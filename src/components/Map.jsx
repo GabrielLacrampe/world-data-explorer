@@ -13,7 +13,23 @@ function Map({ onCountryClick }) {
             .then(data => setWorldData(data))
     }, [])
 
-  return (
+    const onEachCountry = (feature, layer) => {
+        layer.on({
+            mouseover: (e) => {
+                e.target.setStyle({
+                    fillColor: '#ff5722',
+                    fillOpacity: 0.7,
+                })
+            },
+            mouseout: (e) => {
+                e.target.setStyle({
+                    fillColor: '#3b5998',
+                    fillOpacity: 0.4
+                })
+            },
+        })
+    }
+    return (
     <MapContainer
       center={[20, 0]}
       zoom={2}
@@ -34,6 +50,7 @@ function Map({ onCountryClick }) {
             color: '#ffffff',
             weight: 0.5
           }}
+            onEachFeature={onEachCountry}
         />
       )}
     </MapContainer>
