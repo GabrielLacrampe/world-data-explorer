@@ -4,7 +4,7 @@ Interactive world map showing real-time economic, demographic,
 and migration data by country.
 
 ## Live Demo
-[link Vercel]
+*Coming soon*
 
 ## Tech Stack
 - React + Vite
@@ -13,11 +13,14 @@ and migration data by country.
 - Tailwind CSS
 
 ## Features
-- [ ] Interactive world map
-- [ ] Country data sidebar
-- [ ] Color layers by population / GDP
-- [ ] Historical data timeline
+- [x] Interactive world map
+- [x] Country selection with sidebar panel
+- [ ] Country data (population, GDP, capital)
+- [ ] Color layers by population / GDP per capita
+- [ ] Historical data timeline (1990–present)
+- [ ] Country comparison tool
 
 ## Run locally
+cd world-data-explorer
 npm install
 npm run dev
