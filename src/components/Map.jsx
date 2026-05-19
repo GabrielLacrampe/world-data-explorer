@@ -27,6 +27,11 @@ function Map({ onCountryClick }) {
                     fillOpacity: 0.4
                 })
             },
+            click: () => {
+                const countryCode = feature.properties.ISO_A2
+                const countryName = feature.properties.ADMIN
+                onCountryClick({ code: countryCode, name: countryName })
+            },
         })
     }
     return (
