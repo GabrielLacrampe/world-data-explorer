@@ -13,10 +13,20 @@ function App() {
     setLoading(true)
     setCountryData(null)
 
-    fetch('https://restcountries.com/v3.1/alpha/${selectedCountry.code}')
+    // Validate code: if invalid (-99), search by name instead
+    const urlPath = selectedCountry.code && selectedCountry.code !== '-99'
+      ? `https://restcountries.com/v3.1/alpha/${selectedCountry.code}`
+      : `https://restcountries.com/v3.1/name/${selectedCountry.name}`
+
+    fetch(urlPath)
       .then(res => res.json())
       .then(data => {
         setCountryData(data[0])
+        setLoading(false)
+      })
+      .catch(error => {
+        console.error('Error fetching country data:', error)
+        setCountryData(null)
         setLoading(false)
       })
   }, [selectedCountry])
