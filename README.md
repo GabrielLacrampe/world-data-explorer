@@ -2,6 +2,7 @@
 
 Interactive world map showing real-time economic, demographic, 
 and migration data by country.
+Built as a portfolio project while studying Multimedia Application Development.
 
 ## Live Demo
 *Coming soon*
