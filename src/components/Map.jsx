@@ -48,7 +48,7 @@ function Map({ onCountryClick }) {
 
   return (
 
-    <div className="relative h-full w-full">
+    <div className="relative h-full w-full z-10">
       {geoLoading && (
         <div className="absolute inset-0 flex z-10 items-center justify-center bg-gray-950"> 
           <div className="flex flex-col items-center gap-3"> 
