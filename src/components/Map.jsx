@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react'
 import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
+import { valueToColor } from '../utils/colorScale'
 
 const GEOJSON_URL = 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
 
-function Map({ onCountryClick }) {
+function Map({ onCountryClick, activeLayer, allCountriesData, layerConfig }) {
   const [worldData, setWorldData] = useState(null)
   const [geoLoading, setGeoLoading] = useState(true)
+  const [minMax, setMinMax] = useState({ min: 0, max: 1 })
 
   useEffect(() => {
       fetch(GEOJSON_URL)
@@ -37,20 +39,44 @@ function Map({ onCountryClick }) {
       })
   }
 
-  const getcountryStyle = (feature) => {
-      return {
-          fillColor: '#3b5998',
-          fillOpacity: 0.6,
-          color: '#ffffff',
-          weight: 0.5
-      }
+  const getCountryStyle = (feature) => {
+    const code = feature.properties['ISO3166-1-Alpha-2']
+    const property = layerConfig?.property
+
+    if (!property || !allCountriesData || !allCountriesData[code]) {
+      return { fillColor: '#3b5998', fillOpacity: 0.6, color: '#ffffff', weight: 0.5 }
+    }
+
+    const value = allCountriesData[code][property]
+    const color = valueToColor(value, minMax.min, minMax.max)
+
+    return {
+      fillColor: color,
+      fillOpacity: 0.75,
+      color: '#ffffff',
+      weight: 0.5,
+    }
   }
+
+  // Updates country colors when layer or data changes
+  useEffect(() => {
+    if (!allCountriesData || !layerConfig.property) return
+
+    const values = Object.values(allCountriesData)
+      .map(c => c[layerConfig.property])
+      .filter(v => v && v > 0)
+
+    setMinMax({
+      min: Math.min(...values),
+      max: Math.max(...values),
+    })
+  }, [activeLayer, allCountriesData, layerConfig])
 
   return (
 
-    <div className="relative h-full w-full z-10">
-      {geoLoading && (
-        <div className="absolute inset-0 flex z-10 items-center justify-center bg-gray-950"> 
+    <div className="{`${activeLayer}-${minMax.min}-${minMax.max}`}
+                data={worldData}
+                style={getColute inset-0 flex z-10 items-center justify-center bg-gray-950"> 
           <div className="flex flex-col items-center gap-3"> 
             <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin">
               <p className="text-gray-400 text-sm">Loading world data...</p>
