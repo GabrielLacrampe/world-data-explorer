@@ -1,11 +1,44 @@
 import { useEffect, useState } from 'react'
 import Map from './components/Map'
 import Sidebar from './components/Sidebar'
+import LayerSelector from './components/LayerSelector'
+
+const LAYERS = {
+  none: { 
+    label: 'None',
+    property: null,
+    unit: '',
+  },
+  population: {
+    label: 'Population',
+    property: 'population',
+    unit: 'people',
+  },
+  area: {
+    label: 'Area',
+    property: 'area',
+    unit: 'km²',
+  },
+}
 
 function App() {
   const [selectedCountry, setSelectedCountry] = useState(null)
   const [countryData, setCountryData] = useState(null)
   const [loading, setLoading] = useState(false)
+  const [activeLayer, setActiveLayer] = useState('none')
+  const [allCountriesData, setAllCountriesData] = useState(null)
+
+  useEffect(() => {
+    fetch('https://restcountries.com/v3.1/all?fields=cca2,population,area')
+      .then(res => res.json())
+      .then(data => {
+        const indexd = {}
+        data.forEach(c => {
+          indexd[c.cca2] = c
+        })
+        setAllCountriesData(indexd)
+      })
+  }, [])
 
   useEffect(() => {
     if (!selectedCountry)  return
@@ -38,8 +71,18 @@ function App() {
         countryData={countryData}
         loading={loading}
       />
-      <div className="flex-1">
-        <Map onCountryClick={setSelectedCountry} />
+      <div className="flex-1 relative">
+        <LayerSelector 
+          layers={LAYERS} 
+          activeLayer={activeLayer} 
+          onLayerChange={setActiveLayer} 
+        />
+        <Map 
+        onCountryClick={setSelectedCountry} 
+        activeLayer={activeLayer}
+        layerConfig={LAYERS[activeLayer]}
+        allCountriesData={allCountriesData}
+        />
       </div>
     </div>
   )
