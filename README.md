@@ -16,8 +16,9 @@ Built as a portfolio project while studying Multimedia Application Development.
 ## Features
 - [x] Interactive world map
 - [x] Country selection with sidebar panel
-- [ ] Country data (population, GDP, capital)
-- [ ] Color layers by population / GDP per capita
+- [x] Country data (population, GDP, capital)
+- [x] Color layers by population, area
+- [ ] GDP per capita layer (World Bank API)
 - [ ] Historical data timeline (1990–present)
 - [ ] Country comparison tool
 
