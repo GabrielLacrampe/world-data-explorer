@@ -76,10 +76,9 @@ function Map({ onCountryClick, activeLayer, allCountriesData, layerConfig }) {
   }, [activeLayer, allCountriesData, layerConfig])
 
   return (
-
-    <div className="{`${activeLayer}-${minMax.min}-${minMax.max}`}
-                data={worldData}
-                style={getColute inset-0 flex z-10 items-center justify-center bg-gray-950"> 
+    <div className="relative h-full w-full z-10">
+      {geoLoading && (
+        <div className="absolute inset-0 flex z-10 items-center justify-center bg-gray-950"> 
           <div className="flex flex-col items-center gap-3"> 
             <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin">
               <p className="text-gray-400 text-sm">Loading world data...</p>
@@ -101,9 +100,9 @@ function Map({ onCountryClick, activeLayer, allCountriesData, layerConfig }) {
 
             {worldData && (
               <GeoJSON
-                key="default"
+                key={`${activeLayer}-${minMax.min}-${minMax.max}`}
                 data={worldData}
-                style={getcountryStyle}
+                style={getCountryStyle}
                 onEachFeature={onEachCountry}
               />
             )}
