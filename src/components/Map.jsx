@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
-import { valueToColor } from '../utils/colorScale'
+import { valueToColor, calculateQuantiles } from '../utils/colorScale'
 
 const GEOJSON_URL = 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
 
@@ -9,6 +9,7 @@ function Map({ onCountryClick, activeLayer, allCountriesData, layerConfig }) {
   const [worldData, setWorldData] = useState(null)
   const [geoLoading, setGeoLoading] = useState(true)
   const [minMax, setMinMax] = useState({ min: 0, max: 1 })
+  const [quantiles, setQuantiles] = useState(null)
 
   useEffect(() => {
       fetch(GEOJSON_URL)
@@ -48,7 +49,7 @@ function Map({ onCountryClick, activeLayer, allCountriesData, layerConfig }) {
     }
 
     const value = allCountriesData[code][property]
-    const color = valueToColor(value, minMax.min, minMax.max)
+    const color = valueToColor(value, minMax.min, minMax.max, quantiles)
 
     return {
       fillColor: color,
@@ -66,6 +67,8 @@ function Map({ onCountryClick, activeLayer, allCountriesData, layerConfig }) {
       .map(c => c[layerConfig.property])
       .filter(v => v && v > 0)
 
+    const newQuantiles = calculateQuantiles(values)
+    setQuantiles(newQuantiles)
     setMinMax({
       min: Math.min(...values),
       max: Math.max(...values),
