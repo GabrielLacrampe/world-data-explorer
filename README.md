@@ -5,13 +5,14 @@ and migration data by country.
 Built as a portfolio project while studying Multimedia Application Development.
 
 ## Live Demo
-*Coming soon*
+https://grand-world-data-explorer.vercel.app/
 
 ## Tech Stack
-- React + Vite
-- React Leaflet
-- REST Countries API / World Bank API
-- Tailwind CSS
+- **React** + Vite
+- **React Leaflet** — interactive map rendering
+- **Tailwind CSS** — styling
+- **REST Countries API** — country data
+- **Vercel** — deployment
 
 ## Features
 - [x] Interactive world map
@@ -22,7 +23,6 @@ Built as a portfolio project while studying Multimedia Application Development.
 - [ ] Historical data timeline (1990–present)
 - [ ] Country comparison tool
 
-## Run locally
-cd world-data-explorer
-npm install
-npm run dev
+## About
+Built as a portfolio project while studying Multimedia Application Development.
+Actively in development — see commit history for progress.
