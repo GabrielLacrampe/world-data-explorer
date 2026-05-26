@@ -1,112 +1,105 @@
-import { useEffect, useState } from 'react'
-import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet'
-import 'leaflet/dist/leaflet.css'
-import { valueToColor, calculateQuantiles } from '../utils/colorScale'
+import { useState, useEffect, useRef } from 'react'
+import ReactMapGL, { Source, Layer } from 'react-map-gl/maplibre'
+import 'maplibre-gl/dist/maplibre-gl.css'
 
-const GEOJSON_URL = 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
+const GEOJSON_URL =
+  'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
 
-function Map({ onCountryClick, activeLayer, allCountriesData, layerConfig }) {
+// A neutral dark map style with no external tile server required
+const MAP_STYLE = {
+  version: 8,
+  sources: {
+    'osm-tiles': {
+      type: 'raster',
+      tiles: ['https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'],
+      tileSize: 256,
+      attribution: '© OpenStreetMap © CARTO',
+    },
+  },
+  layers: [
+    {
+      id: 'background',
+      type: 'background',
+      paint: { 'background-color': '#0d1117' },
+    },
+    {
+      id: 'osm-tiles',
+      type: 'raster',
+      source: 'osm-tiles',
+      paint: { 'raster-opacity': 0.4 },
+    },
+  ],
+}
+
+function Map({ onCountryClick }) {
   const [worldData, setWorldData] = useState(null)
   const [geoLoading, setGeoLoading] = useState(true)
-  const [minMax, setMinMax] = useState({ min: 0, max: 1 })
-  const [quantiles, setQuantiles] = useState(null)
+  const [viewState, setViewState] = useState({
+    longitude: 0,
+    latitude: 20,
+    zoom: 1.8,
+  })
 
   useEffect(() => {
-      fetch(GEOJSON_URL)
-          .then(res => res.json())
-          .then(data => {
-              setWorldData(data)
-              setGeoLoading(false)
-          })
+    fetch(GEOJSON_URL)
+      .then((res) => res.json())
+      .then((data) => {
+        setWorldData(data)
+        setGeoLoading(false)
+      })
   }, [])
 
-  const onEachCountry = (feature, layer) => {
-      layer.on({
-          mouseover: (e) => {
-              e.target.setStyle({
-                  fillOpacity: 0.85,
-              })
-          },
-          mouseout: (e) => {
-              e.target.setStyle({
-                  fillOpacity: 0.6
-              })
-          },
-          click: () => {
-              const countryCode = feature.properties['ISO3166-1-Alpha-2']
-              const countryName = feature.properties.name
-              onCountryClick({ code: countryCode, name: countryName })
-          },
-      })
-  }
-
-  const getCountryStyle = (feature) => {
-    const code = feature.properties['ISO3166-1-Alpha-2']
-    const property = layerConfig?.property
-
-    if (!property || !allCountriesData || !allCountriesData[code]) {
-      return { fillColor: '#3b5998', fillOpacity: 0.6, color: '#ffffff', weight: 0.5 }
-    }
-
-    const value = allCountriesData[code][property]
-    const color = valueToColor(value, minMax.min, minMax.max, quantiles)
-
-    return {
-      fillColor: color,
-      fillOpacity: 0.75,
-      color: '#ffffff',
-      weight: 0.5,
-    }
-  }
-
-  // Updates country colors when layer or data changes
-  useEffect(() => {
-    if (!allCountriesData || !layerConfig.property) return
-
-    const values = Object.values(allCountriesData)
-      .map(c => c[layerConfig.property])
-      .filter(v => v && v > 0)
-
-    const newQuantiles = calculateQuantiles(values)
-    setQuantiles(newQuantiles)
-    setMinMax({
-      min: Math.min(...values),
-      max: Math.max(...values),
+  const handleClick = (e) => {
+    const features = e.features
+    if (!features || features.length === 0) return
+    const feature = features[0]
+    onCountryClick({
+      code: feature.properties.ISO_A2,
+      name: feature.properties.ADMIN,
     })
-  }, [activeLayer, allCountriesData, layerConfig])
+  }
 
   return (
-    <div className="relative h-full w-full z-10">
+    <div className="relative h-full w-full">
       {geoLoading && (
-        <div className="absolute inset-0 flex z-10 items-center justify-center bg-gray-950"> 
-          <div className="flex flex-col items-center gap-3"> 
-            <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin">
-              <p className="text-gray-400 text-sm">Loading world data...</p>
-            </div>
+        <div className="absolute inset-0 z-10 flex items-center justify-center bg-gray-950">
+          <div className="flex flex-col items-center gap-3">
+            <div className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
+            <p className="text-gray-400 text-sm">Loading world data...</p>
           </div>
         </div>
       )}
 
-      <MapContainer
-            center={[20, 0]}
-            zoom={2}
-            className="h-full w-full"
-            style={{ background: '#1a1a2e' }}
-          >
-            <TileLayer
-              url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-              attribution='&copy; OpenStreetMap &copy; CARTO'
+      <ReactMapGL
+        {...viewState}
+        onMove={(e) => setViewState(e.viewState)}
+        mapStyle={MAP_STYLE}
+        style={{ width: '100%', height: '100%' }}
+        interactiveLayerIds={worldData ? ['countries-fill'] : []}
+        onClick={handleClick}
+      >
+        {worldData && (
+          <Source id="countries" type="geojson" data={worldData}>
+            <Layer
+              id="countries-fill"
+              type="fill"
+              paint={{
+                'fill-color': '#3b5998',
+                'fill-opacity': 0.6,
+              }}
             />
-
-            {worldData && (
-              <GeoJSON
-                key={`${activeLayer}-${minMax.min}-${minMax.max}`}
-                data={worldData}
-                style={getCountryStyle}
-                onEachFeature={onEachCountry}
-              />
-            )}
-        </MapContainer>
+            <Layer
+              id="countries-border"
+              type="line"
+              paint={{
+                'line-color': '#ffffff',
+                'line-width': 0.5,
+                'line-opacity': 0.4,
+              }}
+            />
+          </Source>
+        )}
+      </ReactMapGL>
     </div>
   )
 }
