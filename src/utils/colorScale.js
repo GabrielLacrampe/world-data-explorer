@@ -78,3 +78,19 @@ export function formatNumber(n) {
   if (n >= 1_000) return `${(n / 1_000).toFixed(0)}K`
   return n.toString()
 }
+
+/**
+ * Builds a MapLibre 'match' expression that maps ISO codes to colors.
+ * countryColors is an object: { 'NL': '#ff0000', 'DE': '#00ff00', ... }
+ * fallbackColor is used for countries with no data.
+ */
+export function buildMatchExpression(countryColors, fallbackColor = '#1e293b') {
+  const expression = ['match', ['get', 'ISO_A2']]
+
+  Object.entries(countryColors).forEach(([isoCode, color]) => {
+    expression.push(isoCode, color)
+  })
+
+  expression.push(fallbackColor) // fallback
+  return expression
+}

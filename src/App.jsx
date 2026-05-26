@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import Map from './components/Map'
 import Sidebar from './components/Sidebar'
 import LayerSelector from './components/LayerSelector'
+import { buildMatchExpression, valueToColor } from './utils/colorScale'
+
 
 const LAYERS = {
   none: { 
@@ -27,6 +29,7 @@ function App() {
   const [loading, setLoading] = useState(false)
   const [activeLayer, setActiveLayer] = useState('none')
   const [allCountriesData, setAllCountriesData] = useState(null)
+  const [fillExpression, setFillExpression] = useState(null)
 
   useEffect(() => {
     fetch('https://restcountries.com/v3.1/all?fields=cca2,population,area')
@@ -64,6 +67,31 @@ function App() {
       })
   }, [selectedCountry])
 
+  // Rebuild color expression when layer or country data changes
+  useEffect(() => {
+    if (!allCountriesData || activeLayer === 'none') {
+      setFillExpression('#3b5998')
+      return
+    }
+
+    const property = LAYERS[activeLayer].property
+    const values = Object.values(allCountriesData)
+      .map(c => c[property])
+      .filter(v => v && v > 0)
+
+    const min = Math.min(...values)
+    const max = Math.max(...values)
+
+    const countryColors = {}
+    Object.entries(allCountriesData).forEach(([code, country]) => {
+      const value = country[property]
+      countryColors[code] = valueToColor(value, min, max)
+    })
+
+    setFillExpression(buildMatchExpression(countryColors))
+  }, [activeLayer, allCountriesData])
+
+
   return (
     <div className="flex h-screen w-screen">
       <Sidebar 
@@ -82,6 +110,7 @@ function App() {
         activeLayer={activeLayer}
         layerConfig={LAYERS[activeLayer]}
         allCountriesData={allCountriesData}
+        fillExpression={fillExpression}
         />
       </div>
     </div>

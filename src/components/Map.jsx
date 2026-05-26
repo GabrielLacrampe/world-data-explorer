@@ -32,8 +32,9 @@ const MAP_STYLE = {
   ],
 }
 
-function Map({ onCountryClick }) {
+function Map({ onCountryClick, fillExpression }) {
   const mapRef = useRef(null)
+  const resolvedFill = fillExpression || '#3b5998'
   const hoveredFeatureId = useRef(null)
   const [worldData, setWorldData] = useState(null)
   const [geoLoading, setGeoLoading] = useState(true)
@@ -121,7 +122,7 @@ function Map({ onCountryClick }) {
               id="countries-fill"
               type="fill"
               paint={{
-                'fill-color': '#3b5998',
+                'fill-color': resolvedFill,
                 'fill-opacity': [
                   'case',
                   ['boolean', ['feature-state', 'hover'], false],
