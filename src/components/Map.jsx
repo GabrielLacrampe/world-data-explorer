@@ -1,6 +1,7 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import ReactMapGL, { Source, Layer } from 'react-map-gl/maplibre'
 import 'maplibre-gl/dist/maplibre-gl.css'
+
 
 const GEOJSON_URL =
   'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
@@ -32,6 +33,8 @@ const MAP_STYLE = {
 }
 
 function Map({ onCountryClick }) {
+  const mapRef = useRef(null)
+  const hoveredFeatureId = useRef(null)
   const [worldData, setWorldData] = useState(null)
   const [geoLoading, setGeoLoading] = useState(true)
   const [viewState, setViewState] = useState({
@@ -47,6 +50,37 @@ function Map({ onCountryClick }) {
         setWorldData(data)
         setGeoLoading(false)
       })
+  }, [])
+
+  const handleMouseMove = useCallback((e) => {
+    if (!mapRef.current) return
+    const map = mapRef.current.getMap()
+
+    if (e.features && e.features.length > 0) {
+      // Clear previous hover
+      if (hoveredFeatureId.current !== null) {
+        map.setFeatureState(
+          { source: 'countries', id: hoveredFeatureId.current },
+          { hover: false }
+        )
+      }
+      // Set new hover
+      hoveredFeatureId.current = e.features[0].id
+      map.setFeatureState(
+        { source: 'countries', id: hoveredFeatureId.current },
+        { hover: true }
+      )
+    }
+  }, [])
+
+  const handleMouseLeave = useCallback(() => {
+    if (!mapRef.current || hoveredFeatureId.current === null) return
+    const map = mapRef.current.getMap()
+    map.setFeatureState(
+      { source: 'countries', id: hoveredFeatureId.current },
+      { hover: false }
+    )
+    hoveredFeatureId.current = null
   }, [])
 
   const handleClick = (e) => {
@@ -71,28 +105,36 @@ function Map({ onCountryClick }) {
       )}
 
       <ReactMapGL
+        ref={mapRef}
         {...viewState}
         onMove={(e) => setViewState(e.viewState)}
         mapStyle={MAP_STYLE}
         style={{ width: '100%', height: '100%' }}
         interactiveLayerIds={worldData ? ['countries-fill'] : []}
         onClick={handleClick}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
       >
         {worldData && (
-          <Source id="countries" type="geojson" data={worldData}>
+          <Source id="countries" type="geojson" data={worldData} generateId={true}>
             <Layer
               id="countries-fill"
               type="fill"
               paint={{
                 'fill-color': '#3b5998',
-                'fill-opacity': 0.6,
+                'fill-opacity': [
+                  'case',
+                  ['boolean', ['feature-state', 'hover'], false],
+                  0.85,   // hovered
+                  0.6,    // default
+                ],
               }}
             />
             <Layer
               id="countries-border"
               type="line"
               paint={{
-                'line-color': '#ffffff',
+                'line-color': '#d03030',
                 'line-width': 0.5,
                 'line-opacity': 0.4,
               }}
