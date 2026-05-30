@@ -6,6 +6,7 @@ import Legend from './components/Legend'
 import LoadingOverlay from './components/LoadingOverlay'
 import useStore from './store/useStore'
 import { buildMatchExpression, valueToColor } from './utils/colorScale'
+import { fetchIndicatorAllCountries } from './utils/worldBank'
 
 const LAYERS = {
   // ── Existing layers ──────────────────────────────────────────────────
@@ -82,6 +83,8 @@ function App() {
     allCountriesData,
     setAllCountriesData,
     setFillExpression,
+    worldBankLayerCache,
+    setWorldBankLayerData,
   } = useStore()
 
   useEffect(() => {
@@ -152,6 +155,42 @@ function App() {
       })
   }, [selectedCountry, setCountryData, setLoading])
 
+  useEffect(() => {
+    const layer = LAYERS[activeLayer]
+    if (layer.source !== 'worldbank') return
+
+    const indicator = layer.indicator
+
+    // Use cache if available
+    if (worldBankLayerCache[indicator]) {
+      buildAndSetWorldBankExpression(worldBankLayerCache[indicator])
+      return
+    }
+
+    // Fetch and cache
+    fetchIndicatorAllCountries(indicator)
+      .then((data) => {
+        setWorldBankLayerData(indicator, data)
+        buildAndSetWorldBankExpression(data)
+      })
+      .catch((err) => {
+        console.error('World Bank layer fetch failed:', err)
+        setFillExpression('#3b5998')
+      })
+  }, [activeLayer])
+  
+  function buildAndSetWorldBankExpression(data) {
+    const values = Object.values(data).filter((v) => v !== null && v > 0)
+    if (values.length === 0) return
+
+    const countryColors = {}
+    Object.entries(data).forEach(([code, value]) => {
+      countryColors[code] = valueToColor(value, values)
+    })
+
+    setFillExpression(buildMatchExpression(countryColors))
+  }
+
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-gray-950">
       <Map />
@@ -162,6 +201,8 @@ function App() {
     </div>
   )
 }
+
+
 
 export default App
 
