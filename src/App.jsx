@@ -61,10 +61,6 @@ function App() {
       return
     }
 
-    // Calcular min y max para percentile clipping
-    const min = values[Math.floor(values.length * 0.02)]
-    const max = values[Math.floor(values.length * 0.98)]
-
     const countryColors = {}
     Object.entries(allCountriesData).forEach(([code, country]) => {
       const value = country[property]
