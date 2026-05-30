@@ -6,6 +6,10 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 const GEOJSON_URL =
   'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
 
+// Property names from datasets/geo-countries (not Natural Earth ADMIN/ISO_A2)
+const GEO_NAME = 'name'
+const GEO_ISO2 = 'ISO3166-1-Alpha-2'
+
 // A neutral dark map style with no external tile server required
 const MAP_STYLE = {
   version: 8,
@@ -32,7 +36,7 @@ const MAP_STYLE = {
   ],
 }
 
-function Map({ onCountryClick, fillExpression }) {
+function Map({ onCountryClick, fillExpression, selectedCountry }) {
   const mapRef = useRef(null)
   const resolvedFill = fillExpression || '#3b5998'
   const hoveredFeatureId = useRef(null)
@@ -43,7 +47,8 @@ function Map({ onCountryClick, fillExpression }) {
     latitude: 20,
     zoom: 1.8,
   })
-
+  const selectedFeatureId = useRef(null)
+  
   useEffect(() => {
     fetch(GEOJSON_URL)
       .then((res) => res.json())
@@ -52,6 +57,19 @@ function Map({ onCountryClick, fillExpression }) {
         setGeoLoading(false)
       })
   }, [])
+
+  useEffect(() => {
+    if (!mapRef.current || selectedCountry) return
+    const map = mapRef.current.getMap()
+
+    if (selectedFeatureId.current !== null) {
+      map.setFeatureState(
+        { source: 'countries', id: selectedFeatureId.current },
+        { selected: false }
+      )
+      selectedFeatureId.current = null
+    }
+  }, [selectedCountry])
 
   const handleMouseMove = useCallback((e) => {
     if (!mapRef.current) return
@@ -88,11 +106,30 @@ function Map({ onCountryClick, fillExpression }) {
     const features = e.features
     if (!features || features.length === 0) return
     const feature = features[0]
+
+    if (!mapRef.current) return
+    const map = mapRef.current.getMap()
+
+    if (selectedFeatureId.current !== null) {
+      map.setFeatureState(
+        { source: 'countries', id: selectedFeatureId.current },
+        { selected: false }
+      )
+    }
+
+    selectedFeatureId.current = feature.id
+    map.setFeatureState(
+      { source: 'countries', id: feature.id },
+      { selected: true }
+    )
+
     onCountryClick({
-      code: feature.properties.ISO_A2,
-      name: feature.properties.ADMIN,
+      code: feature.properties[GEO_ISO2],
+      name: feature.properties[GEO_NAME],
     })
   }
+
+  
 
   return (
     <div className="relative h-full w-full">
@@ -122,9 +159,16 @@ function Map({ onCountryClick, fillExpression }) {
               id="countries-fill"
               type="fill"
               paint={{
-                'fill-color': resolvedFill,
+                'fill-color': [
+                  'case',
+                  ['boolean', ['feature-state', 'selected'], false],
+                  '#60a5fa',       // selected: brighter blue
+                  resolvedFill,    // default: data-driven color
+                ],
                 'fill-opacity': [
                   'case',
+                  ['boolean', ['feature-state', 'selected'], false],
+                  0.95,   // selected
                   ['boolean', ['feature-state', 'hover'], false],
                   0.85,   // hovered
                   0.6,    // default

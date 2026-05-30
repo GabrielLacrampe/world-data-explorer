@@ -85,7 +85,7 @@ export function formatNumber(n) {
  * fallbackColor is used for countries with no data.
  */
 export function buildMatchExpression(countryColors, fallbackColor = '#1e293b') {
-  const expression = ['match', ['get', 'ISO_A2']]
+  const expression = ['match', ['get', 'ISO3166-1-Alpha-2']]
 
   Object.entries(countryColors).forEach(([isoCode, color]) => {
     expression.push(isoCode, color)

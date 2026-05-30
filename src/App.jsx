@@ -55,9 +55,12 @@ function App() {
       : `https://restcountries.com/v3.1/name/${selectedCountry.name}`
 
     fetch(urlPath)
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`)
+        return res.json()
+      })
       .then(data => {
-        setCountryData(data[0])
+        setCountryData(data[0] ?? null)
         setLoading(false)
       })
       .catch(error => {
@@ -106,7 +109,8 @@ function App() {
           onLayerChange={setActiveLayer} 
         />
         <Map 
-        onCountryClick={setSelectedCountry} 
+        onCountryClick={setSelectedCountry}
+        selectedCountry={selectedCountry}
         activeLayer={activeLayer}
         layerConfig={LAYERS[activeLayer]}
         allCountriesData={allCountriesData}
