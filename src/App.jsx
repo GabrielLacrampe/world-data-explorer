@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import Map from './components/Map'
 import Sidebar from './components/Sidebar'
 import LayerSelector from './components/LayerSelector'
@@ -26,10 +26,19 @@ const LAYERS = {
 function App() {
   const [selectedCountry, setSelectedCountry] = useState(null)
   const [countryData, setCountryData] = useState(null)
-  const [loading, setLoading] = useState(false)
+  const [countryDataKey, setCountryDataKey] = useState(null)
+  const [countryErrorKey, setCountryErrorKey] = useState(null)
   const [activeLayer, setActiveLayer] = useState('none')
   const [allCountriesData, setAllCountriesData] = useState(null)
-  const [fillExpression, setFillExpression] = useState(null)
+  const selectedCountryKey = selectedCountry
+    ? `${selectedCountry.code ?? ''}:${selectedCountry.name ?? ''}`
+    : null
+  const loading = Boolean(
+    selectedCountryKey &&
+      countryDataKey !== selectedCountryKey &&
+      countryErrorKey !== selectedCountryKey
+  )
+  const sidebarCountryData = countryDataKey === selectedCountryKey ? countryData : null
 
   useEffect(() => {
     fetch('https://restcountries.com/v3.1/all?fields=cca2,population,area')
@@ -46,9 +55,6 @@ function App() {
   useEffect(() => {
     if (!selectedCountry)  return
 
-    setLoading(true)
-    setCountryData(null)
-
     // Validate code: if invalid (-99), search by name instead
     const urlPath = selectedCountry.code && selectedCountry.code !== '-99'
       ? `https://restcountries.com/v3.1/alpha/${selectedCountry.code}`
@@ -61,20 +67,18 @@ function App() {
       })
       .then(data => {
         setCountryData(data[0] ?? null)
-        setLoading(false)
+        setCountryDataKey(selectedCountryKey)
       })
       .catch(error => {
         console.error('Error fetching country data:', error)
         setCountryData(null)
-        setLoading(false)
+        setCountryErrorKey(selectedCountryKey)
       })
-  }, [selectedCountry])
+  }, [selectedCountry, selectedCountryKey])
 
-  // Rebuild color expression when layer or country data changes
-  useEffect(() => {
+  const fillExpression = useMemo(() => {
     if (!allCountriesData || activeLayer === 'none') {
-      setFillExpression('#3b5998')
-      return
+      return '#3b5998'
     }
 
     const property = LAYERS[activeLayer].property
@@ -82,24 +86,20 @@ function App() {
       .map(c => c[property])
       .filter(v => v && v > 0)
 
-    const min = Math.min(...values)
-    const max = Math.max(...values)
-
     const countryColors = {}
     Object.entries(allCountriesData).forEach(([code, country]) => {
       const value = country[property]
-      countryColors[code] = valueToColor(value, min, max)
+      countryColors[code] = valueToColor(value, values)
     })
 
-    setFillExpression(buildMatchExpression(countryColors))
+    return buildMatchExpression(countryColors)
   }, [activeLayer, allCountriesData])
-
 
   return (
     <div className="flex h-screen w-screen">
       <Sidebar 
         country={selectedCountry}
-        countryData={countryData}
+        countryData={sidebarCountryData}
         loading={loading}
       />
       <div className="flex-1 relative">

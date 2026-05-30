@@ -1,49 +1,111 @@
-// Colour pallete inspired by Tailwind CSS: https://tailwindcss.com/docs/customizing-colors#color-palette-reference
+const NO_DATA_COLOR = '#1e293b'
+
+// Ten-stop gradient for data layers, from very low to very high.
 const COLOR_SCALE = [
-  '#e0f2fe', // very low
-  '#7dd3fc',
-  '#38bdf8',
-  '#0284c7',
+  '#0f172a',
+  '#164e63',
   '#0369a1',
-  '#1d4ed8',
-  '#7c3aed',
-  '#9f1239', // very high
+  '#0284c7',
+  '#059669',
+  '#65a30d',
+  '#ca8a04',
+  '#ea580c',
+  '#dc2626',
+  '#9f1239',
 ]
 
 /**
- * Transforms a value (e.g. population) into a color from the scale.
- * Uses quantile-based bucketing for better color distribution across outliers.
+ * Transforms a value into a gradient color.
+ * Uses percentile clipping to reduce outlier distortion and logarithmic scaling
+ * by default, which works well for country-level population and area values.
  */
-export function valueToColor(value, min, max, quantiles = null) {
-  if (!value || value <= 0) return '#1e293b' // no data: dark gray
+export function valueToColor(
+  value,
+  allValues,
+  {
+    gradient = COLOR_SCALE,
+    scale = 'log',
+    lowerPercentile = 0.02,
+    upperPercentile = 0.98,
+  } = {}
+) {
+  if (!value || value <= 0) return NO_DATA_COLOR
 
-  // If no quantiles provided, use logarithmic scaling
-  if (!quantiles) {
-    const logValue = Math.log(value)
-    const logMin = Math.log(Math.max(min, 1))
-    const logMax = Math.log(Math.max(max, 1))
+  const values = Array.isArray(allValues)
+    ? allValues.filter((v) => v && v > 0)
+    : []
 
-    const normalized = (logValue - logMin) / (logMax - logMin)
-    const clamped = Math.max(0, Math.min(1, normalized))
+  if (values.length === 0) return NO_DATA_COLOR
 
-    const index = Math.floor(clamped * (COLOR_SCALE.length - 1))
-    return COLOR_SCALE[index]
-  }
+  const transformedValues = values.map((v) => transformValue(v, scale))
+  const transformedValue = transformValue(value, scale)
+  const min = percentile(transformedValues, lowerPercentile)
+  const max = percentile(transformedValues, upperPercentile)
 
-  // Quantile-based: find which bucket the value falls into
-  for (let i = 0; i < quantiles.length; i++) {
-    if (value <= quantiles[i]) {
-      return COLOR_SCALE[i]
-    }
-  }
-  return COLOR_SCALE[COLOR_SCALE.length - 1]
+  if (min === max) return gradient[Math.floor(gradient.length / 2)]
+
+  const normalized = clamp((transformedValue - min) / (max - min), 0, 1)
+  return interpolateGradient(gradient, normalized)
+}
+
+function transformValue(value, scale) {
+  if (scale === 'log') return Math.log(Math.max(value, 1))
+  return value
+}
+
+function percentile(values, percentileValue) {
+  const sorted = [...values].sort((a, b) => a - b)
+  const index = clamp(percentileValue, 0, 1) * (sorted.length - 1)
+  const lower = Math.floor(index)
+  const upper = Math.ceil(index)
+  const weight = index - lower
+
+  if (lower === upper) return sorted[lower]
+  return sorted[lower] * (1 - weight) + sorted[upper] * weight
+}
+
+function interpolateGradient(gradient, normalizedValue) {
+  const scaled = clamp(normalizedValue, 0, 1) * (gradient.length - 1)
+  const lower = Math.floor(scaled)
+  const upper = Math.ceil(scaled)
+  const weight = scaled - lower
+
+  if (lower === upper) return gradient[lower]
+  return mixColors(gradient[lower], gradient[upper], weight)
+}
+
+function mixColors(fromHex, toHex, weight) {
+  const from = hexToRgb(fromHex)
+  const to = hexToRgb(toHex)
+  const mixed = from.map((channel, index) =>
+    Math.round(channel * (1 - weight) + to[index] * weight)
+  )
+
+  return rgbToHex(mixed)
+}
+
+function hexToRgb(hex) {
+  const value = hex.replace('#', '')
+  return [
+    Number.parseInt(value.slice(0, 2), 16),
+    Number.parseInt(value.slice(2, 4), 16),
+    Number.parseInt(value.slice(4, 6), 16),
+  ]
+}
+
+function rgbToHex(rgb) {
+  return `#${rgb.map((channel) => channel.toString(16).padStart(2, '0')).join('')}`
+}
+
+function clamp(value, min, max) {
+  return Math.max(min, Math.min(max, value))
 }
 
 /**
  * Calculates quantiles from all values for even color distribution.
  */
 export function calculateQuantiles(allValues, numBuckets = COLOR_SCALE.length) {
-  const sorted = allValues.sort((a, b) => a - b)
+  const sorted = [...allValues].sort((a, b) => a - b)
   const quantiles = []
   
   for (let i = 1; i < numBuckets; i++) {
