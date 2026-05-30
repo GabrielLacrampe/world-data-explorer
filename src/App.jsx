@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import Map from './components/Map'
-import Sidebar from './components/Sidebar/Sidebar'
-import TopBar from './components/TopBar/TopBar'
-import Legend from './components/Map/Legend'
+import Sidebar from './components/Sidebar'
+import TopBar from './components/TopBar'
+import Legend from './components/Legend'
 import LoadingOverlay from './components/LoadingOverlay'
 import useStore from './store/useStore'
 import { buildMatchExpression, valueToColor } from './utils/colorScale'
@@ -90,28 +90,12 @@ function App() {
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-gray-950">
       <Map />
-      <TopBar />
+      <TopBar layers={LAYERS} />
       <Sidebar />
-      <Legend />
+      <Legend layers={LAYERS}/>
       <LoadingOverlay />
     </div>
   )
-}
-
-function TopBar() {
-  return null
-}
-
-function Sidebar() {
-  return null
-}
-
-function Legend() {
-  return null
-}
-
-function LoadingOverlay() {
-  return null
 }
 
 export default App

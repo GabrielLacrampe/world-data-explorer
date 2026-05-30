@@ -1,4 +1,4 @@
-import useStore from '../../store/useStore'
+import useStore from '../store/useStore'
 
 const COLOR_SCALE = [
   { color: '#e0f2fe', label: 'Low' },

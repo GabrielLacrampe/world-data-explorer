@@ -1,4 +1,4 @@
-import useStore from '../../store/useStore'
+import useStore from '../store/useStore'
 
 function TopBar({ layers }) {
   const { activeLayer, setActiveLayer } = useStore()
