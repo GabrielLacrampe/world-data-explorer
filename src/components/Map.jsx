@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import ReactMapGL, { Source, Layer } from 'react-map-gl/maplibre'
 import 'maplibre-gl/dist/maplibre-gl.css'
-
+import { MAP_STYLE } from '../utils/mapStyles'
 
 const GEOJSON_URL =
   'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
@@ -10,31 +10,7 @@ const GEOJSON_URL =
 const GEO_NAME = 'name'
 const GEO_ISO2 = 'ISO3166-1-Alpha-2'
 
-// A neutral dark map style with no external tile server required
-const MAP_STYLE = {
-  version: 8,
-  sources: {
-    'osm-tiles': {
-      type: 'raster',
-      tiles: ['https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'],
-      tileSize: 256,
-      attribution: '© OpenStreetMap © CARTO',
-    },
-  },
-  layers: [
-    {
-      id: 'background',
-      type: 'background',
-      paint: { 'background-color': '#0d1117' },
-    },
-    {
-      id: 'osm-tiles',
-      type: 'raster',
-      source: 'osm-tiles',
-      paint: { 'raster-opacity': 0.4 },
-    },
-  ],
-}
+
 
 function Map({ onCountryClick, fillExpression, selectedCountry }) {
   const mapRef = useRef(null)
