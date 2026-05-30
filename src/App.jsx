@@ -1,5 +1,9 @@
 import { useEffect } from 'react'
 import Map from './components/Map'
+import Sidebar from './components/Sidebar/Sidebar'
+import TopBar from './components/TopBar/TopBar'
+import Legend from './components/Map/Legend'
+import LoadingOverlay from './components/LoadingOverlay'
 import useStore from './store/useStore'
 import { buildMatchExpression, valueToColor } from './utils/colorScale'
 
