@@ -22,6 +22,7 @@ const useStore = create((set, get) => ({
     selectedCountry: country,
     countryData: null,
     economyData: null,
+    worldBankCountryData: null,
     sidebarOpen: country !== null,
     activeTab: 'economy',
   }),
@@ -45,6 +46,20 @@ const useStore = create((set, get) => ({
     set((state) => ({
       loading: { ...state.loading, [key]: value },
     })),
+
+    // World Bank layer data cache: { indicator: { ISO2: value, ... } }
+    worldBankLayerCache: {},
+  setWorldBankLayerData: (indicator, data) =>
+    set((state) => ({
+        worldBankLayerCache: {
+        ...state.worldBankLayerCache,
+        [indicator]: data,
+      },
+    })),
+
+  // World Bank sidebar data for selected country
+  worldBankCountryData: null,
+  setWorldBankCountryData: (data) => set({ worldBankCountryData: data }),
 }))
 
 export default useStore
