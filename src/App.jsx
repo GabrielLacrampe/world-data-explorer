@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect } from 'react'
 import Map from './components/Map'
 import Sidebar from './components/Sidebar'
 import TopBar from './components/TopBar'
@@ -16,23 +16,14 @@ const LAYERS = {
 export { LAYERS }
 
 function App() {
-  const [selectedCountry, setSelectedCountry] = useState(null)
-  const [countryDataKey, setCountryDataKey] = useState(null)
-  const [countryErrorKey, setCountryErrorKey] = useState(null)
-  const [activeLayer, setActiveLayer] = useState('none')
-  const selectedCountryKey = selectedCountry
-    ? `${selectedCountry.code ?? ''}:${selectedCountry.name ?? ''}`
-    : null
-  const loading = Boolean(
-    selectedCountryKey &&
-      countryDataKey !== selectedCountryKey &&
-      countryErrorKey !== selectedCountryKey
-  )
-  const sidebarCountryData = countryDataKey === selectedCountryKey ? countryData : null
   const {
+    selectedCountry,
+    setSelectedCountry,
     countryData,
     setCountryData,
     setLoading,
+    activeLayer,
+    setActiveLayer,
     allCountriesData,
     setAllCountriesData,
     setFillExpression,
@@ -50,12 +41,14 @@ function App() {
       })
   }, [setAllCountriesData])
 
-  const fillExpression = useMemo(() => {
+  useEffect(() => {
     if (!allCountriesData || activeLayer === 'none') {
-      return '#3b5998'
+      setFillExpression('#3b5998')
+      return
     }
     if (!allCountriesData || !LAYERS[activeLayer].property) {
-      return '#3b5998'
+      setFillExpression('#3b5998')
+      return
     }
 
     const property = LAYERS[activeLayer].property
@@ -63,14 +56,23 @@ function App() {
       .map((c) => c[property])
       .filter((v) => v && v > 0)
 
+    if (values.length === 0) {
+      setFillExpression('#3b5998')
+      return
+    }
+
+    // Calcular min y max para percentile clipping
+    const min = values[Math.floor(values.length * 0.02)]
+    const max = values[Math.floor(values.length * 0.98)]
+
     const countryColors = {}
     Object.entries(allCountriesData).forEach(([code, country]) => {
       const value = country[property]
       countryColors[code] = valueToColor(value, values)
     })
 
-    return buildMatchExpression(countryColors)
-  }, [activeLayer, allCountriesData])
+    setFillExpression(buildMatchExpression(countryColors))
+  }, [activeLayer, allCountriesData, setFillExpression])
 
   useEffect(() => {
     if (!selectedCountry) return
@@ -101,14 +103,7 @@ function App() {
 
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-gray-950">
-      <Map 
-        onCountryClick={setSelectedCountry}
-        selectedCountry={selectedCountry}
-        activeLayer={activeLayer}
-        layerConfig={LAYERS[activeLayer]}
-        allCountriesData={allCountriesData}
-        fillExpression={fillExpression}
-      />
+      <Map />
       <TopBar layers={LAYERS} />
       <Sidebar />
       <Legend layers={LAYERS}/>
