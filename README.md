@@ -9,7 +9,7 @@ https://grand-world-data-explorer.vercel.app/
 
 ## Tech Stack
 - **React** + Vite
-- **React Leaflet** — interactive map rendering
+- **MapLibre GL JS** + react-map-gl — interactive WebGL map
 - **Tailwind CSS** — styling
 - **REST Countries API** — country data
 - **Vercel** — deployment
