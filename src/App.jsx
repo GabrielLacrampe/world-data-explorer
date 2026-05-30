@@ -8,9 +8,64 @@ import useStore from './store/useStore'
 import { buildMatchExpression, valueToColor } from './utils/colorScale'
 
 const LAYERS = {
-  none: { label: 'None', property: null, unit: '' },
-  population: { label: 'Population', property: 'population', unit: 'people' },
-  area: { label: 'Area', property: 'area', unit: 'km²' },
+  // ── Existing layers ──────────────────────────────────────────────────
+  none: { label: 'None', property: null, unit: '', source: 'static' },
+  population: {
+    label: 'Population',
+    property: 'population',
+    unit: 'people',
+    source: 'restcountries',
+  },
+  area: {
+    label: 'Area',
+    property: 'area',
+    unit: 'km²',
+    source: 'restcountries',
+  },
+
+  // ── World Bank layers ────────────────────────────────────────────────
+  gdp_per_capita: {
+    label: 'GDP per Capita',
+    indicator: 'NY.GDP.PCAP.CD',
+    unit: 'USD',
+    source: 'worldbank',
+    format: 'currency',
+  },
+  gdp_growth: {
+    label: 'GDP Growth',
+    indicator: 'NY.GDP.MKTP.KD.ZG',
+    unit: '%',
+    source: 'worldbank',
+    format: 'percent',
+  },
+  unemployment: {
+    label: 'Unemployment',
+    indicator: 'SL.UEM.TOTL.ZS',
+    unit: '% of labor force',
+    source: 'worldbank',
+    format: 'percent',
+  },
+  life_expectancy: {
+    label: 'Life Expectancy',
+    indicator: 'SP.DYN.LE00.IN',
+    unit: 'years',
+    source: 'worldbank',
+    format: 'decimal',
+  },
+  co2_per_capita: {
+    label: 'CO₂ per Capita',
+    indicator: 'EN.ATM.CO2E.PC',
+    unit: 'tonnes',
+    source: 'worldbank',
+    format: 'decimal',
+  },
+  military_spending: {
+    label: 'Military Spending',
+    indicator: 'MS.MIL.XPND.GD.ZS',
+    unit: '% of GDP',
+    source: 'worldbank',
+    format: 'percent',
+  },
 }
 
 export { LAYERS }
