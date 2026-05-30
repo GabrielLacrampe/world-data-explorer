@@ -1,35 +1,26 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import Map from './components/Map'
 import Sidebar from './components/Sidebar'
 import LayerSelector from './components/LayerSelector'
+import useStore from './store/useStore'
 import { buildMatchExpression, valueToColor } from './utils/colorScale'
 
 
 const LAYERS = {
-  none: { 
-    label: 'None',
-    property: null,
-    unit: '',
-  },
-  population: {
-    label: 'Population',
-    property: 'population',
-    unit: 'people',
-  },
-  area: {
-    label: 'Area',
-    property: 'area',
-    unit: 'km²',
-  },
+  none: { label: 'None', property: null, unit: '' },
+  population: { label: 'Population', property: 'population', unit: 'people' },
+  area: { label: 'Area', property: 'area', unit: 'km²' }
 }
 
+export { LAYERS }
+
 function App() {
-  const [selectedCountry, setSelectedCountry] = useState(null)
-  const [countryData, setCountryData] = useState(null)
-  const [loading, setLoading] = useState(false)
-  const [activeLayer, setActiveLayer] = useState('none')
-  const [allCountriesData, setAllCountriesData] = useState(null)
-  const [fillExpression, setFillExpression] = useState(null)
+  const [selectedCountry, setSelectedCountry] = useStore()
+  const [countryData, setCountryData] = useStore()
+  const [loading, setLoading] = useStore()
+  const [activeLayer, setActiveLayer] = useStore()
+  const [allCountriesData, setAllCountriesData] = useStore()
+  const [fillExpression, setFillExpression] = useStore()
 
   useEffect(() => {
     fetch('https://restcountries.com/v3.1/all?fields=cca2,population,area')
@@ -43,10 +34,34 @@ function App() {
       })
   }, [])
 
+  // Rebuild color expression when layer changes
+    useEffect(() => {
+      if (!allCountriesData || !LAYERS[activeLayer].property) {
+        setFillExpression('#3b5998')
+        return
+      }
+
+      const property = LAYERS[activeLayer].property
+      const values = Object.values(allCountriesData)
+        .map((c) => c[property])
+        .filter((v) => v && v > 0)
+
+      const min = Math.min(...values)
+      const max = Math.max(...values)
+
+      const countryColors = {}
+      Object.entries(allCountriesData).forEach(([code, country]) => {
+        countryColors[code] = valueToColor(country[property], min, max)
+      })
+
+      setFillExpression(buildMatchExpression(countryColors))
+    }, [activeLayer, allCountriesData])
+
+
   useEffect(() => {
     if (!selectedCountry)  return
 
-    setLoading(true)
+    setLoading('country', true)
     setCountryData(null)
 
     // Validate code: if invalid (-99), search by name instead
@@ -61,12 +76,12 @@ function App() {
       })
       .then(data => {
         setCountryData(data[0] ?? null)
-        setLoading(false)
+        setLoading('country', false)
       })
       .catch(error => {
         console.error('Error fetching country data:', error)
         setCountryData(null)
-        setLoading(false)
+        setLoading('country', false)
       })
   }, [selectedCountry])
 
@@ -96,27 +111,12 @@ function App() {
 
 
   return (
-    <div className="flex h-screen w-screen">
-      <Sidebar 
-        country={selectedCountry}
-        countryData={countryData}
-        loading={loading}
-      />
-      <div className="flex-1 relative">
-        <LayerSelector 
-          layers={LAYERS} 
-          activeLayer={activeLayer} 
-          onLayerChange={setActiveLayer} 
-        />
-        <Map 
-        onCountryClick={setSelectedCountry}
-        selectedCountry={selectedCountry}
-        activeLayer={activeLayer}
-        layerConfig={LAYERS[activeLayer]}
-        allCountriesData={allCountriesData}
-        fillExpression={fillExpression}
-        />
-      </div>
+    <div className="relative w-screen h-screen overflow-hidden bg-gray-950">
+      <Map />
+      <TopBar layers={LAYERS} />
+      <Sidebar />
+      <Legend layers={LAYERS} />
+      <LoadingOverlay />
     </div>
   )
 }
