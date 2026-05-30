@@ -15,13 +15,16 @@ https://grand-world-data-explorer.vercel.app/
 - **Vercel** — deployment
 
 ## Features
-- [x] Interactive world map
-- [x] Country selection with sidebar panel
-- [x] Country data (population, GDP, capital)
-- [x] Color layers by population, area
-- [ ] GDP per capita layer (World Bank API)
-- [ ] Historical data timeline (1990–present)
-- [ ] Country comparison tool
+- [x] Full-screen interactive map (MapLibre GL JS / WebGL)
+- [x] Country selection with animated sidebar
+- [x] Economy tab: population, capital, languages, currency, flag
+- [x] Color layers: population and area
+- [x] Layer selector in top bar
+- [x] Color scale legend
+- [ ] GDP, unemployment, CO₂ layers (Phase 3)
+- [ ] Active conflicts layer — ACLED (Phase 4)
+- [ ] Geopolitics tab: military spending, democracy index (Phase 5)
+- [ ] Country relations layer (Phase 6)
 
 ## About
 Built as a portfolio project while studying Multimedia Application Development.
