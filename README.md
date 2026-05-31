@@ -17,13 +17,13 @@ https://grand-world-data-explorer.vercel.app/
 ## Features
 - [x] Full-screen interactive map (MapLibre GL JS / WebGL)
 - [x] Country selection with animated sidebar
-- [x] Economy tab: population, capital, languages, currency, flag
-- [x] Color layers: population and area
+- [x] Economy tab: geography, demographics, GDP, unemployment, CO₂, military spending
+- [x] 8 color layers: population, area, GDP per capita, GDP growth, unemployment, life expectancy, CO₂, military spending
 - [x] Layer selector in top bar
-- [x] Color scale legend
-- [ ] GDP, unemployment, CO₂ layers (Phase 3)
+- [x] Color scale legend with unit labels
+- [x] World Bank API integration with per-layer caching
 - [ ] Active conflicts layer — ACLED (Phase 4)
-- [ ] Geopolitics tab: military spending, democracy index (Phase 5)
+- [ ] Geopolitics tab: alliances, democracy index (Phase 5)
 - [ ] Country relations layer (Phase 6)
 
 ## About
