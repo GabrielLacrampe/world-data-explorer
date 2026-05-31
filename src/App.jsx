@@ -223,7 +223,7 @@ function App() {
       <Map />
       <TopBar layers={LAYERS} />
       <Sidebar />
-      <Legend layers={LAYERS}/>
+      <Legend />
       <LoadingOverlay />
     </div>
   )
