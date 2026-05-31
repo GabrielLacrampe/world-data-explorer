@@ -7,6 +7,7 @@ import LoadingOverlay from './components/LoadingOverlay'
 import useStore from './store/useStore'
 import { buildMatchExpression, valueToColor } from './utils/colorScale'
 import { fetchIndicatorAllCountries } from './utils/worldBank'
+import { fetchIndicatorsForCountry, formatIndicatorValue } from './utils/worldBank'
 
 const LAYERS = {
   // ── Existing layers ──────────────────────────────────────────────────
@@ -69,7 +70,16 @@ const LAYERS = {
   },
 }
 
-export { LAYERS }
+const SIDEBAR_INDICATORS = [
+  { indicator: 'NY.GDP.PCAP.CD', label: 'GDP per Capita', format: 'currency', unit: 'USD' },
+  { indicator: 'NY.GDP.MKTP.KD.ZG', label: 'GDP Growth', format: 'percent', unit: '%' },
+  { indicator: 'SL.UEM.TOTL.ZS', label: 'Unemployment', format: 'percent', unit: '%' },
+  { indicator: 'SP.DYN.LE00.IN', label: 'Life Expectancy', format: 'decimal', unit: 'years' },
+  { indicator: 'EN.ATM.CO2E.PC', label: 'CO₂ per Capita', format: 'decimal', unit: 'tonnes' },
+  { indicator: 'MS.MIL.XPND.GD.ZS', label: 'Military Spending', format: 'percent', unit: '% of GDP' },
+]
+
+export { LAYERS, SIDEBAR_INDICATORS }
 
 function App() {
   const {
@@ -179,6 +189,21 @@ function App() {
       })
   }, [activeLayer])
   
+  useEffect(() => {
+    if (!selectedCountry?.code || selectedCountry.code === '-99') return
+
+    const indicators = SIDEBAR_INDICATORS.map((i) => i.indicator)
+
+    fetchIndicatorsForCountry(selectedCountry.code, indicators)
+      .then((data) => {
+        setWorldBankCountryData(data)
+      })
+      .catch((err) => {
+        console.error('World Bank country fetch failed:', err)
+      })
+  }, [selectedCountry])
+
+
   function buildAndSetWorldBankExpression(data) {
     const values = Object.values(data).filter((v) => v !== null && v > 0)
     if (values.length === 0) return
