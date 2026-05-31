@@ -95,6 +95,8 @@ function App() {
     setFillExpression,
     worldBankLayerCache,
     setWorldBankLayerData,
+    worldBankCountryData,        
+    setWorldBankCountryData,
   } = useStore()
 
   useEffect(() => {
