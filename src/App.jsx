@@ -82,6 +82,8 @@ const SIDEBAR_INDICATORS = [
 export { LAYERS, SIDEBAR_INDICATORS }
 
 function App() {
+  useOverlays()
+  
   const {
     selectedCountry,
     setSelectedCountry,
