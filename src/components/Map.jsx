@@ -3,6 +3,7 @@ import ReactMapGL, { Source, Layer } from 'react-map-gl/maplibre'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { MAP_STYLE } from '../utils/mapStyles'
 import useStore from '../store/useStore'
+import OverlayLayer from './OverlayLayer'
 
 const GEOJSON_URL =
   'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
@@ -114,7 +115,7 @@ function Map() {
         onMove={(e) => setViewState(e.viewState)}
         mapStyle={MAP_STYLE}
         style={{ width: '100%', height: '100%' }}
-        interactiveLayerIds={worldData ? ['countries-fill'] : []}
+        interactiveLayerIds={worldData ? ['countries-fill'] : [], 'conflicts-points'}
         onClick={handleClick}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
@@ -151,6 +152,7 @@ function Map() {
                 'line-opacity': 0.4,
               }}
             />
+            <OverlayLayer onPointClick={handlePointClick} />
           </Source>
         )}
       </ReactMapGL>
