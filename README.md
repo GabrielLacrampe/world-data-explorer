@@ -22,9 +22,15 @@ https://grand-world-data-explorer.vercel.app/
 - [x] Layer selector in top bar
 - [x] Color scale legend with unit labels
 - [x] World Bank API integration with per-layer caching
-- [ ] Active conflicts layer — ACLED (Phase 4)
+- [x] Active conflicts layer — ACLED (Phase 4, via `/api/conflicts` proxy)
 - [ ] Geopolitics tab: alliances, democracy index (Phase 5)
 - [ ] Country relations layer (Phase 6)
+
+## Conflicts layer (ACLED)
+
+Credentials stay on the server via [`api/conflicts.js`](api/conflicts.js). Copy [`.env.example`](.env.example) to `.env` and set `ACLED_EMAIL` / `ACLED_PASSWORD` (myACLED account). Add the same variables in the Vercel project settings for production.
+
+Local dev with the API route: `npx vercel dev` (not `npm run dev` alone).
 
 ## About
 Built as a portfolio project while studying Multimedia Application Development.

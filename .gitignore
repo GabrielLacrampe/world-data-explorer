@@ -23,8 +23,13 @@ dist-ssr
 *.sln
 *.sw?
 *.env
+.env
 .env.local
+vulnerable.env
 .env.development.local
 .env.test.local
 .env.production.local
 .env
+
+.vercel
+.env*
