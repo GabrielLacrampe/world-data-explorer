@@ -60,6 +60,41 @@ const useStore = create((set, get) => ({
   // World Bank sidebar data for selected country
   worldBankCountryData: null,
   setWorldBankCountryData: (data) => set({ worldBankCountryData: data }),
+
+  // ─── Overlays ─────────────────────────────────────────────────────────
+  // Extensible system for geolocated data overlays.
+  // Each overlay: { active: bool, data: GeoJSON | null, loading: bool }
+  overlays: {
+    conflicts: { active: false, data: null, loading: false },
+  },
+
+  toggleOverlay: (key) =>
+    set((state) => ({
+      overlays: {
+        ...state.overlays,
+        [key]: {
+          ...state.overlays[key],
+          active: !state.overlays[key].active,
+        },
+      },
+    })),
+
+  setOverlayData: (key, data) =>
+    set((state) => ({
+      overlays: {
+        ...state.overlays,
+        [key]: { ...state.overlays[key], data, loading: false },
+      },
+    })),
+
+  setOverlayLoading: (key, loading) =>
+    set((state) => ({
+      overlays: {
+        ...state.overlays,
+        [key]: { ...state.overlays[key], loading },
+      },
+    })),
 }))
+
 
 export default useStore
