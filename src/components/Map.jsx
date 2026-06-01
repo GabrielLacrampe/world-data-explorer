@@ -86,45 +86,21 @@ function Map() {
 
   const handleClick = useCallback((e) => {
     if (!e.features?.length || !mapRef.current) return
-    const feature = e.features[0]
-    const map = mapRef.current.getMap()
-
-    if (selectedFeatureId.current !== null) {
-      map.setFeatureState(
-        { source: 'countries', id: selectedFeatureId.current },
-        { selected: false }
-      )
-    }
-
-    selectedFeatureId.current = feature.id
-    map.setFeatureState(
-      { source: 'countries', id: feature.id },
-      { selected: true }
-    )
-
-    setSelectedCountry({
-      code: feature.properties[GEO_ISO2],
-      name: feature.properties[GEO_NAME],
-    })
-  }, [setSelectedCountry])
-
-  const handlePointClick = useCallback((e) => {
-    if (!e.features?.length || !mapRef.current) return
 
     const feature = e.features[0]
 
-    // Point click (conflict event)
     if (feature.layer.id === 'conflicts-points') {
-      closePopup() // close any existing popup first
+      closePopup()
       setActivePopup({
         longitude: feature.geometry.coordinates[0],
         latitude: feature.geometry.coordinates[1],
         properties: feature.properties,
       })
-      return // don't propagate to country selection
+      return
     }
 
-    // Country click (existing behavior)
+    if (feature.layer.id !== 'countries-fill') return
+
     const map = mapRef.current.getMap()
 
     if (selectedFeatureId.current !== null) {
@@ -156,7 +132,7 @@ function Map() {
         onMove={(e) => setViewState(e.viewState)}
         mapStyle={MAP_STYLE}
         style={{ width: '100%', height: '100%' }}
-        interactiveLayerIds={worldData ? ['countries-fill'] : [], 'conflicts-points'}
+        interactiveLayerIds={worldData ? ['countries-fill', 'conflicts-points'] : []}
         onClick={handleClick}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
@@ -193,9 +169,10 @@ function Map() {
                 'line-opacity': 0.4,
               }}
             />
-            <OverlayLayer onPointClick={handlePointClick} />
+            <OverlayLayer />
           </Source>
-        )}<ConflictPopup />
+        )}
+        <ConflictPopup />
       </ReactMapGL>
     </div>
   )

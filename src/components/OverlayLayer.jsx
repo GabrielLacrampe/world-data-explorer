@@ -6,7 +6,7 @@ import useStore from '../store/useStore'
 const HEATMAP_MAX_ZOOM = 4    // heatmap fades out above zoom 4
 const POINTS_MIN_ZOOM = 3     // points fade in from zoom 3
 
-function OverlayLayer({ onPointClick }) {
+function OverlayLayer() {
   const overlays = useStore((state) => state.overlays)
   const conflictOverlay = overlays.conflicts
 
