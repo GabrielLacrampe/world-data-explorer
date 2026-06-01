@@ -8,6 +8,7 @@ import useStore from './store/useStore'
 import { buildMatchExpression, valueToColor } from './utils/colorScale'
 import { fetchIndicatorAllCountries } from './utils/worldBank'
 import { fetchIndicatorsForCountry, formatIndicatorValue } from './utils/worldBank'
+import { useOverlays } from './hooks/useOverlays'
 
 const LAYERS = {
   // ── Existing layers ──────────────────────────────────────────────────

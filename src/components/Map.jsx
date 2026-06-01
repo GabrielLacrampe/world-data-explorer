@@ -4,6 +4,7 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 import { MAP_STYLE } from '../utils/mapStyles'
 import useStore from '../store/useStore'
 import OverlayLayer from './OverlayLayer'
+import ConflictPopup from './ConflictPopup'
 
 const GEOJSON_URL =
   'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
@@ -29,7 +30,9 @@ function Map() {
     fillExpression,
     selectedCountry,
     setSelectedCountry,
-    setLoading,
+    setLoading, 
+    setActivePopup, 
+    closePopup 
   } = useStore()
 
   useEffect(() => {
@@ -105,6 +108,44 @@ function Map() {
     })
   }, [setSelectedCountry])
 
+  const handlePointClick = useCallback((e) => {
+    if (!e.features?.length || !mapRef.current) return
+
+    const feature = e.features[0]
+
+    // Point click (conflict event)
+    if (feature.layer.id === 'conflicts-points') {
+      closePopup() // close any existing popup first
+      setActivePopup({
+        longitude: feature.geometry.coordinates[0],
+        latitude: feature.geometry.coordinates[1],
+        properties: feature.properties,
+      })
+      return // don't propagate to country selection
+    }
+
+    // Country click (existing behavior)
+    const map = mapRef.current.getMap()
+
+    if (selectedFeatureId.current !== null) {
+      map.setFeatureState(
+        { source: 'countries', id: selectedFeatureId.current },
+        { selected: false }
+      )
+    }
+
+    selectedFeatureId.current = feature.id
+    map.setFeatureState(
+      { source: 'countries', id: feature.id },
+      { selected: true }
+    )
+
+    setSelectedCountry({
+      code: feature.properties[GEO_ISO2],
+      name: feature.properties[GEO_NAME],
+    })
+  }, [setSelectedCountry, setActivePopup, closePopup])
+
   const resolvedFill = fillExpression || '#3b5998'
 
   return (
@@ -154,7 +195,7 @@ function Map() {
             />
             <OverlayLayer onPointClick={handlePointClick} />
           </Source>
-        )}
+        )}<ConflictPopup />
       </ReactMapGL>
     </div>
   )

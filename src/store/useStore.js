@@ -94,6 +94,12 @@ const useStore = create((set, get) => ({
         [key]: { ...state.overlays[key], loading },
       },
     })),
+
+  // ─── Popup ────────────────────────────────────────────────────────────
+  activePopup: null,  // { longitude, lat, properties } | null
+  setActivePopup: (popup) => set({ activePopup: popup }),
+  closePopup: () => set({ activePopup: null }),
+  
 }))
 
 
