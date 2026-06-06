@@ -1,0 +1,352 @@
+{
+  "GB": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "PT": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "SO": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "DJ": [
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "MA": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "DZ": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "TN": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "LY": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "SD": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "IQ": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "EG": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "LB": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "JO": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact",
+    "Neutrality Pact"
+  ],
+  "SA": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "KW": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "QA": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "AE": [
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "US": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "CA": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente",
+    "Neutrality Pact"
+  ],
+  "MX": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "BR": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "AR": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "NL": [
+    "Defense Pact",
+    "Entente",
+    "Non-Aggression Treaty"
+  ],
+  "BE": [
+    "Defense Pact",
+    "Entente",
+    "Non-Aggression Treaty"
+  ],
+  "LU": [
+    "Defense Pact",
+    "Entente",
+    "Non-Aggression Treaty"
+  ],
+  "FR": [
+    "Defense Pact",
+    "Entente",
+    "Non-Aggression Treaty"
+  ],
+  "ES": [
+    "Defense Pact",
+    "Entente",
+    "Non-Aggression Treaty"
+  ],
+  "IT": [
+    "Defense Pact",
+    "Entente",
+    "Non-Aggression Treaty"
+  ],
+  "GR": [
+    "Defense Pact",
+    "Entente",
+    "Non-Aggression Treaty",
+    "Neutrality Pact"
+  ],
+  "DE": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente",
+    "Neutrality Pact"
+  ],
+  "PL": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente",
+    "Neutrality Pact"
+  ],
+  "SK": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente",
+    "Neutrality Pact"
+  ],
+  "NO": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "DK": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "IS": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "TR": [
+    "Defense Pact",
+    "Entente",
+    "Neutrality Pact",
+    "Non-Aggression Treaty"
+  ],
+  "PH": [
+    "Defense Pact"
+  ],
+  "AU": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "JP": [],
+  "KR": [
+    "Entente",
+    "Non-Aggression Treaty"
+  ],
+  "PK": [
+    "Non-Aggression Treaty"
+  ],
+  "CN": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "KP": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "KE": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "ET": [
+    "Defense Pact",
+    "Non-Aggression Treaty"
+  ],
+  "IN": [
+    "Non-Aggression Treaty"
+  ],
+  "ML": [
+    "Defense Pact"
+  ],
+  "SN": [
+    "Defense Pact"
+  ],
+  "GH": [
+    "Defense Pact"
+  ],
+  "NG": [
+    "Defense Pact"
+  ],
+  "ZA": [
+    "Non-Aggression Treaty"
+  ],
+  "RU": [
+    "Neutrality Pact",
+    "Non-Aggression Treaty",
+    "Entente",
+    "Defense Pact"
+  ],
+  "RO": [
+    "Neutrality Pact",
+    "Entente",
+    "Non-Aggression Treaty"
+  ],
+  "BG": [
+    "Neutrality Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "UA": [
+    "Neutrality Pact",
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "FI": [
+    "Neutrality Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "BY": [
+    "Defense Pact",
+    "Neutrality Pact",
+    "Entente",
+    "Non-Aggression Treaty"
+  ],
+  "ME": [
+    "Neutrality Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "LV": [
+    "Neutrality Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "EE": [
+    "Neutrality Pact",
+    "Entente"
+  ],
+  "LT": [
+    "Neutrality Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "HR": [
+    "Neutrality Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "IL": [
+    "Neutrality Pact",
+    "Non-Aggression Treaty"
+  ],
+  "CG": [
+    "Defense Pact",
+    "Entente",
+    "Non-Aggression Treaty"
+  ],
+  "CD": [
+    "Non-Aggression Treaty",
+    "Defense Pact",
+    "Entente"
+  ],
+  "LR": [
+    "Defense Pact",
+    "Non-Aggression Treaty"
+  ],
+  "CF": [
+    "Defense Pact",
+    "Non-Aggression Treaty"
+  ],
+  "BI": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "RW": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "MZ": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "IR": [
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "AF": [
+    "Non-Aggression Treaty"
+  ],
+  "UG": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ],
+  "TZ": [
+    "Defense Pact",
+    "Non-Aggression Treaty",
+    "Entente"
+  ]
+}
