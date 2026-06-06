@@ -6,8 +6,8 @@ import Legend from './components/Legend'
 import LoadingOverlay from './components/LoadingOverlay'
 import useStore from './store/useStore'
 import { buildMatchExpression, valueToColor } from './utils/colorScale'
-import { fetchIndicatorAllCountries } from './utils/worldBank'
-import { fetchIndicatorsForCountry, formatIndicatorValue } from './utils/worldBank'
+import { fetchIndicatorAllCountries, fetchIndicatorsForCountry } from './utils/worldBank'
+import { loadStaticDatasets } from './utils/staticData'
 
 const LAYERS = {
   // ── Existing layers ──────────────────────────────────────────────────
@@ -95,9 +95,16 @@ function App() {
     setFillExpression,
     worldBankLayerCache,
     setWorldBankLayerData,
-    worldBankCountryData,        
+    worldBankCountryData,
     setWorldBankCountryData,
+    setStaticData,
   } = useStore()
+
+  useEffect(() => {
+    loadStaticDatasets()
+      .then(setStaticData)
+      .catch((err) => console.error('Static data load failed:', err))
+  }, [])
 
   useEffect(() => {
     fetch('https://restcountries.com/v3.1/all?fields=cca2,population,area')

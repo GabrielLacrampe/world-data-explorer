@@ -60,6 +60,10 @@ const useStore = create((set, get) => ({
   // World Bank sidebar data for selected country
   worldBankCountryData: null,
   setWorldBankCountryData: (data) => set({ worldBankCountryData: data }),
+
+  // ─── Static datasets ─────────────────────────────────────────────────
+  staticData: null,
+  setStaticData: (data) => set({ staticData: data }),
 }))
 
 export default useStore
