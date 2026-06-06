@@ -9,6 +9,7 @@ const ALLIANCE_COLORS = {
   'Entente': '#22c55e',
 }
 const ALLIANCE_TYPE_ORDER = ['Defense Pact', 'Non-Aggression Treaty', 'Neutrality Pact', 'Entente']
+const countryNames = new Intl.DisplayNames(['en'], { type: 'region' })
 
 function Sidebar() {
   const {
@@ -114,6 +115,8 @@ function Sidebar() {
 }
 
 function GeopoliticsTab({ countryCode, staticData }) {
+  const setSelectedCountry = useStore((s) => s.setSelectedCountry)
+
   if (!staticData) {
     return <p className="text-gray-500 text-sm">Loading...</p>
   }
@@ -185,18 +188,31 @@ function GeopoliticsTab({ countryCode, staticData }) {
       {/* ── Alliances ────────────────────────────────────────── */}
       <Section title="Alliances & Treaties">
         {alliances.length > 0 ? (
-          <div className="flex flex-col gap-1.5">
+          <div className="flex flex-col gap-3">
             {ALLIANCE_TYPE_ORDER.map((type) => {
-              const count = alliances.filter((a) => a.type === type).length
-              if (!count) return null
+              const partners = alliances.filter((a) => a.type === type).map((a) => a.partner)
+              if (!partners.length) return null
               return (
-                <div key={type} className="flex items-center gap-2 text-sm">
-                  <div
-                    className="w-2 h-2 rounded-full shrink-0"
-                    style={{ backgroundColor: ALLIANCE_COLORS[type] }}
-                  />
-                  <span className="text-white">{type}</span>
-                  <span className="text-gray-500 ml-auto">{count}</span>
+                <div key={type}>
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <div
+                      className="w-2 h-2 rounded-full shrink-0"
+                      style={{ backgroundColor: ALLIANCE_COLORS[type] }}
+                    />
+                    <span className="text-white text-sm">{type}</span>
+                  </div>
+                  <div className="flex flex-wrap gap-1 pl-4">
+                    {partners.map((iso2) => (
+                      <img
+                        key={iso2}
+                        src={`https://flagcdn.com/w20/${iso2.toLowerCase()}.png`}
+                        alt={iso2}
+                        title={countryNames.of(iso2) ?? iso2}
+                        className="h-3 w-auto rounded-sm opacity-90 hover:opacity-100 cursor-pointer"
+                        onClick={() => setSelectedCountry({ code: iso2, name: countryNames.of(iso2) ?? iso2 })}
+                      />
+                    ))}
+                  </div>
                 </div>
               )
             })}

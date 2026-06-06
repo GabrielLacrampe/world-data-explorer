@@ -48,8 +48,20 @@ function Map() {
       })
   }, [setWorldData, setLoading])
 
+  // iso2 → feature ID (generateId assigns IDs by array index)
+  const iso2ToFeatureId = useMemo(() => {
+    if (!worldData) return {}
+    const lookup = {}
+    worldData.features.forEach((f, i) => {
+      const iso2 = f.properties[GEO_ISO2]
+      if (iso2) lookup[iso2] = i
+    })
+    return lookup
+  }, [worldData])
+
+  // Handle feature-state highlight for any selection source (map click or flag click)
   useEffect(() => {
-    if (!mapRef.current || selectedCountry) return
+    if (!mapRef.current) return
     const map = mapRef.current.getMap()
 
     if (selectedFeatureId.current !== null) {
@@ -59,7 +71,15 @@ function Map() {
       )
       selectedFeatureId.current = null
     }
-  }, [selectedCountry])
+
+    if (selectedCountry) {
+      const fid = iso2ToFeatureId[selectedCountry.code]
+      if (fid !== undefined) {
+        map.setFeatureState({ source: 'countries', id: fid }, { selected: true })
+        selectedFeatureId.current = fid
+      }
+    }
+  }, [selectedCountry, iso2ToFeatureId])
 
   const handleMouseMove = useCallback((e) => {
     if (!mapRef.current || !e.features?.length) return
@@ -89,23 +109,8 @@ function Map() {
   }, [])
 
   const handleClick = useCallback((e) => {
-    if (!e.features?.length || !mapRef.current) return
+    if (!e.features?.length) return
     const feature = e.features[0]
-    const map = mapRef.current.getMap()
-
-    if (selectedFeatureId.current !== null) {
-      map.setFeatureState(
-        { source: 'countries', id: selectedFeatureId.current },
-        { selected: false }
-      )
-    }
-
-    selectedFeatureId.current = feature.id
-    map.setFeatureState(
-      { source: 'countries', id: feature.id },
-      { selected: true }
-    )
-
     setSelectedCountry({
       code: feature.properties[GEO_ISO2],
       name: feature.properties[GEO_NAME],
