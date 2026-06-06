@@ -11,7 +11,8 @@ function Legend() {
   const activeLayer = useStore((state) => state.activeLayer)
   const layer = LAYERS[activeLayer]
 
-  if (!layer || (!layer.property && !layer.indicator)) return null
+  if (!layer || activeLayer === 'none') return null
+  if (!layer.property && !layer.indicator && !layer.staticKey) return null
 
   const unit = layer.unit ?? ''
 
@@ -36,6 +37,9 @@ function Legend() {
         <span className="text-gray-600 text-xs">Low</span>
         <span className="text-gray-600 text-xs">High</span>
       </div>
+      {layer.attribution && (
+        <p className="text-gray-700 text-xs mt-2">Source: {layer.attribution}</p>
+      )}
     </div>
   )
 }

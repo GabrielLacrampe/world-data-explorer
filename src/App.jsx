@@ -68,6 +68,17 @@ const LAYERS = {
     source: 'worldbank',
     format: 'percent',
   },
+
+  // ── Static dataset layers ────────────────────────────────────────────
+  democracy_index: {
+    label: 'Democracy Index',
+    unit: 'V-Dem score',
+    source: 'static',
+    staticKey: 'vdem',
+    format: 'decimal',
+    scale: 'linear',
+    attribution: 'V-Dem Institute',
+  },
 }
 
 const SIDEBAR_INDICATORS = [
@@ -97,6 +108,7 @@ function App() {
     setWorldBankLayerData,
     worldBankCountryData,
     setWorldBankCountryData,
+    staticData,
     setStaticData,
   } = useStore()
 
@@ -198,6 +210,22 @@ function App() {
       })
   }, [activeLayer])
   
+  useEffect(() => {
+    const layer = LAYERS[activeLayer]
+    if (layer.source !== 'static' || !staticData) return
+
+    const dataset = staticData[layer.staticKey]
+    if (!dataset) return
+
+    const values = Object.values(dataset).filter((v) => v !== null && v > 0)
+    const countryColors = {}
+    const scaleType = layer.scale ?? 'log'
+    Object.entries(dataset).forEach(([code, value]) => {
+      countryColors[code] = valueToColor(value, values, { scale: scaleType })
+    })
+    setFillExpression(buildMatchExpression(countryColors))
+  }, [activeLayer, staticData, setFillExpression])
+
   useEffect(() => {
     if (!selectedCountry?.code || selectedCountry.code === '-99') return
 
