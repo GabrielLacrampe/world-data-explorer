@@ -2,6 +2,14 @@ import useStore from '../store/useStore'
 import { formatIndicatorValue } from '../utils/worldBank'
 import { FREEDOM_STATUS, formatMilSpending } from '../utils/staticData'
 
+const ALLIANCE_COLORS = {
+  'Defense Pact': '#ef4444',
+  'Non-Aggression Treaty': '#f59e0b',
+  'Neutrality Pact': '#a78bfa',
+  'Entente': '#22c55e',
+}
+const ALLIANCE_TYPE_ORDER = ['Defense Pact', 'Non-Aggression Treaty', 'Neutrality Pact', 'Entente']
+
 function Sidebar() {
   const {
     sidebarOpen,
@@ -178,12 +186,20 @@ function GeopoliticsTab({ countryCode, staticData }) {
       <Section title="Alliances & Treaties">
         {alliances.length > 0 ? (
           <div className="flex flex-col gap-1.5">
-            {alliances.map((alliance) => (
-              <div key={alliance} className="flex items-center gap-2 text-sm">
-                <div className="w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
-                <span className="text-white">{alliance}</span>
-              </div>
-            ))}
+            {ALLIANCE_TYPE_ORDER.map((type) => {
+              const count = alliances.filter((a) => a.type === type).length
+              if (!count) return null
+              return (
+                <div key={type} className="flex items-center gap-2 text-sm">
+                  <div
+                    className="w-2 h-2 rounded-full shrink-0"
+                    style={{ backgroundColor: ALLIANCE_COLORS[type] }}
+                  />
+                  <span className="text-white">{type}</span>
+                  <span className="text-gray-500 ml-auto">{count}</span>
+                </div>
+              )
+            })}
           </div>
         ) : (
           <p className="text-gray-600 text-sm">No formal alliances recorded</p>

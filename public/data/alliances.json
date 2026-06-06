@@ -1,352 +1,3092 @@
 {
   "GB": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    }
   ],
   "PT": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
-  ],
-  "SO": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    }
   ],
   "DJ": [
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "SO",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Entente"
+    },
+    {
+      "partner": "DZ",
+      "type": "Entente"
+    },
+    {
+      "partner": "TN",
+      "type": "Entente"
+    },
+    {
+      "partner": "LY",
+      "type": "Entente"
+    },
+    {
+      "partner": "SD",
+      "type": "Entente"
+    },
+    {
+      "partner": "IQ",
+      "type": "Entente"
+    },
+    {
+      "partner": "EG",
+      "type": "Entente"
+    },
+    {
+      "partner": "LB",
+      "type": "Entente"
+    },
+    {
+      "partner": "JO",
+      "type": "Entente"
+    },
+    {
+      "partner": "SA",
+      "type": "Entente"
+    },
+    {
+      "partner": "KW",
+      "type": "Entente"
+    },
+    {
+      "partner": "QA",
+      "type": "Entente"
+    },
+    {
+      "partner": "AE",
+      "type": "Entente"
+    }
+  ],
+  "SO": [
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IQ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "EG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "QA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AE",
+      "type": "Defense Pact"
+    }
   ],
   "MA": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
+    {
+      "partner": "SO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "DZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IQ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "EG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "QA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AE",
+      "type": "Defense Pact"
+    }
   ],
   "DZ": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
+    {
+      "partner": "SO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IQ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "EG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "QA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AE",
+      "type": "Defense Pact"
+    }
   ],
   "TN": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
+    {
+      "partner": "SO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IQ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "EG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "QA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AE",
+      "type": "Defense Pact"
+    }
   ],
   "LY": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
+    {
+      "partner": "SO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IQ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "EG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "QA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AE",
+      "type": "Defense Pact"
+    }
   ],
   "SD": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
+    {
+      "partner": "SO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IQ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "EG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "QA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "UG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BI",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CF",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "IQ": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
+    {
+      "partner": "SO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "EG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "QA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AE",
+      "type": "Defense Pact"
+    }
   ],
   "EG": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
+    {
+      "partner": "SO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IQ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "QA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IL",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "LB": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
+    {
+      "partner": "SO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IQ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "EG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "QA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AE",
+      "type": "Defense Pact"
+    }
   ],
   "JO": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact",
-    "Neutrality Pact"
+    {
+      "partner": "SO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IQ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "EG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "QA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IL",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "SA": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
+    {
+      "partner": "SO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IQ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "EG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "QA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AE",
+      "type": "Defense Pact"
+    }
   ],
   "KW": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
+    {
+      "partner": "SO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IQ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "EG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "QA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AE",
+      "type": "Defense Pact"
+    }
   ],
   "QA": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
+    {
+      "partner": "SO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IQ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "EG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AE",
+      "type": "Defense Pact"
+    }
   ],
   "AE": [
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
-  ],
-  "US": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "SO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DJ",
+      "type": "Entente"
+    },
+    {
+      "partner": "MA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IQ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "EG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "QA",
+      "type": "Defense Pact"
+    }
   ],
   "CA": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente",
-    "Neutrality Pact"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MX",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RU",
+      "type": "Non-Aggression Treaty"
+    }
+  ],
+  "US": [
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MX",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PH",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "JP",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KR",
+      "type": "Entente"
+    },
+    {
+      "partner": "PK",
+      "type": "Defense Pact"
+    }
   ],
   "MX": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AR",
+      "type": "Defense Pact"
+    }
   ],
   "BR": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MX",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "AR",
+      "type": "Defense Pact"
+    }
   ],
   "AR": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MX",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BR",
+      "type": "Defense Pact"
+    }
   ],
   "NL": [
-    "Defense Pact",
-    "Entente",
-    "Non-Aggression Treaty"
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    }
   ],
   "BE": [
-    "Defense Pact",
-    "Entente",
-    "Non-Aggression Treaty"
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    }
   ],
   "LU": [
-    "Defense Pact",
-    "Entente",
-    "Non-Aggression Treaty"
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    }
   ],
   "FR": [
-    "Defense Pact",
-    "Entente",
-    "Non-Aggression Treaty"
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RU",
+      "type": "Entente"
+    }
   ],
   "ES": [
-    "Defense Pact",
-    "Entente",
-    "Non-Aggression Treaty"
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    }
   ],
   "IT": [
-    "Defense Pact",
-    "Entente",
-    "Non-Aggression Treaty"
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    }
   ],
   "GR": [
-    "Defense Pact",
-    "Entente",
-    "Non-Aggression Treaty",
-    "Neutrality Pact"
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BG",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "RO",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "DE": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente",
-    "Neutrality Pact"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RU",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "PL": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente",
-    "Neutrality Pact"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "UA",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "RU",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "BY",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "LV",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "EE",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "LT",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "SK": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente",
-    "Neutrality Pact"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "UA",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "NO": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    }
   ],
   "DK": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    }
   ],
   "IS": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TR",
+      "type": "Defense Pact"
+    }
   ],
   "TR": [
-    "Defense Pact",
-    "Entente",
-    "Neutrality Pact",
-    "Non-Aggression Treaty"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GB",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "FR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "ES",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IT",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NO",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "DK",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IS",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RO",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "BG",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "RU",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "ME",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "HR",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "PH": [
-    "Defense Pact"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    }
   ],
   "AU": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    }
   ],
-  "JP": [],
+  "JP": [
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    }
+  ],
   "KR": [
-    "Entente",
-    "Non-Aggression Treaty"
+    {
+      "partner": "US",
+      "type": "Entente"
+    },
+    {
+      "partner": "KP",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "PK": [
-    "Non-Aggression Treaty"
+    {
+      "partner": "US",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "IN",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "IR",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "AF",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "CN",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "CN": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "KP",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RU",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "IR",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "AF",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "PK",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "KP": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
-  ],
-  "KE": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "CN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KR",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "RU",
+      "type": "Entente"
+    }
   ],
   "ET": [
-    "Defense Pact",
-    "Non-Aggression Treaty"
+    {
+      "partner": "KE",
+      "type": "Defense Pact"
+    }
+  ],
+  "KE": [
+    {
+      "partner": "ET",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "UG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BI",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    }
   ],
   "IN": [
-    "Non-Aggression Treaty"
+    {
+      "partner": "PK",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "ML": [
-    "Defense Pact"
+    {
+      "partner": "SN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GH",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NG",
+      "type": "Defense Pact"
+    }
   ],
   "SN": [
-    "Defense Pact"
+    {
+      "partner": "ML",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GH",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NG",
+      "type": "Defense Pact"
+    }
   ],
   "GH": [
-    "Defense Pact"
+    {
+      "partner": "ML",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "NG",
+      "type": "Defense Pact"
+    }
   ],
   "NG": [
-    "Defense Pact"
-  ],
-  "ZA": [
-    "Non-Aggression Treaty"
+    {
+      "partner": "ML",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SN",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "GH",
+      "type": "Defense Pact"
+    }
   ],
   "RU": [
-    "Neutrality Pact",
-    "Non-Aggression Treaty",
-    "Entente",
-    "Defense Pact"
+    {
+      "partner": "DE",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "FI",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "FR",
+      "type": "Entente"
+    },
+    {
+      "partner": "UA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "TR",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "CA",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "BG",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "CN",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "KP",
+      "type": "Entente"
+    }
   ],
   "RO": [
-    "Neutrality Pact",
-    "Entente",
-    "Non-Aggression Treaty"
+    {
+      "partner": "TR",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "GR",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "BG",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "BG": [
-    "Neutrality Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "GR",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "RO",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "TR",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "RU",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "ME",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "BY",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "UA": [
-    "Neutrality Pact",
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "SK",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "RU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BY",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "LT",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "LV",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "FI": [
-    "Neutrality Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "RU",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "BY": [
-    "Defense Pact",
-    "Neutrality Pact",
-    "Entente",
-    "Non-Aggression Treaty"
+    {
+      "partner": "RU",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "UA",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "PL",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "BG",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "LT",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "ME": [
-    "Neutrality Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "TR",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "BG",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "LV": [
-    "Neutrality Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "PL",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "UA",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "EE": [
-    "Neutrality Pact",
-    "Entente"
+    {
+      "partner": "PL",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "LT": [
-    "Neutrality Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "UA",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "PL",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "BY",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "HR": [
-    "Neutrality Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "TR",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "IL": [
-    "Neutrality Pact",
-    "Non-Aggression Treaty"
-  ],
-  "CG": [
-    "Defense Pact",
-    "Entente",
-    "Non-Aggression Treaty"
+    {
+      "partner": "JO",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "EG",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "CD": [
-    "Non-Aggression Treaty",
-    "Defense Pact",
-    "Entente"
+    {
+      "partner": "CG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CF",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BI",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "UG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    }
   ],
-  "LR": [
-    "Defense Pact",
-    "Non-Aggression Treaty"
+  "CG": [
+    {
+      "partner": "CD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "LR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CF",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BI",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "UG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    }
   ],
   "CF": [
-    "Defense Pact",
-    "Non-Aggression Treaty"
+    {
+      "partner": "LR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BI",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Non-Aggression Treaty"
+    }
+  ],
+  "LR": [
+    {
+      "partner": "CF",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BI",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MZ",
+      "type": "Defense Pact"
+    }
   ],
   "BI": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "LR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CF",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "UG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    }
   ],
   "RW": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "LR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CF",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BI",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "UG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    }
   ],
   "MZ": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
-  ],
-  "IR": [
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "LR",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CF",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BI",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "UG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    }
   ],
   "AF": [
-    "Non-Aggression Treaty"
+    {
+      "partner": "IR",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "CN",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "PK",
+      "type": "Non-Aggression Treaty"
+    }
+  ],
+  "IR": [
+    {
+      "partner": "AF",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "CN",
+      "type": "Non-Aggression Treaty"
+    },
+    {
+      "partner": "PK",
+      "type": "Non-Aggression Treaty"
+    }
   ],
   "UG": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "CG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "TZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BI",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    }
   ],
   "TZ": [
-    "Defense Pact",
-    "Non-Aggression Treaty",
-    "Entente"
+    {
+      "partner": "CG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "CD",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "UG",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "KE",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "BI",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "RW",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "MZ",
+      "type": "Defense Pact"
+    },
+    {
+      "partner": "SD",
+      "type": "Defense Pact"
+    }
   ]
 }

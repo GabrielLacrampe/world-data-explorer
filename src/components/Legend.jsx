@@ -1,6 +1,13 @@
 import { LAYERS } from '../App'
 import useStore from '../store/useStore'
 
+const ALLIANCE_LEGEND = [
+  { type: 'Defense Pact', color: '#ef4444' },
+  { type: 'Non-Aggression Treaty', color: '#f59e0b' },
+  { type: 'Neutrality Pact', color: '#a78bfa' },
+  { type: 'Entente', color: '#22c55e' },
+]
+
 const COLOR_SCALE = [
   '#0f172a', '#164e63', '#0369a1', '#0284c7',
   '#059669', '#65a30d', '#ca8a04', '#ea580c',
@@ -9,7 +16,34 @@ const COLOR_SCALE = [
 
 function Legend() {
   const activeLayer = useStore((state) => state.activeLayer)
+  const selectedCountry = useStore((state) => state.selectedCountry)
+  const staticData = useStore((state) => state.staticData)
   const layer = LAYERS[activeLayer]
+
+  if (selectedCountry && staticData?.alliances) {
+    const allies = staticData.alliances[selectedCountry.code]
+    if (allies?.length) {
+      const presentTypes = new Set(allies.map((a) => a.type))
+      return (
+        <div className="absolute bottom-8 left-4 z-20
+                        bg-gray-950 bg-opacity-80 backdrop-blur-sm
+                        border border-gray-800 rounded p-3 min-w-40">
+          <p className="text-gray-400 text-xs uppercase tracking-wider mb-2">
+            Alliance relations
+          </p>
+          <div className="flex flex-col gap-1.5">
+            {ALLIANCE_LEGEND.filter((e) => presentTypes.has(e.type)).map(({ type, color }) => (
+              <div key={type} className="flex items-center gap-2">
+                <div className="w-2.5 h-2.5 rounded-sm shrink-0" style={{ backgroundColor: color }} />
+                <span className="text-gray-300 text-xs">{type}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-gray-700 text-xs mt-2">Source: COW Project</p>
+        </div>
+      )
+    }
+  }
 
   if (!layer || activeLayer === 'none') return null
   if (!layer.property && !layer.indicator && !layer.staticKey) return null

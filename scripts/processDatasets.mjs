@@ -318,11 +318,20 @@ const COW_TO_ISO2 = {
   840: 'PH', 850: 'ID', 900: 'AU', 920: 'NZ',
 }
 
-const ALLIANCE_TYPES = {
-  1: 'Defense Pact',
-  2: 'Neutrality Pact',
-  3: 'Non-Aggression Treaty',
-  4: 'Entente',
+// Alliance type priority — lower number wins when a pair appears in multiple alliances
+const TYPE_PRIORITY = {
+  'Defense Pact': 1,
+  'Non-Aggression Treaty': 2,
+  'Neutrality Pact': 3,
+  'Entente': 4,
+}
+
+function allianceTypeFromRow(ssType) {
+  const s = (ssType || '').toLowerCase()
+  if (s.includes('defense')) return 'Defense Pact'
+  if (s.includes('neutrality')) return 'Neutrality Pact'
+  if (s.includes('aggression')) return 'Non-Aggression Treaty'
+  return 'Entente'
 }
 
 function processCOW() {
@@ -336,31 +345,51 @@ function processCOW() {
   const raw = readFileSync(filePath, 'utf-8')
   const { data } = Papa.parse(raw, { header: true, skipEmptyLines: true })
 
-  const result = {}
+  // Group members by alliance ID (only alliances active at end of data collection)
+  const groups = {}
 
   for (const row of data) {
-    const cowCode = parseInt(row.ccode, 10)
-    // right_censor=1 means the alliance was still active at end of data collection
     if (parseInt(row.right_censor, 10) !== 1) continue
-
+    const cowCode = parseInt(row.ccode, 10)
     const iso2 = COW_TO_ISO2[cowCode]
     if (!iso2) continue
 
-    if (!result[iso2]) result[iso2] = []
+    const groupId = row.version4id
+    if (!groups[groupId]) {
+      groups[groupId] = { type: allianceTypeFromRow(row.ss_type), members: new Set() }
+    }
+    groups[groupId].members.add(iso2)
+  }
 
-    // Each row has boolean columns for alliance types
-    if (parseInt(row.defense, 10) === 1 && !result[iso2].includes('Defense Pact'))
-      result[iso2].push('Defense Pact')
-    if (parseInt(row.neutrality, 10) === 1 && !result[iso2].includes('Neutrality Pact'))
-      result[iso2].push('Neutrality Pact')
-    if (parseInt(row.nonaggression, 10) === 1 && !result[iso2].includes('Non-Aggression Treaty'))
-      result[iso2].push('Non-Aggression Treaty')
-    if (parseInt(row.entente, 10) === 1 && !result[iso2].includes('Entente'))
-      result[iso2].push('Entente')
+  // Build bilateral relationships, keeping the strongest type for any duplicate pair
+  const pairBest = {}
+
+  for (const { type, members } of Object.values(groups)) {
+    const arr = [...members]
+    for (let i = 0; i < arr.length; i++) {
+      for (let j = i + 1; j < arr.length; j++) {
+        const a = arr[i] < arr[j] ? arr[i] : arr[j]
+        const b = arr[i] < arr[j] ? arr[j] : arr[i]
+        const key = `${a}-${b}`
+        if (!pairBest[key] || TYPE_PRIORITY[type] < TYPE_PRIORITY[pairBest[key]]) {
+          pairBest[key] = type
+        }
+      }
+    }
+  }
+
+  // Expand pairs into per-country lists
+  const result = {}
+  for (const [key, type] of Object.entries(pairBest)) {
+    const [a, b] = key.split('-')
+    if (!result[a]) result[a] = []
+    if (!result[b]) result[b] = []
+    result[a].push({ partner: b, type })
+    result[b].push({ partner: a, type })
   }
 
   writeFileSync(join(OUT, 'alliances.json'), JSON.stringify(result, null, 2))
-  console.log(`COW: wrote ${Object.keys(result).length} countries`)
+  console.log(`COW: wrote bilateral alliances for ${Object.keys(result).length} countries (${Object.keys(pairBest).length} pairs)`)
 }
 
 // ─── Run all ──────────────────────────────────────────────────────────────────

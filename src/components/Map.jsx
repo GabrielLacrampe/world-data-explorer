@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import ReactMapGL, { Source, Layer } from 'react-map-gl/maplibre'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { MAP_STYLE } from '../utils/mapStyles'
@@ -10,6 +10,13 @@ const GEOJSON_URL =
 // Property names from datasets/geo-countries (not Natural Earth ADMIN/ISO_A2)
 const GEO_NAME = 'name'
 const GEO_ISO2 = 'ISO3166-1-Alpha-2'
+
+const ALLIANCE_COLORS = {
+  'Defense Pact': '#ef4444',
+  'Non-Aggression Treaty': '#f59e0b',
+  'Neutrality Pact': '#a78bfa',
+  'Entente': '#22c55e',
+}
 
 function Map() {
   const mapRef = useRef(null)
@@ -29,6 +36,7 @@ function Map() {
     selectedCountry,
     setSelectedCountry,
     setLoading,
+    staticData,
   } = useStore()
 
   useEffect(() => {
@@ -106,6 +114,19 @@ function Map() {
 
   const resolvedFill = fillExpression || '#3b5998'
 
+  const allianceFill = useMemo(() => {
+    if (!selectedCountry || !staticData?.alliances) return null
+    const allies = staticData.alliances[selectedCountry.code]
+    if (!allies?.length) return null
+    const args = []
+    for (const { partner, type } of allies) {
+      args.push(partner, ALLIANCE_COLORS[type] ?? '#6b7280')
+    }
+    return ['match', ['get', GEO_ISO2], ...args, resolvedFill]
+  }, [selectedCountry, staticData, resolvedFill])
+
+  const activeFill = allianceFill ?? resolvedFill
+
   return (
     <div className="absolute inset-0">
       <ReactMapGL
@@ -130,7 +151,7 @@ function Map() {
                   'case',
                   ['boolean', ['feature-state', 'selected'], false],
                   '#60a5fa',
-                  resolvedFill,
+                  activeFill,
                 ],
                 'fill-opacity': [
                   'case',
