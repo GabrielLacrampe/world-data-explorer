@@ -17,12 +17,14 @@ const LAYERS = {
     property: 'population',
     unit: 'people',
     source: 'restcountries',
+    attribution: 'REST Countries',
   },
   area: {
     label: 'Area',
     property: 'area',
     unit: 'km²',
     source: 'restcountries',
+    attribution: 'REST Countries',
   },
 
   // ── World Bank layers ────────────────────────────────────────────────
@@ -32,6 +34,7 @@ const LAYERS = {
     unit: 'USD',
     source: 'worldbank',
     format: 'currency',
+    attribution: 'World Bank',
   },
   gdp_growth: {
     label: 'GDP Growth',
@@ -39,6 +42,7 @@ const LAYERS = {
     unit: '%',
     source: 'worldbank',
     format: 'percent',
+    attribution: 'World Bank',
   },
   unemployment: {
     label: 'Unemployment',
@@ -46,6 +50,7 @@ const LAYERS = {
     unit: '% of labor force',
     source: 'worldbank',
     format: 'percent',
+    attribution: 'World Bank',
   },
   life_expectancy: {
     label: 'Life Expectancy',
@@ -53,6 +58,7 @@ const LAYERS = {
     unit: 'years',
     source: 'worldbank',
     format: 'decimal',
+    attribution: 'World Bank',
   },
   co2_per_capita: {
     label: 'CO₂ per Capita',
@@ -60,6 +66,7 @@ const LAYERS = {
     unit: 'tonnes',
     source: 'worldbank',
     format: 'decimal',
+    attribution: 'World Bank',
   },
   military_spending: {
     label: 'Military Spending',
@@ -67,6 +74,7 @@ const LAYERS = {
     unit: '% of GDP',
     source: 'worldbank',
     format: 'percent',
+    attribution: 'World Bank',
   },
 
   // ── Static dataset layers ────────────────────────────────────────────
