@@ -1,6 +1,6 @@
 import useStore from '../store/useStore'
-import { SIDEBAR_INDICATORS } from '../App'
 import { formatIndicatorValue } from '../utils/worldBank'
+import { FREEDOM_STATUS, formatMilSpending } from '../utils/staticData'
 
 function Sidebar() {
   const {
@@ -12,6 +12,7 @@ function Sidebar() {
     setActiveTab,
     loading,
     worldBankCountryData,
+    staticData,
   } = useStore()
 
   return (
@@ -88,7 +89,10 @@ function Sidebar() {
                 />
               )}              
               {activeTab === 'geopolitics' && (
-                <p className="text-gray-500 text-sm">Coming in Phase 5</p>
+                <GeopoliticsTab
+                  countryCode={selectedCountry?.code}
+                  staticData={staticData}
+                />
               )}
               {activeTab === 'conflicts' && (
                 <p className="text-gray-500 text-sm">Coming in Phase 4</p>
@@ -97,6 +101,104 @@ function Sidebar() {
           </>
         )}
       </div>
+    </div>
+  )
+}
+
+function GeopoliticsTab({ countryCode, staticData }) {
+  if (!staticData) {
+    return <p className="text-gray-500 text-sm">Loading...</p>
+  }
+
+  if (!countryCode || countryCode === '-99') {
+    return <p className="text-gray-500 text-sm">No data available for this territory.</p>
+  }
+
+  const milSpending = staticData.sipri?.[countryCode]
+  const democracyScore = staticData.vdem?.[countryCode]
+  const freedomStatus = staticData.freedomhouse?.[countryCode]
+  const alliances = staticData.alliances?.[countryCode] ?? []
+  const freedomConfig = FREEDOM_STATUS[freedomStatus]
+
+  return (
+    <div className="flex flex-col gap-6">
+
+      {/* ── Political system ──────────────────────────────────── */}
+      <Section title="Political System">
+        {freedomStatus ? (
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 rounded-full shrink-0"
+              style={{ backgroundColor: freedomConfig?.color ?? '#6b7280' }} />
+            <div>
+              <p className="text-white text-sm">{freedomStatus}</p>
+              <p className="text-gray-500 text-xs">Freedom House rating</p>
+            </div>
+          </div>
+        ) : (
+          <p className="text-gray-600 text-xs">Freedom House data pending</p>
+        )}
+
+        {democracyScore !== undefined ? (
+          <div>
+            <p className="text-gray-500 text-xs uppercase tracking-wider">
+              Liberal Democracy Index
+            </p>
+            <div className="flex items-center gap-3 mt-1">
+              <div className="flex-1 h-1.5 bg-gray-800 rounded-full overflow-hidden">
+                <div
+                  className="h-full rounded-full"
+                  style={{
+                    width: `${democracyScore * 100}%`,
+                    backgroundColor: democracyScore > 0.6
+                      ? '#22c55e'
+                      : democracyScore > 0.3
+                      ? '#eab308'
+                      : '#ef4444',
+                  }}
+                />
+              </div>
+              <span className="text-white text-sm w-12 text-right">
+                {democracyScore.toFixed(3)}
+              </span>
+            </div>
+            <p className="text-gray-600 text-xs mt-1">V-Dem score (0–1)</p>
+          </div>
+        ) : (
+          <DataRow label="Liberal Democracy Index" value="No data" />
+        )}
+      </Section>
+
+      {/* ── Military ─────────────────────────────────────────── */}
+      <Section title="Military">
+        <DataRow label="Military Spending" value={formatMilSpending(milSpending)} />
+        <p className="text-gray-600 text-xs -mt-2">SIPRI estimate (current USD)</p>
+      </Section>
+
+      {/* ── Alliances ────────────────────────────────────────── */}
+      <Section title="Alliances & Treaties">
+        {alliances.length > 0 ? (
+          <div className="flex flex-col gap-1.5">
+            {alliances.map((alliance) => (
+              <div key={alliance} className="flex items-center gap-2 text-sm">
+                <div className="w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                <span className="text-white">{alliance}</span>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="text-gray-600 text-sm">No formal alliances recorded</p>
+        )}
+        <p className="text-gray-600 text-xs">COW dataset · alliances up to ~2012</p>
+      </Section>
+
+      {/* ── Sources ──────────────────────────────────────────── */}
+      <div className="pt-2 border-t border-gray-800">
+        <p className="text-gray-700 text-xs">
+          Sources: SIPRI Military Expenditure Database · V-Dem Institute ·
+          Correlates of War Project
+        </p>
+      </div>
+
     </div>
   )
 }
