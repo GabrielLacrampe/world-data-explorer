@@ -172,9 +172,9 @@ function Map() {
               id="countries-border"
               type="line"
               paint={{
-                'line-color': '#ffffff',
-                'line-width': 0.5,
-                'line-opacity': 0.4,
+                'line-color': '#c8d6e8',
+                'line-width': 0.6,
+                'line-opacity': 0.35,
               }}
             />
           </Source>

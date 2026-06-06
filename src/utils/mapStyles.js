@@ -1,24 +1,24 @@
 export const MAP_STYLE = {
   version: 8,
   sources: {
-    'osm-tiles': {
+    'stadia-tiles': {
       type: 'raster',
-      tiles: ['https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'],
+      tiles: ['https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png'],
       tileSize: 256,
-      attribution: '© OpenStreetMap © CARTO',
+      attribution: '© Stadia Maps © OpenMapTiles © OpenStreetMap contributors',
     },
   },
   layers: [
     {
       id: 'background',
       type: 'background',
-      paint: { 'background-color': '#0d1117' },
+      paint: { 'background-color': '#0a0e1a' },
     },
     {
-      id: 'osm-tiles',
+      id: 'stadia-tiles',
       type: 'raster',
-      source: 'osm-tiles',
-      paint: { 'raster-opacity': 0.4 },
+      source: 'stadia-tiles',
+      paint: { 'raster-opacity': 0.7 },
     },
   ],
 }

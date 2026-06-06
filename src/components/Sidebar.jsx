@@ -27,8 +27,8 @@ function Sidebar() {
   return (
     <div
       className={`absolute top-12 left-0 bottom-0 z-10 w-80
-                  bg-gray-950 bg-opacity-90 backdrop-blur-sm
-                  border-r border-gray-800
+                  bg-[#0d1117]/95 backdrop-blur-md
+                  border-r border-[#1e2736]
                   transform transition-transform duration-300 ease-in-out
                   ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
     >
@@ -36,10 +36,10 @@ function Sidebar() {
       <button
         onClick={() => setSidebarOpen(false)}
         className="absolute -right-8 top-4 w-8 h-8
-                   bg-gray-950 bg-opacity-80 border border-gray-800
+                   bg-[#0d1117]/90 border border-[#1e2736]
                    border-l-0 rounded-r
-                   text-gray-400 hover:text-white
-                   flex items-center justify-center text-sm"
+                   text-[#6b7280] hover:text-[#e2e8f0] transition-colors
+                   flex items-center justify-center text-xs"
       >
         ✕
       </button>
@@ -56,33 +56,33 @@ function Sidebar() {
         {countryData && !loading.country && (
           <>
             {/* Country header */}
-            <div className="p-5 border-b border-gray-800">
+            <div className="p-5 border-b border-[#1e2736]">
               <div className="flex items-center gap-3">
                 <img
                   src={countryData.flags.svg}
                   alt={`Flag of ${countryData.name.common}`}
-                  className="w-10 h-7 object-cover rounded"
+                  className="w-11 h-8 object-cover rounded shadow-sm shadow-black/40"
                 />
                 <div>
-                  <h2 className="text-white font-semibold text-lg leading-tight">
+                  <h2 className="font-display text-base font-medium tracking-wide text-[#e2e8f0] leading-tight">
                     {countryData.name.common}
                   </h2>
-                  <p className="text-gray-500 text-xs">{countryData.name.official}</p>
+                  <p className="text-[#6b7280] text-xs mt-0.5 leading-snug">{countryData.name.official}</p>
                 </div>
               </div>
             </div>
 
             {/* Tab bar */}
-            <div className="flex border-b border-gray-800">
+            <div className="flex border-b border-[#1e2736]">
               {['economy', 'geopolitics', 'conflicts'].map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`flex-1 py-2.5 text-xs uppercase tracking-wider
-                              transition-colors
+                  className={`flex-1 py-2.5 text-xs uppercase tracking-widest
+                              transition-colors font-display
                               ${activeTab === tab
-                                ? 'text-white border-b-2 border-blue-500'
-                                : 'text-gray-500 hover:text-gray-300'}`}
+                                ? 'text-[#e2e8f0] border-b-2 border-blue-500'
+                                : 'text-[#6b7280] hover:text-[#94a3b8]'}`}
                 >
                   {tab}
                 </button>
@@ -348,8 +348,8 @@ function EconomyTab({ data, worldBankData }) {
 function Section({ title, children }) {
   return (
     <div className="flex flex-col gap-3">
-      <p className="text-gray-600 text-xs uppercase tracking-widest border-b
-                    border-gray-800 pb-1">
+      <p className="font-display text-[10px] uppercase tracking-[0.15em] text-[#6b7280]
+                    border-b border-[#1e2736] pb-1.5">
         {title}
       </p>
       {children}
@@ -360,8 +360,8 @@ function Section({ title, children }) {
 function DataRow({ label, value }) {
   return (
     <div>
-      <p className="text-gray-500 text-xs uppercase tracking-wider">{label}</p>
-      <p className="text-white text-sm mt-0.5">{value}</p>
+      <p className="text-[#6b7280] text-xs uppercase tracking-wider">{label}</p>
+      <p className="text-[#e2e8f0] text-sm mt-0.5">{value}</p>
     </div>
   )
 }
