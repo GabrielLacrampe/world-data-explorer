@@ -5,7 +5,7 @@ import TopBar from './components/TopBar'
 import Legend from './components/Legend'
 import LoadingOverlay from './components/LoadingOverlay'
 import useStore from './store/useStore'
-import { buildMatchExpression, valueToColor } from './utils/colorScale'
+import { buildMatchExpression, valueToColor, buildPoliticalExpression } from './utils/colorScale'
 import { fetchIndicatorAllCountries, fetchIndicatorsForCountry } from './utils/worldBank'
 import { loadStaticDatasets } from './utils/staticData'
 
@@ -87,6 +87,13 @@ const LAYERS = {
     scale: 'linear',
     attribution: 'V-Dem Institute',
   },
+
+  // ── Diplomatic layers ────────────────────────────────────────────────
+  alliances: {
+    label: 'Alliances',
+    source: 'diplomatic',
+    attribution: 'COW Project',
+  },
 }
 
 const SIDEBAR_INDICATORS = [
@@ -118,6 +125,7 @@ function App() {
     setWorldBankCountryData,
     staticData,
     setStaticData,
+    worldData,
   } = useStore()
 
   useEffect(() => {
@@ -139,14 +147,7 @@ function App() {
   }, [setAllCountriesData])
 
   useEffect(() => {
-    if (!allCountriesData || activeLayer === 'none') {
-      setFillExpression('#3b5998')
-      return
-    }
-    if (!allCountriesData || !LAYERS[activeLayer].property) {
-      setFillExpression('#3b5998')
-      return
-    }
+    if (!allCountriesData || !LAYERS[activeLayer].property) return
 
     const property = LAYERS[activeLayer].property
     const values = Object.values(allCountriesData)
@@ -166,6 +167,14 @@ function App() {
 
     setFillExpression(buildMatchExpression(countryColors))
   }, [activeLayer, allCountriesData, setFillExpression])
+
+  useEffect(() => {
+    if ((activeLayer !== 'none' && activeLayer !== 'alliances') || !worldData) return
+    const iso2Codes = worldData.features
+      .map((f) => f.properties['ISO3166-1-Alpha-2'])
+      .filter(Boolean)
+    setFillExpression(buildPoliticalExpression(iso2Codes))
+  }, [activeLayer, worldData, setFillExpression])
 
   useEffect(() => {
     if (!selectedCountry) return
@@ -264,7 +273,7 @@ function App() {
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-gray-950">
       <Map />
-      <TopBar layers={LAYERS} />
+      <TopBar />
       <Sidebar />
       <Legend />
       <LoadingOverlay />
