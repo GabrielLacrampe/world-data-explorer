@@ -14,7 +14,6 @@ const countryNames = new Intl.DisplayNames(['en'], { type: 'region' })
 function Sidebar() {
   const {
     sidebarOpen,
-    setSidebarOpen,
     selectedCountry,
     countryData,
     activeTab,
@@ -33,16 +32,6 @@ function Sidebar() {
                   ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
     >
       {/* Close button */}
-      <button
-        onClick={() => setSidebarOpen(false)}
-        className="absolute -right-8 top-4 w-8 h-8
-                   bg-[#0d1117]/90 border border-[#1e2736]
-                   border-l-0 rounded-r
-                   text-[#6b7280] hover:text-[#e2e8f0] transition-colors
-                   flex items-center justify-center text-xs"
-      >
-        ✕
-      </button>
 
       {/* Content */}
       <div className="h-full overflow-y-auto flex flex-col">

@@ -3,7 +3,7 @@ import { create } from 'zustand'
 const useStore = create((set, get) => ({
 
   // ─── Map ─────────────────────────────────────────────────────────────
-  activeLayer: 'population',
+  activeLayer: 'none',
   worldData: null,
   fillExpression: '#3b5998',
   allCountriesData: null,
@@ -18,14 +18,15 @@ const useStore = create((set, get) => ({
   countryData: null,       // REST Countries response
   economyData: null,       // World Bank response
 
-  setSelectedCountry: (country) => set({
+  setSelectedCountry: (country) => set((state) => ({
     selectedCountry: country,
     countryData: null,
     economyData: null,
     worldBankCountryData: null,
-    sidebarOpen: country !== null,
+    // keep sidebar open if already open and selecting a new country; close on deselect
+    sidebarOpen: country === null ? false : state.sidebarOpen,
     activeTab: 'economy',
-  }),
+  })),
   setCountryData: (data) => set({ countryData: data }),
   setEconomyData: (data) => set({ economyData: data }),
 
