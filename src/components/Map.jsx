@@ -11,6 +11,28 @@ const GEOJSON_URL =
 const GEO_NAME = 'name'
 const GEO_ISO2 = 'ISO3166-1-Alpha-2'
 
+// Known ISO2 fixes for features the geo-countries dataset ships with code -99.
+// Add entries here as new broken countries are discovered.
+const NAME_TO_ISO2_FIXES = {
+  'France':          'FR',
+  'Norway':          'NO',
+  'Northern Cyprus': 'CY',
+  'Somaliland':      'SO',
+  'Kosovo':          'XK',
+}
+
+function patchGeoJSON(data) {
+  return {
+    ...data,
+    features: data.features.map((f) => {
+      if (f.properties[GEO_ISO2] !== '-99') return f
+      const fix = NAME_TO_ISO2_FIXES[f.properties[GEO_NAME]]
+      if (!fix) return f
+      return { ...f, properties: { ...f.properties, [GEO_ISO2]: fix } }
+    }),
+  }
+}
+
 const ALLIANCE_COLORS = {
   'Defense Pact': '#ef4444',
   'Non-Aggression Treaty': '#f59e0b',
@@ -37,13 +59,14 @@ function Map() {
     setSelectedCountry,
     setLoading,
     staticData,
+    activeLayer,
   } = useStore()
 
   useEffect(() => {
     fetch(GEOJSON_URL)
       .then((res) => res.json())
       .then((data) => {
-        setWorldData(data)
+        setWorldData(patchGeoJSON(data))
         setLoading('map', false)
       })
   }, [setWorldData, setLoading])
@@ -109,7 +132,10 @@ function Map() {
   }, [])
 
   const handleClick = useCallback((e) => {
-    if (!e.features?.length) return
+    if (!e.features?.length) {
+      setSelectedCountry(null)
+      return
+    }
     const feature = e.features[0]
     setSelectedCountry({
       code: feature.properties[GEO_ISO2],
@@ -120,6 +146,7 @@ function Map() {
   const resolvedFill = fillExpression || '#3b5998'
 
   const allianceFill = useMemo(() => {
+    if (activeLayer !== 'alliances') return null
     if (!selectedCountry || !staticData?.alliances) return null
     const allies = staticData.alliances[selectedCountry.code]
     if (!allies?.length) return null
@@ -127,8 +154,8 @@ function Map() {
     for (const { partner, type } of allies) {
       args.push(partner, ALLIANCE_COLORS[type] ?? '#6b7280')
     }
-    return ['match', ['get', GEO_ISO2], ...args, resolvedFill]
-  }, [selectedCountry, staticData, resolvedFill])
+    return ['match', ['get', GEO_ISO2], ...args, '#3b5998']
+  }, [activeLayer, selectedCountry, staticData, resolvedFill])
 
   const activeFill = allianceFill ?? resolvedFill
 
@@ -140,6 +167,7 @@ function Map() {
         onMove={(e) => setViewState(e.viewState)}
         mapStyle={MAP_STYLE}
         style={{ width: '100%', height: '100%' }}
+        minZoom={1.4}
         interactiveLayerIds={worldData ? ['countries-fill'] : []}
         onClick={handleClick}
         onMouseMove={handleMouseMove}
@@ -160,10 +188,10 @@ function Map() {
                 ],
                 'fill-opacity': [
                   'case',
-                  ['boolean', ['feature-state', 'selected'], false],
-                  0.95,
-                  ['boolean', ['feature-state', 'hover'], false],
-                  0.85,
+                  // Hide non-country features (lakes, disputed areas with code -99)
+                  ['==', ['get', 'ISO3166-1-Alpha-2'], '-99'], 0,
+                  ['boolean', ['feature-state', 'selected'], false], 0.95,
+                  ['boolean', ['feature-state', 'hover'], false], 0.85,
                   0.6,
                 ],
               }}
