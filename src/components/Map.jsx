@@ -3,41 +3,30 @@ import ReactMapGL, { Source, Layer } from 'react-map-gl/maplibre'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { MAP_STYLE } from '../utils/mapStyles'
 import useStore from '../store/useStore'
+import { patchGeoJSON, buildLabelPoints } from '../utils/geoUtils'
+import {
+  ALLIANCE_COLORS,
+  LABEL_REF_ZOOM,
+  LABEL_LARGE_SHOW,
+  LABEL_DEFAULT_SHOW,
+  LABEL_FADE_IN,
+  LABEL_FADE_START,
+  LABEL_FADE_END,
+} from '../config/labelConfig'
 
 const GEOJSON_URL =
   'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
 
-// Property names from datasets/geo-countries (not Natural Earth ADMIN/ISO_A2)
 const GEO_NAME = 'name'
 const GEO_ISO2 = 'ISO3166-1-Alpha-2'
 
 // Known ISO2 fixes for features the geo-countries dataset ships with code -99.
-// Add entries here as new broken countries are discovered.
 const NAME_TO_ISO2_FIXES = {
   'France':          'FR',
   'Norway':          'NO',
   'Northern Cyprus': 'CY',
   'Somaliland':      'SO',
   'Kosovo':          'XK',
-}
-
-function patchGeoJSON(data) {
-  return {
-    ...data,
-    features: data.features.map((f) => {
-      if (f.properties[GEO_ISO2] !== '-99') return f
-      const fix = NAME_TO_ISO2_FIXES[f.properties[GEO_NAME]]
-      if (!fix) return f
-      return { ...f, properties: { ...f.properties, [GEO_ISO2]: fix } }
-    }),
-  }
-}
-
-const ALLIANCE_COLORS = {
-  'Defense Pact': '#ef4444',
-  'Non-Aggression Treaty': '#f59e0b',
-  'Neutrality Pact': '#a78bfa',
-  'Entente': '#22c55e',
 }
 
 function Map() {
@@ -60,18 +49,20 @@ function Map() {
     setLoading,
     staticData,
     activeLayer,
+    setMapZoom,
   } = useStore()
 
   useEffect(() => {
     fetch(GEOJSON_URL)
       .then((res) => res.json())
       .then((data) => {
-        setWorldData(patchGeoJSON(data))
+        setWorldData(patchGeoJSON(data, NAME_TO_ISO2_FIXES))
         setLoading('map', false)
       })
   }, [setWorldData, setLoading])
 
-  // iso2 → feature ID (generateId assigns IDs by array index)
+  const labelPoints = useMemo(() => worldData ? buildLabelPoints(worldData) : null, [worldData])
+
   const iso2ToFeatureId = useMemo(() => {
     if (!worldData) return {}
     const lookup = {}
@@ -82,7 +73,6 @@ function Map() {
     return lookup
   }, [worldData])
 
-  // Handle feature-state highlight for any selection source (map click or flag click)
   useEffect(() => {
     if (!mapRef.current) return
     const map = mapRef.current.getMap()
@@ -164,7 +154,7 @@ function Map() {
       <ReactMapGL
         ref={mapRef}
         {...viewState}
-        onMove={(e) => setViewState(e.viewState)}
+        onMove={(e) => { setViewState(e.viewState); setMapZoom(e.viewState.zoom) }}
         mapStyle={MAP_STYLE}
         style={{ width: '100%', height: '100%' }}
         minZoom={1.4}
@@ -186,13 +176,12 @@ function Map() {
                   '#60a5fa',
                   activeFill,
                 ],
-                'fill-opacity': [
+                'fill-opacity': activeLayer === 'geographic' ? 0 : [
                   'case',
-                  // Hide non-country features (lakes, disputed areas with code -99)
                   ['==', ['get', 'ISO3166-1-Alpha-2'], '-99'], 0,
                   ['boolean', ['feature-state', 'selected'], false], 0.95,
                   ['boolean', ['feature-state', 'hover'], false], 0.85,
-                  0.6,
+                  0.35,
                 ],
               }}
             />
@@ -203,6 +192,72 @@ function Map() {
                 'line-color': '#c8d6e8',
                 'line-width': 0.6,
                 'line-opacity': 0.35,
+              }}
+            />
+          </Source>
+        )}
+        {labelPoints && (
+          <Source id="country-label-points" type="geojson" data={labelPoints}>
+            <Layer
+              id="country-labels-large"
+              type="symbol"
+              filter={['==', ['get', 'isLarge'], true]}
+              layout={{
+                'text-field': ['get', 'name'],
+                'text-font': ['Noto Sans Bold'],
+                'text-transform': 'uppercase',
+                'text-size': [
+                  'interpolate', ['exponential', 2], ['zoom'],
+                  LABEL_REF_ZOOM - 2, ['*', ['get', 'labelSize'], 0.25],
+                  LABEL_REF_ZOOM,     ['get', 'labelSize'],
+                  LABEL_REF_ZOOM + 4, ['*', ['get', 'labelSize'], 16],
+                ],
+                'text-rotate': ['get', 'labelRotate'],
+                'text-max-width': 6,
+                'text-letter-spacing': 0.1,
+              }}
+              paint={{
+                'text-color': '#e8dcc8',
+                'text-halo-color': 'rgba(0,0,0,0.75)',
+                'text-halo-width': 1.5,
+                'text-opacity': [
+                  'interpolate', ['linear'], ['zoom'],
+                  LABEL_LARGE_SHOW,                  0,
+                  LABEL_LARGE_SHOW + LABEL_FADE_IN,  1,
+                  LABEL_FADE_START,                  1,
+                  LABEL_FADE_END,                    0,
+                ],
+              }}
+            />
+            <Layer
+              id="country-labels-default"
+              type="symbol"
+              filter={['==', ['get', 'isLarge'], false]}
+              layout={{
+                'text-field': ['get', 'name'],
+                'text-font': ['Noto Sans Bold'],
+                'text-transform': 'uppercase',
+                'text-size': [
+                  'interpolate', ['exponential', 2], ['zoom'],
+                  LABEL_REF_ZOOM - 2, ['*', ['get', 'labelSize'], 0.25],
+                  LABEL_REF_ZOOM,     ['get', 'labelSize'],
+                  LABEL_REF_ZOOM + 4, ['*', ['get', 'labelSize'], 16],
+                ],
+                'text-rotate': ['get', 'labelRotate'],
+                'text-max-width': 6,
+                'text-letter-spacing': 0.1,
+              }}
+              paint={{
+                'text-color': '#e8dcc8',
+                'text-halo-color': 'rgba(0,0,0,0.75)',
+                'text-halo-width': 1.5,
+                'text-opacity': [
+                  'interpolate', ['linear'], ['zoom'],
+                  LABEL_DEFAULT_SHOW,                  0,
+                  LABEL_DEFAULT_SHOW + LABEL_FADE_IN,  1,
+                  LABEL_FADE_START,                    1,
+                  LABEL_FADE_END,                      0,
+                ],
               }}
             />
           </Source>
