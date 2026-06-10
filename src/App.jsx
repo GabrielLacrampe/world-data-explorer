@@ -11,7 +11,8 @@ import { loadStaticDatasets } from './utils/staticData'
 
 const LAYERS = {
   // ── Existing layers ──────────────────────────────────────────────────
-  none: { label: 'None', property: null, unit: '', source: 'static' },
+  geographic: { label: 'Geographic', property: null, unit: '', source: 'none' },
+  political:  { label: 'Political',  property: null, unit: '', source: 'static' },
   population: {
     label: 'Population',
     property: 'population',
@@ -169,7 +170,7 @@ function App() {
   }, [activeLayer, allCountriesData, setFillExpression])
 
   useEffect(() => {
-    if ((activeLayer !== 'none' && activeLayer !== 'alliances') || !worldData) return
+    if ((activeLayer !== 'political' && activeLayer !== 'geographic' && activeLayer !== 'alliances') || !worldData) return
     const iso2Codes = worldData.features
       .map((f) => f.properties['ISO3166-1-Alpha-2'])
       .filter(Boolean)

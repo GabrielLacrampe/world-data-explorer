@@ -3,8 +3,10 @@ import { create } from 'zustand'
 const useStore = create((set, get) => ({
 
   // ─── Map ─────────────────────────────────────────────────────────────
-  activeLayer: 'none',
+  activeLayer: 'political',
   worldData: null,
+  mapZoom: 1.8,
+  setMapZoom: (z) => set({ mapZoom: z }),
   fillExpression: '#3b5998',
   allCountriesData: null,
 

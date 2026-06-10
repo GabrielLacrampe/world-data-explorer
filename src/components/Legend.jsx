@@ -16,7 +16,8 @@ const COLOR_SCALE = [
 ]
 
 const LAYER_GROUPS = [
-  { label: 'Demographics', keys: ['none', 'population', 'area'] },
+  { label: 'Map Style',    keys: ['geographic', 'political'] },
+  { label: 'Demographics', keys: ['population', 'area'] },
   { label: 'Economy',      keys: ['gdp_per_capita', 'gdp_growth', 'unemployment', 'life_expectancy', 'co2_per_capita', 'military_spending'] },
   { label: 'Governance',   keys: ['democracy_index'] },
   { label: 'Diplomacy',    keys: ['alliances'] },
@@ -119,7 +120,7 @@ function DataPanel() {
           </div>
           <p className="text-[#374151] text-xs mt-2">Source: COW Project</p>
         </div>
-      ) : layer && activeLayer !== 'none' && (layer.property || layer.indicator || layer.staticKey) ? (
+      ) : layer && activeLayer !== 'political' && activeLayer !== 'geographic' && (layer.property || layer.indicator || layer.staticKey) ? (
         <div className="bg-[#0d1117]/90 backdrop-blur-md border border-[#1e2736] rounded-md p-3 w-52">
           <p className="font-display text-[10px] uppercase tracking-[0.15em] text-[#6b7280] mb-2.5">
             {layer.label}
