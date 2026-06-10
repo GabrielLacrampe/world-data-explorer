@@ -41,6 +41,7 @@ function TopBar() {
     selectedCountry,
     sidebarOpen,
     setSidebarOpen,
+    mapZoom,
   } = useStore()
 
   const gdpCap = worldBankCountryData?.['NY.GDP.PCAP.CD']
@@ -101,6 +102,13 @@ function TopBar() {
           World Data Explorer
         </span>
       )}
+      {/* Zoom indicator — always visible, pinned to the right */}
+      <div className="ml-auto flex flex-col justify-center leading-none text-right shrink-0">
+        <span className="text-[9px] uppercase tracking-[0.12em] text-[#4b5563] font-display">Zoom</span>
+        <span className="text-[11px] font-medium text-[#e2e8f0] mt-0.5 tabular-nums">
+          {mapZoom != null ? mapZoom.toFixed(2) : '—'}
+        </span>
+      </div>
     </div>
   )
 }
