@@ -115,13 +115,22 @@ function Sidebar() {
 
 // ─── Government ───────────────────────────────────────────────────────────────
 
+function wikiPhotoUrl(uploadUrl) {
+  if (!uploadUrl) return null
+  // Extract filename from Wikimedia upload URL and use Special:FilePath which allows CORS
+  const match = uploadUrl.match(/\/commons\/(?:thumb\/)?[a-f0-9]\/[a-f0-9]{2}\/(.+?)(?:\/\d+px-.+)?$/)
+  if (!match) return uploadUrl
+  const filename = decodeURIComponent(match[1])
+  return `https://commons.wikimedia.org/w/index.php?action=raw&title=Special:FilePath/${encodeURIComponent(filename)}&width=200`
+}
+
 function PersonCard({ person, role }) {
   return (
     <div className="flex items-center gap-3">
       <div className="w-12 h-12 rounded-full overflow-hidden bg-[#1e2736] border border-[#2d3748] shrink-0">
         {person.photo ? (
           <img
-            src={person.photo}
+            src={wikiPhotoUrl(person.photo)}
             alt={person.name}
             className="w-full h-full object-cover"
             onError={(e) => { e.target.style.display = 'none' }}
@@ -167,20 +176,41 @@ function GovernmentTab({ countryCode, staticData }) {
       )}
 
       <Section title="Key Ministers">
-        {['Economy', 'Defense', 'Foreign Affairs'].map((ministry) => (
-          <div key={ministry} className="flex items-center gap-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#374151] shrink-0" />
-            <div>
-              <p className="text-[#6b7280] text-xs uppercase tracking-wider">{ministry}</p>
-              <p className="text-[#4b5563] text-sm">No data</p>
+        {[
+          { key: 'economy', label: 'Economy' },
+          { key: 'defense', label: 'Defense' },
+          { key: 'foreign', label: 'Foreign Affairs' },
+        ].map(({ key, label }) => {
+          const m = gov?.ministers?.[key]
+          return (
+            <div key={key}>
+              <p className="text-[#6b7280] text-xs uppercase tracking-wider">{label}</p>
+              {m ? (
+                <p className="text-[#e2e8f0] text-sm mt-0.5">
+                  {m.name}
+                  {m.party && <span className="text-[#6b7280] text-xs"> · {m.party}</span>}
+                </p>
+              ) : (
+                <p className="text-[#4b5563] text-sm mt-0.5">No data</p>
+              )}
             </div>
-          </div>
-        ))}
-        <p className="text-[#4b5563] text-xs">Source pending: Wikidata minister positions</p>
+          )
+        })}
       </Section>
 
       <Section title="Governing Parties">
-        <p className="text-[#4b5563] text-sm">No coalition data available</p>
+        {gov?.governingParties?.length ? (
+          <div className="flex flex-col gap-1">
+            {gov.governingParties.map((p) => (
+              <div key={p} className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
+                <p className="text-[#e2e8f0] text-sm">{p}</p>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <p className="text-[#4b5563] text-sm">No coalition data available</p>
+        )}
       </Section>
 
       <div className="pt-2 border-t border-gray-800">
