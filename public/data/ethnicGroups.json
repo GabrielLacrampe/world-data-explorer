@@ -1,1354 +1,2732 @@
 {
-  "KE": [
+  "DZ": [
     {
-      "name": "Kikuyu people",
+      "name": "Arab-Amazigh",
+      "pct": 99
+    },
+    {
+      "name": "European less than",
+      "pct": 1
+    }
+  ],
+  "AO": [
+    {
+      "name": "Ovimbundu",
+      "pct": 37
+    },
+    {
+      "name": "Kimbundu",
+      "pct": 25
+    },
+    {
+      "name": "other",
       "pct": 22
     },
     {
-      "name": "African people",
-      "pct": 15
-    },
-    {
-      "name": "Luhya",
-      "pct": 14
-    },
-    {
-      "name": "Luo peoples",
+      "name": "Bakongo",
       "pct": 13
     },
     {
-      "name": "Kalenjin people",
-      "pct": 12
-    },
+      "name": "European",
+      "pct": 1
+    }
+  ],
+  "BW": [
     {
-      "name": "Kamba people",
+      "name": "Kalanga",
       "pct": 11
     },
     {
-      "name": "Kisii people",
-      "pct": 6
+      "name": "gadi and people of European ancestry",
+      "pct": 7
     },
     {
-      "name": "Meru people",
-      "pct": 6
+      "name": "Basarwa",
+      "pct": 3
     }
   ],
-  "UA": [
+  "BJ": [
     {
-      "name": "Ukrainians",
-      "pct": 77.8
+      "name": "Fon and related",
+      "pct": 38.4
     },
     {
-      "name": "Russians in Ukraine",
-      "pct": 17.3
+      "name": "Adja and related",
+      "pct": 15.1
     },
     {
-      "name": "Belarusians",
-      "pct": 0.6
+      "name": "Yoruba and related",
+      "pct": 12
     },
     {
-      "name": "Moldovans",
-      "pct": 0.5
+      "name": "Bariba and related",
+      "pct": 9.6
     },
     {
-      "name": "Crimean Tatars",
-      "pct": 0.5
+      "name": "Fulani and related",
+      "pct": 8.6
     },
     {
-      "name": "Bulgarians in Ukraine",
-      "pct": 0.4
+      "name": "Ottamari and related",
+      "pct": 6.1
     },
     {
-      "name": "Poles in Ukraine",
-      "pct": 0.3
+      "name": "Yoa-Lokpa and related",
+      "pct": 4.3
     },
     {
-      "name": "Hungarians in Ukraine",
-      "pct": 0.3
+      "name": "Dendi and related",
+      "pct": 2.9
     },
     {
-      "name": "Romanians in Ukraine",
-      "pct": 0.3
+      "name": "foreigner",
+      "pct": 1.9
     },
     {
-      "name": "Jewish people",
-      "pct": 0.2
+      "name": "other",
+      "pct": 0.9
     }
   ],
-  "AZ": [
+  "TD": [
     {
-      "name": "Azerbaijanis",
-      "pct": 91.6
+      "name": "Buduma",
+      "pct": 9.8
     },
     {
-      "name": "Lezgins",
+      "name": "Arab",
+      "pct": 9.7
+    },
+    {
+      "name": "Mimi",
+      "pct": 7
+    },
+    {
+      "name": "Gorane",
+      "pct": 5.8
+    },
+    {
+      "name": "Musgum",
+      "pct": 4.9
+    },
+    {
+      "name": "other",
+      "pct": 4.6
+    },
+    {
+      "name": "Kuka",
+      "pct": 3.7
+    },
+    {
+      "name": "Mesme",
+      "pct": 3.5
+    },
+    {
+      "name": "Mundang",
+      "pct": 2.7
+    },
+    {
+      "name": "Dangleat",
+      "pct": 2.5
+    },
+    {
+      "name": "Muro",
+      "pct": 2.4
+    },
+    {
+      "name": "Kera",
       "pct": 2
     },
     {
-      "name": "Armenians",
+      "name": "Somrai",
+      "pct": 2
+    },
+    {
+      "name": "Bodore",
+      "pct": 1.8
+    },
+    {
+      "name": "unspecified",
+      "pct": 1.7
+    },
+    {
+      "name": "Peve",
       "pct": 1.3
     },
     {
-      "name": "Russians",
+      "name": "Barma",
+      "pct": 1.2
+    },
+    {
+      "name": "Kobe",
+      "pct": 1.1
+    },
+    {
+      "name": "Mararit",
+      "pct": 1.1
+    },
+    {
+      "name": "Kadjakse",
+      "pct": 0.8
+    }
+  ],
+  "CG": [
+    {
+      "name": "Teke",
+      "pct": 16.9
+    },
+    {
+      "name": "Mbochi",
+      "pct": 13.1
+    },
+    {
+      "name": "foreigner",
+      "pct": 8.2
+    },
+    {
+      "name": "Sangha",
+      "pct": 5.6
+    },
+    {
+      "name": "Kele",
+      "pct": 4.4
+    },
+    {
+      "name": "Punu",
+      "pct": 4.3
+    },
+    {
+      "name": "Pygmy",
+      "pct": 1.6
+    },
+    {
+      "name": "Oubanguiens",
+      "pct": 1.6
+    },
+    {
+      "name": "Duma",
+      "pct": 1.5
+    },
+    {
+      "name": "Makaa",
       "pct": 1.3
     },
     {
-      "name": "Talysh people",
+      "name": "other and unspecified",
+      "pct": 1
+    }
+  ],
+  "CD": [
+    {
+      "name": "make up about",
+      "pct": 45
+    }
+  ],
+  "CM": [
+    {
+      "name": "Bamileke-Bamu",
+      "pct": 22.2
+    },
+    {
+      "name": "Biu-Mandara",
+      "pct": 16.4
+    },
+    {
+      "name": "Kanuri",
+      "pct": 13.5
+    },
+    {
+      "name": "Mbam",
+      "pct": 13.1
+    },
+    {
+      "name": "Grassfields",
+      "pct": 9.9
+    },
+    {
+      "name": "Oroko",
+      "pct": 4.6
+    },
+    {
+      "name": "Southwestern Bantu",
+      "pct": 4.3
+    },
+    {
+      "name": "other ethnic group",
+      "pct": 3.8
+    },
+    {
+      "name": "Meka",
+      "pct": 2.3
+    }
+  ],
+  "CF": [
+    {
+      "name": "Baya",
+      "pct": 28.8
+    },
+    {
+      "name": "Banda",
+      "pct": 22.9
+    },
+    {
+      "name": "Mandjia",
+      "pct": 9.9
+    },
+    {
+      "name": "Sara",
+      "pct": 7.9
+    },
+    {
+      "name": "M'Baka-Bantu",
+      "pct": 7.9
+    },
+    {
+      "name": "Mbum",
+      "pct": 6
+    },
+    {
+      "name": "Ngbanki",
+      "pct": 5.5
+    },
+    {
+      "name": "Zande-Nzakara",
+      "pct": 3
+    },
+    {
+      "name": "ntral African Republic ethnic groups",
+      "pct": 2
+    }
+  ],
+  "CV": [
+    {
+      "name": "African",
+      "pct": 28
+    },
+    {
+      "name": "European",
+      "pct": 1
+    }
+  ],
+  "DJ": [
+    {
+      "name": "Somali",
+      "pct": 60
+    },
+    {
+      "name": "Afar",
+      "pct": 35
+    },
+    {
+      "name": "other",
+      "pct": 5
+    }
+  ],
+  "EG": [
+    {
+      "name": "Egyptian",
+      "pct": 99.7
+    },
+    {
+      "name": "other",
+      "pct": 0.3
+    }
+  ],
+  "GQ": [
+    {
+      "name": "Hawaiian and other Pacific Islander",
+      "pct": 46.1
+    },
+    {
+      "name": "Asian",
+      "pct": 35.5
+    },
+    {
+      "name": "Chamorro",
+      "pct": 32.8
+    },
+    {
+      "name": "Filipino",
+      "pct": 29.1
+    },
+    {
+      "name": "mixed",
+      "pct": 10
+    },
+    {
+      "name": "White",
+      "pct": 6.8
+    },
+    {
+      "name": "Chuukese",
+      "pct": 6.7
+    },
+    {
+      "name": "Korean",
+      "pct": 2.2
+    },
+    {
+      "name": "other Asian",
+      "pct": 1.5
+    },
+    {
+      "name": "Palauan",
+      "pct": 1.4
+    },
+    {
+      "name": "Pohnpeian",
+      "pct": 1.4
+    },
+    {
+      "name": "Japanese",
+      "pct": 1.4
+    },
+    {
+      "name": "Yapese",
+      "pct": 1
+    },
+    {
+      "name": "African descent or African-American",
+      "pct": 0.9
+    },
+    {
+      "name": "other",
+      "pct": 0.6
+    },
+    {
+      "name": "Indigenous",
+      "pct": 0.1
+    }
+  ],
+  "ER": [
+    {
+      "name": "Tigrinya",
+      "pct": 50
+    },
+    {
+      "name": "Tigre",
+      "pct": 30
+    },
+    {
+      "name": "Saho",
+      "pct": 4
+    },
+    {
+      "name": "Afar",
+      "pct": 4
+    },
+    {
+      "name": "Kunama",
+      "pct": 4
+    },
+    {
+      "name": "Bilen",
+      "pct": 3
+    },
+    {
+      "name": "Beja",
+      "pct": 2
+    },
+    {
+      "name": "Nara",
+      "pct": 2
+    },
+    {
+      "name": "Rashaida",
+      "pct": 1
+    }
+  ],
+  "ET": [
+    {
+      "name": "Oromo",
+      "pct": 35.8
+    },
+    {
+      "name": "Amhara",
+      "pct": 24.1
+    },
+    {
+      "name": "other",
+      "pct": 13.5
+    },
+    {
+      "name": "Somali",
+      "pct": 7.2
+    },
+    {
+      "name": "Tigray",
+      "pct": 5.7
+    },
+    {
+      "name": "Sidama",
+      "pct": 4.1
+    },
+    {
+      "name": "Guragie",
+      "pct": 2.6
+    },
+    {
+      "name": "Welaita",
+      "pct": 2.3
+    },
+    {
+      "name": "Afar",
+      "pct": 2.2
+    },
+    {
+      "name": "Silte",
       "pct": 1.3
+    },
+    {
+      "name": "Kefficho",
+      "pct": 1.2
+    }
+  ],
+  "GA": [
+    {
+      "name": "Fang",
+      "pct": 23.5
+    },
+    {
+      "name": "Shira-Punu'Vii",
+      "pct": 20.6
+    },
+    {
+      "name": "foreigner",
+      "pct": 16.2
+    },
+    {
+      "name": "other",
+      "pct": 12.6
+    },
+    {
+      "name": "Nzabi-Duma",
+      "pct": 11.2
+    },
+    {
+      "name": "Mbede-Teke",
+      "pct": 5.6
+    },
+    {
+      "name": "Myene",
+      "pct": 4.4
+    },
+    {
+      "name": "Kota-Kele",
+      "pct": 4.3
+    },
+    {
+      "name": "Okande-Tsogho",
+      "pct": 1.6
+    }
+  ],
+  "GH": [
+    {
+      "name": "Akan",
+      "pct": 45.7
+    },
+    {
+      "name": "Mole-Dagbani",
+      "pct": 18.5
+    },
+    {
+      "name": "Ewe",
+      "pct": 12.8
+    },
+    {
+      "name": "Ga-Dangme",
+      "pct": 7.1
+    },
+    {
+      "name": "Gurma",
+      "pct": 6.4
+    },
+    {
+      "name": "Guan",
+      "pct": 3.2
+    },
+    {
+      "name": "Grusi",
+      "pct": 2.7
+    },
+    {
+      "name": "Mande",
+      "pct": 2
+    },
+    {
+      "name": "other",
+      "pct": 1.6
+    }
+  ],
+  "GN": [
+    {
+      "name": "Malinke",
+      "pct": 29.4
+    },
+    {
+      "name": "Susu",
+      "pct": 21.2
+    },
+    {
+      "name": "Guerze",
+      "pct": 7.8
+    },
+    {
+      "name": "Kissi",
+      "pct": 6.2
+    },
+    {
+      "name": "Toma",
+      "pct": 1.6
+    },
+    {
+      "name": "foreign",
+      "pct": 0.4
+    }
+  ],
+  "CI": [
+    {
+      "name": "Akan",
+      "pct": 38
+    },
+    {
+      "name": "Voltaique or Gur",
+      "pct": 22
+    },
+    {
+      "name": "Northern Mande",
+      "pct": 22
+    },
+    {
+      "name": "Kru",
+      "pct": 9.1
+    },
+    {
+      "name": "Southern Mande",
+      "pct": 8.6
+    },
+    {
+      "name": "other",
+      "pct": 0.3
+    }
+  ],
+  "KE": [
+    {
+      "name": "Kikuyu",
+      "pct": 17.1
+    },
+    {
+      "name": "Luhya",
+      "pct": 14.3
+    },
+    {
+      "name": "Kalenjin",
+      "pct": 13.4
+    },
+    {
+      "name": "Luo",
+      "pct": 10.7
+    },
+    {
+      "name": "Kamba",
+      "pct": 9.8
+    },
+    {
+      "name": "other",
+      "pct": 8.2
+    },
+    {
+      "name": "Somali",
+      "pct": 5.8
+    },
+    {
+      "name": "Kisii",
+      "pct": 5.7
+    },
+    {
+      "name": "Mijikenda",
+      "pct": 5.2
+    },
+    {
+      "name": "Meru",
+      "pct": 4.2
+    },
+    {
+      "name": "Maasai",
+      "pct": 2.5
+    },
+    {
+      "name": "Turkana",
+      "pct": 2.1
+    },
+    {
+      "name": "non-Kenyan",
+      "pct": 1
+    }
+  ],
+  "LR": [
+    {
+      "name": "Kpelle",
+      "pct": 20.2
+    },
+    {
+      "name": "Bassa",
+      "pct": 13.6
+    },
+    {
+      "name": "Grebo",
+      "pct": 9.9
+    },
+    {
+      "name": "Gio",
+      "pct": 7.9
+    },
+    {
+      "name": "Mano",
+      "pct": 7.2
+    },
+    {
+      "name": "Kru",
+      "pct": 5.5
+    },
+    {
+      "name": "Lorma",
+      "pct": 4.8
+    },
+    {
+      "name": "Krahn",
+      "pct": 4.5
+    },
+    {
+      "name": "Mandingo",
+      "pct": 4.2
+    },
+    {
+      "name": "Vai",
+      "pct": 3.8
+    },
+    {
+      "name": "Gola",
+      "pct": 3.8
+    },
+    {
+      "name": "other African",
+      "pct": 3
+    },
+    {
+      "name": "Gbandi",
+      "pct": 2.9
+    },
+    {
+      "name": "Mende",
+      "pct": 1.7
+    },
+    {
+      "name": "Sapo",
+      "pct": 1
+    },
+    {
+      "name": "Belle",
+      "pct": 0.7
+    },
+    {
+      "name": "other Liberian ethnic group",
+      "pct": 0.4
+    },
+    {
+      "name": "Dey",
+      "pct": 0.3
+    },
+    {
+      "name": "non-African",
+      "pct": 0.2
+    }
+  ],
+  "LS": [
+    {
+      "name": "Sotho",
+      "pct": 99.7
+    },
+    {
+      "name": "other",
+      "pct": 0.3
+    }
+  ],
+  "LY": [
+    {
+      "name": "Amazigh and Arab",
+      "pct": 97
+    },
+    {
+      "name": "other",
+      "pct": 3
+    }
+  ],
+  "MW": [
+    {
+      "name": "Chewa",
+      "pct": 34.3
+    },
+    {
+      "name": "Lomwe",
+      "pct": 18.8
+    },
+    {
+      "name": "Yao",
+      "pct": 13.2
+    },
+    {
+      "name": "Ngoni",
+      "pct": 10.4
+    },
+    {
+      "name": "Tumbuka",
+      "pct": 9.2
+    },
+    {
+      "name": "Sena",
+      "pct": 3.8
+    },
+    {
+      "name": "Mang'anja",
+      "pct": 3.2
+    },
+    {
+      "name": "other",
+      "pct": 2.2
+    },
+    {
+      "name": "Tonga",
+      "pct": 1.8
+    },
+    {
+      "name": "Nyanja",
+      "pct": 1.8
+    },
+    {
+      "name": "Nkhonde",
+      "pct": 1
+    },
+    {
+      "name": "foreign",
+      "pct": 0.3
+    }
+  ],
+  "ML": [
+    {
+      "name": "Bambara",
+      "pct": 33.3
+    },
+    {
+      "name": "Marka",
+      "pct": 9.8
+    },
+    {
+      "name": "Manianka",
+      "pct": 9.6
+    },
+    {
+      "name": "Malinke",
+      "pct": 8.8
+    },
+    {
+      "name": "Dogon",
+      "pct": 8.7
+    },
+    {
+      "name": "other Malian",
+      "pct": 6
+    },
+    {
+      "name": "Sonrai",
+      "pct": 5.9
+    },
+    {
+      "name": "Bobo",
+      "pct": 2.1
+    },
+    {
+      "name": "Bella",
+      "pct": 1.7
+    },
+    {
+      "name": "of Economic Community of West Africa",
+      "pct": 0.4
+    },
+    {
+      "name": "other",
+      "pct": 0.3
+    }
+  ],
+  "ME": [
+    {
+      "name": "Montenegrin",
+      "pct": 45
+    },
+    {
+      "name": "Serbian",
+      "pct": 28.7
+    },
+    {
+      "name": "Bosniak",
+      "pct": 8.7
+    },
+    {
+      "name": "Albanian",
+      "pct": 4.9
+    },
+    {
+      "name": "unspecified",
+      "pct": 4.9
+    },
+    {
+      "name": "Muslim",
+      "pct": 3.3
+    },
+    {
+      "name": "other",
+      "pct": 2.6
+    },
+    {
+      "name": "Romani",
+      "pct": 1
+    },
+    {
+      "name": "Croat",
+      "pct": 1
+    }
+  ],
+  "MZ": [
+    {
+      "name": "African",
+      "pct": 99
+    },
+    {
+      "name": "Mestizo",
+      "pct": 0.8
+    }
+  ],
+  "NE": [
+    {
+      "name": "Hausa",
+      "pct": 53.1
+    },
+    {
+      "name": "Songhai",
+      "pct": 21.2
+    },
+    {
+      "name": "Tuareg",
+      "pct": 11
+    },
+    {
+      "name": "Kanuri",
+      "pct": 5.9
+    },
+    {
+      "name": "unavailable",
+      "pct": 0.9
+    },
+    {
+      "name": "Gurma",
+      "pct": 0.8
+    },
+    {
+      "name": "Arab",
+      "pct": 0.4
+    },
+    {
+      "name": "Tubu",
+      "pct": 0.4
+    }
+  ],
+  "NG": [
+    {
+      "name": "Hausa",
+      "pct": 30
+    },
+    {
+      "name": "other",
+      "pct": 24.9
+    },
+    {
+      "name": "Yoruba",
+      "pct": 15.5
+    },
+    {
+      "name": "Fulani",
+      "pct": 6
+    },
+    {
+      "name": "Tiv",
+      "pct": 2.4
+    },
+    {
+      "name": "Beriberi",
+      "pct": 2.4
+    },
+    {
+      "name": "Ibibio",
+      "pct": 1.8
+    },
+    {
+      "name": "Izon",
+      "pct": 1.8
+    }
+  ],
+  "GW": [
+    {
+      "name": "Balanta",
+      "pct": 30
+    },
+    {
+      "name": "Fulani",
+      "pct": 30
+    },
+    {
+      "name": "Manjaco",
+      "pct": 14
+    },
+    {
+      "name": "Mandinga",
+      "pct": 13
+    },
+    {
+      "name": "Papel",
+      "pct": 7
+    },
+    {
+      "name": "unspecified smaller ethnic groups",
+      "pct": 6
+    }
+  ],
+  "ZA": [
+    {
+      "name": "Black African",
+      "pct": 80.9
+    },
+    {
+      "name": "Colored",
+      "pct": 8.8
+    },
+    {
+      "name": "White",
+      "pct": 7.8
+    },
+    {
+      "name": "Asian",
+      "pct": 2.6
+    }
+  ],
+  "SN": [
+    {
+      "name": "Wolof",
+      "pct": 39.7
+    },
+    {
+      "name": "Pulaar",
+      "pct": 27.5
+    },
+    {
+      "name": "Sereer",
+      "pct": 16
+    },
+    {
+      "name": "other",
+      "pct": 5.4
+    },
+    {
+      "name": "Mandinka",
+      "pct": 4.9
+    },
+    {
+      "name": "Jola",
+      "pct": 4.2
+    },
+    {
+      "name": "Soninke",
+      "pct": 2.4
+    }
+  ],
+  "SL": [
+    {
+      "name": "Temne",
+      "pct": 35.4
+    },
+    {
+      "name": "Mende",
+      "pct": 30.8
+    },
+    {
+      "name": "Limba",
+      "pct": 8.8
+    },
+    {
+      "name": "other",
+      "pct": 5
+    },
+    {
+      "name": "Kono",
+      "pct": 4.3
+    },
+    {
+      "name": "Korankoh",
+      "pct": 4
+    },
+    {
+      "name": "Fullah",
+      "pct": 3.8
+    },
+    {
+      "name": "Mandingo",
+      "pct": 2.8
+    },
+    {
+      "name": "Loko",
+      "pct": 2
+    },
+    {
+      "name": "Sherbro",
+      "pct": 1.9
+    },
+    {
+      "name": "Creole",
+      "pct": 1.2
+    }
+  ],
+  "TG": [
+    {
+      "name": "Mina",
+      "pct": 42.4
+    },
+    {
+      "name": "Tem",
+      "pct": 25.9
+    },
+    {
+      "name": "Akan",
+      "pct": 17.1
+    },
+    {
+      "name": "foreigners",
+      "pct": 5.2
+    },
+    {
+      "name": "Akebu",
+      "pct": 4.1
+    },
+    {
+      "name": "Ana-Ife",
+      "pct": 3.2
+    },
+    {
+      "name": "other Togolese",
+      "pct": 1.7
+    },
+    {
+      "name": "no response",
+      "pct": 0.4
+    }
+  ],
+  "TN": [
+    {
+      "name": "Arab",
+      "pct": 98
+    },
+    {
+      "name": "European",
+      "pct": 1
+    },
+    {
+      "name": "Jewish and other",
+      "pct": 1
+    }
+  ],
+  "TZ": [
+    {
+      "name": "mainland - African",
+      "pct": 99
+    },
+    {
+      "name": "of which",
+      "pct": 95
+    },
+    {
+      "name": "other",
+      "pct": 1
+    }
+  ],
+  "BF": [
+    {
+      "name": "Mossi",
+      "pct": 53.7
+    },
+    {
+      "name": "other",
+      "pct": 12.8
+    },
+    {
+      "name": "Gurunsi",
+      "pct": 5.9
+    },
+    {
+      "name": "Bissa",
+      "pct": 5.4
+    },
+    {
+      "name": "Gurma",
+      "pct": 5.2
+    },
+    {
+      "name": "Bobo",
+      "pct": 3.4
+    },
+    {
+      "name": "Senufo",
+      "pct": 2.2
+    },
+    {
+      "name": "Lobi",
+      "pct": 1.5
+    },
+    {
+      "name": "foreign",
+      "pct": 0.7
+    },
+    {
+      "name": "Bella",
+      "pct": 0.1
+    }
+  ],
+  "NA": [
+    {
+      "name": "Ovambo",
+      "pct": 50
+    },
+    {
+      "name": "Kavangos",
+      "pct": 9
+    },
+    {
+      "name": "Herero",
+      "pct": 7
+    },
+    {
+      "name": "Damara",
+      "pct": 7
+    },
+    {
+      "name": "mixed European and African ancestry",
+      "pct": 6.5
+    },
+    {
+      "name": "European",
+      "pct": 6
+    },
+    {
+      "name": "Nama",
+      "pct": 5
+    },
+    {
+      "name": "Caprivian",
+      "pct": 4
+    },
+    {
+      "name": "San",
+      "pct": 3
+    },
+    {
+      "name": "Baster",
+      "pct": 2
+    },
+    {
+      "name": "Tswana",
+      "pct": 0.5
+    }
+  ],
+  "ZM": [
+    {
+      "name": "Bemba",
+      "pct": 21
+    },
+    {
+      "name": "other",
+      "pct": 13.8
+    },
+    {
+      "name": "Tonga",
+      "pct": 13.6
+    },
+    {
+      "name": "Chewa",
+      "pct": 7.4
+    },
+    {
+      "name": "Lozi",
+      "pct": 5.7
+    },
+    {
+      "name": "Nsenga",
+      "pct": 5.3
+    },
+    {
+      "name": "Tumbuka",
+      "pct": 4.4
+    },
+    {
+      "name": "Ngoni",
+      "pct": 4
+    },
+    {
+      "name": "Lala",
+      "pct": 3.1
+    },
+    {
+      "name": "Kaonde",
+      "pct": 2.9
+    },
+    {
+      "name": "Namwanga",
+      "pct": 2.8
+    },
+    {
+      "name": "Mambwe",
+      "pct": 2.5
+    },
+    {
+      "name": "Luvale",
+      "pct": 2.2
+    },
+    {
+      "name": "Lamba",
+      "pct": 2.1
+    },
+    {
+      "name": "Ushi",
+      "pct": 1.9
+    },
+    {
+      "name": "Lenje",
+      "pct": 1.6
+    },
+    {
+      "name": "Bisa",
+      "pct": 1.6
+    },
+    {
+      "name": "Mbunda",
+      "pct": 1.2
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.4
+    }
+  ],
+  "ZW": [
+    {
+      "name": "African",
+      "pct": 99.6
+    }
+  ],
+  "AU": [
+    {
+      "name": "English",
+      "pct": 33
+    },
+    {
+      "name": "Australian",
+      "pct": 29.9
+    },
+    {
+      "name": "Irish",
+      "pct": 9.5
+    },
+    {
+      "name": "Scottish",
+      "pct": 8.6
+    },
+    {
+      "name": "Chinese",
+      "pct": 5.5
+    },
+    {
+      "name": "unspecified",
+      "pct": 4.7
+    },
+    {
+      "name": "Italian",
+      "pct": 4.4
+    },
+    {
+      "name": "German",
+      "pct": 4
+    },
+    {
+      "name": "Indian",
+      "pct": 3.1
+    },
+    {
+      "name": "Australian Aboriginal",
+      "pct": 2.9
+    },
+    {
+      "name": "Greek",
+      "pct": 1.7
+    }
+  ],
+  "SB": [
+    {
+      "name": "Melanesian",
+      "pct": 95.3
+    },
+    {
+      "name": "Polynesian",
+      "pct": 3.1
+    },
+    {
+      "name": "Micronesian",
+      "pct": 1.2
+    },
+    {
+      "name": "other",
+      "pct": 0.3
+    }
+  ],
+  "CQ": [
+    {
+      "name": "Asian",
+      "pct": 50
+    },
+    {
+      "name": "e Hawaiian or other Pacific Islander",
+      "pct": 34.9
+    },
+    {
+      "name": "two or more ethnicities or races",
+      "pct": 12.7
+    },
+    {
+      "name": "Chinese",
+      "pct": 6.8
+    },
+    {
+      "name": "Native Hawaiian or Pacific Islander",
+      "pct": 6.4
+    },
+    {
+      "name": "Carolinian",
+      "pct": 4.6
+    },
+    {
+      "name": "Korean",
+      "pct": 4.2
+    },
+    {
+      "name": "and other Asian",
+      "pct": 3.7
+    },
+    {
+      "name": "other",
+      "pct": 2.5
+    }
+  ],
+  "FJ": [
+    {
+      "name": "iTaukei",
+      "pct": 56.8
+    },
+    {
+      "name": "Indo-Fijian",
+      "pct": 37.5
+    },
+    {
+      "name": "other",
+      "pct": 4.5
+    },
+    {
+      "name": "Rotuman",
+      "pct": 1.2
+    }
+  ],
+  "FM": [
+    {
+      "name": "Mortlockese",
+      "pct": 49.3
+    },
+    {
+      "name": "Pohnpeian",
+      "pct": 29.8
+    },
+    {
+      "name": "Kosraean",
+      "pct": 6.3
+    },
+    {
+      "name": "Yapese",
+      "pct": 5.7
+    },
+    {
+      "name": "Yap outer islanders",
+      "pct": 5.1
+    },
+    {
+      "name": "Polynesian",
+      "pct": 1.6
+    },
+    {
+      "name": "Asian",
+      "pct": 1.4
+    },
+    {
+      "name": "other",
+      "pct": 0.8
+    }
+  ],
+  "FP": [
+    {
+      "name": "Polynesian",
+      "pct": 78
+    },
+    {
+      "name": "Chinese",
+      "pct": 12
+    },
+    {
+      "name": "local French",
+      "pct": 6
+    },
+    {
+      "name": "metropolitan French",
+      "pct": 4
+    }
+  ],
+  "KI": [
+    {
+      "name": "I-Kiribati",
+      "pct": 95.78
+    },
+    {
+      "name": "mixed",
+      "pct": 3.8
+    },
+    {
+      "name": "other",
+      "pct": 1.7
+    },
+    {
+      "name": "Tuvaluan",
+      "pct": 0.2
+    }
+  ],
+  "NC": [
+    {
+      "name": "Kanak",
+      "pct": 39.1
+    },
+    {
+      "name": "European",
+      "pct": 27.1
+    },
+    {
+      "name": "other",
+      "pct": 17.7
+    },
+    {
+      "name": "Futunian",
+      "pct": 8.2
+    },
+    {
+      "name": "unspecified",
+      "pct": 2.5
+    },
+    {
+      "name": "Tahitian",
+      "pct": 2.1
+    },
+    {
+      "name": "Indonesian",
+      "pct": 1.4
+    },
+    {
+      "name": "Ni-Vanuatu",
+      "pct": 1
+    },
+    {
+      "name": "Vietnamese",
+      "pct": 0.9
+    }
+  ],
+  "NF": [
+    {
+      "name": "Australian",
+      "pct": 22.8
+    },
+    {
+      "name": "English",
+      "pct": 22.4
+    },
+    {
+      "name": "Pitcairn Islander",
+      "pct": 20
+    },
+    {
+      "name": "Scottish",
+      "pct": 6
+    },
+    {
+      "name": "Irish",
+      "pct": 5.2
+    }
+  ],
+  "VU": [
+    {
+      "name": "Ni-Vanuatu",
+      "pct": 99
+    },
+    {
+      "name": "other",
+      "pct": 1
+    }
+  ],
+  "NR": [
+    {
+      "name": "Nauruan",
+      "pct": 94.6
+    },
+    {
+      "name": "I-Kiribati",
+      "pct": 2.2
+    },
+    {
+      "name": "other",
+      "pct": 1.9
+    },
+    {
+      "name": "Fijian",
+      "pct": 1.3
+    }
+  ],
+  "NZ": [
+    {
+      "name": "European",
+      "pct": 64.1
+    },
+    {
+      "name": "Maori",
+      "pct": 16.5
+    },
+    {
+      "name": "other",
+      "pct": 13.7
+    },
+    {
+      "name": "Chinese",
+      "pct": 4.9
+    },
+    {
+      "name": "Indian",
+      "pct": 4.7
+    },
+    {
+      "name": "Samoan",
+      "pct": 3.9
+    },
+    {
+      "name": "Tongan",
+      "pct": 1.8
+    },
+    {
+      "name": "Cook Islands Maori",
+      "pct": 1.7
+    },
+    {
+      "name": "English",
+      "pct": 1.5
+    },
+    {
+      "name": "Filipino",
+      "pct": 1.5
+    },
+    {
+      "name": "New Zealander",
+      "pct": 1
+    }
+  ],
+  "PW": [
+    {
+      "name": "Asian",
+      "pct": 26.5
+    },
+    {
+      "name": "other",
+      "pct": 1.7
+    },
+    {
+      "name": "Carolinian",
+      "pct": 1.2
+    }
+  ],
+  "MH": [
+    {
+      "name": "Black",
+      "pct": 86.2
+    },
+    {
+      "name": "mixed",
+      "pct": 4.8
+    },
+    {
+      "name": "Spanish",
+      "pct": 3
+    },
+    {
+      "name": "White",
+      "pct": 2.7
+    },
+    {
+      "name": "other",
+      "pct": 1.8
+    },
+    {
+      "name": "Indian",
+      "pct": 1.6
+    }
+  ],
+  "TL": [
+    {
+      "name": "Tokelauan",
+      "pct": 64.5
+    },
+    {
+      "name": "Samoan",
+      "pct": 9.7
+    },
+    {
+      "name": "other",
+      "pct": 5.6
+    },
+    {
+      "name": "other Pacific Islander",
+      "pct": 3.4
+    },
+    {
+      "name": "Tuvaluan",
+      "pct": 2.8
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.8
+    }
+  ],
+  "TV": [
+    {
+      "name": "Tuvaluan",
+      "pct": 97
+    },
+    {
+      "name": "I-Kiribati",
+      "pct": 1.6
+    },
+    {
+      "name": "other",
+      "pct": 0.8
+    }
+  ],
+  "WS": [
+    {
+      "name": "Samoan",
+      "pct": 96
+    },
+    {
+      "name": "New Zealander",
+      "pct": 2
+    },
+    {
+      "name": "other",
+      "pct": 1.9
+    }
+  ],
+  "AA": [
+    {
+      "name": "Dutch",
+      "pct": 78.7
+    },
+    {
+      "name": "Colombian",
+      "pct": 6.6
+    },
+    {
+      "name": "Venezuelan",
+      "pct": 5.5
+    },
+    {
+      "name": "other",
+      "pct": 5.1
+    },
+    {
+      "name": "Dominican",
+      "pct": 2.8
+    },
+    {
+      "name": "Haitian",
+      "pct": 1.3
+    }
+  ],
+  "AG": [
+    {
+      "name": "African descent",
+      "pct": 87.3
+    },
+    {
+      "name": "mixed",
+      "pct": 4.7
+    },
+    {
+      "name": "Hispanic",
+      "pct": 2.7
+    },
+    {
+      "name": "other",
+      "pct": 2.7
+    },
+    {
+      "name": "White",
+      "pct": 1.6
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.9
+    }
+  ],
+  "AV": [
+    {
+      "name": "Black",
+      "pct": 85.3
+    },
+    {
+      "name": "Hispanic",
+      "pct": 4.9
+    },
+    {
+      "name": "mixed",
+      "pct": 3.8
+    },
+    {
+      "name": "White",
+      "pct": 3.2
+    },
+    {
+      "name": "other",
+      "pct": 1.6
+    },
+    {
+      "name": "Indian",
+      "pct": 1
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.3
+    }
+  ],
+  "BB": [
+    {
+      "name": "African descent",
+      "pct": 92.4
+    },
+    {
+      "name": "mixed",
+      "pct": 3.1
+    },
+    {
+      "name": "White",
+      "pct": 2.7
+    },
+    {
+      "name": "East Indian",
+      "pct": 1.3
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.3
+    },
+    {
+      "name": "other",
+      "pct": 0.2
+    }
+  ],
+  "BZ": [
+    {
+      "name": "Mestizo",
+      "pct": 52.9
+    },
+    {
+      "name": "Creole",
+      "pct": 25.9
+    },
+    {
+      "name": "Maya",
+      "pct": 11.3
+    },
+    {
+      "name": "Garifuna",
+      "pct": 6.1
+    },
+    {
+      "name": "East Indian",
+      "pct": 3.9
+    },
+    {
+      "name": "Mennonite",
+      "pct": 3.6
+    },
+    {
+      "name": "White",
+      "pct": 1.2
+    },
+    {
+      "name": "other",
+      "pct": 1.2
+    },
+    {
+      "name": "Asian",
+      "pct": 1
+    },
+    {
+      "name": "unknown",
+      "pct": 0.3
+    }
+  ],
+  "BS": [
+    {
+      "name": "African descent",
+      "pct": 90.6
+    },
+    {
+      "name": "White",
+      "pct": 4.7
+    },
+    {
+      "name": "mixed",
+      "pct": 2.1
+    },
+    {
+      "name": "other",
+      "pct": 1.9
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.7
+    }
+  ],
+  "CJ": [
+    {
+      "name": "Cayman Islander",
+      "pct": 35.4
+    },
+    {
+      "name": "Jamaican",
+      "pct": 24.8
+    },
+    {
+      "name": "other",
+      "pct": 11.1
+    },
+    {
+      "name": "Filipino",
+      "pct": 5.5
+    },
+    {
+      "name": "British",
+      "pct": 5.3
+    },
+    {
+      "name": "American",
+      "pct": 5.2
+    },
+    {
+      "name": "Honduran",
+      "pct": 4.2
+    },
+    {
+      "name": "Canadian",
+      "pct": 3.3
+    },
+    {
+      "name": "Indian",
+      "pct": 2.1
+    },
+    {
+      "name": "Cuban",
+      "pct": 1.6
+    },
+    {
+      "name": "Nicaraguan",
+      "pct": 1
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.5
+    }
+  ],
+  "CR": [
+    {
+      "name": "White or Mestizo",
+      "pct": 83.6
+    },
+    {
+      "name": "Mulatto",
+      "pct": 6.7
+    },
+    {
+      "name": "none",
+      "pct": 2.9
+    },
+    {
+      "name": "Indigenous",
+      "pct": 2.4
+    },
+    {
+      "name": "unspecified",
+      "pct": 2.2
+    },
+    {
+      "name": "Black or African descent",
+      "pct": 1.1
+    },
+    {
+      "name": "other",
+      "pct": 1.1
+    }
+  ],
+  "CU": [
+    {
+      "name": "White",
+      "pct": 64.1
+    },
+    {
+      "name": "Mulatto or mixed",
+      "pct": 26.6
+    },
+    {
+      "name": "Black",
+      "pct": 9.3
+    }
+  ],
+  "DM": [
+    {
+      "name": "African descent",
+      "pct": 84.5
+    },
+    {
+      "name": "mixed",
+      "pct": 9
+    },
+    {
+      "name": "Indigenous",
+      "pct": 3.8
+    },
+    {
+      "name": "other",
+      "pct": 2.1
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.6
+    }
+  ],
+  "DO": [
+    {
+      "name": "mixed",
+      "pct": 70.4
+    },
+    {
+      "name": "Indio",
+      "pct": 58
+    },
+    {
+      "name": "Black",
+      "pct": 15.8
+    },
+    {
+      "name": "White",
+      "pct": 13.5
+    },
+    {
+      "name": "Mulatto",
+      "pct": 12.4
+    },
+    {
+      "name": "other",
+      "pct": 0.3
+    }
+  ],
+  "SV": [
+    {
+      "name": "Mestizo",
+      "pct": 86.3
+    },
+    {
+      "name": "White",
+      "pct": 12.7
+    },
+    {
+      "name": "other",
+      "pct": 0.6
+    },
+    {
+      "name": "Indigenous",
+      "pct": 0.2
+    },
+    {
+      "name": "Black",
+      "pct": 0.1
+    }
+  ],
+  "GD": [
+    {
+      "name": "African descent",
+      "pct": 82.4
+    },
+    {
+      "name": "mixed",
+      "pct": 13.3
+    },
+    {
+      "name": "East Indian",
+      "pct": 2.2
+    },
+    {
+      "name": "other",
+      "pct": 1.3
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.9
+    }
+  ],
+  "GT": [
+    {
+      "name": "Maya",
+      "pct": 41.7
+    },
+    {
+      "name": "African descent",
+      "pct": 0.2
+    },
+    {
+      "name": "foreign",
+      "pct": 0.2
+    }
+  ],
+  "HT": [
+    {
+      "name": "Black",
+      "pct": 95
+    },
+    {
+      "name": "mixed and White",
+      "pct": 5
+    }
+  ],
+  "HN": [
+    {
+      "name": "Indigenous",
+      "pct": 7
+    },
+    {
+      "name": "African descent",
+      "pct": 2
+    },
+    {
+      "name": "White",
+      "pct": 1
+    }
+  ],
+  "JM": [
+    {
+      "name": "Black",
+      "pct": 92.1
+    },
+    {
+      "name": "mixed",
+      "pct": 6.1
+    },
+    {
+      "name": "East Indian",
+      "pct": 0.8
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.7
+    },
+    {
+      "name": "other",
+      "pct": 0.4
+    }
+  ],
+  "NN": [
+    {
+      "name": "Saint Maarten",
+      "pct": 29.9
+    },
+    {
+      "name": "Dominican Republic",
+      "pct": 10.2
+    },
+    {
+      "name": "other",
+      "pct": 8
+    },
+    {
+      "name": "Haiti",
+      "pct": 7.8
+    },
+    {
+      "name": "Jamaica",
+      "pct": 6.6
+    },
+    {
+      "name": "Saint Martin",
+      "pct": 5.9
+    },
+    {
+      "name": "Guyana",
+      "pct": 5
+    },
+    {
+      "name": "Dominica",
+      "pct": 4.4
+    },
+    {
+      "name": "Curacao",
+      "pct": 4.1
+    },
+    {
+      "name": "Aruba",
+      "pct": 3.4
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "pct": 2.8
+    },
+    {
+      "name": "India",
+      "pct": 2.6
+    },
+    {
+      "name": "Netherlands",
+      "pct": 2.2
+    },
+    {
+      "name": "unspecified",
+      "pct": 1.7
+    },
+    {
+      "name": "US",
+      "pct": 1.6
+    },
+    {
+      "name": "Suriname",
+      "pct": 1.4
+    },
+    {
+      "name": "Saint Lucia",
+      "pct": 1.3
+    },
+    {
+      "name": "Anguilla",
+      "pct": 1.1
+    }
+  ],
+  "NI": [
+    {
+      "name": "White",
+      "pct": 17
+    },
+    {
+      "name": "Black",
+      "pct": 9
+    },
+    {
+      "name": "Indigenous",
+      "pct": 5
+    }
+  ],
+  "PA": [
+    {
+      "name": "Indigenous",
+      "pct": 12.3
+    },
+    {
+      "name": "Black or African descent",
+      "pct": 9.2
+    },
+    {
+      "name": "Ngabe",
+      "pct": 7.6
+    },
+    {
+      "name": "Mulatto",
+      "pct": 6.8
+    },
+    {
+      "name": "White",
+      "pct": 6.7
+    },
+    {
+      "name": "Kuna",
+      "pct": 2.4
+    },
+    {
+      "name": "Embera",
+      "pct": 0.9
+    },
+    {
+      "name": "Bugle",
+      "pct": 0.8
+    },
+    {
+      "name": "other",
+      "pct": 0.4
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.2
+    }
+  ],
+  "RQ": [
+    {
+      "name": "White",
+      "pct": 75.8
+    },
+    {
+      "name": "African American",
+      "pct": 12.4
+    },
+    {
+      "name": "other",
+      "pct": 8.5
+    },
+    {
+      "name": "mixed",
+      "pct": 3.3
+    }
+  ],
+  "KN": [
+    {
+      "name": "African descent",
+      "pct": 92.5
+    },
+    {
+      "name": "mixed",
+      "pct": 3
+    },
+    {
+      "name": "White",
+      "pct": 2.1
+    },
+    {
+      "name": "East Indian",
+      "pct": 1.5
+    },
+    {
+      "name": "other",
+      "pct": 0.6
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.3
+    }
+  ],
+  "LC": [
+    {
+      "name": "African descent",
+      "pct": 85.3
+    },
+    {
+      "name": "mixed",
+      "pct": 10.9
+    },
+    {
+      "name": "East Indian",
+      "pct": 2.2
+    },
+    {
+      "name": "other",
+      "pct": 1.6
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.1
+    }
+  ],
+  "TT": [
+    {
+      "name": "East Indian",
+      "pct": 35.4
+    },
+    {
+      "name": "African descent",
+      "pct": 34.2
+    },
+    {
+      "name": "mixed - other",
+      "pct": 15.3
+    },
+    {
+      "name": "unspecified",
+      "pct": 6.2
+    },
+    {
+      "name": "other",
+      "pct": 1.3
+    }
+  ],
+  "UC": [
+    {
+      "name": "Curacaoan",
+      "pct": 75.4
+    },
+    {
+      "name": "Dutch",
+      "pct": 6
+    },
+    {
+      "name": "other",
+      "pct": 5
+    },
+    {
+      "name": "Dominican",
+      "pct": 3.6
+    },
+    {
+      "name": "Colombian",
+      "pct": 3
+    },
+    {
+      "name": "Saban",
+      "pct": 1.5
+    },
+    {
+      "name": "Haitian",
+      "pct": 1.2
+    },
+    {
+      "name": "Surinamese",
+      "pct": 1.2
+    },
+    {
+      "name": "Venezuelan",
+      "pct": 1.1
+    },
+    {
+      "name": "Aruban",
+      "pct": 1.1
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.9
+    }
+  ],
+  "VC": [
+    {
+      "name": "African descent",
+      "pct": 71.2
+    },
+    {
+      "name": "mixed",
+      "pct": 23
+    },
+    {
+      "name": "Indigenous",
+      "pct": 3
+    },
+    {
+      "name": "European",
+      "pct": 1.5
+    },
+    {
+      "name": "Indian",
+      "pct": 1.1
+    },
+    {
+      "name": "other",
+      "pct": 0.2
+    }
+  ],
+  "VI": [
+    {
+      "name": "Black",
+      "pct": 76.3
+    },
+    {
+      "name": "Latino",
+      "pct": 5.5
+    },
+    {
+      "name": "White",
+      "pct": 5.4
+    },
+    {
+      "name": "mixed",
+      "pct": 5.3
+    },
+    {
+      "name": "other",
+      "pct": 3
+    },
+    {
+      "name": "Indian",
+      "pct": 2.1
+    },
+    {
+      "name": "East Indian",
+      "pct": 1.6
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.8
+    }
+  ],
+  "VQ": [
+    {
+      "name": "African-American or African descent",
+      "pct": 71.4
+    },
+    {
+      "name": "White",
+      "pct": 13.3
+    },
+    {
+      "name": "mixed",
+      "pct": 7.5
+    },
+    {
+      "name": "other",
+      "pct": 6.3
+    },
+    {
+      "name": "Indigenous",
+      "pct": 0.4
+    },
+    {
+      "name": "Hawaiian and other Pacific Islander",
+      "pct": 0.1
+    }
+  ],
+  "KZ": [
+    {
+      "name": "Kazakh",
+      "pct": 71
+    },
+    {
+      "name": "Russian",
+      "pct": 14.9
+    },
+    {
+      "name": "other",
+      "pct": 4.9
+    },
+    {
+      "name": "Uzbek",
+      "pct": 3.3
+    },
+    {
+      "name": "Ukrainian",
+      "pct": 1.9
+    },
+    {
+      "name": "Uyghurs",
+      "pct": 1.5
+    },
+    {
+      "name": "German",
+      "pct": 1.1
+    },
+    {
+      "name": "Tatar",
+      "pct": 1.1
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.3
+    }
+  ],
+  "KG": [
+    {
+      "name": "Kyrgyz",
+      "pct": 73.8
+    },
+    {
+      "name": "Uzbek",
+      "pct": 14.8
+    },
+    {
+      "name": "other",
+      "pct": 5.2
+    },
+    {
+      "name": "Russian",
+      "pct": 5.1
+    },
+    {
+      "name": "Dungan",
+      "pct": 1.1
+    }
+  ],
+  "TJ": [
+    {
+      "name": "Tajik",
+      "pct": 84.3
+    },
+    {
+      "name": "Uzbek",
+      "pct": 13.8
+    },
+    {
+      "name": "other",
+      "pct": 2
+    }
+  ],
+  "TM": [
+    {
+      "name": "Turkmen",
+      "pct": 85
+    },
+    {
+      "name": "other",
+      "pct": 6
+    },
+    {
+      "name": "Uzbek",
+      "pct": 5
+    },
+    {
+      "name": "Russian",
+      "pct": 4
     }
   ],
   "UZ": [
     {
-      "name": "Uzbeks",
-      "pct": 80
+      "name": "Uzbek",
+      "pct": 83.8
     },
     {
-      "name": "Russians in Uzbekistan",
-      "pct": 5.5
+      "name": "Tajik",
+      "pct": 4.8
     },
     {
-      "name": "Tajiks",
-      "pct": 5
+      "name": "other",
+      "pct": 2.9
     },
     {
-      "name": "Kazakhs",
-      "pct": 3
-    },
-    {
-      "name": "Karakalpaks",
+      "name": "Kazakh",
       "pct": 2.5
     },
     {
-      "name": "Tatars",
+      "name": "Russian",
+      "pct": 2.3
+    },
+    {
+      "name": "Karakalpak",
+      "pct": 2.2
+    },
+    {
+      "name": "Tatar",
       "pct": 1.5
-    }
-  ],
-  "KH": [
-    {
-      "name": "Khmer people",
-      "pct": 97.6
-    },
-    {
-      "name": "Chams",
-      "pct": 1.2
-    },
-    {
-      "name": "Vietnamese people",
-      "pct": 0.1
-    },
-    {
-      "name": "Chinese people",
-      "pct": 0.1
-    }
-  ],
-  "MY": [
-    {
-      "name": "Malays",
-      "pct": 50.1
-    },
-    {
-      "name": "Javanese",
-      "pct": 24
-    },
-    {
-      "name": "Sundanese people",
-      "pct": 23.7
-    },
-    {
-      "name": "Arab Malaysians",
-      "pct": 23
-    },
-    {
-      "name": "Africans in Malaysia",
-      "pct": 22.8
-    },
-    {
-      "name": "Malaysian Chinese",
-      "pct": 22.6
-    },
-    {
-      "name": "Minangkabau",
-      "pct": 19
-    },
-    {
-      "name": "Kerinci people",
-      "pct": 18
-    },
-    {
-      "name": "Orang Asli",
-      "pct": 11.8
-    },
-    {
-      "name": "Indian Malaysians",
-      "pct": 6.7
     }
   ],
   "MM": [
     {
-      "name": "Bamar",
-      "pct": 68
-    },
-    {
-      "name": "Shan people",
+      "name": "Shan",
       "pct": 9
     },
     {
-      "name": "Karen people",
+      "name": "Karen",
       "pct": 7
+    },
+    {
+      "name": "other",
+      "pct": 5
     },
     {
       "name": "Rakhine",
       "pct": 4
     },
     {
-      "name": "Chinese people",
+      "name": "Chinese",
       "pct": 3
     },
     {
-      "name": "Mon people",
+      "name": "Indian",
       "pct": 2
     },
     {
-      "name": "Indians",
+      "name": "Mon",
       "pct": 2
     }
   ],
-  "TH": [
+  "KH": [
     {
-      "name": "Thai people",
-      "pct": 97.5
+      "name": "Khmer",
+      "pct": 95.4
     },
     {
-      "name": "Burmese in Thailand",
-      "pct": 1.3
+      "name": "Cham",
+      "pct": 2.4
     },
     {
-      "name": "Isan people",
-      "pct": null
-    },
-    {
-      "name": "Lao people",
-      "pct": null
-    },
-    {
-      "name": "Lao Ga",
-      "pct": null
-    },
-    {
-      "name": "Lao Krang",
-      "pct": null
-    },
-    {
-      "name": "Lao Lom",
-      "pct": null
-    },
-    {
-      "name": "Lao Song",
-      "pct": null
-    },
-    {
-      "name": "Lao Ti",
-      "pct": null
-    },
-    {
-      "name": "Northern Thai people",
-      "pct": null
-    },
-    {
-      "name": "Phuan people",
-      "pct": null
-    },
-    {
-      "name": "Tai Bueng",
-      "pct": null
-    },
-    {
-      "name": "Tai Daeng people",
-      "pct": null
-    },
-    {
-      "name": "Tai Dam people",
-      "pct": null
-    },
-    {
-      "name": "Kaleun people",
-      "pct": null
-    },
-    {
-      "name": "Tai Nua people",
-      "pct": null
-    },
-    {
-      "name": "Khorat Thai",
-      "pct": null
-    },
-    {
-      "name": "Shan people",
-      "pct": null
-    },
-    {
-      "name": "Saek people",
-      "pct": null
-    },
-    {
-      "name": "Nyaw people",
-      "pct": null
-    },
-    {
-      "name": "Yoy people",
-      "pct": null
-    },
-    {
-      "name": "Kedah Malays",
-      "pct": null
-    },
-    {
-      "name": "Moken people",
-      "pct": null
-    },
-    {
-      "name": "Urak Lawoi’",
-      "pct": null
-    },
-    {
-      "name": "Chams",
-      "pct": null
-    },
-    {
-      "name": "Thai Malays",
-      "pct": null
-    },
-    {
-      "name": "Bangkok Malays",
-      "pct": null
-    },
-    {
-      "name": "Khmuic peoples",
-      "pct": null
-    },
-    {
-      "name": "Lua people",
-      "pct": null
-    },
-    {
-      "name": "Mlabri people",
-      "pct": null
-    },
-    {
-      "name": "Pray people",
-      "pct": null
-    },
-    {
-      "name": "Mal people",
-      "pct": null
-    },
-    {
-      "name": "Bru people",
-      "pct": null
-    },
-    {
-      "name": "Lamet people",
-      "pct": null
-    },
-    {
-      "name": "Lawa people",
-      "pct": null
-    },
-    {
-      "name": "Palaung people",
-      "pct": null
-    },
-    {
-      "name": "Khmer people",
-      "pct": null
-    },
-    {
-      "name": "Northern Khmer people",
-      "pct": null
-    },
-    {
-      "name": "Mon people",
-      "pct": null
-    },
-    {
-      "name": "Nyah Kur people",
-      "pct": null
-    },
-    {
-      "name": "Kuy people",
-      "pct": null
-    },
-    {
-      "name": "Pear people",
-      "pct": null
-    },
-    {
-      "name": "Vietnamese people",
-      "pct": null
-    },
-    {
-      "name": "Thai Chinese",
-      "pct": null
-    },
-    {
-      "name": "Chin Haw",
-      "pct": null
-    },
-    {
-      "name": "Peranakan Chinese",
-      "pct": null
-    },
-    {
-      "name": "Teochew people",
-      "pct": null
-    },
-    {
-      "name": "Hoklo people",
-      "pct": null
-    },
-    {
-      "name": "Hakka people",
-      "pct": null
-    },
-    {
-      "name": "Hainan people",
-      "pct": null
-    },
-    {
-      "name": "Cantonese people",
-      "pct": null
-    },
-    {
-      "name": "Fuzhou people",
-      "pct": null
-    },
-    {
-      "name": "Akha",
-      "pct": null
-    },
-    {
-      "name": "Karen people",
-      "pct": null
-    },
-    {
-      "name": "Karenni people",
-      "pct": null
-    },
-    {
-      "name": "Lahu people",
-      "pct": null
-    },
-    {
-      "name": "Lisu people",
-      "pct": null
-    },
-    {
-      "name": "Yi people",
-      "pct": null
-    },
-    {
-      "name": "Mpi people",
-      "pct": null
-    },
-    {
-      "name": "Pa'O",
-      "pct": null
-    },
-    {
-      "name": "Phunoi people",
-      "pct": null
-    },
-    {
-      "name": "S'gaw people",
-      "pct": null
-    },
-    {
-      "name": "Ugong people",
-      "pct": null
-    },
-    {
-      "name": "Indians in Thailand",
-      "pct": null
-    },
-    {
-      "name": "Iranians in Thailand",
-      "pct": null
-    },
-    {
-      "name": "Thai Portuguese",
-      "pct": null
-    },
-    {
-      "name": "Hmong people",
-      "pct": null
-    },
-    {
-      "name": "Yao people",
-      "pct": null
-    },
-    {
-      "name": "Australians in Thailand",
-      "pct": null
-    },
-    {
-      "name": "Farang",
-      "pct": null
-    },
-    {
-      "name": "Filipinos in Thailand",
-      "pct": null
-    },
-    {
-      "name": "Japanese migration to Thailand",
-      "pct": null
-    },
-    {
-      "name": "Koreans in Thailand",
-      "pct": null
-    },
-    {
-      "name": "Luk khrueng",
-      "pct": null
-    },
-    {
-      "name": "Swedes in Thailand",
-      "pct": null
-    },
-    {
-      "name": "Southern Thai people",
-      "pct": null
-    }
-  ],
-  "YE": [
-    {
-      "name": "Arabs",
-      "pct": null
-    },
-    {
-      "name": "Somalis",
-      "pct": null
-    }
-  ],
-  "MV": [
-    {
-      "name": "Maldivians",
-      "pct": null
-    }
-  ],
-  "MZ": [
-    {
-      "name": "African people",
-      "pct": 99.7
-    },
-    {
-      "name": "White Africans of European ancestry",
-      "pct": 0.2
-    },
-    {
-      "name": "Indians in Mozambique",
-      "pct": 0.1
-    },
-    {
-      "name": "European people",
-      "pct": 0.1
-    }
-  ],
-  "NG": [
-    {
-      "name": "Hausa people",
-      "pct": 22.1
-    },
-    {
-      "name": "Yoruba people",
-      "pct": 21
-    },
-    {
-      "name": "Igbo people",
-      "pct": 18
-    },
-    {
-      "name": "Ijaw people",
-      "pct": 10
-    },
-    {
-      "name": "Fulbe people",
-      "pct": 4.7
-    },
-    {
-      "name": "Kanuri people",
-      "pct": 4
-    },
-    {
-      "name": "Ibibio people",
-      "pct": 3.5
-    },
-    {
-      "name": "Tiv people",
-      "pct": 2.5
-    }
-  ],
-  "UG": [
-    {
-      "name": "Baganda people",
-      "pct": 16.5
-    },
-    {
-      "name": "Nkole people",
-      "pct": 9.6
-    },
-    {
-      "name": "Soga",
-      "pct": 8.8
-    },
-    {
-      "name": "Kiga people",
-      "pct": 7.1
-    },
-    {
-      "name": "Teso people",
-      "pct": 7
-    },
-    {
-      "name": "Langi people",
-      "pct": 6.3
-    },
-    {
-      "name": "Gisu people",
-      "pct": 4.9
-    },
-    {
-      "name": "Acholi people",
-      "pct": 4.4
-    },
-    {
-      "name": "Lugbara people",
-      "pct": 3.3
-    },
-    {
-      "name": "Konjo people",
-      "pct": null
-    }
-  ],
-  "RU": [
-    {
-      "name": "Russians",
-      "pct": 77.7
-    },
-    {
-      "name": "http://www.wikidata.org/.well-known/genid/2a7e35cd26f78703db1ad006372d6508",
-      "pct": 3.9
-    },
-    {
-      "name": "Tatars",
-      "pct": 3.7
-    },
-    {
-      "name": "Ukrainians",
-      "pct": 1.4
-    },
-    {
-      "name": "Chuvash people",
-      "pct": 1
-    },
-    {
-      "name": "Chechens",
-      "pct": 1
-    }
-  ],
-  "DE": [
-    {
-      "name": "Germans",
-      "pct": 86.3
-    },
-    {
-      "name": "Turks",
-      "pct": 1.8
-    },
-    {
-      "name": "Romanians",
-      "pct": 1
-    },
-    {
-      "name": "Poles",
-      "pct": 1
-    },
-    {
-      "name": "Syrians",
-      "pct": 1
-    }
-  ],
-  "PL": [
-    {
-      "name": "Poles",
-      "pct": 96.9
-    },
-    {
-      "name": "Silesians",
-      "pct": 1.1
-    },
-    {
-      "name": "Germans",
-      "pct": 0.2
-    },
-    {
-      "name": "Ukrainians in Poland",
-      "pct": 0.1
-    }
-  ],
-  "GR": [
-    {
-      "name": "Greeks",
-      "pct": null
-    }
-  ],
-  "PE": [
-    {
-      "name": "Peruvians",
-      "pct": null
-    }
-  ],
-  "NZ": [
-    {
-      "name": "European New Zealanders",
-      "pct": 71.2
-    },
-    {
-      "name": "Māori",
-      "pct": 14.1
-    },
-    {
-      "name": "Asian New Zealanders",
-      "pct": 11.3
-    },
-    {
-      "name": "Pacific Islanders",
-      "pct": 7.6
-    }
-  ],
-  "PG": [
-    {
-      "name": "Polynesians",
-      "pct": null
-    },
-    {
-      "name": "Melanesians",
-      "pct": null
-    },
-    {
-      "name": "Micronesians",
-      "pct": null
-    },
-    {
-      "name": "Negrito",
-      "pct": null
-    },
-    {
-      "name": "Papuan people",
-      "pct": null
-    }
-  ],
-  "CO": [
-    {
-      "name": "mestizo Colombians",
-      "pct": 49
-    },
-    {
-      "name": "White Colombians",
-      "pct": 37
-    },
-    {
-      "name": "Afro-Colombians",
-      "pct": 10.4
-    },
-    {
-      "name": "indigenous peoples in Colombia",
-      "pct": 3.4
-    },
-    {
-      "name": "http://www.wikidata.org/.well-known/genid/2d753c535fb8abf5cfb6c8e1db794328",
-      "pct": 2.1
-    }
-  ],
-  "IQ": [
-    {
-      "name": "Arabs",
-      "pct": 77.5
-    },
-    {
-      "name": "Kurds in Iraq",
-      "pct": 17.5
-    },
-    {
-      "name": "Yazidis",
-      "pct": null
-    },
-    {
-      "name": "Shabak people",
-      "pct": null
-    },
-    {
-      "name": "Assyrians in Iraq",
-      "pct": null
-    },
-    {
-      "name": "Iraqi Turkmen",
-      "pct": null
-    }
-  ],
-  "NP": [
-    {
-      "name": "Chhetri",
-      "pct": 16.6
-    },
-    {
-      "name": "Bahun",
-      "pct": 12.2
-    },
-    {
-      "name": "Magars",
-      "pct": 7.1
-    },
-    {
-      "name": "Tharu people",
-      "pct": 6.6
-    },
-    {
-      "name": "Tamang people",
-      "pct": 5.8
-    },
-    {
-      "name": "Newar people",
-      "pct": 5
-    },
-    {
-      "name": "Kami people",
-      "pct": 4.8
-    },
-    {
-      "name": "Muslim",
-      "pct": 4.4
-    },
-    {
-      "name": "Yadav",
-      "pct": 4
-    },
-    {
-      "name": "Rai people",
-      "pct": 2.3
-    },
-    {
-      "name": "Gurung people",
-      "pct": 2
-    },
-    {
-      "name": "Miji people",
-      "pct": 1.8
-    },
-    {
-      "name": "Thakuri",
-      "pct": 1.6
-    },
-    {
-      "name": "Limbu people",
+      "name": "Chinese",
       "pct": 1.5
     },
     {
-      "name": "Bene Israel",
-      "pct": 1.4
-    },
-    {
-      "name": "Sarki",
-      "pct": 1.4
-    },
-    {
-      "name": "Chamar",
-      "pct": 1.3
-    },
-    {
-      "name": "Kushwaha",
-      "pct": 1.2
-    }
-  ],
-  "AF": [
-    {
-      "name": "Kyrgyz people",
-      "pct": null
-    },
-    {
-      "name": "Nuristani people",
-      "pct": null
-    },
-    {
-      "name": "Baloch",
-      "pct": null
-    },
-    {
-      "name": "Hazaras",
-      "pct": null
-    },
-    {
-      "name": "Gurjar",
-      "pct": null
-    },
-    {
-      "name": "Arabs",
-      "pct": null
-    },
-    {
-      "name": "Tajiks",
-      "pct": null
-    },
-    {
-      "name": "Pamiri people",
-      "pct": null
-    },
-    {
-      "name": "Uzbeks",
-      "pct": null
-    },
-    {
-      "name": "Aimaq people",
-      "pct": null
-    },
-    {
-      "name": "Qizilbash",
-      "pct": null
-    },
-    {
-      "name": "Pasha people",
-      "pct": null
-    },
-    {
-      "name": "Turkmens",
-      "pct": null
-    },
-    {
-      "name": "Brahui people",
-      "pct": null
-    },
-    {
-      "name": "Pashtuns",
-      "pct": null
-    }
-  ],
-  "BD": [
-    {
-      "name": "Bengalis",
-      "pct": 98
-    }
-  ],
-  "TZ": [
-    {
-      "name": "Bantu people",
-      "pct": 95
-    }
-  ],
-  "PH": [
-    {
-      "name": "Tagalog people",
-      "pct": 28.1
-    },
-    {
-      "name": "Cebuano people",
-      "pct": 13.1
-    },
-    {
-      "name": "Ilocano",
-      "pct": 9
-    },
-    {
-      "name": "Visayans",
-      "pct": 7.6
-    },
-    {
-      "name": "Hiligaynon people",
-      "pct": 7.5
-    },
-    {
-      "name": "Bicolano people",
-      "pct": 6
-    },
-    {
-      "name": "Waray people",
-      "pct": 3.4
-    }
-  ],
-  "CD": [
-    {
-      "name": "Kongo people",
-      "pct": null
-    },
-    {
-      "name": "Luba people",
-      "pct": null
-    },
-    {
-      "name": "Mangbetu people",
-      "pct": null
-    },
-    {
-      "name": "Mongo",
-      "pct": null
-    },
-    {
-      "name": "Zande people",
-      "pct": null
-    }
-  ],
-  "ET": [
-    {
-      "name": "Oromo people",
-      "pct": 34.4
-    },
-    {
-      "name": "Amhara people",
-      "pct": 27
-    },
-    {
-      "name": "Somalis",
-      "pct": 6.2
-    },
-    {
-      "name": "Tigray people",
-      "pct": 6.1
-    },
-    {
-      "name": "Sidama people",
-      "pct": 4
-    },
-    {
-      "name": "Gurage people",
-      "pct": 2.5
-    },
-    {
-      "name": "Wolaitans",
-      "pct": 2.3
-    },
-    {
-      "name": "Afar people",
-      "pct": 1.7
-    },
-    {
-      "name": "Hadiya people",
-      "pct": 1.7
-    },
-    {
-      "name": "Gamo people",
-      "pct": 1.5
-    },
-    {
-      "name": "Silt'e people",
-      "pct": 1.3
-    },
-    {
-      "name": "Gedeo people",
-      "pct": 1.3
-    },
-    {
-      "name": "Kafficho people",
-      "pct": 1.2
-    }
-  ],
-  "GB": [
-    {
-      "name": "White British",
-      "pct": 87.2
-    },
-    {
-      "name": "Black Britons",
-      "pct": 3
-    },
-    {
-      "name": "British Indians",
-      "pct": 2.3
-    },
-    {
-      "name": "British Pakistanis",
-      "pct": 1.9
+      "name": "other",
+      "pct": 0.7
     }
   ],
   "CN": [
     {
-      "name": "Han Chinese people",
+      "name": "Han Chinese",
+      "pct": 91.1
+    },
+    {
+      "name": "ethnic minorities",
+      "pct": 8.9
+    }
+  ],
+  "HK": [
+    {
+      "name": "Chinese",
       "pct": 91.6
     },
     {
-      "name": "Zhuang people",
-      "pct": 1.3
+      "name": "other",
+      "pct": 3.7
     },
     {
-      "name": "Uyghurs",
-      "pct": 0.8
+      "name": "Filipino",
+      "pct": 2.7
     },
     {
-      "name": "Hui people",
-      "pct": 0.8
-    },
-    {
-      "name": "Manchu",
-      "pct": 0.8
-    },
-    {
-      "name": "Miao",
-      "pct": 0.7
-    },
-    {
-      "name": "Yi people",
-      "pct": 0.7
-    },
-    {
-      "name": "Tujia people",
-      "pct": 0.6
-    },
-    {
-      "name": "Tibetan people",
-      "pct": 0.5
-    },
-    {
-      "name": "Mongols in China",
-      "pct": 0.4
-    },
-    {
-      "name": "Yao people",
-      "pct": 0.2
-    },
-    {
-      "name": "Kam people",
-      "pct": 0.2
-    },
-    {
-      "name": "Bouyei people",
-      "pct": 0.2
-    },
-    {
-      "name": "Kazakhs in China",
-      "pct": 0.1
-    },
-    {
-      "name": "Hlai people",
-      "pct": 0.1
-    },
-    {
-      "name": "Hani people",
-      "pct": 0.1
-    },
-    {
-      "name": "Korean Chinese",
-      "pct": 0.1
-    },
-    {
-      "name": "Bai people",
-      "pct": 0.1
-    },
-    {
-      "name": "Lisu people",
-      "pct": 0.1
-    }
-  ],
-  "BR": [
-    {
-      "name": "White Brazilians",
-      "pct": 47.7
-    },
-    {
-      "name": "Pardo Brazilians",
-      "pct": 43.1
-    },
-    {
-      "name": "African Brazilians",
-      "pct": 7.6
-    },
-    {
-      "name": "Asian Brazilians",
-      "pct": 1.1
-    },
-    {
-      "name": "indigenous peoples in Brazil",
-      "pct": 0.4
-    }
-  ],
-  "CA": [
-    {
-      "name": "Canadians",
-      "pct": 32.2
-    },
-    {
-      "name": "English Canadians",
-      "pct": 19.8
-    },
-    {
-      "name": "French Canadians",
-      "pct": 15.5
-    },
-    {
-      "name": "Scottish Canadians",
-      "pct": 14.4
-    },
-    {
-      "name": "Irish Canadians",
-      "pct": 13.8
-    },
-    {
-      "name": "German Canadians",
-      "pct": 9.8
-    },
-    {
-      "name": "Chinese Canadians",
-      "pct": 4.5
-    },
-    {
-      "name": "Italian Canadians",
-      "pct": 4.5
-    },
-    {
-      "name": "First Nations",
-      "pct": 4.2
-    },
-    {
-      "name": "Belgian Canadians",
-      "pct": null
-    },
-    {
-      "name": "Inuit",
-      "pct": null
-    },
-    {
-      "name": "Québécois",
-      "pct": null
-    },
-    {
-      "name": "Abenaki people",
-      "pct": null
-    },
-    {
-      "name": "Atikamekw people",
-      "pct": null
-    },
-    {
-      "name": "Innu people",
-      "pct": null
-    },
-    {
-      "name": "Mohawk",
-      "pct": null
-    },
-    {
-      "name": "Wyandot people",
-      "pct": null
-    },
-    {
-      "name": "Cree",
-      "pct": null
-    },
-    {
-      "name": "Wolastoqiyik",
-      "pct": null
-    }
-  ],
-  "JP": [
-    {
-      "name": "Japanese people",
-      "pct": 98.5
-    },
-    {
-      "name": "Koreans",
-      "pct": 0.5
-    },
-    {
-      "name": "Chinese people",
-      "pct": 0.4
-    },
-    {
-      "name": "Ainu people",
-      "pct": null
-    }
-  ],
-  "CZ": [
-    {
-      "name": "Czechs",
-      "pct": 63.7
-    },
-    {
-      "name": "http://www.wikidata.org/.well-known/genid/8786144f23342fb8e4c79c23cfee8bcb",
-      "pct": 26
-    },
-    {
-      "name": "Moravians",
-      "pct": 4.9
-    },
-    {
-      "name": "Slovaks",
-      "pct": 1.4
-    }
-  ],
-  "AL": [
-    {
-      "name": "Albanians",
-      "pct": 82.6
-    },
-    {
-      "name": "http://www.wikidata.org/.well-known/genid/5b668a0177699714b6b192fd33630524",
-      "pct": 15.5
-    },
-    {
-      "name": "Greeks",
-      "pct": 0.9
-    },
-    {
-      "name": "Egyptians",
-      "pct": null
-    },
-    {
-      "name": "Macedonians",
-      "pct": null
-    },
-    {
-      "name": "Montenegrins in Albania",
-      "pct": null
-    },
-    {
-      "name": "Vlachs",
-      "pct": null
-    },
-    {
-      "name": "Romani people",
-      "pct": null
-    }
-  ],
-  "AD": [
-    {
-      "name": "Andorrans",
-      "pct": 46.2
-    },
-    {
-      "name": "Spaniards",
-      "pct": 26.4
-    },
-    {
-      "name": "Portuguese",
-      "pct": 12.8
-    },
-    {
-      "name": "French",
-      "pct": 5
+      "name": "Indonesian",
+      "pct": 1.9
     }
   ],
   "ID": [
-    {
-      "name": "Malays",
-      "pct": 99
-    },
     {
       "name": "Javanese",
       "pct": 40.1
     },
     {
-      "name": "Sundanese people",
+      "name": "Sundanese",
       "pct": 15.5
     },
     {
-      "name": "Arab Indonesians",
-      "pct": 13.5
+      "name": "other",
+      "pct": 15
+    },
+    {
+      "name": "Malay",
+      "pct": 3.7
     },
     {
       "name": "Batak",
@@ -1359,35 +2737,31 @@
       "pct": 3
     },
     {
-      "name": "Betawi people",
+      "name": "Betawi",
       "pct": 2.9
-    },
-    {
-      "name": "Buginese people",
-      "pct": 2.7
     },
     {
       "name": "Minangkabau",
       "pct": 2.7
     },
     {
-      "name": "Bantenese people",
+      "name": "Buginese",
+      "pct": 2.7
+    },
+    {
+      "name": "Bantenese",
       "pct": 2
     },
     {
-      "name": "Kerinci people",
-      "pct": 1.9
+      "name": "Banjarese",
+      "pct": 1.7
     },
     {
       "name": "Balinese",
       "pct": 1.7
     },
     {
-      "name": "Banjar",
-      "pct": 1.7
-    },
-    {
-      "name": "Aceh",
+      "name": "Acehnese",
       "pct": 1.4
     },
     {
@@ -1395,472 +2769,1896 @@
       "pct": 1.4
     },
     {
-      "name": "Sasak people",
+      "name": "Sasak",
       "pct": 1.3
     },
     {
-      "name": "Chinese Indonesians",
+      "name": "Chinese",
+      "pct": 1.2
+    }
+  ],
+  "JP": [
+    {
+      "name": "Japanese",
+      "pct": 97.5
+    },
+    {
+      "name": "other",
       "pct": 1.2
     },
     {
-      "name": "Indonesians",
-      "pct": null
+      "name": "Chinese",
+      "pct": 0.6
+    },
+    {
+      "name": "Vietnam",
+      "pct": 0.4
+    },
+    {
+      "name": "South Korean",
+      "pct": 0.3
     }
   ],
-  "ES": [
+  "LA": [
     {
-      "name": "Spaniards",
-      "pct": 88
+      "name": "Lao",
+      "pct": 53.2
     },
     {
-      "name": "Romani people",
-      "pct": null
-    }
-  ],
-  "US": [
-    {
-      "name": "White Americans",
-      "pct": 72.4
+      "name": "other",
+      "pct": 11.6
     },
     {
-      "name": "African Americans",
-      "pct": 12.6
+      "name": "Khmou",
+      "pct": 11
     },
     {
-      "name": "Asian Americans",
-      "pct": 4.8
+      "name": "Hmong",
+      "pct": 9.2
     },
     {
-      "name": "Native Americans in the United States",
-      "pct": 1.1
-    }
-  ],
-  "AT": [
-    {
-      "name": "Austrians",
-      "pct": 91.1
+      "name": "Phouthay",
+      "pct": 3.4
     },
     {
-      "name": "Yugoslavs",
-      "pct": 4
+      "name": "Tai",
+      "pct": 3.1
     },
     {
-      "name": "Turks in Austria",
-      "pct": 1.6
+      "name": "Makong",
+      "pct": 2.5
     },
     {
-      "name": "Germans",
-      "pct": 0.9
-    }
-  ],
-  "TR": [
-    {
-      "name": "Turks",
-      "pct": 72.5
-    },
-    {
-      "name": "Kurds",
-      "pct": 19
-    }
-  ],
-  "EG": [
-    {
-      "name": "Egyptians",
-      "pct": 99.6
-    }
-  ],
-  "MX": [
-    {
-      "name": "mestizo Mexicans",
-      "pct": 62
-    },
-    {
-      "name": "indigenous peoples of Mexico",
-      "pct": 28
-    },
-    {
-      "name": "white Mexicans",
-      "pct": 15
-    },
-    {
-      "name": "Afro Mexicans",
-      "pct": 0.5
-    }
-  ],
-  "AW": [
-    {
-      "name": "Dutch",
-      "pct": 82.1
-    },
-    {
-      "name": "Colombians",
-      "pct": 6.6
-    },
-    {
-      "name": "Dominicans",
+      "name": "Katong",
       "pct": 2.2
     },
     {
-      "name": "Venezuelans",
-      "pct": 2.2
-    },
-    {
-      "name": "Católica",
-      "pct": 1.2
-    },
-    {
-      "name": "http://www.wikidata.org/.well-known/genid/43469810177dc4db32b87d68c5b6f98c",
-      "pct": 0.1
-    }
-  ],
-  "NC": [
-    {
-      "name": "Kanak",
-      "pct": 40.3
-    },
-    {
-      "name": "European people",
-      "pct": 29.2
-    },
-    {
-      "name": "Wallisians and Futunians",
-      "pct": 8.7
-    },
-    {
-      "name": "Tahitians",
+      "name": "Lue",
       "pct": 2
     },
     {
-      "name": "Indonesians",
-      "pct": 1.6
-    },
-    {
-      "name": "Vietnamese people",
-      "pct": 1
-    },
-    {
-      "name": "ni-Vanuatu",
-      "pct": 0.9
+      "name": "Akha",
+      "pct": 1.8
     }
   ],
-  "VN": [
+  "MK": [
     {
-      "name": "Vietnamese people",
-      "pct": 85.7
+      "name": "Macedonian",
+      "pct": 58.4
     },
     {
-      "name": "Tay people",
-      "pct": 1.9
+      "name": "Albanian",
+      "pct": 24.3
     },
     {
-      "name": "Thai people",
-      "pct": 1.8
+      "name": "Turkish",
+      "pct": 3.9
     },
     {
-      "name": "Khmer people",
-      "pct": 1.5
+      "name": "Romani",
+      "pct": 2.5
     },
     {
-      "name": "Muong people",
-      "pct": 1.5
+      "name": "other",
+      "pct": 2.3
     },
     {
-      "name": "Hmong people",
+      "name": "Serb",
+      "pct": 1.3
+    }
+  ],
+  "MN": [
+    {
+      "name": "Khalkh",
+      "pct": 83.8
+    },
+    {
+      "name": "other",
+      "pct": 4.1
+    },
+    {
+      "name": "Kazak",
+      "pct": 3.8
+    },
+    {
+      "name": "Durvud",
+      "pct": 2.6
+    },
+    {
+      "name": "Bayad",
+      "pct": 2
+    },
+    {
+      "name": "Buriad",
+      "pct": 1.4
+    },
+    {
+      "name": "Zakhchin",
       "pct": 1.2
     },
     {
-      "name": "Nùng people",
+      "name": "Dariganga",
       "pct": 1.1
-    },
-    {
-      "name": "Hoa people",
-      "pct": 1
     }
   ],
-  "MA": [
+  "MY": [
     {
-      "name": "Arab-Amazighs",
-      "pct": 99
+      "name": "Bumiputera",
+      "pct": 63.8
+    },
+    {
+      "name": "Malay",
+      "pct": 52.8
+    },
+    {
+      "name": "Chinese",
+      "pct": 20.6
+    },
+    {
+      "name": "non-citizens",
+      "pct": 9
+    },
+    {
+      "name": "Indian",
+      "pct": 6
+    },
+    {
+      "name": "other",
+      "pct": 0.6
     }
   ],
-  "SD": [
+  "PH": [
     {
-      "name": "Sudanese Arabs",
-      "pct": 70
+      "name": "Tagalog",
+      "pct": 26
     },
     {
-      "name": "Fur people",
-      "pct": null
+      "name": "other local ethnicities",
+      "pct": 18.5
     },
     {
-      "name": "Beja people",
-      "pct": null
+      "name": "Binisaya",
+      "pct": 14.3
     },
     {
-      "name": "Nuba peoples",
-      "pct": null
+      "name": "Ilocano",
+      "pct": 8
     },
     {
-      "name": "Fulbe people",
-      "pct": null
-    }
-  ],
-  "AS": [
-    {
-      "name": "Samoans",
-      "pct": 88.9
+      "name": "Cebuano",
+      "pct": 8
     },
     {
-      "name": "Tongans",
-      "pct": 2.9
+      "name": "Illonggo",
+      "pct": 7.9
     },
     {
-      "name": "Filipinos",
-      "pct": 2.2
-    }
-  ],
-  "PS": [
+      "name": "Bicol",
+      "pct": 6.5
+    },
     {
-      "name": "Palestinians",
-      "pct": null
-    }
-  ],
-  "CL": [
+      "name": "Waray",
+      "pct": 3.8
+    },
     {
-      "name": "Chileans",
-      "pct": null
+      "name": "Kapampangan",
+      "pct": 3
+    },
+    {
+      "name": "Maguindanao",
+      "pct": 1.9
+    },
+    {
+      "name": "Pangasinan",
+      "pct": 1.9
+    },
+    {
+      "name": "foreign ethnicities",
+      "pct": 0.2
     }
   ],
   "SG": [
     {
-      "name": "Chinese Singaporeans",
-      "pct": 74.3
+      "name": "Chinese",
+      "pct": 74.2
     },
     {
-      "name": "Malays",
-      "pct": 13.4
+      "name": "Malay",
+      "pct": 13.7
     },
     {
-      "name": "Indian Singaporeans",
-      "pct": 9.1
+      "name": "Indian",
+      "pct": 8.9
+    },
+    {
+      "name": "other",
+      "pct": 3.2
     }
   ],
-  "AM": [
+  "TH": [
     {
-      "name": "Armenians",
-      "pct": 98.1
+      "name": "Thai",
+      "pct": 97.5
     },
     {
-      "name": "Yazidis",
+      "name": "Burmese",
+      "pct": 1.3
+    },
+    {
+      "name": "other",
+      "pct": 1.1
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.1
+    }
+  ],
+  "TW": [
+    {
+      "name": "more than",
+      "pct": 95
+    },
+    {
+      "name": "indigenous Malayo-Polynesian peoples",
+      "pct": 2.3
+    }
+  ],
+  "VN": [
+    {
+      "name": "other",
+      "pct": 5.5
+    },
+    {
+      "name": "Tay",
+      "pct": 1.9
+    },
+    {
+      "name": "Thai",
+      "pct": 1.9
+    },
+    {
+      "name": "Muong",
+      "pct": 1.5
+    },
+    {
+      "name": "Khmer",
+      "pct": 1.4
+    },
+    {
+      "name": "Mong",
+      "pct": 1.4
+    },
+    {
+      "name": "Nung",
       "pct": 1.1
     }
   ],
-  "AU": [
+  "AL": [
     {
-      "name": "English people",
-      "pct": 25.9
+      "name": "Albanian",
+      "pct": 82.6
     },
     {
-      "name": "Australians",
-      "pct": 25.4
+      "name": "unspecified",
+      "pct": 15.5
     },
     {
-      "name": "Irish people",
-      "pct": 7.5
+      "name": "other",
+      "pct": 1
     },
     {
-      "name": "Scottish people",
-      "pct": 6.4
+      "name": "Greek",
+      "pct": 0.9
+    }
+  ],
+  "AD": [
+    {
+      "name": "Spanish",
+      "pct": 34.3
     },
     {
-      "name": "Italians",
-      "pct": 3.3
+      "name": "Andorran",
+      "pct": 32.1
     },
     {
-      "name": "Germans",
-      "pct": 3.2
+      "name": "other",
+      "pct": 18
     },
     {
-      "name": "Chinese people",
-      "pct": 3.1
+      "name": "Portuguese",
+      "pct": 10
     },
     {
-      "name": "Greeks",
-      "pct": 1.4
+      "name": "French",
+      "pct": 5.6
+    }
+  ],
+  "AT": [
+    {
+      "name": "Austrian",
+      "pct": 80.8
     },
     {
-      "name": "Indians",
-      "pct": 1.4
+      "name": "other",
+      "pct": 10
+    },
+    {
+      "name": "German",
+      "pct": 2.6
+    },
+    {
+      "name": "Bosnian and Herzegovinian",
+      "pct": 1.9
+    },
+    {
+      "name": "Turkish",
+      "pct": 1.8
+    },
+    {
+      "name": "Serbian",
+      "pct": 1.6
+    },
+    {
+      "name": "Romanian",
+      "pct": 1.3
+    }
+  ],
+  "BE": [
+    {
+      "name": "Belgian",
+      "pct": 75.2
+    },
+    {
+      "name": "other",
+      "pct": 10.6
+    },
+    {
+      "name": "Italian",
+      "pct": 4.1
+    },
+    {
+      "name": "Moroccan",
+      "pct": 3.7
+    },
+    {
+      "name": "French",
+      "pct": 2.4
+    },
+    {
+      "name": "Turkish",
+      "pct": 2
     },
     {
       "name": "Dutch",
+      "pct": 2
+    }
+  ],
+  "BA": [
+    {
+      "name": "Bosniak",
+      "pct": 50.1
+    },
+    {
+      "name": "Serb",
+      "pct": 30.8
+    },
+    {
+      "name": "Croat",
+      "pct": 15.4
+    },
+    {
+      "name": "other",
+      "pct": 2.7
+    },
+    {
+      "name": "no answer",
+      "pct": 1
+    }
+  ],
+  "BY": [
+    {
+      "name": "Belarusian",
+      "pct": 83.7
+    },
+    {
+      "name": "Russian",
+      "pct": 8.3
+    },
+    {
+      "name": "Polish",
+      "pct": 3.1
+    },
+    {
+      "name": "other",
+      "pct": 2.4
+    },
+    {
+      "name": "Ukrainian",
+      "pct": 1.7
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.9
+    }
+  ],
+  "BG": [
+    {
+      "name": "Bulgarian",
+      "pct": 78.5
+    },
+    {
+      "name": "unspecified",
+      "pct": 9.4
+    },
+    {
+      "name": "Turkish",
+      "pct": 7.8
+    },
+    {
+      "name": "Roma",
+      "pct": 4.1
+    },
+    {
+      "name": "other",
+      "pct": 1.2
+    }
+  ],
+  "CY": [
+    {
+      "name": "Greek",
+      "pct": 98.8
+    },
+    {
+      "name": "other",
+      "pct": 1
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.2
+    }
+  ],
+  "DK": [
+    {
+      "name": "other",
+      "pct": 14.7
+    },
+    {
+      "name": "Turkish",
+      "pct": 1.1
+    }
+  ],
+  "IE": [
+    {
+      "name": "Irish",
+      "pct": 76.6
+    },
+    {
+      "name": "other White",
+      "pct": 9.9
+    },
+    {
+      "name": "Asian",
+      "pct": 3.3
+    },
+    {
+      "name": "unspecified",
+      "pct": 2.6
+    },
+    {
+      "name": "Black",
+      "pct": 1.5
+    },
+    {
+      "name": "Irish travelers",
+      "pct": 0.6
+    }
+  ],
+  "EE": [
+    {
+      "name": "Estonian",
+      "pct": 69.1
+    },
+    {
+      "name": "Russian",
+      "pct": 23.7
+    },
+    {
+      "name": "other",
+      "pct": 4.6
+    },
+    {
+      "name": "Ukrainian",
+      "pct": 2.1
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.5
+    }
+  ],
+  "CZ": [
+    {
+      "name": "Czech",
+      "pct": 57.3
+    },
+    {
+      "name": "unspecified",
+      "pct": 31.6
+    },
+    {
+      "name": "other",
+      "pct": 7.7
+    },
+    {
+      "name": "Moravian",
+      "pct": 3.4
+    }
+  ],
+  "DE": [
+    {
+      "name": "German",
+      "pct": 85.4
+    },
+    {
+      "name": "unspecified",
+      "pct": 8.3
+    },
+    {
+      "name": "Turkish",
+      "pct": 1.8
+    },
+    {
+      "name": "Ukrainian",
+      "pct": 1.4
+    },
+    {
+      "name": "Syrian",
+      "pct": 1.1
+    },
+    {
+      "name": "Romanian",
+      "pct": 1
+    },
+    {
+      "name": "Poland",
+      "pct": 1
+    }
+  ],
+  "GR": [
+    {
+      "name": "Greek",
+      "pct": 91.6
+    },
+    {
+      "name": "Albanian",
+      "pct": 4.4
+    },
+    {
+      "name": "other",
+      "pct": 4
+    }
+  ],
+  "HR": [
+    {
+      "name": "Croat",
+      "pct": 91.6
+    },
+    {
+      "name": "other",
+      "pct": 3.9
+    },
+    {
+      "name": "Serb",
+      "pct": 3.2
+    },
+    {
+      "name": "unspecified",
+      "pct": 1.3
+    }
+  ],
+  "HU": [
+    {
+      "name": "Hungarian",
+      "pct": 84.3
+    },
+    {
+      "name": "unspecified",
+      "pct": 13.7
+    },
+    {
+      "name": "Romani",
+      "pct": 2.1
+    },
+    {
+      "name": "other",
       "pct": 1.2
     },
     {
-      "name": "Indigenous Australians",
+      "name": "German",
+      "pct": 1
+    }
+  ],
+  "IS": [
+    {
+      "name": "Icelandic",
+      "pct": 78.7
+    },
+    {
+      "name": "other",
+      "pct": 13.5
+    },
+    {
+      "name": "Polish",
+      "pct": 5.8
+    },
+    {
+      "name": "Danish",
+      "pct": 1
+    },
+    {
+      "name": "Ukrainian",
+      "pct": 1
+    }
+  ],
+  "XK": [
+    {
+      "name": "Albanians",
+      "pct": 92.9
+    },
+    {
+      "name": "Bosniaks",
+      "pct": 1.6
+    },
+    {
+      "name": "Serbs",
+      "pct": 1.5
+    },
+    {
+      "name": "Turk",
+      "pct": 1.1
+    },
+    {
+      "name": "Ashkali",
+      "pct": 0.9
+    },
+    {
+      "name": "Egyptian",
+      "pct": 0.7
+    },
+    {
+      "name": "Gorani",
+      "pct": 0.6
+    },
+    {
+      "name": "Romani",
       "pct": 0.5
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.2
+    }
+  ],
+  "LV": [
+    {
+      "name": "Latvian",
+      "pct": 62.7
+    },
+    {
+      "name": "Russian",
+      "pct": 24.5
+    },
+    {
+      "name": "Belarusian",
+      "pct": 3.1
+    },
+    {
+      "name": "unspecified",
+      "pct": 2.6
+    },
+    {
+      "name": "Ukrainian",
+      "pct": 2.2
+    },
+    {
+      "name": "Polish",
+      "pct": 2
+    },
+    {
+      "name": "other",
+      "pct": 1.8
+    },
+    {
+      "name": "Lithuanian",
+      "pct": 1.1
+    }
+  ],
+  "LT": [
+    {
+      "name": "Lithuanian",
+      "pct": 84.6
+    },
+    {
+      "name": "Polish",
+      "pct": 6.5
+    },
+    {
+      "name": "Russian",
+      "pct": 5
+    },
+    {
+      "name": "unspecified",
+      "pct": 1.8
+    },
+    {
+      "name": "other",
+      "pct": 1.1
+    },
+    {
+      "name": "Belarusian",
+      "pct": 1
+    }
+  ],
+  "SK": [
+    {
+      "name": "Slovak",
+      "pct": 83.8
+    },
+    {
+      "name": "Hungarian",
+      "pct": 7.8
+    },
+    {
+      "name": "unspecified",
+      "pct": 5.4
+    },
+    {
+      "name": "other",
+      "pct": 1.8
+    },
+    {
+      "name": "Romani",
+      "pct": 1.2
+    }
+  ],
+  "LI": [
+    {
+      "name": "Liechtensteiner",
+      "pct": 65.6
+    },
+    {
+      "name": "other",
+      "pct": 11.4
+    },
+    {
+      "name": "Swiss",
+      "pct": 9.6
+    },
+    {
+      "name": "Austrian",
+      "pct": 5.8
+    },
+    {
+      "name": "German",
+      "pct": 4.5
+    },
+    {
+      "name": "Italian",
+      "pct": 3.1
+    }
+  ],
+  "LU": [
+    {
+      "name": "Luxembourger",
+      "pct": 52.9
+    },
+    {
+      "name": "Portuguese",
+      "pct": 14.5
+    },
+    {
+      "name": "other",
+      "pct": 14
+    },
+    {
+      "name": "French",
+      "pct": 7.6
+    },
+    {
+      "name": "Italian",
+      "pct": 3.7
+    },
+    {
+      "name": "Belgian",
+      "pct": 3
+    },
+    {
+      "name": "German",
+      "pct": 2
+    },
+    {
+      "name": "Spanish",
+      "pct": 1.3
+    },
+    {
+      "name": "Romania",
+      "pct": 1
+    }
+  ],
+  "MD": [
+    {
+      "name": "Moldovan",
+      "pct": 75.1
+    },
+    {
+      "name": "Romanian",
+      "pct": 7
+    },
+    {
+      "name": "Ukrainian",
+      "pct": 6.6
+    },
+    {
+      "name": "Gagauz",
+      "pct": 4.6
+    },
+    {
+      "name": "Russian",
+      "pct": 4.1
+    },
+    {
+      "name": "Bulgarian",
+      "pct": 1.9
+    },
+    {
+      "name": "other",
+      "pct": 0.8
+    }
+  ],
+  "MC": [
+    {
+      "name": "Monegasque",
+      "pct": 32.1
+    },
+    {
+      "name": "French",
+      "pct": 19.9
+    },
+    {
+      "name": "other",
+      "pct": 16.6
+    },
+    {
+      "name": "Italian",
+      "pct": 15.3
+    },
+    {
+      "name": "British",
+      "pct": 5
+    },
+    {
+      "name": "Belgian",
+      "pct": 2.3
+    },
+    {
+      "name": "Swiss",
+      "pct": 2
+    },
+    {
+      "name": "German",
+      "pct": 1.9
+    },
+    {
+      "name": "Russian",
+      "pct": 1.8
+    },
+    {
+      "name": "American",
+      "pct": 1.1
+    },
+    {
+      "name": "Dutch",
+      "pct": 1.1
+    },
+    {
+      "name": "Moroccan",
+      "pct": 1
+    }
+  ],
+  "NL": [
+    {
+      "name": "Dutch",
+      "pct": 75.4
+    },
+    {
+      "name": "other",
+      "pct": 9.3
+    },
+    {
+      "name": "Turkish",
+      "pct": 2.4
+    },
+    {
+      "name": "Moroccan",
+      "pct": 2.4
+    },
+    {
+      "name": "Surinamese",
+      "pct": 2.1
+    },
+    {
+      "name": "Indonesian",
+      "pct": 2
+    }
+  ],
+  "NO": [
+    {
+      "name": "Norwegian",
+      "pct": 81.5
+    },
+    {
+      "name": "other",
+      "pct": 9.6
+    },
+    {
+      "name": "other European",
+      "pct": 8.9
+    }
+  ],
+  "PL": [
+    {
+      "name": "Polish",
+      "pct": 96.9
+    },
+    {
+      "name": "other and unspecified",
+      "pct": 1.7
+    },
+    {
+      "name": "Silesian",
+      "pct": 1.1
+    },
+    {
+      "name": "German",
+      "pct": 0.2
+    },
+    {
+      "name": "Ukrainian",
+      "pct": 0.1
+    }
+  ],
+  "PT": [
+    {
+      "name": "Portuguese",
+      "pct": 95
+    },
+    {
+      "name": "and other foreign born",
+      "pct": 5
+    }
+  ],
+  "RS": [
+    {
+      "name": "Serb",
+      "pct": 83.3
+    },
+    {
+      "name": "other",
+      "pct": 5.7
+    },
+    {
+      "name": "Hungarian",
+      "pct": 3.5
+    },
+    {
+      "name": "undeclared or unknown",
+      "pct": 3.4
+    },
+    {
+      "name": "Romani",
+      "pct": 2.1
+    },
+    {
+      "name": "Bosniak",
+      "pct": 2
+    }
+  ],
+  "RO": [
+    {
+      "name": "Romanian",
+      "pct": 89.3
+    },
+    {
+      "name": "Hungarian",
+      "pct": 6
+    },
+    {
+      "name": "Romani",
+      "pct": 3.4
+    },
+    {
+      "name": "other",
+      "pct": 0.9
+    },
+    {
+      "name": "Ukrainian",
+      "pct": 0.3
+    },
+    {
+      "name": "German",
+      "pct": 0.1
+    }
+  ],
+  "SI": [
+    {
+      "name": "Slovene",
+      "pct": 83.1
+    },
+    {
+      "name": "other or unspecified",
+      "pct": 12
+    },
+    {
+      "name": "Serb",
+      "pct": 2
+    },
+    {
+      "name": "Croat",
+      "pct": 1.8
+    },
+    {
+      "name": "Bosniak",
+      "pct": 1.1
+    }
+  ],
+  "ES": [
+    {
+      "name": "Spanish",
+      "pct": 84.8
+    },
+    {
+      "name": "other",
+      "pct": 12.3
+    },
+    {
+      "name": "Moroccan",
+      "pct": 1.7
+    },
+    {
+      "name": "Romanian",
+      "pct": 1.2
+    }
+  ],
+  "SE": [
+    {
+      "name": "Swedish",
+      "pct": 79.6
+    },
+    {
+      "name": "other",
+      "pct": 15.8
+    },
+    {
+      "name": "Syrian",
+      "pct": 1.9
+    },
+    {
+      "name": "Iraqi",
+      "pct": 1.4
+    },
+    {
+      "name": "Finnish",
+      "pct": 1.3
+    }
+  ],
+  "CH": [
+    {
+      "name": "Swiss",
+      "pct": 69.2
+    },
+    {
+      "name": "other",
+      "pct": 16.7
+    },
+    {
+      "name": "German",
+      "pct": 4.2
+    },
+    {
+      "name": "Italian",
+      "pct": 3.2
+    },
+    {
+      "name": "Portuguese",
+      "pct": 2.5
+    },
+    {
+      "name": "French",
+      "pct": 2.1
+    },
+    {
+      "name": "Kosovan",
+      "pct": 1.1
+    },
+    {
+      "name": "Turkish",
+      "pct": 1
+    }
+  ],
+  "GB": [
+    {
+      "name": "White",
+      "pct": 87.2
+    },
+    {
+      "name": "other",
+      "pct": 3.7
+    },
+    {
+      "name": "black British",
+      "pct": 3
+    },
+    {
+      "name": "Indian",
+      "pct": 2.3
+    },
+    {
+      "name": "mixed",
+      "pct": 2
+    },
+    {
+      "name": "Pakistani",
+      "pct": 1.9
+    }
+  ],
+  "UA": [
+    {
+      "name": "Ukrainian",
+      "pct": 77.8
+    },
+    {
+      "name": "Russian",
+      "pct": 17.3
+    },
+    {
+      "name": "other",
+      "pct": 1.8
+    },
+    {
+      "name": "Belarusian",
+      "pct": 0.6
+    },
+    {
+      "name": "Moldovan",
+      "pct": 0.5
+    },
+    {
+      "name": "Crimean Tatar",
+      "pct": 0.5
+    },
+    {
+      "name": "Bulgarian",
+      "pct": 0.4
+    },
+    {
+      "name": "Hungarian",
+      "pct": 0.3
+    },
+    {
+      "name": "Romanian",
+      "pct": 0.3
+    },
+    {
+      "name": "Polish",
+      "pct": 0.3
+    },
+    {
+      "name": "Jewish",
+      "pct": 0.2
+    }
+  ],
+  "AE": [
+    {
+      "name": "South Asian",
+      "pct": 59.4
+    },
+    {
+      "name": "Emirati",
+      "pct": 11.6
+    },
+    {
+      "name": "Egyptian",
+      "pct": 10.2
+    },
+    {
+      "name": "Bangladeshi",
+      "pct": 9.5
+    },
+    {
+      "name": "Pakistani",
+      "pct": 9.4
+    },
+    {
+      "name": "Filipino",
+      "pct": 6.1
+    },
+    {
+      "name": "other",
+      "pct": 2.3
+    }
+  ],
+  "BH": [
+    {
+      "name": "Bahraini",
+      "pct": 47.4
+    },
+    {
+      "name": "Asian",
+      "pct": 43.4
+    },
+    {
+      "name": "other Arab",
+      "pct": 4.9
+    },
+    {
+      "name": "African",
+      "pct": 1.4
+    },
+    {
+      "name": "North American",
+      "pct": 1.1
+    },
+    {
+      "name": "Gulf Co-operative countries",
+      "pct": 0.9
+    },
+    {
+      "name": "European",
+      "pct": 0.8
+    },
+    {
+      "name": "other",
+      "pct": 0.1
+    }
+  ],
+  "IL": [
+    {
+      "name": "of which Israel-born",
+      "pct": 79.7
+    },
+    {
+      "name": "Jewish",
+      "pct": 73.5
+    },
+    {
+      "name": "Arab",
+      "pct": 21.1
+    },
+    {
+      "name": "Oceania-born",
+      "pct": 14.3
+    },
+    {
+      "name": "other",
+      "pct": 5.4
+    },
+    {
+      "name": "Africa-born",
+      "pct": 3.9
+    },
+    {
+      "name": "Asia-born",
+      "pct": 2.1
+    }
+  ],
+  "IQ": [
+    {
+      "name": "other",
+      "pct": 5
+    }
+  ],
+  "JO": [
+    {
+      "name": "Jordanian",
+      "pct": 69.3
+    },
+    {
+      "name": "Syrian",
+      "pct": 13.3
+    },
+    {
+      "name": "Palestinian",
+      "pct": 6.7
+    },
+    {
+      "name": "Egyptian",
+      "pct": 6.7
+    },
+    {
+      "name": "other",
+      "pct": 2.6
+    },
+    {
+      "name": "Iraqi",
+      "pct": 1.4
+    }
+  ],
+  "KW": [
+    {
+      "name": "Asian",
+      "pct": 40.3
+    },
+    {
+      "name": "Kuwaiti",
+      "pct": 30.4
+    },
+    {
+      "name": "other Arab",
+      "pct": 27.4
+    },
+    {
+      "name": "African",
+      "pct": 1
+    },
+    {
+      "name": "other",
+      "pct": 0.9
+    }
+  ],
+  "LB": [
+    {
+      "name": "Arab",
+      "pct": 95
+    },
+    {
+      "name": "Armenian",
+      "pct": 4
+    },
+    {
+      "name": "other",
+      "pct": 1
+    }
+  ],
+  "QA": [
+    {
+      "name": "non-Qatari",
+      "pct": 88.4
+    },
+    {
+      "name": "Qatari",
+      "pct": 11.6
+    }
+  ],
+  "SA": [
+    {
+      "name": "Arab",
+      "pct": 90
+    },
+    {
+      "name": "Afro-Asian",
+      "pct": 10
+    }
+  ],
+  "TR": [
+    {
+      "name": "Kurdish",
+      "pct": 19
+    }
+  ],
+  "BD": [
+    {
+      "name": "Bengali at least",
+      "pct": 99
+    },
+    {
+      "name": "other indigenous ethnic groups",
+      "pct": 1
+    }
+  ],
+  "CA": [
+    {
+      "name": "Canadian",
+      "pct": 15.6
+    },
+    {
+      "name": "English",
+      "pct": 14.7
+    },
+    {
+      "name": "Scottish",
+      "pct": 12.1
+    },
+    {
+      "name": "Irish",
+      "pct": 12.1
+    },
+    {
+      "name": "French",
+      "pct": 11
+    },
+    {
+      "name": "German",
+      "pct": 8.1
+    },
+    {
+      "name": "Chinese",
+      "pct": 4.7
+    },
+    {
+      "name": "Italian",
+      "pct": 4.3
+    },
+    {
+      "name": "Indian",
+      "pct": 3.7
+    },
+    {
+      "name": "Ukrainian",
+      "pct": 3.5
+    },
+    {
+      "name": "First Nations",
+      "pct": 1.7
+    },
+    {
+      "name": "Metis",
+      "pct": 1.5
+    }
+  ],
+  "GL": [
+    {
+      "name": "Greenlandic",
+      "pct": 88.1
+    },
+    {
+      "name": "Danish",
+      "pct": 7.1
+    },
+    {
+      "name": "and other",
+      "pct": 2.3
+    },
+    {
+      "name": "Filipino",
+      "pct": 1.6
+    },
+    {
+      "name": "other Nordic peoples",
+      "pct": 0.9
+    }
+  ],
+  "MX": [
+    {
+      "name": "predominantly Indigenous",
+      "pct": 21
+    },
+    {
+      "name": "other",
+      "pct": 10
+    },
+    {
+      "name": "Indigenous",
+      "pct": 7
+    }
+  ],
+  "US": [
+    {
+      "name": "White",
+      "pct": 61.6
+    },
+    {
+      "name": "Black or African American",
+      "pct": 12.4
+    },
+    {
+      "name": "two or more races",
+      "pct": 10.2
+    },
+    {
+      "name": "other",
+      "pct": 8.4
+    },
+    {
+      "name": "Asian",
+      "pct": 6
+    },
+    {
+      "name": "Indigenous and Alaska native",
+      "pct": 1.1
+    },
+    {
+      "name": "Hawaiian and Other Pacific Islander",
+      "pct": 0.2
     }
   ],
   "AR": [
     {
-      "name": "European people",
-      "pct": 97.2
-    },
-    {
-      "name": "indigenous peoples in Argentina",
+      "name": "Indigenous",
       "pct": 2.4
     },
     {
-      "name": "Afro-Argentines",
+      "name": "African descent",
       "pct": 0.4
+    }
+  ],
+  "BO": [
+    {
+      "name": "Indigenous",
+      "pct": 20
+    },
+    {
+      "name": "White",
+      "pct": 5
+    },
+    {
+      "name": "unspecified",
+      "pct": 3
+    },
+    {
+      "name": "Chola",
+      "pct": 2
+    },
+    {
+      "name": "African descent",
+      "pct": 1
+    },
+    {
+      "name": "other",
+      "pct": 1
+    }
+  ],
+  "BR": [
+    {
+      "name": "mixed",
+      "pct": 45.3
+    },
+    {
+      "name": "White",
+      "pct": 43.5
+    },
+    {
+      "name": "Black",
+      "pct": 10.2
+    },
+    {
+      "name": "Indigenous",
+      "pct": 0.6
+    },
+    {
+      "name": "Asian",
+      "pct": 0.4
+    }
+  ],
+  "CL": [
+    {
+      "name": "White and non-Indigenous",
+      "pct": 88.9
+    },
+    {
+      "name": "Mapuche",
+      "pct": 9.1
+    },
+    {
+      "name": "other Indigenous groups",
+      "pct": 1
+    },
+    {
+      "name": "Aymara",
+      "pct": 0.7
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.3
+    }
+  ],
+  "CO": [
+    {
+      "name": "Mestizo and White",
+      "pct": 87.6
+    },
+    {
+      "name": "Indigenous",
+      "pct": 4.3
+    },
+    {
+      "name": "unspecified",
+      "pct": 1.4
+    }
+  ],
+  "EC": [
+    {
+      "name": "Montubio",
+      "pct": 7.7
+    },
+    {
+      "name": "Indigenous",
+      "pct": 7.7
+    },
+    {
+      "name": "White",
+      "pct": 2.2
+    },
+    {
+      "name": "Afroecuadorian",
+      "pct": 2
+    },
+    {
+      "name": "Mulatto",
+      "pct": 1.4
+    },
+    {
+      "name": "Black",
+      "pct": 1.3
+    },
+    {
+      "name": "other",
+      "pct": 0.1
+    }
+  ],
+  "FK": [
+    {
+      "name": "Falkland Islander",
+      "pct": 48.3
+    },
+    {
+      "name": "British",
+      "pct": 23.1
+    },
+    {
+      "name": "other",
+      "pct": 8.5
+    },
+    {
+      "name": "St. Helenian",
+      "pct": 7.5
+    },
+    {
+      "name": "mixed",
+      "pct": 6
+    },
+    {
+      "name": "Chilean",
+      "pct": 4.6
+    },
+    {
+      "name": "unspecified",
+      "pct": 2
+    }
+  ],
+  "GY": [
+    {
+      "name": "East Indian",
+      "pct": 39.8
+    },
+    {
+      "name": "African descent",
+      "pct": 29.3
+    },
+    {
+      "name": "mixed",
+      "pct": 19.9
+    },
+    {
+      "name": "Indigenous",
+      "pct": 10.5
+    },
+    {
+      "name": "other",
+      "pct": 0.5
+    }
+  ],
+  "PY": [
+    {
+      "name": "other",
+      "pct": 5
+    }
+  ],
+  "PE": [
+    {
+      "name": "Indigenous",
+      "pct": 25.8
+    },
+    {
+      "name": "White",
+      "pct": 5.9
+    },
+    {
+      "name": "African descent",
+      "pct": 3.6
+    },
+    {
+      "name": "unspecified",
+      "pct": 3.3
+    }
+  ],
+  "UY": [
+    {
+      "name": "White",
+      "pct": 87.7
+    },
+    {
+      "name": "none or unspecified",
+      "pct": 5
+    },
+    {
+      "name": "Black",
+      "pct": 4.6
+    },
+    {
+      "name": "Indigenous",
+      "pct": 2.4
+    },
+    {
+      "name": "other",
+      "pct": 0.3
+    }
+  ],
+  "BT": [
+    {
+      "name": "ethnic Nepali",
+      "pct": 35
+    },
+    {
+      "name": "indigenous or migrant tribes",
+      "pct": 15
+    }
+  ],
+  "LK": [
+    {
+      "name": "Sinhalese",
+      "pct": 74.9
+    },
+    {
+      "name": "Sri Lankan Tamil",
+      "pct": 11.2
+    },
+    {
+      "name": "Sri Lankan Moors",
+      "pct": 9.2
+    },
+    {
+      "name": "Indian Tamil",
+      "pct": 4.2
+    },
+    {
+      "name": "other",
+      "pct": 0.5
     }
   ],
   "IN": [
     {
-      "name": "Indo-Aryan peoples",
+      "name": "Indo-Aryan",
       "pct": 72
     },
     {
-      "name": "Dravidian people",
+      "name": "Dravidian",
       "pct": 25
+    },
+    {
+      "name": "and other",
+      "pct": 3
     }
   ],
-  "VE": [
+  "NP": [
     {
-      "name": "Arab Venezuelan",
-      "pct": null
+      "name": "other",
+      "pct": 20
     },
     {
-      "name": "Koreans in Venezuela",
-      "pct": null
+      "name": "Chhettri",
+      "pct": 16.5
     },
     {
-      "name": "Chinese Venezuelans",
-      "pct": null
+      "name": "Brahman-Hill",
+      "pct": 11.3
     },
     {
-      "name": "Lebanese Venezuelans",
-      "pct": null
+      "name": "Magar",
+      "pct": 6.9
     },
     {
-      "name": "Indians in Venezuela",
-      "pct": null
+      "name": "Tharu",
+      "pct": 6.2
     },
     {
-      "name": "White Venezuelans",
-      "pct": null
+      "name": "Tamang",
+      "pct": 5.6
     },
     {
-      "name": "Afro-Venezuelans",
-      "pct": null
+      "name": "Bishwokarma",
+      "pct": 5
     },
     {
-      "name": "indigenous peoples in Venezuela",
-      "pct": null
+      "name": "Musalman",
+      "pct": 4.9
     },
     {
-      "name": "mestizo Venezuelans",
-      "pct": null
+      "name": "Newar",
+      "pct": 4.6
     },
     {
-      "name": "Japanese Venezuelans",
-      "pct": null
-    }
-  ],
-  "IR": [
-    {
-      "name": "Baloch",
-      "pct": null
+      "name": "Yadav",
+      "pct": 4.2
     },
     {
-      "name": "Iranian Arabs",
-      "pct": null
+      "name": "Rai",
+      "pct": 2.2
     },
     {
-      "name": "Lurs",
-      "pct": null
+      "name": "Pariyar",
+      "pct": 1.9
     },
     {
-      "name": "Iranian Turkmen",
-      "pct": null
+      "name": "Gurung",
+      "pct": 1.9
     },
     {
-      "name": "Kurds",
-      "pct": null
+      "name": "Thakuri",
+      "pct": 1.7
     },
     {
-      "name": "Iranian Azerbaijanis",
-      "pct": null
+      "name": "Mijar",
+      "pct": 1.6
     },
     {
-      "name": "Turkic peoples",
-      "pct": null
+      "name": "Teli",
+      "pct": 1.5
     },
     {
-      "name": "Persians",
-      "pct": null
+      "name": "Limbu",
+      "pct": 1.4
+    },
+    {
+      "name": "Ram",
+      "pct": 1.4
+    },
+    {
+      "name": "Kushwaha",
+      "pct": 1.2
     }
   ],
   "PK": [
     {
-      "name": "Punjabis",
+      "name": "Punjabi",
       "pct": 44.7
     },
     {
-      "name": "Pashtuns",
-      "pct": 15.4
-    },
-    {
-      "name": "Sindhis",
+      "name": "Sindhi",
       "pct": 14.1
     },
     {
-      "name": "Saraiki people",
+      "name": "Saraiki",
       "pct": 8.4
     },
     {
-      "name": "Muhajir",
+      "name": "Muhajirs",
       "pct": 7.6
+    },
+    {
+      "name": "other",
+      "pct": 6.3
     },
     {
       "name": "Baloch",
       "pct": 3.6
-    }
-  ],
-  "AO": [
-    {
-      "name": "Ovimbundu people",
-      "pct": 37
-    },
-    {
-      "name": "Mbundu people",
-      "pct": 25
-    },
-    {
-      "name": "Kongo people",
-      "pct": 13
-    },
-    {
-      "name": "Mestiço",
-      "pct": 2
-    },
-    {
-      "name": "European people",
-      "pct": 1
-    }
-  ],
-  "TN": [
-    {
-      "name": "Arabs",
-      "pct": 98
-    },
-    {
-      "name": "Jewish people",
-      "pct": 1
-    },
-    {
-      "name": "European people",
-      "pct": 1
     }
   ]
 }

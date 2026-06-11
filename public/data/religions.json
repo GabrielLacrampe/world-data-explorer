@@ -1,482 +1,7618 @@
 {
-  "MO": [
+  "AF": [
     {
-      "name": "Chinese folk religion",
-      "pct": 58.7
+      "name": "Muslims",
+      "pct": 99
     },
     {
-      "name": "Buddhism",
-      "pct": 17.3
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Christianity",
-      "pct": 7
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
     }
   ],
-  "BA": [
+  "AL": [
     {
-      "name": "Catholicism",
-      "pct": null
+      "name": "Muslims",
+      "pct": 82.1
     },
     {
-      "name": "Islam",
-      "pct": null
+      "name": "Christians",
+      "pct": 16.7
     },
     {
-      "name": "Judaism",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Eastern Orthodoxy",
-      "pct": null
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
     }
   ],
-  "GE": [
+  "DZ": [
     {
-      "name": "Georgian Orthodox Church",
-      "pct": null
+      "name": "Muslims",
+      "pct": 97.9
     },
     {
-      "name": "Eastern Orthodoxy",
-      "pct": null
+      "name": "Unaffiliated",
+      "pct": 1.8
     },
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ],
-  "MT": [
+  "AS": [
     {
-      "name": "Hinduism",
-      "pct": null
+      "name": "Christians",
+      "pct": 98.3
     },
     {
-      "name": "Islam",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
     }
   ],
-  "NP": [
+  "AD": [
     {
-      "name": "Islam",
-      "pct": null
+      "name": "Christians",
+      "pct": 89.5
     },
     {
-      "name": "Bon",
-      "pct": null
+      "name": "Unaffiliated",
+      "pct": 8.8
     },
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Hinduism",
-      "pct": null
+      "name": "Folk Religions",
+      "pct": 1
     },
     {
-      "name": "Kirat Mundhum",
-      "pct": null
+      "name": "Hindus",
+      "pct": 1
     },
     {
-      "name": "Buddhism",
-      "pct": null
+      "name": "Jews",
+      "pct": 1
     },
     {
-      "name": "Prakṛti",
-      "pct": null
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ],
-  "SA": [
+  "AO": [
     {
-      "name": "Islam",
-      "pct": null
+      "name": "Christians",
+      "pct": 90.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 5.2
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 4.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ],
-  "HK": [
+  "AI": [
     {
-      "name": "Hinduism",
-      "pct": null
+      "name": "Christians",
+      "pct": 90.6
     },
     {
-      "name": "Judaism",
-      "pct": null
+      "name": "Unaffiliated",
+      "pct": 4
     },
     {
-      "name": "Sikhism",
-      "pct": null
+      "name": "Folk Religions",
+      "pct": 2.9
     },
     {
-      "name": "Confucianism",
-      "pct": null
+      "name": "Other Religions",
+      "pct": 1.6
     },
     {
-      "name": "Buddhism",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Islam",
-      "pct": null
+      "name": "Hindus",
+      "pct": 1
     },
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Jews",
+      "pct": 1
     },
     {
-      "name": "Taoism",
-      "pct": null
+      "name": "Muslims",
+      "pct": 1
     }
   ],
-  "TW": [
+  "AG": [
     {
-      "name": "Buddhism",
-      "pct": null
+      "name": "Christians",
+      "pct": 93
     },
     {
-      "name": "Islam",
-      "pct": null
+      "name": "Folk Religions",
+      "pct": 3.6
     },
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Unaffiliated",
+      "pct": 1.7
     },
     {
-      "name": "Yiguandao",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Chinese folk religion",
-      "pct": null
+      "name": "Hindus",
+      "pct": 1
     },
     {
-      "name": "Taoism",
-      "pct": null
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ],
-  "KR": [
+  "AR": [
     {
-      "name": "Protestantism",
-      "pct": null
+      "name": "Christians",
+      "pct": 85.4
     },
     {
-      "name": "Catholicism",
-      "pct": null
+      "name": "Unaffiliated",
+      "pct": 12.1
     },
     {
-      "name": "Buddhism",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "AM": [
+    {
+      "name": "Christians",
+      "pct": 98.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "AW": [
+    {
+      "name": "Christians",
+      "pct": 91.6
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 6.2
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "AU": [
+    {
+      "name": "Christians",
+      "pct": 61.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 28.6
+    },
+    {
+      "name": "Muslims",
+      "pct": 3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 2.9
+    },
+    {
+      "name": "Hindus",
+      "pct": 1.7
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "AT": [
+    {
+      "name": "Christians",
+      "pct": 78.4
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 14.5
+    },
+    {
+      "name": "Muslims",
+      "pct": 6.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "AZ": [
+    {
+      "name": "Muslims",
+      "pct": 97.3
+    },
+    {
+      "name": "Christians",
+      "pct": 2.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "BS": [
+    {
+      "name": "Christians",
+      "pct": 96.2
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "BH": [
+    {
+      "name": "Muslims",
+      "pct": 69.7
+    },
+    {
+      "name": "Christians",
+      "pct": 14.1
+    },
+    {
+      "name": "Hindus",
+      "pct": 10.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 3.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ],
   "BD": [
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Muslims",
+      "pct": 90.8
     },
     {
-      "name": "Islam",
-      "pct": null
+      "name": "Hindus",
+      "pct": 8.2
     },
     {
-      "name": "Buddhism",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Hinduism",
-      "pct": null
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "BB": [
+    {
+      "name": "Christians",
+      "pct": 95.2
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.9
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    }
+  ],
+  "BY": [
+    {
+      "name": "Christians",
+      "pct": 70.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 28.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "BE": [
+    {
+      "name": "Christians",
+      "pct": 60.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 31
+    },
+    {
+      "name": "Muslims",
+      "pct": 7.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "BZ": [
+    {
+      "name": "Christians",
+      "pct": 87.6
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 9
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.5
+    },
+    {
+      "name": "Jews",
+      "pct": 1.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "BJ": [
+    {
+      "name": "Christians",
+      "pct": 52.2
+    },
+    {
+      "name": "Muslims",
+      "pct": 24.6
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 17.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 5.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "BM": [
+    {
+      "name": "Christians",
+      "pct": 75
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 19.4
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 3
+    },
+    {
+      "name": "Muslims",
+      "pct": 1.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ],
   "BT": [
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 74.7
     },
     {
-      "name": "Mahāyāna",
-      "pct": null
+      "name": "Hindus",
+      "pct": 22.5
     },
     {
-      "name": "Hinduism",
-      "pct": null
+      "name": "Folk Religions",
+      "pct": 1.9
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "BO": [
+    {
+      "name": "Christians",
+      "pct": 94
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 4.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "BA": [
+    {
+      "name": "Christians",
+      "pct": 51.1
+    },
+    {
+      "name": "Muslims",
+      "pct": 46.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "BW": [
+    {
+      "name": "Christians",
+      "pct": 76.4
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 17.5
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 4.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "BR": [
+    {
+      "name": "Christians",
+      "pct": 88.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 8.4
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 3.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "VG": [
+    {
+      "name": "Christians",
+      "pct": 84.5
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 8.4
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.9
+    },
+    {
+      "name": "Hindus",
+      "pct": 1.2
+    },
+    {
+      "name": "Muslims",
+      "pct": 1.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ],
   "BN": [
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Muslims",
+      "pct": 75.1
     },
     {
-      "name": "Islam",
-      "pct": null
+      "name": "Christians",
+      "pct": 9.4
     },
     {
-      "name": "Buddhism",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 8.6
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 6.2
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
     }
   ],
-  "PH": [
+  "BG": [
     {
-      "name": "Catholicism",
-      "pct": 78.8
+      "name": "Christians",
+      "pct": 81
     },
     {
-      "name": "Islam",
-      "pct": 6.4
+      "name": "Muslims",
+      "pct": 14.2
     },
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Unaffiliated",
+      "pct": 4.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ],
-  "GB": [
+  "BF": [
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Muslims",
+      "pct": 62.7
+    },
+    {
+      "name": "Christians",
+      "pct": 21.7
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 15.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
     }
   ],
-  "JP": [
+  "BI": [
     {
-      "name": "Buddhism",
-      "pct": null
+      "name": "Christians",
+      "pct": 91
     },
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Folk Religions",
+      "pct": 6
     },
     {
-      "name": "Shinto",
-      "pct": null
-    }
-  ],
-  "CZ": [
-    {
-      "name": "irreligion",
-      "pct": 34.5
-    },
-    {
-      "name": "Catholic Church",
-      "pct": 10.4
-    }
-  ],
-  "ID": [
-    {
-      "name": "Islam",
-      "pct": 87.2
-    },
-    {
-      "name": "Protestantism",
-      "pct": 6.9
-    },
-    {
-      "name": "Catholicism",
+      "name": "Muslims",
       "pct": 2.9
     },
     {
-      "name": "Hinduism",
-      "pct": 1.7
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Buddhism",
-      "pct": 0.7
+      "name": "Hindus",
+      "pct": 1
     },
     {
-      "name": "Confucianism",
-      "pct": 0.5
-    }
-  ],
-  "SG": [
-    {
-      "name": "Buddhism",
-      "pct": null
+      "name": "Jews",
+      "pct": 1
     },
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Other Religions",
+      "pct": 1
     },
     {
-      "name": "Islam",
-      "pct": null
-    },
-    {
-      "name": "Taoism",
-      "pct": null
-    },
-    {
-      "name": "Hinduism",
-      "pct": null
+      "name": "Unaffiliated",
+      "pct": 1
     }
   ],
   "KH": [
     {
-      "name": "Buddhism",
-      "pct": 96.9
+      "name": "Buddhists",
+      "pct": 96.8
     },
     {
-      "name": "Islam",
+      "name": "Muslims",
+      "pct": 2
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "CM": [
+    {
+      "name": "Christians",
+      "pct": 69.6
+    },
+    {
+      "name": "Muslims",
+      "pct": 19.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 5.2
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 3.2
+    },
+    {
+      "name": "Other Religions",
+      "pct": 2.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    }
+  ],
+  "CA": [
+    {
+      "name": "Christians",
+      "pct": 66.4
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 24.5
+    },
+    {
+      "name": "Muslims",
+      "pct": 2.8
+    },
+    {
+      "name": "Hindus",
+      "pct": 1.7
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.2
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.2
+    },
+    {
+      "name": "Jews",
+      "pct": 1.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    }
+  ],
+  "CV": [
+    {
+      "name": "Christians",
+      "pct": 89.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 9
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "KY": [
+    {
+      "name": "Christians",
+      "pct": 83.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 9.4
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 4.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "CF": [
+    {
+      "name": "Christians",
+      "pct": 89
+    },
+    {
+      "name": "Muslims",
+      "pct": 9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "TD": [
+    {
+      "name": "Muslims",
+      "pct": 55.1
+    },
+    {
+      "name": "Christians",
+      "pct": 41.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2.4
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "CL": [
+    {
+      "name": "Christians",
+      "pct": 88.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 9.7
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "CN": [
+    {
+      "name": "Unaffiliated",
+      "pct": 51.8
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 21.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 18.3
+    },
+    {
+      "name": "Christians",
+      "pct": 5.2
+    },
+    {
+      "name": "Muslims",
+      "pct": 2
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "CO": [
+    {
+      "name": "Christians",
+      "pct": 92.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 6.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "KM": [
+    {
+      "name": "Muslims",
+      "pct": 98.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "CG": [
+    {
+      "name": "Christians",
+      "pct": 87.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 8
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 2.7
+    },
+    {
+      "name": "Muslims",
+      "pct": 1.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "CD": [
+    {
+      "name": "Christians",
+      "pct": 95.8
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.7
+    },
+    {
+      "name": "Muslims",
+      "pct": 1.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "CK": [
+    {
+      "name": "Christians",
+      "pct": 96
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "CR": [
+    {
+      "name": "Christians",
+      "pct": 90.8
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 8
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "CI": [
+    {
+      "name": "Christians",
+      "pct": 44
+    },
+    {
+      "name": "Muslims",
+      "pct": 37.2
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 10.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 8.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "HR": [
+    {
+      "name": "Christians",
+      "pct": 93.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 5.1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "CU": [
+    {
+      "name": "Christians",
+      "pct": 58.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 23.2
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 17.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "CY": [
+    {
+      "name": "Christians",
+      "pct": 72.3
+    },
+    {
+      "name": "Muslims",
+      "pct": 25
+    },
+    {
+      "name": "Unaffiliated",
       "pct": 1.9
     },
     {
-      "name": "animism",
-      "pct": 0.8
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Christianity",
-      "pct": 0.4
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ],
-  "TL": [
+  "CZ": [
     {
-      "name": "Catholicism",
-      "pct": 90
+      "name": "Unaffiliated",
+      "pct": 78.4
     },
     {
-      "name": "Protestantism",
-      "pct": null
+      "name": "Christians",
+      "pct": 20.9
     },
     {
-      "name": "Islam",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "DK": [
+    {
+      "name": "Christians",
+      "pct": 81.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 12
+    },
+    {
+      "name": "Muslims",
+      "pct": 5.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "DJ": [
+    {
+      "name": "Muslims",
+      "pct": 96.9
+    },
+    {
+      "name": "Christians",
+      "pct": 2.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "DM": [
+    {
+      "name": "Christians",
+      "pct": 94.4
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 3
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "DO": [
+    {
+      "name": "Christians",
+      "pct": 88
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 10.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "EC": [
+    {
+      "name": "Christians",
+      "pct": 94
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 5.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "EG": [
+    {
+      "name": "Muslims",
+      "pct": 95.3
+    },
+    {
+      "name": "Christians",
+      "pct": 4.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "SV": [
+    {
+      "name": "Christians",
+      "pct": 88
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 11.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GQ": [
+    {
+      "name": "Christians",
+      "pct": 88.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 5
+    },
+    {
+      "name": "Muslims",
+      "pct": 4
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "ER": [
+    {
+      "name": "Christians",
+      "pct": 62.9
+    },
+    {
+      "name": "Muslims",
+      "pct": 36.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "EE": [
+    {
+      "name": "Unaffiliated",
+      "pct": 60.2
+    },
+    {
+      "name": "Christians",
+      "pct": 39.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "ET": [
+    {
+      "name": "Christians",
+      "pct": 61.9
+    },
+    {
+      "name": "Muslims",
+      "pct": 35.9
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 2.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "FO": [
+    {
+      "name": "Christians",
+      "pct": 98
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "FK": [
+    {
+      "name": "Christians",
+      "pct": 67.2
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 31.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "FJ": [
+    {
+      "name": "Christians",
+      "pct": 64.4
+    },
+    {
+      "name": "Hindus",
+      "pct": 27.9
+    },
+    {
+      "name": "Muslims",
+      "pct": 6.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "FI": [
+    {
+      "name": "Christians",
+      "pct": 77.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 20.8
+    },
+    {
+      "name": "Muslims",
+      "pct": 1.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "FR": [
+    {
+      "name": "Christians",
+      "pct": 58.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 31.9
+    },
+    {
+      "name": "Muslims",
+      "pct": 8.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GF": [
+    {
+      "name": "Christians",
+      "pct": 84
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 8.6
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.9
+    },
+    {
+      "name": "Hindus",
+      "pct": 1.4
+    },
+    {
+      "name": "Muslims",
+      "pct": 1.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "PF": [
+    {
+      "name": "Christians",
+      "pct": 94
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 4.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GA": [
+    {
+      "name": "Christians",
+      "pct": 75.6
+    },
+    {
+      "name": "Muslims",
+      "pct": 12.2
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 5.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 5.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GM": [
+    {
+      "name": "Muslims",
+      "pct": 95.3
+    },
+    {
+      "name": "Christians",
+      "pct": 4.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "GE": [
+    {
+      "name": "Christians",
+      "pct": 87.6
+    },
+    {
+      "name": "Muslims",
+      "pct": 11.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "DE": [
+    {
+      "name": "Christians",
+      "pct": 66
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 26.3
+    },
+    {
+      "name": "Muslims",
+      "pct": 6.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GH": [
+    {
+      "name": "Christians",
+      "pct": 73.6
+    },
+    {
+      "name": "Muslims",
+      "pct": 17.5
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 4.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.8
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GI": [
+    {
+      "name": "Christians",
+      "pct": 88.8
+    },
+    {
+      "name": "Muslims",
+      "pct": 4
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2.9
+    },
+    {
+      "name": "Jews",
+      "pct": 2.1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1.8
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GR": [
+    {
+      "name": "Christians",
+      "pct": 87.6
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 6.1
+    },
+    {
+      "name": "Muslims",
+      "pct": 5.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GL": [
+    {
+      "name": "Christians",
+      "pct": 96.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GD": [
+    {
+      "name": "Christians",
+      "pct": 96.6
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "GP": [
+    {
+      "name": "Christians",
+      "pct": 95.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GU": [
+    {
+      "name": "Christians",
+      "pct": 94.2
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.7
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.6
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1.1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    }
+  ],
+  "GT": [
+    {
+      "name": "Christians",
+      "pct": 95.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GN": [
+    {
+      "name": "Muslims",
+      "pct": 84.6
+    },
+    {
+      "name": "Christians",
+      "pct": 10.8
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 2.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.8
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GW": [
+    {
+      "name": "Muslims",
+      "pct": 46.1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 30.6
+    },
+    {
+      "name": "Christians",
+      "pct": 18.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 4.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GY": [
+    {
+      "name": "Christians",
+      "pct": 67.9
+    },
+    {
+      "name": "Hindus",
+      "pct": 23.3
+    },
+    {
+      "name": "Muslims",
+      "pct": 6.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "HT": [
+    {
+      "name": "Christians",
+      "pct": 87
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 10.7
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 2.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "VA": [
+    {
+      "name": "Christians",
+      "pct": 99
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "HN": [
+    {
+      "name": "Christians",
+      "pct": 87.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 10.5
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "HK": [
+    {
+      "name": "Unaffiliated",
+      "pct": 54.7
+    },
+    {
+      "name": "Christians",
+      "pct": 14.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 13.3
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 13
+    },
+    {
+      "name": "Muslims",
+      "pct": 2.1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.5
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    }
+  ],
+  "HU": [
+    {
+      "name": "Christians",
+      "pct": 79.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 20.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "IS": [
+    {
+      "name": "Christians",
+      "pct": 94
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ],
   "IN": [
     {
-      "name": "Hinduism",
-      "pct": 80.5
+      "name": "Hindus",
+      "pct": 78.9
     },
     {
-      "name": "Islam",
+      "name": "Muslims",
+      "pct": 15.4
+    },
+    {
+      "name": "Christians",
+      "pct": 2.4
+    },
+    {
+      "name": "Other Religions",
+      "pct": 2.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "ID": [
+    {
+      "name": "Muslims",
+      "pct": 87
+    },
+    {
+      "name": "Christians",
+      "pct": 10.2
+    },
+    {
+      "name": "Hindus",
+      "pct": 1.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "IR": [
+    {
+      "name": "Muslims",
+      "pct": 99
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "IQ": [
+    {
+      "name": "Muslims",
+      "pct": 99
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "IE": [
+    {
+      "name": "Christians",
+      "pct": 89.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 7.9
+    },
+    {
+      "name": "Muslims",
+      "pct": 1.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "IM": [
+    {
+      "name": "Christians",
+      "pct": 84.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 15.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "IL": [
+    {
+      "name": "Jews",
+      "pct": 74
+    },
+    {
+      "name": "Muslims",
+      "pct": 20.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.2
+    },
+    {
+      "name": "Christians",
+      "pct": 2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "IT": [
+    {
+      "name": "Christians",
+      "pct": 80.8
+    },
+    {
+      "name": "Unaffiliated",
       "pct": 13.4
     },
     {
-      "name": "Sikhism",
-      "pct": null
+      "name": "Muslims",
+      "pct": 4.9
     },
     {
-      "name": "Jainism",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Folk Religions",
+      "pct": 1
     },
     {
-      "name": "Buddhism",
-      "pct": null
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "JM": [
+    {
+      "name": "Christians",
+      "pct": 77.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 17
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 4.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "JP": [
+    {
+      "name": "Unaffiliated",
+      "pct": 60
+    },
+    {
+      "name": "Buddhists",
+      "pct": 33.2
+    },
+    {
+      "name": "Other Religions",
+      "pct": 4.5
+    },
+    {
+      "name": "Christians",
+      "pct": 1.8
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    }
+  ],
+  "JO": [
+    {
+      "name": "Muslims",
+      "pct": 97.1
+    },
+    {
+      "name": "Christians",
+      "pct": 2.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "KZ": [
+    {
+      "name": "Muslims",
+      "pct": 72
+    },
+    {
+      "name": "Christians",
+      "pct": 23.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "KE": [
+    {
+      "name": "Christians",
+      "pct": 84.5
+    },
+    {
+      "name": "Muslims",
+      "pct": 10.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2.3
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.5
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    }
+  ],
+  "KI": [
+    {
+      "name": "Christians",
+      "pct": 97
+    },
+    {
+      "name": "Other Religions",
+      "pct": 2.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "XK": [
+    {
+      "name": "Muslims",
+      "pct": 94.3
+    },
+    {
+      "name": "Christians",
+      "pct": 5.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "KW": [
+    {
+      "name": "Muslims",
+      "pct": 70.7
+    },
+    {
+      "name": "Christians",
+      "pct": 13.6
+    },
+    {
+      "name": "Hindus",
+      "pct": 9.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 5.4
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "KG": [
+    {
+      "name": "Muslims",
+      "pct": 89.4
+    },
+    {
+      "name": "Christians",
+      "pct": 10
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "LA": [
+    {
+      "name": "Buddhists",
+      "pct": 64
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 32.8
+    },
+    {
+      "name": "Christians",
+      "pct": 1.5
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "LV": [
+    {
+      "name": "Christians",
+      "pct": 54.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 45.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "LB": [
+    {
+      "name": "Muslims",
+      "pct": 61.2
+    },
+    {
+      "name": "Christians",
+      "pct": 38.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "LS": [
+    {
+      "name": "Christians",
+      "pct": 97
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2.8
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "LR": [
+    {
+      "name": "Christians",
+      "pct": 86.2
+    },
+    {
+      "name": "Muslims",
+      "pct": 11.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "LY": [
+    {
+      "name": "Muslims",
+      "pct": 96.6
+    },
+    {
+      "name": "Christians",
+      "pct": 2.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "LI": [
+    {
+      "name": "Christians",
+      "pct": 91.9
+    },
+    {
+      "name": "Muslims",
+      "pct": 5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "LT": [
+    {
+      "name": "Christians",
+      "pct": 89.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 9.8
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "LU": [
+    {
+      "name": "Christians",
+      "pct": 70.6
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 26.7
+    },
+    {
+      "name": "Muslims",
+      "pct": 2.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "MO": [
+    {
+      "name": "Folk Religions",
+      "pct": 58.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 17.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 15.4
+    },
+    {
+      "name": "Christians",
+      "pct": 7.2
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "MG": [
+    {
+      "name": "Christians",
+      "pct": 84.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 7.3
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 4.7
+    },
+    {
+      "name": "Muslims",
+      "pct": 3.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "MW": [
+    {
+      "name": "Christians",
+      "pct": 83.4
+    },
+    {
+      "name": "Muslims",
+      "pct": 12.8
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "MY": [
+    {
+      "name": "Muslims",
+      "pct": 66.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 15.7
+    },
+    {
+      "name": "Christians",
+      "pct": 9.4
+    },
+    {
+      "name": "Hindus",
+      "pct": 5.8
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 2.2
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
     }
   ],
   "MV": [
     {
-      "name": "Sunni Islam",
-      "pct": null
+      "name": "Muslims",
+      "pct": 98.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
     }
   ],
-  "OM": [
+  "ML": [
     {
-      "name": "Islam",
-      "pct": null
+      "name": "Muslims",
+      "pct": 94.6
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 2.5
+    },
+    {
+      "name": "Christians",
+      "pct": 2.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
     }
   ],
-  "PK": [
+  "MT": [
     {
-      "name": "Islam",
-      "pct": null
+      "name": "Christians",
+      "pct": 97
     },
     {
-      "name": "Christianity",
-      "pct": null
+      "name": "Unaffiliated",
+      "pct": 2.5
     },
     {
-      "name": "Ahmadiyya",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Hinduism",
-      "pct": null
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ],
-  "LK": [
+  "MH": [
     {
-      "name": "Buddhism",
-      "pct": 69.3
+      "name": "Christians",
+      "pct": 97.5
     },
     {
-      "name": "Hinduism",
-      "pct": 15.5
+      "name": "Unaffiliated",
+      "pct": 1.5
     },
     {
-      "name": "Islam",
-      "pct": 7.6
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Christianity",
-      "pct": 7.5
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ],
-  "TH": [
+  "MQ": [
     {
-      "name": "Buddhism",
-      "pct": 92.5
+      "name": "Christians",
+      "pct": 96.5
     },
     {
-      "name": "Islam",
-      "pct": 5.4
+      "name": "Unaffiliated",
+      "pct": 2.3
     },
     {
-      "name": "Christianity",
-      "pct": 1.2
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Hinduism",
-      "pct": null
+      "name": "Folk Religions",
+      "pct": 1
     },
     {
-      "name": "Sikhism",
-      "pct": null
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ],
-  "VN": [
+  "MR": [
     {
-      "name": "Catholicism",
-      "pct": null
+      "name": "Muslims",
+      "pct": 99
     },
     {
-      "name": "Caodaism",
-      "pct": null
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Hòa Hảo",
-      "pct": null
+      "name": "Christians",
+      "pct": 1
     },
     {
-      "name": "Buddhism",
-      "pct": null
+      "name": "Folk Religions",
+      "pct": 1
     },
     {
-      "name": "Protestantism",
-      "pct": null
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "MU": [
+    {
+      "name": "Hindus",
+      "pct": 48.4
+    },
+    {
+      "name": "Christians",
+      "pct": 32.8
+    },
+    {
+      "name": "Muslims",
+      "pct": 17.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "YT": [
+    {
+      "name": "Muslims",
+      "pct": 98.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
     }
   ],
   "MX": [
     {
-      "name": "Catholicism",
-      "pct": 77.7
+      "name": "Christians",
+      "pct": 94.1
     },
     {
-      "name": "irreligion",
-      "pct": 10.6
+      "name": "Unaffiliated",
+      "pct": 5.7
     },
     {
-      "name": "Evangelicalism",
-      "pct": 7.5
+      "name": "Buddhists",
+      "pct": 1
     },
     {
-      "name": "Pentecostalism",
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "FM": [
+    {
+      "name": "Christians",
+      "pct": 95.3
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 2.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "MD": [
+    {
+      "name": "Christians",
+      "pct": 97.4
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "MC": [
+    {
+      "name": "Christians",
+      "pct": 86
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 11.7
+    },
+    {
+      "name": "Jews",
+      "pct": 1.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "MN": [
+    {
+      "name": "Buddhists",
+      "pct": 54.4
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 36.5
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 3.4
+    },
+    {
+      "name": "Muslims",
+      "pct": 3.4
+    },
+    {
+      "name": "Christians",
+      "pct": 2.3
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "ME": [
+    {
+      "name": "Christians",
+      "pct": 76.6
+    },
+    {
+      "name": "Muslims",
+      "pct": 20.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "MS": [
+    {
+      "name": "Christians",
+      "pct": 93.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 4.8
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    }
+  ],
+  "MA": [
+    {
+      "name": "Muslims",
+      "pct": 99
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "MZ": [
+    {
+      "name": "Christians",
+      "pct": 57.8
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 17.3
+    },
+    {
+      "name": "Muslims",
+      "pct": 17.2
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 7.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "NA": [
+    {
+      "name": "Christians",
+      "pct": 97.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "NR": [
+    {
+      "name": "Christians",
+      "pct": 79
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 8.1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 7.4
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 4.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1.1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    }
+  ],
+  "NP": [
+    {
+      "name": "Hindus",
+      "pct": 80.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 10
+    },
+    {
+      "name": "Muslims",
+      "pct": 5
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 3.6
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "NL": [
+    {
+      "name": "Christians",
+      "pct": 47.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 44.3
+    },
+    {
+      "name": "Muslims",
+      "pct": 6.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "NC": [
+    {
+      "name": "Christians",
+      "pct": 85.2
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 10.4
+    },
+    {
+      "name": "Muslims",
+      "pct": 2.8
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "NZ": [
+    {
+      "name": "Christians",
+      "pct": 52.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 39.6
+    },
+    {
+      "name": "Hindus",
+      "pct": 2.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1.9
+    },
+    {
+      "name": "Muslims",
       "pct": 1.6
     },
     {
-      "name": "Jehovah's Witnesses",
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "NI": [
+    {
+      "name": "Christians",
+      "pct": 85.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 13
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "NE": [
+    {
+      "name": "Muslims",
+      "pct": 98.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "NG": [
+    {
+      "name": "Muslims",
+      "pct": 51.1
+    },
+    {
+      "name": "Christians",
+      "pct": 46.9
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "NU": [
+    {
+      "name": "Christians",
+      "pct": 96.4
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "KP": [
+    {
+      "name": "Unaffiliated",
+      "pct": 71.3
+    },
+    {
+      "name": "Other Religions",
+      "pct": 12.9
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 12.3
+    },
+    {
+      "name": "Christians",
+      "pct": 2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1.5
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    }
+  ],
+  "MP": [
+    {
+      "name": "Christians",
+      "pct": 81.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 10.6
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 5.3
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "NO": [
+    {
+      "name": "Christians",
+      "pct": 81.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 11.6
+    },
+    {
+      "name": "Muslims",
+      "pct": 4.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "OM": [
+    {
+      "name": "Muslims",
+      "pct": 85.9
+    },
+    {
+      "name": "Christians",
+      "pct": 6.4
+    },
+    {
+      "name": "Hindus",
+      "pct": 5.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "PK": [
+    {
+      "name": "Muslims",
+      "pct": 96.5
+    },
+    {
+      "name": "Hindus",
+      "pct": 1.9
+    },
+    {
+      "name": "Christians",
+      "pct": 1.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "PW": [
+    {
+      "name": "Christians",
+      "pct": 86.7
+    },
+    {
+      "name": "Other Religions",
+      "pct": 10.4
+    },
+    {
+      "name": "Unaffiliated",
       "pct": 1.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    }
+  ],
+  "PA": [
+    {
+      "name": "Christians",
+      "pct": 92.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "PG": [
+    {
+      "name": "Christians",
+      "pct": 99
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "PY": [
+    {
+      "name": "Christians",
+      "pct": 96.9
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "PE": [
+    {
+      "name": "Christians",
+      "pct": 95.4
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "PH": [
+    {
+      "name": "Christians",
+      "pct": 92.4
+    },
+    {
+      "name": "Muslims",
+      "pct": 5.7
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "PL": [
+    {
+      "name": "Christians",
+      "pct": 92.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 7.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "PT": [
+    {
+      "name": "Christians",
+      "pct": 90.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 8.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "PR": [
+    {
+      "name": "Christians",
+      "pct": 96.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "QA": [
+    {
+      "name": "Muslims",
+      "pct": 65.2
+    },
+    {
+      "name": "Hindus",
+      "pct": 15.9
+    },
+    {
+      "name": "Christians",
+      "pct": 13.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 3.8
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "RE": [
+    {
+      "name": "Christians",
+      "pct": 87.6
+    },
+    {
+      "name": "Hindus",
+      "pct": 4.5
+    },
+    {
+      "name": "Muslims",
+      "pct": 4.2
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    }
+  ],
+  "RO": [
+    {
+      "name": "Christians",
+      "pct": 99
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "RU": [
+    {
+      "name": "Christians",
+      "pct": 72.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 15.2
+    },
+    {
+      "name": "Muslims",
+      "pct": 11.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "RW": [
+    {
+      "name": "Christians",
+      "pct": 93.8
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3
+    },
+    {
+      "name": "Muslims",
+      "pct": 2.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "LC": [
+    {
+      "name": "Christians",
+      "pct": 91.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 5.8
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    }
+  ],
+  "WS": [
+    {
+      "name": "Christians",
+      "pct": 96.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "SM": [
+    {
+      "name": "Christians",
+      "pct": 91.6
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 7.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "ST": [
+    {
+      "name": "Christians",
+      "pct": 81.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 13.2
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 3.1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 2.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    }
+  ],
+  "SA": [
+    {
+      "name": "Muslims",
+      "pct": 92.7
+    },
+    {
+      "name": "Christians",
+      "pct": 4.4
+    },
+    {
+      "name": "Hindus",
+      "pct": 1.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "SN": [
+    {
+      "name": "Muslims",
+      "pct": 96.6
+    },
+    {
+      "name": "Christians",
+      "pct": 3.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "RS": [
+    {
+      "name": "Christians",
+      "pct": 91.6
+    },
+    {
+      "name": "Muslims",
+      "pct": 5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "SC": [
+    {
+      "name": "Christians",
+      "pct": 94
+    },
+    {
+      "name": "Hindus",
+      "pct": 2.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2.1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "SL": [
+    {
+      "name": "Muslims",
+      "pct": 78.5
+    },
+    {
+      "name": "Christians",
+      "pct": 20.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "SG": [
+    {
+      "name": "Buddhists",
+      "pct": 32.2
+    },
+    {
+      "name": "Christians",
+      "pct": 17.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 16.5
+    },
+    {
+      "name": "Muslims",
+      "pct": 16.1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 8.5
+    },
+    {
+      "name": "Hindus",
+      "pct": 6.5
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 2.4
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    }
+  ],
+  "SK": [
+    {
+      "name": "Christians",
+      "pct": 83.6
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 15.8
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "SI": [
+    {
+      "name": "Christians",
+      "pct": 77.2
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 18.8
+    },
+    {
+      "name": "Muslims",
+      "pct": 3.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "SB": [
+    {
+      "name": "Christians",
+      "pct": 97.4
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "SO": [
+    {
+      "name": "Muslims",
+      "pct": 99
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "ZA": [
+    {
+      "name": "Christians",
+      "pct": 80.8
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 15.3
+    },
+    {
+      "name": "Muslims",
+      "pct": 1.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "KR": [
+    {
+      "name": "Unaffiliated",
+      "pct": 46.6
+    },
+    {
+      "name": "Christians",
+      "pct": 30.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 21.9
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "ES": [
+    {
+      "name": "Christians",
+      "pct": 75.2
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 21
+    },
+    {
+      "name": "Muslims",
+      "pct": 3.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "LK": [
+    {
+      "name": "Buddhists",
+      "pct": 68.6
+    },
+    {
+      "name": "Hindus",
+      "pct": 13.7
+    },
+    {
+      "name": "Muslims",
+      "pct": 10.4
+    },
+    {
+      "name": "Christians",
+      "pct": 7.2
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "SS": [
+    {
+      "name": "Christians",
+      "pct": 60.5
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 32.9
+    },
+    {
+      "name": "Muslims",
+      "pct": 6.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "SR": [
+    {
+      "name": "Christians",
+      "pct": 52.3
+    },
+    {
+      "name": "Hindus",
+      "pct": 18.8
+    },
+    {
+      "name": "Muslims",
+      "pct": 14.3
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 6.2
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 5.6
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    }
+  ],
+  "SZ": [
+    {
+      "name": "Christians",
+      "pct": 88.7
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 9.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "SE": [
+    {
+      "name": "Christians",
+      "pct": 63
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 29
+    },
+    {
+      "name": "Muslims",
+      "pct": 6.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "CH": [
+    {
+      "name": "Christians",
+      "pct": 70
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 22.8
+    },
+    {
+      "name": "Muslims",
+      "pct": 5.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "SY": [
+    {
+      "name": "Muslims",
+      "pct": 92.8
+    },
+    {
+      "name": "Christians",
+      "pct": 5.2
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "TW": [
+    {
+      "name": "Folk Religions",
+      "pct": 43.8
+    },
+    {
+      "name": "Buddhists",
+      "pct": 21.2
+    },
+    {
+      "name": "Other Religions",
+      "pct": 15.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 13.7
+    },
+    {
+      "name": "Christians",
+      "pct": 5.8
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    }
+  ],
+  "TJ": [
+    {
+      "name": "Muslims",
+      "pct": 96.4
+    },
+    {
+      "name": "Christians",
+      "pct": 1.8
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "TZ": [
+    {
+      "name": "Christians",
+      "pct": 63.1
+    },
+    {
+      "name": "Muslims",
+      "pct": 34.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.6
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "TH": [
+    {
+      "name": "Buddhists",
+      "pct": 92.6
+    },
+    {
+      "name": "Muslims",
+      "pct": 6
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "TL": [
+    {
+      "name": "Christians",
+      "pct": 99
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "TG": [
+    {
+      "name": "Christians",
+      "pct": 42.3
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 36.9
+    },
+    {
+      "name": "Muslims",
+      "pct": 14
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 6.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "TK": [
+    {
+      "name": "Christians",
+      "pct": 99
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "TO": [
+    {
+      "name": "Christians",
+      "pct": 98.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "TT": [
+    {
+      "name": "Christians",
+      "pct": 66.3
+    },
+    {
+      "name": "Hindus",
+      "pct": 22.3
+    },
+    {
+      "name": "Muslims",
+      "pct": 5.8
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 2
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.8
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    }
+  ],
+  "TN": [
+    {
+      "name": "Muslims",
+      "pct": 99
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "TR": [
+    {
+      "name": "Muslims",
+      "pct": 98
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "TM": [
+    {
+      "name": "Muslims",
+      "pct": 93
+    },
+    {
+      "name": "Christians",
+      "pct": 6.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "TC": [
+    {
+      "name": "Christians",
+      "pct": 92.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 4.6
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 2.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "TV": [
+    {
+      "name": "Christians",
+      "pct": 96.7
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.3
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    }
+  ],
+  "UG": [
+    {
+      "name": "Christians",
+      "pct": 86.1
+    },
+    {
+      "name": "Muslims",
+      "pct": 12.1
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "UA": [
+    {
+      "name": "Christians",
+      "pct": 85.6
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 12.5
+    },
+    {
+      "name": "Muslims",
+      "pct": 1.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "AE": [
+    {
+      "name": "Muslims",
+      "pct": 75
+    },
+    {
+      "name": "Christians",
+      "pct": 12.9
+    },
+    {
+      "name": "Hindus",
+      "pct": 7.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 2.4
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "GB": [
+    {
+      "name": "Christians",
+      "pct": 59.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 31.2
+    },
+    {
+      "name": "Muslims",
+      "pct": 6.1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1.6
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "US": [
+    {
+      "name": "Christians",
+      "pct": 75.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 18.6
+    },
+    {
+      "name": "Jews",
+      "pct": 1.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1.2
+    },
+    {
+      "name": "Muslims",
+      "pct": 1.1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "UY": [
+    {
+      "name": "Christians",
+      "pct": 57
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 41.5
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "UZ": [
+    {
+      "name": "Muslims",
+      "pct": 97.1
+    },
+    {
+      "name": "Christians",
+      "pct": 2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "VU": [
+    {
+      "name": "Christians",
+      "pct": 93.5
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 4
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1.4
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    }
+  ],
+  "VE": [
+    {
+      "name": "Christians",
+      "pct": 89.5
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 9.7
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "VN": [
+    {
+      "name": "Folk Religions",
+      "pct": 45
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 29.9
+    },
+    {
+      "name": "Buddhists",
+      "pct": 16.2
+    },
+    {
+      "name": "Christians",
+      "pct": 8.4
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "WF": [
+    {
+      "name": "Christians",
+      "pct": 97.4
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "EH": [
+    {
+      "name": "Muslims",
+      "pct": 99
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "YE": [
+    {
+      "name": "Muslims",
+      "pct": 99
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Christians",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "ZM": [
+    {
+      "name": "Christians",
+      "pct": 97.4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 1
+    }
+  ],
+  "ZW": [
+    {
+      "name": "Christians",
+      "pct": 87.1
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 7.6
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 4
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "CW": [
+    {
+      "name": "Christians",
+      "pct": 93.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.3
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "SX": [
+    {
+      "name": "Christians",
+      "pct": 93.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.3
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
+    }
+  ],
+  "BQ": [
+    {
+      "name": "Christians",
+      "pct": 93.9
+    },
+    {
+      "name": "Unaffiliated",
+      "pct": 3.3
+    },
+    {
+      "name": "Folk Religions",
+      "pct": 1.2
+    },
+    {
+      "name": "Buddhists",
+      "pct": 1
+    },
+    {
+      "name": "Hindus",
+      "pct": 1
+    },
+    {
+      "name": "Jews",
+      "pct": 1
+    },
+    {
+      "name": "Muslims",
+      "pct": 1
+    },
+    {
+      "name": "Other Religions",
+      "pct": 1
     }
   ]
 }

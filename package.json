@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "fetch-data": "node scripts/fetch-governments.mjs && node scripts/fetch-cultures.mjs && node scripts/fetch-military.mjs"
+    "fetch-data": "node scripts/fetch-governments.mjs && node scripts/fetch-religions.mjs && node scripts/fetch-ethnicgroups.mjs && node scripts/fetch-military.mjs"
   },
   "dependencies": {
     "maplibre-gl": "^5.24.0",
