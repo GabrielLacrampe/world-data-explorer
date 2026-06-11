@@ -26,15 +26,16 @@ const useStore = create((set, get) => ({
     economyData: null,
     worldBankCountryData: null,
     // keep sidebar open if already open and selecting a new country; close on deselect
-    sidebarOpen: country === null ? false : state.sidebarOpen,
-    activeTab: 'economy',
+    sidebarOpen: country !== null,
+    activeTab: 'gobierno',
+    countryLoadError: false,
   })),
   setCountryData: (data) => set({ countryData: data }),
   setEconomyData: (data) => set({ economyData: data }),
 
   // ─── UI ──────────────────────────────────────────────────────────────
   sidebarOpen: false,
-  activeTab: 'economy',    // 'economy' | 'geopolitics' | 'conflicts'
+  activeTab: 'gobierno',
 
   setSidebarOpen: (open) => set({ sidebarOpen: open }),
   setActiveTab: (tab) => set({ activeTab: tab }),
@@ -44,11 +45,13 @@ const useStore = create((set, get) => ({
     map: true,
     country: false,
   },
+  countryLoadError: false,
 
   setLoading: (key, value) =>
     set((state) => ({
       loading: { ...state.loading, [key]: value },
     })),
+  setCountryLoadError: (val) => set({ countryLoadError: val }),
 
     // World Bank layer data cache: { indicator: { ISO2: value, ... } }
     worldBankLayerCache: {},

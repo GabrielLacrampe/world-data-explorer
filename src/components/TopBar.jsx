@@ -48,7 +48,7 @@ function TopBar() {
   const gdpGrowth = worldBankCountryData?.['NY.GDP.MKTP.KD.ZG']
   const milSpending = staticData?.sipri?.[selectedCountry?.code]
   const democracy = staticData?.vdem?.[selectedCountry?.code]
-  const pop = countryData?.population
+  const pop = worldBankCountryData?.['SP.POP.TOTL']
 
   const growthDisplay = gdpGrowth != null
     ? `${gdpGrowth >= 0 ? '+' : ''}${gdpGrowth.toFixed(1)}%`

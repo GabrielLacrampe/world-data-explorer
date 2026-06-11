@@ -98,6 +98,7 @@ const LAYERS = {
 }
 
 const SIDEBAR_INDICATORS = [
+  { indicator: 'SP.POP.TOTL', label: 'Population', format: 'integer', unit: '' },
   { indicator: 'NY.GDP.PCAP.CD', label: 'GDP per Capita', format: 'currency', unit: 'USD' },
   { indicator: 'NY.GDP.MKTP.KD.ZG', label: 'GDP Growth', format: 'percent', unit: '%' },
   { indicator: 'SL.UEM.TOTL.ZS', label: 'Unemployment', format: 'percent', unit: '%' },
@@ -127,6 +128,7 @@ function App() {
     staticData,
     setStaticData,
     worldData,
+    setCountryLoadError,
   } = useStore()
 
   useEffect(() => {
@@ -136,15 +138,19 @@ function App() {
   }, [])
 
   useEffect(() => {
-    fetch('https://restcountries.com/v3.1/all?fields=cca2,population,area')
+    fetch('https://cdn.jsdelivr.net/npm/world-countries/countries.json')
       .then((res) => res.json())
       .then((data) => {
-        const indexd = {}
+        const indexed = {}
         data.forEach((c) => {
-          indexd[c.cca2] = c
+          indexed[c.cca2] = {
+            ...c,
+            flags: { svg: `https://flagcdn.com/${c.cca2.toLowerCase()}.svg` },
+          }
         })
-        setAllCountriesData(indexd)
+        setAllCountriesData(indexed)
       })
+      .catch((err) => console.error('Failed to load countries data:', err))
   }, [setAllCountriesData])
 
   useEffect(() => {
@@ -178,31 +184,21 @@ function App() {
   }, [activeLayer, worldData, setFillExpression])
 
   useEffect(() => {
-    if (!selectedCountry) return
+    if (!selectedCountry || !allCountriesData) return
 
-    setLoading('country', true)
-    setCountryData(null)
-
-    const urlPath =
-      selectedCountry.code && selectedCountry.code !== '-99'
-        ? `https://restcountries.com/v3.1/alpha/${selectedCountry.code}`
-        : `https://restcountries.com/v3.1/name/${selectedCountry.name}`
-
-    fetch(urlPath)
-      .then((res) => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`)
-        return res.json()
-      })
-      .then((data) => {
-        setCountryData(data[0] ?? null)
-        setLoading('country', false)
-      })
-      .catch((error) => {
-        console.error('Error fetching country data:', error)
-        setCountryData(null)
-        setLoading('country', false)
-      })
-  }, [selectedCountry, setCountryData, setLoading])
+    const code = selectedCountry.code
+    if (code && code !== '-99' && allCountriesData[code]) {
+      setCountryData(allCountriesData[code])
+    } else {
+      // Fallback: search by name
+      const match = Object.values(allCountriesData).find(
+        (c) => c.name?.common?.toLowerCase() === selectedCountry.name?.toLowerCase()
+      )
+      setCountryData(match ?? null)
+      if (!match) setCountryLoadError(true)
+    }
+    setLoading('country', false)
+  }, [selectedCountry, allCountriesData, setCountryData, setLoading, setCountryLoadError])
 
   useEffect(() => {
     const layer = LAYERS[activeLayer]
