@@ -1,11 +1,22 @@
-export async function loadStaticDatasets() {
-  const [sipri, vdem, alliances] = await Promise.all([
-    fetch('/data/sipri.json').then((r) => r.json()),
-    fetch('/data/vdem.json').then((r) => r.json()),
-    fetch('/data/alliances.json').then((r) => r.json()),
-  ])
+async function fetchJson(url) {
+  const r = await fetch(url)
+  if (!r.ok) throw new Error(`Failed to load ${url}`)
+  return r.json()
+}
 
-  return { sipri, vdem, freedomhouse: null, alliances }
+export async function loadStaticDatasets() {
+  const [sipri, vdem, alliances, governments, ethnicGroups, religions, militaryPersonnel] =
+    await Promise.all([
+      fetchJson('/data/sipri.json'),
+      fetchJson('/data/vdem.json'),
+      fetchJson('/data/alliances.json'),
+      fetchJson('/data/governments.json').catch(() => ({})),
+      fetchJson('/data/ethnicGroups.json').catch(() => ({})),
+      fetchJson('/data/religions.json').catch(() => ({})),
+      fetchJson('/data/militaryPersonnel.json').catch(() => ({})),
+    ])
+
+  return { sipri, vdem, freedomhouse: null, alliances, governments, ethnicGroups, religions, militaryPersonnel }
 }
 
 export const FREEDOM_STATUS = {

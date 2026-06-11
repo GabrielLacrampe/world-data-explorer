@@ -1,0 +1,1866 @@
+{
+  "KE": [
+    {
+      "name": "Kikuyu people",
+      "pct": 22
+    },
+    {
+      "name": "African people",
+      "pct": 15
+    },
+    {
+      "name": "Luhya",
+      "pct": 14
+    },
+    {
+      "name": "Luo peoples",
+      "pct": 13
+    },
+    {
+      "name": "Kalenjin people",
+      "pct": 12
+    },
+    {
+      "name": "Kamba people",
+      "pct": 11
+    },
+    {
+      "name": "Kisii people",
+      "pct": 6
+    },
+    {
+      "name": "Meru people",
+      "pct": 6
+    }
+  ],
+  "UA": [
+    {
+      "name": "Ukrainians",
+      "pct": 77.8
+    },
+    {
+      "name": "Russians in Ukraine",
+      "pct": 17.3
+    },
+    {
+      "name": "Belarusians",
+      "pct": 0.6
+    },
+    {
+      "name": "Moldovans",
+      "pct": 0.5
+    },
+    {
+      "name": "Crimean Tatars",
+      "pct": 0.5
+    },
+    {
+      "name": "Bulgarians in Ukraine",
+      "pct": 0.4
+    },
+    {
+      "name": "Poles in Ukraine",
+      "pct": 0.3
+    },
+    {
+      "name": "Hungarians in Ukraine",
+      "pct": 0.3
+    },
+    {
+      "name": "Romanians in Ukraine",
+      "pct": 0.3
+    },
+    {
+      "name": "Jewish people",
+      "pct": 0.2
+    }
+  ],
+  "AZ": [
+    {
+      "name": "Azerbaijanis",
+      "pct": 91.6
+    },
+    {
+      "name": "Lezgins",
+      "pct": 2
+    },
+    {
+      "name": "Armenians",
+      "pct": 1.3
+    },
+    {
+      "name": "Russians",
+      "pct": 1.3
+    },
+    {
+      "name": "Talysh people",
+      "pct": 1.3
+    }
+  ],
+  "UZ": [
+    {
+      "name": "Uzbeks",
+      "pct": 80
+    },
+    {
+      "name": "Russians in Uzbekistan",
+      "pct": 5.5
+    },
+    {
+      "name": "Tajiks",
+      "pct": 5
+    },
+    {
+      "name": "Kazakhs",
+      "pct": 3
+    },
+    {
+      "name": "Karakalpaks",
+      "pct": 2.5
+    },
+    {
+      "name": "Tatars",
+      "pct": 1.5
+    }
+  ],
+  "KH": [
+    {
+      "name": "Khmer people",
+      "pct": 97.6
+    },
+    {
+      "name": "Chams",
+      "pct": 1.2
+    },
+    {
+      "name": "Vietnamese people",
+      "pct": 0.1
+    },
+    {
+      "name": "Chinese people",
+      "pct": 0.1
+    }
+  ],
+  "MY": [
+    {
+      "name": "Malays",
+      "pct": 50.1
+    },
+    {
+      "name": "Javanese",
+      "pct": 24
+    },
+    {
+      "name": "Sundanese people",
+      "pct": 23.7
+    },
+    {
+      "name": "Arab Malaysians",
+      "pct": 23
+    },
+    {
+      "name": "Africans in Malaysia",
+      "pct": 22.8
+    },
+    {
+      "name": "Malaysian Chinese",
+      "pct": 22.6
+    },
+    {
+      "name": "Minangkabau",
+      "pct": 19
+    },
+    {
+      "name": "Kerinci people",
+      "pct": 18
+    },
+    {
+      "name": "Orang Asli",
+      "pct": 11.8
+    },
+    {
+      "name": "Indian Malaysians",
+      "pct": 6.7
+    }
+  ],
+  "MM": [
+    {
+      "name": "Bamar",
+      "pct": 68
+    },
+    {
+      "name": "Shan people",
+      "pct": 9
+    },
+    {
+      "name": "Karen people",
+      "pct": 7
+    },
+    {
+      "name": "Rakhine",
+      "pct": 4
+    },
+    {
+      "name": "Chinese people",
+      "pct": 3
+    },
+    {
+      "name": "Mon people",
+      "pct": 2
+    },
+    {
+      "name": "Indians",
+      "pct": 2
+    }
+  ],
+  "TH": [
+    {
+      "name": "Thai people",
+      "pct": 97.5
+    },
+    {
+      "name": "Burmese in Thailand",
+      "pct": 1.3
+    },
+    {
+      "name": "Isan people",
+      "pct": null
+    },
+    {
+      "name": "Lao people",
+      "pct": null
+    },
+    {
+      "name": "Lao Ga",
+      "pct": null
+    },
+    {
+      "name": "Lao Krang",
+      "pct": null
+    },
+    {
+      "name": "Lao Lom",
+      "pct": null
+    },
+    {
+      "name": "Lao Song",
+      "pct": null
+    },
+    {
+      "name": "Lao Ti",
+      "pct": null
+    },
+    {
+      "name": "Northern Thai people",
+      "pct": null
+    },
+    {
+      "name": "Phuan people",
+      "pct": null
+    },
+    {
+      "name": "Tai Bueng",
+      "pct": null
+    },
+    {
+      "name": "Tai Daeng people",
+      "pct": null
+    },
+    {
+      "name": "Tai Dam people",
+      "pct": null
+    },
+    {
+      "name": "Kaleun people",
+      "pct": null
+    },
+    {
+      "name": "Tai Nua people",
+      "pct": null
+    },
+    {
+      "name": "Khorat Thai",
+      "pct": null
+    },
+    {
+      "name": "Shan people",
+      "pct": null
+    },
+    {
+      "name": "Saek people",
+      "pct": null
+    },
+    {
+      "name": "Nyaw people",
+      "pct": null
+    },
+    {
+      "name": "Yoy people",
+      "pct": null
+    },
+    {
+      "name": "Kedah Malays",
+      "pct": null
+    },
+    {
+      "name": "Moken people",
+      "pct": null
+    },
+    {
+      "name": "Urak Lawoi’",
+      "pct": null
+    },
+    {
+      "name": "Chams",
+      "pct": null
+    },
+    {
+      "name": "Thai Malays",
+      "pct": null
+    },
+    {
+      "name": "Bangkok Malays",
+      "pct": null
+    },
+    {
+      "name": "Khmuic peoples",
+      "pct": null
+    },
+    {
+      "name": "Lua people",
+      "pct": null
+    },
+    {
+      "name": "Mlabri people",
+      "pct": null
+    },
+    {
+      "name": "Pray people",
+      "pct": null
+    },
+    {
+      "name": "Mal people",
+      "pct": null
+    },
+    {
+      "name": "Bru people",
+      "pct": null
+    },
+    {
+      "name": "Lamet people",
+      "pct": null
+    },
+    {
+      "name": "Lawa people",
+      "pct": null
+    },
+    {
+      "name": "Palaung people",
+      "pct": null
+    },
+    {
+      "name": "Khmer people",
+      "pct": null
+    },
+    {
+      "name": "Northern Khmer people",
+      "pct": null
+    },
+    {
+      "name": "Mon people",
+      "pct": null
+    },
+    {
+      "name": "Nyah Kur people",
+      "pct": null
+    },
+    {
+      "name": "Kuy people",
+      "pct": null
+    },
+    {
+      "name": "Pear people",
+      "pct": null
+    },
+    {
+      "name": "Vietnamese people",
+      "pct": null
+    },
+    {
+      "name": "Thai Chinese",
+      "pct": null
+    },
+    {
+      "name": "Chin Haw",
+      "pct": null
+    },
+    {
+      "name": "Peranakan Chinese",
+      "pct": null
+    },
+    {
+      "name": "Teochew people",
+      "pct": null
+    },
+    {
+      "name": "Hoklo people",
+      "pct": null
+    },
+    {
+      "name": "Hakka people",
+      "pct": null
+    },
+    {
+      "name": "Hainan people",
+      "pct": null
+    },
+    {
+      "name": "Cantonese people",
+      "pct": null
+    },
+    {
+      "name": "Fuzhou people",
+      "pct": null
+    },
+    {
+      "name": "Akha",
+      "pct": null
+    },
+    {
+      "name": "Karen people",
+      "pct": null
+    },
+    {
+      "name": "Karenni people",
+      "pct": null
+    },
+    {
+      "name": "Lahu people",
+      "pct": null
+    },
+    {
+      "name": "Lisu people",
+      "pct": null
+    },
+    {
+      "name": "Yi people",
+      "pct": null
+    },
+    {
+      "name": "Mpi people",
+      "pct": null
+    },
+    {
+      "name": "Pa'O",
+      "pct": null
+    },
+    {
+      "name": "Phunoi people",
+      "pct": null
+    },
+    {
+      "name": "S'gaw people",
+      "pct": null
+    },
+    {
+      "name": "Ugong people",
+      "pct": null
+    },
+    {
+      "name": "Indians in Thailand",
+      "pct": null
+    },
+    {
+      "name": "Iranians in Thailand",
+      "pct": null
+    },
+    {
+      "name": "Thai Portuguese",
+      "pct": null
+    },
+    {
+      "name": "Hmong people",
+      "pct": null
+    },
+    {
+      "name": "Yao people",
+      "pct": null
+    },
+    {
+      "name": "Australians in Thailand",
+      "pct": null
+    },
+    {
+      "name": "Farang",
+      "pct": null
+    },
+    {
+      "name": "Filipinos in Thailand",
+      "pct": null
+    },
+    {
+      "name": "Japanese migration to Thailand",
+      "pct": null
+    },
+    {
+      "name": "Koreans in Thailand",
+      "pct": null
+    },
+    {
+      "name": "Luk khrueng",
+      "pct": null
+    },
+    {
+      "name": "Swedes in Thailand",
+      "pct": null
+    },
+    {
+      "name": "Southern Thai people",
+      "pct": null
+    }
+  ],
+  "YE": [
+    {
+      "name": "Arabs",
+      "pct": null
+    },
+    {
+      "name": "Somalis",
+      "pct": null
+    }
+  ],
+  "MV": [
+    {
+      "name": "Maldivians",
+      "pct": null
+    }
+  ],
+  "MZ": [
+    {
+      "name": "African people",
+      "pct": 99.7
+    },
+    {
+      "name": "White Africans of European ancestry",
+      "pct": 0.2
+    },
+    {
+      "name": "Indians in Mozambique",
+      "pct": 0.1
+    },
+    {
+      "name": "European people",
+      "pct": 0.1
+    }
+  ],
+  "NG": [
+    {
+      "name": "Hausa people",
+      "pct": 22.1
+    },
+    {
+      "name": "Yoruba people",
+      "pct": 21
+    },
+    {
+      "name": "Igbo people",
+      "pct": 18
+    },
+    {
+      "name": "Ijaw people",
+      "pct": 10
+    },
+    {
+      "name": "Fulbe people",
+      "pct": 4.7
+    },
+    {
+      "name": "Kanuri people",
+      "pct": 4
+    },
+    {
+      "name": "Ibibio people",
+      "pct": 3.5
+    },
+    {
+      "name": "Tiv people",
+      "pct": 2.5
+    }
+  ],
+  "UG": [
+    {
+      "name": "Baganda people",
+      "pct": 16.5
+    },
+    {
+      "name": "Nkole people",
+      "pct": 9.6
+    },
+    {
+      "name": "Soga",
+      "pct": 8.8
+    },
+    {
+      "name": "Kiga people",
+      "pct": 7.1
+    },
+    {
+      "name": "Teso people",
+      "pct": 7
+    },
+    {
+      "name": "Langi people",
+      "pct": 6.3
+    },
+    {
+      "name": "Gisu people",
+      "pct": 4.9
+    },
+    {
+      "name": "Acholi people",
+      "pct": 4.4
+    },
+    {
+      "name": "Lugbara people",
+      "pct": 3.3
+    },
+    {
+      "name": "Konjo people",
+      "pct": null
+    }
+  ],
+  "RU": [
+    {
+      "name": "Russians",
+      "pct": 77.7
+    },
+    {
+      "name": "http://www.wikidata.org/.well-known/genid/2a7e35cd26f78703db1ad006372d6508",
+      "pct": 3.9
+    },
+    {
+      "name": "Tatars",
+      "pct": 3.7
+    },
+    {
+      "name": "Ukrainians",
+      "pct": 1.4
+    },
+    {
+      "name": "Chuvash people",
+      "pct": 1
+    },
+    {
+      "name": "Chechens",
+      "pct": 1
+    }
+  ],
+  "DE": [
+    {
+      "name": "Germans",
+      "pct": 86.3
+    },
+    {
+      "name": "Turks",
+      "pct": 1.8
+    },
+    {
+      "name": "Romanians",
+      "pct": 1
+    },
+    {
+      "name": "Poles",
+      "pct": 1
+    },
+    {
+      "name": "Syrians",
+      "pct": 1
+    }
+  ],
+  "PL": [
+    {
+      "name": "Poles",
+      "pct": 96.9
+    },
+    {
+      "name": "Silesians",
+      "pct": 1.1
+    },
+    {
+      "name": "Germans",
+      "pct": 0.2
+    },
+    {
+      "name": "Ukrainians in Poland",
+      "pct": 0.1
+    }
+  ],
+  "GR": [
+    {
+      "name": "Greeks",
+      "pct": null
+    }
+  ],
+  "PE": [
+    {
+      "name": "Peruvians",
+      "pct": null
+    }
+  ],
+  "NZ": [
+    {
+      "name": "European New Zealanders",
+      "pct": 71.2
+    },
+    {
+      "name": "Māori",
+      "pct": 14.1
+    },
+    {
+      "name": "Asian New Zealanders",
+      "pct": 11.3
+    },
+    {
+      "name": "Pacific Islanders",
+      "pct": 7.6
+    }
+  ],
+  "PG": [
+    {
+      "name": "Polynesians",
+      "pct": null
+    },
+    {
+      "name": "Melanesians",
+      "pct": null
+    },
+    {
+      "name": "Micronesians",
+      "pct": null
+    },
+    {
+      "name": "Negrito",
+      "pct": null
+    },
+    {
+      "name": "Papuan people",
+      "pct": null
+    }
+  ],
+  "CO": [
+    {
+      "name": "mestizo Colombians",
+      "pct": 49
+    },
+    {
+      "name": "White Colombians",
+      "pct": 37
+    },
+    {
+      "name": "Afro-Colombians",
+      "pct": 10.4
+    },
+    {
+      "name": "indigenous peoples in Colombia",
+      "pct": 3.4
+    },
+    {
+      "name": "http://www.wikidata.org/.well-known/genid/2d753c535fb8abf5cfb6c8e1db794328",
+      "pct": 2.1
+    }
+  ],
+  "IQ": [
+    {
+      "name": "Arabs",
+      "pct": 77.5
+    },
+    {
+      "name": "Kurds in Iraq",
+      "pct": 17.5
+    },
+    {
+      "name": "Yazidis",
+      "pct": null
+    },
+    {
+      "name": "Shabak people",
+      "pct": null
+    },
+    {
+      "name": "Assyrians in Iraq",
+      "pct": null
+    },
+    {
+      "name": "Iraqi Turkmen",
+      "pct": null
+    }
+  ],
+  "NP": [
+    {
+      "name": "Chhetri",
+      "pct": 16.6
+    },
+    {
+      "name": "Bahun",
+      "pct": 12.2
+    },
+    {
+      "name": "Magars",
+      "pct": 7.1
+    },
+    {
+      "name": "Tharu people",
+      "pct": 6.6
+    },
+    {
+      "name": "Tamang people",
+      "pct": 5.8
+    },
+    {
+      "name": "Newar people",
+      "pct": 5
+    },
+    {
+      "name": "Kami people",
+      "pct": 4.8
+    },
+    {
+      "name": "Muslim",
+      "pct": 4.4
+    },
+    {
+      "name": "Yadav",
+      "pct": 4
+    },
+    {
+      "name": "Rai people",
+      "pct": 2.3
+    },
+    {
+      "name": "Gurung people",
+      "pct": 2
+    },
+    {
+      "name": "Miji people",
+      "pct": 1.8
+    },
+    {
+      "name": "Thakuri",
+      "pct": 1.6
+    },
+    {
+      "name": "Limbu people",
+      "pct": 1.5
+    },
+    {
+      "name": "Bene Israel",
+      "pct": 1.4
+    },
+    {
+      "name": "Sarki",
+      "pct": 1.4
+    },
+    {
+      "name": "Chamar",
+      "pct": 1.3
+    },
+    {
+      "name": "Kushwaha",
+      "pct": 1.2
+    }
+  ],
+  "AF": [
+    {
+      "name": "Kyrgyz people",
+      "pct": null
+    },
+    {
+      "name": "Nuristani people",
+      "pct": null
+    },
+    {
+      "name": "Baloch",
+      "pct": null
+    },
+    {
+      "name": "Hazaras",
+      "pct": null
+    },
+    {
+      "name": "Gurjar",
+      "pct": null
+    },
+    {
+      "name": "Arabs",
+      "pct": null
+    },
+    {
+      "name": "Tajiks",
+      "pct": null
+    },
+    {
+      "name": "Pamiri people",
+      "pct": null
+    },
+    {
+      "name": "Uzbeks",
+      "pct": null
+    },
+    {
+      "name": "Aimaq people",
+      "pct": null
+    },
+    {
+      "name": "Qizilbash",
+      "pct": null
+    },
+    {
+      "name": "Pasha people",
+      "pct": null
+    },
+    {
+      "name": "Turkmens",
+      "pct": null
+    },
+    {
+      "name": "Brahui people",
+      "pct": null
+    },
+    {
+      "name": "Pashtuns",
+      "pct": null
+    }
+  ],
+  "BD": [
+    {
+      "name": "Bengalis",
+      "pct": 98
+    }
+  ],
+  "TZ": [
+    {
+      "name": "Bantu people",
+      "pct": 95
+    }
+  ],
+  "PH": [
+    {
+      "name": "Tagalog people",
+      "pct": 28.1
+    },
+    {
+      "name": "Cebuano people",
+      "pct": 13.1
+    },
+    {
+      "name": "Ilocano",
+      "pct": 9
+    },
+    {
+      "name": "Visayans",
+      "pct": 7.6
+    },
+    {
+      "name": "Hiligaynon people",
+      "pct": 7.5
+    },
+    {
+      "name": "Bicolano people",
+      "pct": 6
+    },
+    {
+      "name": "Waray people",
+      "pct": 3.4
+    }
+  ],
+  "CD": [
+    {
+      "name": "Kongo people",
+      "pct": null
+    },
+    {
+      "name": "Luba people",
+      "pct": null
+    },
+    {
+      "name": "Mangbetu people",
+      "pct": null
+    },
+    {
+      "name": "Mongo",
+      "pct": null
+    },
+    {
+      "name": "Zande people",
+      "pct": null
+    }
+  ],
+  "ET": [
+    {
+      "name": "Oromo people",
+      "pct": 34.4
+    },
+    {
+      "name": "Amhara people",
+      "pct": 27
+    },
+    {
+      "name": "Somalis",
+      "pct": 6.2
+    },
+    {
+      "name": "Tigray people",
+      "pct": 6.1
+    },
+    {
+      "name": "Sidama people",
+      "pct": 4
+    },
+    {
+      "name": "Gurage people",
+      "pct": 2.5
+    },
+    {
+      "name": "Wolaitans",
+      "pct": 2.3
+    },
+    {
+      "name": "Afar people",
+      "pct": 1.7
+    },
+    {
+      "name": "Hadiya people",
+      "pct": 1.7
+    },
+    {
+      "name": "Gamo people",
+      "pct": 1.5
+    },
+    {
+      "name": "Silt'e people",
+      "pct": 1.3
+    },
+    {
+      "name": "Gedeo people",
+      "pct": 1.3
+    },
+    {
+      "name": "Kafficho people",
+      "pct": 1.2
+    }
+  ],
+  "GB": [
+    {
+      "name": "White British",
+      "pct": 87.2
+    },
+    {
+      "name": "Black Britons",
+      "pct": 3
+    },
+    {
+      "name": "British Indians",
+      "pct": 2.3
+    },
+    {
+      "name": "British Pakistanis",
+      "pct": 1.9
+    }
+  ],
+  "CN": [
+    {
+      "name": "Han Chinese people",
+      "pct": 91.6
+    },
+    {
+      "name": "Zhuang people",
+      "pct": 1.3
+    },
+    {
+      "name": "Uyghurs",
+      "pct": 0.8
+    },
+    {
+      "name": "Hui people",
+      "pct": 0.8
+    },
+    {
+      "name": "Manchu",
+      "pct": 0.8
+    },
+    {
+      "name": "Miao",
+      "pct": 0.7
+    },
+    {
+      "name": "Yi people",
+      "pct": 0.7
+    },
+    {
+      "name": "Tujia people",
+      "pct": 0.6
+    },
+    {
+      "name": "Tibetan people",
+      "pct": 0.5
+    },
+    {
+      "name": "Mongols in China",
+      "pct": 0.4
+    },
+    {
+      "name": "Yao people",
+      "pct": 0.2
+    },
+    {
+      "name": "Kam people",
+      "pct": 0.2
+    },
+    {
+      "name": "Bouyei people",
+      "pct": 0.2
+    },
+    {
+      "name": "Kazakhs in China",
+      "pct": 0.1
+    },
+    {
+      "name": "Hlai people",
+      "pct": 0.1
+    },
+    {
+      "name": "Hani people",
+      "pct": 0.1
+    },
+    {
+      "name": "Korean Chinese",
+      "pct": 0.1
+    },
+    {
+      "name": "Bai people",
+      "pct": 0.1
+    },
+    {
+      "name": "Lisu people",
+      "pct": 0.1
+    }
+  ],
+  "BR": [
+    {
+      "name": "White Brazilians",
+      "pct": 47.7
+    },
+    {
+      "name": "Pardo Brazilians",
+      "pct": 43.1
+    },
+    {
+      "name": "African Brazilians",
+      "pct": 7.6
+    },
+    {
+      "name": "Asian Brazilians",
+      "pct": 1.1
+    },
+    {
+      "name": "indigenous peoples in Brazil",
+      "pct": 0.4
+    }
+  ],
+  "CA": [
+    {
+      "name": "Canadians",
+      "pct": 32.2
+    },
+    {
+      "name": "English Canadians",
+      "pct": 19.8
+    },
+    {
+      "name": "French Canadians",
+      "pct": 15.5
+    },
+    {
+      "name": "Scottish Canadians",
+      "pct": 14.4
+    },
+    {
+      "name": "Irish Canadians",
+      "pct": 13.8
+    },
+    {
+      "name": "German Canadians",
+      "pct": 9.8
+    },
+    {
+      "name": "Chinese Canadians",
+      "pct": 4.5
+    },
+    {
+      "name": "Italian Canadians",
+      "pct": 4.5
+    },
+    {
+      "name": "First Nations",
+      "pct": 4.2
+    },
+    {
+      "name": "Belgian Canadians",
+      "pct": null
+    },
+    {
+      "name": "Inuit",
+      "pct": null
+    },
+    {
+      "name": "Québécois",
+      "pct": null
+    },
+    {
+      "name": "Abenaki people",
+      "pct": null
+    },
+    {
+      "name": "Atikamekw people",
+      "pct": null
+    },
+    {
+      "name": "Innu people",
+      "pct": null
+    },
+    {
+      "name": "Mohawk",
+      "pct": null
+    },
+    {
+      "name": "Wyandot people",
+      "pct": null
+    },
+    {
+      "name": "Cree",
+      "pct": null
+    },
+    {
+      "name": "Wolastoqiyik",
+      "pct": null
+    }
+  ],
+  "JP": [
+    {
+      "name": "Japanese people",
+      "pct": 98.5
+    },
+    {
+      "name": "Koreans",
+      "pct": 0.5
+    },
+    {
+      "name": "Chinese people",
+      "pct": 0.4
+    },
+    {
+      "name": "Ainu people",
+      "pct": null
+    }
+  ],
+  "CZ": [
+    {
+      "name": "Czechs",
+      "pct": 63.7
+    },
+    {
+      "name": "http://www.wikidata.org/.well-known/genid/8786144f23342fb8e4c79c23cfee8bcb",
+      "pct": 26
+    },
+    {
+      "name": "Moravians",
+      "pct": 4.9
+    },
+    {
+      "name": "Slovaks",
+      "pct": 1.4
+    }
+  ],
+  "AL": [
+    {
+      "name": "Albanians",
+      "pct": 82.6
+    },
+    {
+      "name": "http://www.wikidata.org/.well-known/genid/5b668a0177699714b6b192fd33630524",
+      "pct": 15.5
+    },
+    {
+      "name": "Greeks",
+      "pct": 0.9
+    },
+    {
+      "name": "Egyptians",
+      "pct": null
+    },
+    {
+      "name": "Macedonians",
+      "pct": null
+    },
+    {
+      "name": "Montenegrins in Albania",
+      "pct": null
+    },
+    {
+      "name": "Vlachs",
+      "pct": null
+    },
+    {
+      "name": "Romani people",
+      "pct": null
+    }
+  ],
+  "AD": [
+    {
+      "name": "Andorrans",
+      "pct": 46.2
+    },
+    {
+      "name": "Spaniards",
+      "pct": 26.4
+    },
+    {
+      "name": "Portuguese",
+      "pct": 12.8
+    },
+    {
+      "name": "French",
+      "pct": 5
+    }
+  ],
+  "ID": [
+    {
+      "name": "Malays",
+      "pct": 99
+    },
+    {
+      "name": "Javanese",
+      "pct": 40.1
+    },
+    {
+      "name": "Sundanese people",
+      "pct": 15.5
+    },
+    {
+      "name": "Arab Indonesians",
+      "pct": 13.5
+    },
+    {
+      "name": "Batak",
+      "pct": 3.6
+    },
+    {
+      "name": "Madurese",
+      "pct": 3
+    },
+    {
+      "name": "Betawi people",
+      "pct": 2.9
+    },
+    {
+      "name": "Buginese people",
+      "pct": 2.7
+    },
+    {
+      "name": "Minangkabau",
+      "pct": 2.7
+    },
+    {
+      "name": "Bantenese people",
+      "pct": 2
+    },
+    {
+      "name": "Kerinci people",
+      "pct": 1.9
+    },
+    {
+      "name": "Balinese",
+      "pct": 1.7
+    },
+    {
+      "name": "Banjar",
+      "pct": 1.7
+    },
+    {
+      "name": "Aceh",
+      "pct": 1.4
+    },
+    {
+      "name": "Dayak",
+      "pct": 1.4
+    },
+    {
+      "name": "Sasak people",
+      "pct": 1.3
+    },
+    {
+      "name": "Chinese Indonesians",
+      "pct": 1.2
+    },
+    {
+      "name": "Indonesians",
+      "pct": null
+    }
+  ],
+  "ES": [
+    {
+      "name": "Spaniards",
+      "pct": 88
+    },
+    {
+      "name": "Romani people",
+      "pct": null
+    }
+  ],
+  "US": [
+    {
+      "name": "White Americans",
+      "pct": 72.4
+    },
+    {
+      "name": "African Americans",
+      "pct": 12.6
+    },
+    {
+      "name": "Asian Americans",
+      "pct": 4.8
+    },
+    {
+      "name": "Native Americans in the United States",
+      "pct": 1.1
+    }
+  ],
+  "AT": [
+    {
+      "name": "Austrians",
+      "pct": 91.1
+    },
+    {
+      "name": "Yugoslavs",
+      "pct": 4
+    },
+    {
+      "name": "Turks in Austria",
+      "pct": 1.6
+    },
+    {
+      "name": "Germans",
+      "pct": 0.9
+    }
+  ],
+  "TR": [
+    {
+      "name": "Turks",
+      "pct": 72.5
+    },
+    {
+      "name": "Kurds",
+      "pct": 19
+    }
+  ],
+  "EG": [
+    {
+      "name": "Egyptians",
+      "pct": 99.6
+    }
+  ],
+  "MX": [
+    {
+      "name": "mestizo Mexicans",
+      "pct": 62
+    },
+    {
+      "name": "indigenous peoples of Mexico",
+      "pct": 28
+    },
+    {
+      "name": "white Mexicans",
+      "pct": 15
+    },
+    {
+      "name": "Afro Mexicans",
+      "pct": 0.5
+    }
+  ],
+  "AW": [
+    {
+      "name": "Dutch",
+      "pct": 82.1
+    },
+    {
+      "name": "Colombians",
+      "pct": 6.6
+    },
+    {
+      "name": "Dominicans",
+      "pct": 2.2
+    },
+    {
+      "name": "Venezuelans",
+      "pct": 2.2
+    },
+    {
+      "name": "Católica",
+      "pct": 1.2
+    },
+    {
+      "name": "http://www.wikidata.org/.well-known/genid/43469810177dc4db32b87d68c5b6f98c",
+      "pct": 0.1
+    }
+  ],
+  "NC": [
+    {
+      "name": "Kanak",
+      "pct": 40.3
+    },
+    {
+      "name": "European people",
+      "pct": 29.2
+    },
+    {
+      "name": "Wallisians and Futunians",
+      "pct": 8.7
+    },
+    {
+      "name": "Tahitians",
+      "pct": 2
+    },
+    {
+      "name": "Indonesians",
+      "pct": 1.6
+    },
+    {
+      "name": "Vietnamese people",
+      "pct": 1
+    },
+    {
+      "name": "ni-Vanuatu",
+      "pct": 0.9
+    }
+  ],
+  "VN": [
+    {
+      "name": "Vietnamese people",
+      "pct": 85.7
+    },
+    {
+      "name": "Tay people",
+      "pct": 1.9
+    },
+    {
+      "name": "Thai people",
+      "pct": 1.8
+    },
+    {
+      "name": "Khmer people",
+      "pct": 1.5
+    },
+    {
+      "name": "Muong people",
+      "pct": 1.5
+    },
+    {
+      "name": "Hmong people",
+      "pct": 1.2
+    },
+    {
+      "name": "Nùng people",
+      "pct": 1.1
+    },
+    {
+      "name": "Hoa people",
+      "pct": 1
+    }
+  ],
+  "MA": [
+    {
+      "name": "Arab-Amazighs",
+      "pct": 99
+    }
+  ],
+  "SD": [
+    {
+      "name": "Sudanese Arabs",
+      "pct": 70
+    },
+    {
+      "name": "Fur people",
+      "pct": null
+    },
+    {
+      "name": "Beja people",
+      "pct": null
+    },
+    {
+      "name": "Nuba peoples",
+      "pct": null
+    },
+    {
+      "name": "Fulbe people",
+      "pct": null
+    }
+  ],
+  "AS": [
+    {
+      "name": "Samoans",
+      "pct": 88.9
+    },
+    {
+      "name": "Tongans",
+      "pct": 2.9
+    },
+    {
+      "name": "Filipinos",
+      "pct": 2.2
+    }
+  ],
+  "PS": [
+    {
+      "name": "Palestinians",
+      "pct": null
+    }
+  ],
+  "CL": [
+    {
+      "name": "Chileans",
+      "pct": null
+    }
+  ],
+  "SG": [
+    {
+      "name": "Chinese Singaporeans",
+      "pct": 74.3
+    },
+    {
+      "name": "Malays",
+      "pct": 13.4
+    },
+    {
+      "name": "Indian Singaporeans",
+      "pct": 9.1
+    }
+  ],
+  "AM": [
+    {
+      "name": "Armenians",
+      "pct": 98.1
+    },
+    {
+      "name": "Yazidis",
+      "pct": 1.1
+    }
+  ],
+  "AU": [
+    {
+      "name": "English people",
+      "pct": 25.9
+    },
+    {
+      "name": "Australians",
+      "pct": 25.4
+    },
+    {
+      "name": "Irish people",
+      "pct": 7.5
+    },
+    {
+      "name": "Scottish people",
+      "pct": 6.4
+    },
+    {
+      "name": "Italians",
+      "pct": 3.3
+    },
+    {
+      "name": "Germans",
+      "pct": 3.2
+    },
+    {
+      "name": "Chinese people",
+      "pct": 3.1
+    },
+    {
+      "name": "Greeks",
+      "pct": 1.4
+    },
+    {
+      "name": "Indians",
+      "pct": 1.4
+    },
+    {
+      "name": "Dutch",
+      "pct": 1.2
+    },
+    {
+      "name": "Indigenous Australians",
+      "pct": 0.5
+    }
+  ],
+  "AR": [
+    {
+      "name": "European people",
+      "pct": 97.2
+    },
+    {
+      "name": "indigenous peoples in Argentina",
+      "pct": 2.4
+    },
+    {
+      "name": "Afro-Argentines",
+      "pct": 0.4
+    }
+  ],
+  "IN": [
+    {
+      "name": "Indo-Aryan peoples",
+      "pct": 72
+    },
+    {
+      "name": "Dravidian people",
+      "pct": 25
+    }
+  ],
+  "VE": [
+    {
+      "name": "Arab Venezuelan",
+      "pct": null
+    },
+    {
+      "name": "Koreans in Venezuela",
+      "pct": null
+    },
+    {
+      "name": "Chinese Venezuelans",
+      "pct": null
+    },
+    {
+      "name": "Lebanese Venezuelans",
+      "pct": null
+    },
+    {
+      "name": "Indians in Venezuela",
+      "pct": null
+    },
+    {
+      "name": "White Venezuelans",
+      "pct": null
+    },
+    {
+      "name": "Afro-Venezuelans",
+      "pct": null
+    },
+    {
+      "name": "indigenous peoples in Venezuela",
+      "pct": null
+    },
+    {
+      "name": "mestizo Venezuelans",
+      "pct": null
+    },
+    {
+      "name": "Japanese Venezuelans",
+      "pct": null
+    }
+  ],
+  "IR": [
+    {
+      "name": "Baloch",
+      "pct": null
+    },
+    {
+      "name": "Iranian Arabs",
+      "pct": null
+    },
+    {
+      "name": "Lurs",
+      "pct": null
+    },
+    {
+      "name": "Iranian Turkmen",
+      "pct": null
+    },
+    {
+      "name": "Kurds",
+      "pct": null
+    },
+    {
+      "name": "Iranian Azerbaijanis",
+      "pct": null
+    },
+    {
+      "name": "Turkic peoples",
+      "pct": null
+    },
+    {
+      "name": "Persians",
+      "pct": null
+    }
+  ],
+  "PK": [
+    {
+      "name": "Punjabis",
+      "pct": 44.7
+    },
+    {
+      "name": "Pashtuns",
+      "pct": 15.4
+    },
+    {
+      "name": "Sindhis",
+      "pct": 14.1
+    },
+    {
+      "name": "Saraiki people",
+      "pct": 8.4
+    },
+    {
+      "name": "Muhajir",
+      "pct": 7.6
+    },
+    {
+      "name": "Baloch",
+      "pct": 3.6
+    }
+  ],
+  "AO": [
+    {
+      "name": "Ovimbundu people",
+      "pct": 37
+    },
+    {
+      "name": "Mbundu people",
+      "pct": 25
+    },
+    {
+      "name": "Kongo people",
+      "pct": 13
+    },
+    {
+      "name": "Mestiço",
+      "pct": 2
+    },
+    {
+      "name": "European people",
+      "pct": 1
+    }
+  ],
+  "TN": [
+    {
+      "name": "Arabs",
+      "pct": 98
+    },
+    {
+      "name": "Jewish people",
+      "pct": 1
+    },
+    {
+      "name": "European people",
+      "pct": 1
+    }
+  ]
+}
