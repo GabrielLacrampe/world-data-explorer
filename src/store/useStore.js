@@ -27,7 +27,6 @@ const useStore = create((set, get) => ({
     worldBankCountryData: null,
     // keep sidebar open if already open and selecting a new country; close on deselect
     sidebarOpen: country !== null,
-    activeTab: 'gobierno',
     countryLoadError: false,
   })),
   setCountryData: (data) => set({ countryData: data }),
