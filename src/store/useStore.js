@@ -71,9 +71,7 @@ const useStore = create((set, get) => ({
   setStaticData: (data) => set({ staticData: data }),
 
   // ─── Trade routes ─────────────────────────────────────────────────────
-  tradeMode: false,
   tradeGeoJSON: null,
-  setTradeMode: (val) => set({ tradeMode: val }),
   setTradeGeoJSON: (data) => set({ tradeGeoJSON: data }),
 }))
 
