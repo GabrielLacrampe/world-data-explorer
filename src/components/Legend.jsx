@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { LAYERS } from '../App'
+import { LAYERS } from '../layers'
 import useStore from '../store/useStore'
 
 const ALLIANCE_LEGEND = [
