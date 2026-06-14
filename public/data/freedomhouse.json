@@ -1,0 +1,972 @@
+{
+  "AF": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 7
+  },
+  "AL": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 3
+  },
+  "DZ": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 5
+  },
+  "AD": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "AO": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 5
+  },
+  "AG": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "AR": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "AM": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 4
+  },
+  "AU": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "AT": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "AZ": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 7
+  },
+  "BS": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 2
+  },
+  "BH": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "BD": {
+    "status": "Partly Free",
+    "pr": 5,
+    "cl": 4
+  },
+  "BB": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "BY": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 7
+  },
+  "BE": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "BZ": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 1
+  },
+  "BJ": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 3
+  },
+  "BT": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 3
+  },
+  "BO": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 3
+  },
+  "BA": {
+    "status": "Partly Free",
+    "pr": 5,
+    "cl": 3
+  },
+  "BW": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "BR": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 3
+  },
+  "BN": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 5
+  },
+  "BG": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "BF": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 5
+  },
+  "BI": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "CV": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "KH": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 5
+  },
+  "CM": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 6
+  },
+  "CA": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "CF": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 7
+  },
+  "TD": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "CL": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "CN": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "CO": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 3
+  },
+  "KM": {
+    "status": "Partly Free",
+    "pr": 5,
+    "cl": 5
+  },
+  "CG": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "CD": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "CR": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "CI": {
+    "status": "Partly Free",
+    "pr": 5,
+    "cl": 4
+  },
+  "HR": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "CU": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "CY": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 2
+  },
+  "CZ": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "DK": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "DJ": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 5
+  },
+  "DM": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "DO": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 3
+  },
+  "EC": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 3
+  },
+  "EG": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 6
+  },
+  "SV": {
+    "status": "Partly Free",
+    "pr": 5,
+    "cl": 4
+  },
+  "GQ": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 7
+  },
+  "ER": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 7
+  },
+  "EE": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "SZ": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "ET": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 6
+  },
+  "FJ": {
+    "status": "Free",
+    "pr": 3,
+    "cl": 2
+  },
+  "FI": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "FR": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 2
+  },
+  "GA": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 5
+  },
+  "GE": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 4
+  },
+  "DE": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "GH": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "GR": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "GD": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 2
+  },
+  "GT": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 4
+  },
+  "GN": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 5
+  },
+  "GW": {
+    "status": "Partly Free",
+    "pr": 6,
+    "cl": 4
+  },
+  "GY": {
+    "status": "Free",
+    "pr": 3,
+    "cl": 2
+  },
+  "HT": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 5
+  },
+  "HN": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 4
+  },
+  "HU": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 3
+  },
+  "IS": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "IN": {
+    "status": "Partly Free",
+    "pr": 2,
+    "cl": 4
+  },
+  "ID": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 4
+  },
+  "IR": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 7
+  },
+  "IQ": {
+    "status": "Not Free",
+    "pr": 5,
+    "cl": 6
+  },
+  "IE": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "IL": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 3
+  },
+  "IT": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "JM": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "JP": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "JO": {
+    "status": "Partly Free",
+    "pr": 5,
+    "cl": 5
+  },
+  "KZ": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 5
+  },
+  "KE": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 4
+  },
+  "KI": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "XK": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 4
+  },
+  "KW": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 5
+  },
+  "KG": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 5
+  },
+  "LA": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "LV": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 2
+  },
+  "LB": {
+    "status": "Partly Free",
+    "pr": 5,
+    "cl": 4
+  },
+  "LS": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 3
+  },
+  "LR": {
+    "status": "Partly Free",
+    "pr": 2,
+    "cl": 4
+  },
+  "LY": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "LI": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 1
+  },
+  "LT": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 2
+  },
+  "LU": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "MG": {
+    "status": "Partly Free",
+    "pr": 5,
+    "cl": 4
+  },
+  "MW": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 3
+  },
+  "MY": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 4
+  },
+  "MV": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 5
+  },
+  "ML": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 5
+  },
+  "MT": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 1
+  },
+  "MH": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "MR": {
+    "status": "Partly Free",
+    "pr": 5,
+    "cl": 5
+  },
+  "MU": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 2
+  },
+  "MX": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 4
+  },
+  "FM": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "MD": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 3
+  },
+  "MC": {
+    "status": "Free",
+    "pr": 3,
+    "cl": 1
+  },
+  "MN": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 2
+  },
+  "ME": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 3
+  },
+  "MA": {
+    "status": "Partly Free",
+    "pr": 5,
+    "cl": 5
+  },
+  "MZ": {
+    "status": "Partly Free",
+    "pr": 5,
+    "cl": 4
+  },
+  "MM": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 7
+  },
+  "NA": {
+    "status": "Free",
+    "pr": 3,
+    "cl": 2
+  },
+  "NR": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 3
+  },
+  "NP": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 4
+  },
+  "NL": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "NZ": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "NI": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "NE": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 5
+  },
+  "NG": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 5
+  },
+  "KP": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 7
+  },
+  "MK": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 3
+  },
+  "NO": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "OM": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 5
+  },
+  "PK": {
+    "status": "Partly Free",
+    "pr": 5,
+    "cl": 5
+  },
+  "PW": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "PA": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "PG": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 3
+  },
+  "PY": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 3
+  },
+  "PE": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 3
+  },
+  "PH": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 4
+  },
+  "PL": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "PT": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "QA": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 5
+  },
+  "RO": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "RU": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "RW": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 6
+  },
+  "WS": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "SM": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "ST": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "SA": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "SN": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 3
+  },
+  "RS": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 3
+  },
+  "SC": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "SL": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 3
+  },
+  "SG": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 4
+  },
+  "SK": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 1
+  },
+  "SI": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "SB": {
+    "status": "Free",
+    "pr": 3,
+    "cl": 2
+  },
+  "SO": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 7
+  },
+  "ZA": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "KR": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "SS": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 7
+  },
+  "ES": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "LK": {
+    "status": "Partly Free",
+    "pr": 3,
+    "cl": 4
+  },
+  "KN": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 1
+  },
+  "LC": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "VC": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "SR": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "SE": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "CH": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "SY": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "TW": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "TJ": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 7
+  },
+  "TZ": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 5
+  },
+  "TH": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 5
+  },
+  "GM": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 4
+  },
+  "TL": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 3
+  },
+  "TG": {
+    "status": "Partly Free",
+    "pr": 6,
+    "cl": 4
+  },
+  "TO": {
+    "status": "Free",
+    "pr": 3,
+    "cl": 2
+  },
+  "TT": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "TN": {
+    "status": "Partly Free",
+    "pr": 6,
+    "cl": 4
+  },
+  "TR": {
+    "status": "Not Free",
+    "pr": 5,
+    "cl": 6
+  },
+  "TM": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 7
+  },
+  "TV": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "UG": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 5
+  },
+  "UA": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 4
+  },
+  "AE": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "GB": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "US": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "UY": {
+    "status": "Free",
+    "pr": 1,
+    "cl": 1
+  },
+  "UZ": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "VU": {
+    "status": "Free",
+    "pr": 2,
+    "cl": 2
+  },
+  "VE": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "VN": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "YE": {
+    "status": "Not Free",
+    "pr": 7,
+    "cl": 6
+  },
+  "ZM": {
+    "status": "Partly Free",
+    "pr": 4,
+    "cl": 4
+  },
+  "ZW": {
+    "status": "Not Free",
+    "pr": 6,
+    "cl": 5
+  }
+}

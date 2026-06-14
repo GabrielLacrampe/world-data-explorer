@@ -307,25 +307,37 @@ function DiplomaticTab({ countryCode, staticData }) {
   }
 
   const democracyScore = staticData.vdem?.[countryCode]
-  const freedomStatus  = staticData.freedomhouse?.[countryCode]
+  const fh             = staticData.freedomhouse?.[countryCode]
   const alliances      = staticData.alliances?.[countryCode] ?? []
-  const freedomConfig  = FREEDOM_STATUS[freedomStatus]
+  const freedomConfig  = FREEDOM_STATUS[fh?.status]
 
   return (
     <div className="flex flex-col gap-6">
 
       <Section title="Political System">
-        {freedomStatus ? (
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full shrink-0"
-              style={{ backgroundColor: freedomConfig?.color ?? '#6b7280' }} />
-            <div>
-              <p className="text-white text-sm">{freedomStatus}</p>
-              <p className="text-gray-500 text-xs">Freedom House rating</p>
+        {fh ? (
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full shrink-0"
+                style={{ backgroundColor: freedomConfig?.color ?? '#6b7280' }} />
+              <div>
+                <p className="text-[#e2e8f0] text-sm">{fh.status}</p>
+                <p className="text-gray-500 text-xs">Freedom House 2026</p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div>
+                <p className="text-gray-500 text-xs uppercase tracking-wider">Political Rights</p>
+                <p className="text-[#e2e8f0] text-sm mt-0.5">{fh.pr} <span className="text-gray-500 text-xs">/ 7</span></p>
+              </div>
+              <div>
+                <p className="text-gray-500 text-xs uppercase tracking-wider">Civil Liberties</p>
+                <p className="text-[#e2e8f0] text-sm mt-0.5">{fh.cl} <span className="text-gray-500 text-xs">/ 7</span></p>
+              </div>
             </div>
           </div>
         ) : (
-          <p className="text-gray-600 text-xs">Freedom House data pending</p>
+          <p className="text-gray-600 text-xs">No Freedom House data</p>
         )}
 
         {democracyScore !== undefined ? (
