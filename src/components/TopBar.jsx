@@ -1,20 +1,9 @@
 import useStore from '../store/useStore'
 import { formatMilSpending } from '../utils/staticData'
+import { fmtGdpCap, fmtPop } from '../utils/format'
 
-function fmtGdpCap(v) {
-  if (v == null) return null
-  if (v >= 1_000_000) return `$${(v / 1_000_000).toFixed(1)}M`
-  if (v >= 1_000) return `$${Math.round(v / 1_000)}K`
-  return `$${Math.round(v)}`
-}
-
-function fmtPop(v) {
-  if (v == null) return null
-  if (v >= 1_000_000_000) return `${(v / 1_000_000_000).toFixed(2)}B`
-  if (v >= 1_000_000) return `${(v / 1_000_000).toFixed(1)}M`
-  if (v >= 1_000) return `${(v / 1_000).toFixed(0)}K`
-  return `${v}`
-}
+const DEMOCRACY_HIGH = 0.6
+const DEMOCRACY_LOW  = 0.3
 
 function Stat({ label, value, valueClass = 'text-[#e2e8f0]' }) {
   return (
@@ -33,7 +22,7 @@ function Divider() {
   return <div className="w-px h-5 bg-[#1e2736] shrink-0" />
 }
 
-function TopBar() {
+export default function TopBar() {
   const {
     countryData,
     worldBankCountryData,
@@ -44,11 +33,11 @@ function TopBar() {
     mapZoom,
   } = useStore()
 
-  const gdpCap = worldBankCountryData?.['NY.GDP.PCAP.CD']
-  const gdpGrowth = worldBankCountryData?.['NY.GDP.MKTP.KD.ZG']
+  const gdpCap     = worldBankCountryData?.['NY.GDP.PCAP.CD']
+  const gdpGrowth  = worldBankCountryData?.['NY.GDP.MKTP.KD.ZG']
   const milSpending = staticData?.sipri?.[selectedCountry?.code]
-  const democracy = staticData?.vdem?.[selectedCountry?.code]
-  const pop = worldBankCountryData?.['SP.POP.TOTL']
+  const democracy  = staticData?.vdem?.[selectedCountry?.code]
+  const pop        = worldBankCountryData?.['SP.POP.TOTL']
 
   const growthDisplay = gdpGrowth != null
     ? `${gdpGrowth >= 0 ? '+' : ''}${gdpGrowth.toFixed(1)}%`
@@ -56,6 +45,11 @@ function TopBar() {
   const growthClass = gdpGrowth == null
     ? 'text-[#e2e8f0]'
     : gdpGrowth >= 0 ? 'text-emerald-400' : 'text-red-400'
+
+  const democracyClass = democracy == null      ? 'text-[#e2e8f0]'
+    : democracy > DEMOCRACY_HIGH                ? 'text-emerald-400'
+    : democracy > DEMOCRACY_LOW                 ? 'text-amber-400'
+    : 'text-red-400'
 
   return (
     <div className="absolute top-0 left-0 z-20 h-10
@@ -65,7 +59,6 @@ function TopBar() {
 
       {countryData ? (
         <>
-          {/* Flag + name — clicking opens/closes the sidebar */}
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
             className="flex items-center gap-2 shrink-0 group"
@@ -82,20 +75,11 @@ function TopBar() {
 
           <Divider />
 
-          <Stat label="GDP / Cap" value={fmtGdpCap(gdpCap)} />
-          <Stat label="GDP Growth" value={growthDisplay} valueClass={growthClass} />
-          <Stat label="Population" value={fmtPop(pop)} />
+          <Stat label="GDP / Cap"    value={fmtGdpCap(gdpCap)} />
+          <Stat label="GDP Growth"   value={growthDisplay} valueClass={growthClass} />
+          <Stat label="Population"   value={fmtPop(pop)} />
           <Stat label="Mil. Spending" value={formatMilSpending(milSpending)} />
-          <Stat
-            label="Democracy"
-            value={democracy != null ? democracy.toFixed(3) : null}
-            valueClass={
-              democracy == null ? 'text-[#e2e8f0]'
-              : democracy > 0.6 ? 'text-emerald-400'
-              : democracy > 0.3 ? 'text-amber-400'
-              : 'text-red-400'
-            }
-          />
+          <Stat label="Democracy"    value={democracy != null ? democracy.toFixed(3) : null} valueClass={democracyClass} />
         </>
       ) : (
         <span className="text-[#4b5563] text-[10px] tracking-wider font-display uppercase">
@@ -107,5 +91,3 @@ function TopBar() {
     </div>
   )
 }
-
-export default TopBar
