@@ -6,7 +6,7 @@ import Legend from './components/Legend'
 import LoadingOverlay from './components/LoadingOverlay'
 import useStore from './store/useStore'
 import { buildMatchExpression, valueToColor, buildPoliticalExpression } from './utils/colorScale'
-import { fetchIndicatorAllCountries, fetchIndicatorsForCountry } from './utils/worldBank'
+import { fetchIndicatorAllCountries, fetchIndicatorsForCountry, fetchIndicatorForCountries } from './utils/worldBank'
 import { loadStaticDatasets } from './utils/staticData'
 import { LAYERS, SIDEBAR_INDICATORS } from './layers'
 
@@ -106,24 +106,55 @@ function App() {
     if (layer.source !== 'worldbank') return
 
     const indicator = layer.indicator
+    let cancelled = false
 
-    // Use cache if available
+    const HIGH_LITERACY_SUBREGIONS = new Set([
+      'Northern Europe', 'Southern Europe', 'Western Europe', 'Eastern Europe',
+      'Northern America', 'Australia and New Zealand',
+    ])
+    const HIGH_LITERACY_EXTRA = new Set(['JP', 'KR', 'SG', 'TW'])
+
+    const applyAndSet = (rawData) => {
+      const data = { ...rawData }
+      if (layer.fallback !== undefined && allCountriesData) {
+        Object.entries(allCountriesData).forEach(([iso2, country]) => {
+          if (iso2 in data) return
+          if (HIGH_LITERACY_SUBREGIONS.has(country.subregion) || HIGH_LITERACY_EXTRA.has(iso2)) {
+            data[iso2] = layer.fallback
+          }
+        })
+      }
+      buildAndSetWorldBankExpression(data, layer)
+    }
+
     if (worldBankLayerCache[indicator]) {
-      buildAndSetWorldBankExpression(worldBankLayerCache[indicator])
+      applyAndSet(worldBankLayerCache[indicator])
       return
     }
 
-    // Fetch and cache
-    fetchIndicatorAllCountries(indicator)
-      .then((data) => {
+    fetchIndicatorAllCountries(indicator, { mrv: layer.mrv })
+      .then(async (data) => {
+        if (cancelled) return
+        // Supplemental pass: fetch missing countries individually via WB multi-country endpoint
+        if (layer.supplementalFetch && allCountriesData) {
+          const missing = Object.keys(allCountriesData).filter((iso2) => !(iso2 in data))
+          if (missing.length) {
+            const extra = await fetchIndicatorForCountries(missing, indicator, { mrv: layer.mrv })
+            if (!cancelled) Object.assign(data, extra)
+          }
+        }
+        if (cancelled) return
         setWorldBankLayerData(indicator, data)
-        buildAndSetWorldBankExpression(data)
+        applyAndSet(data)
       })
       .catch((err) => {
+        if (cancelled) return
         console.error('World Bank layer fetch failed:', err)
         setFillExpression('#3b5998')
       })
-  }, [activeLayer])
+
+    return () => { cancelled = true }
+  }, [activeLayer, allCountriesData])
   
   useEffect(() => {
     const layer = LAYERS[activeLayer]
@@ -156,13 +187,17 @@ function App() {
   }, [selectedCountry])
 
 
-  function buildAndSetWorldBankExpression(data) {
-    const values = Object.values(data).filter((v) => v !== null && v > 0)
+  function buildAndSetWorldBankExpression(data, layerConfig) {
+    const scale = layerConfig?.scale ?? 'log'
+    const invert = layerConfig?.invert ?? false
+    const values = Object.values(data).filter(
+      (v) => v !== null && v !== undefined && (scale === 'log' ? v > 0 : true)
+    )
     if (values.length === 0) return
 
     const countryColors = {}
     Object.entries(data).forEach(([code, value]) => {
-      countryColors[code] = valueToColor(value, values)
+      countryColors[code] = valueToColor(value, values, { scale, invert })
     })
 
     setFillExpression(buildMatchExpression(countryColors))
