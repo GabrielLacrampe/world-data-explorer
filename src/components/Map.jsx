@@ -15,13 +15,6 @@ import {
   LABEL_FADE_END,
 } from '../config/labelConfig'
 
-// Dasharray sequence for directional flow animation (---->----->)
-const DASH_SEQUENCE = [
-  [0, 4, 3], [0.5, 4, 2.5], [1, 4, 2], [1.5, 4, 1.5],
-  [2, 4, 1], [2.5, 4, 0.5], [3, 4, 0],
-  [0, 0.5, 3, 3.5], [0, 1, 3, 3], [0, 1.5, 3, 2.5],
-  [0, 2, 3, 2], [0, 2.5, 3, 1.5], [0, 3, 3, 1], [0, 3.5, 3, 0.5],
-]
 
 const GEOJSON_URL =
   'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
@@ -45,6 +38,14 @@ function Map() {
   const animRef = useRef(null)
   const animStep = useRef(0)
 
+  // Subtle dasharray sequence — short dash, long gap, slow step
+  const FLOW_DASH = [
+    [0, 6, 2], [0.5, 6, 1.5], [1, 6, 1], [1.5, 6, 0.5],
+    [2, 6, 0], [0, 0.5, 2, 5.5], [0, 1, 2, 5], [0, 1.5, 2, 4.5],
+    [0, 2, 2, 4], [0, 2.5, 2, 3.5], [0, 3, 2, 3], [0, 3.5, 2, 2.5],
+    [0, 4, 2, 2], [0, 4.5, 2, 1.5], [0, 5, 2, 1], [0, 5.5, 2, 0.5],
+  ]
+
   const [viewState, setViewState] = useState({
     longitude: 0,
     latitude: 20,
@@ -61,7 +62,6 @@ function Map() {
     staticData,
     activeLayer,
     setMapZoom,
-    tradeMode,
     tradeGeoJSON,
     setTradeGeoJSON,
     allCountriesData,
@@ -155,31 +155,6 @@ function Map() {
     if (geojson) setTradeGeoJSON(geojson)
   }, [staticData, allCountriesData, tradeGeoJSON, setTradeGeoJSON])
 
-  // Directional dash animation for selected-country trade routes
-  useEffect(() => {
-    if (!tradeMode) {
-      if (animRef.current) clearTimeout(animRef.current)
-      return
-    }
-
-    const animate = () => {
-      const map = mapRef.current?.getMap()
-      if (!map) return
-      const step = DASH_SEQUENCE[animStep.current % DASH_SEQUENCE.length]
-      ;['trade-export-selected', 'trade-import-selected'].forEach(id => {
-        if (map.getLayer(id)) map.setPaintProperty(id, 'line-dasharray', step)
-      })
-      animStep.current = (animStep.current + 1) % DASH_SEQUENCE.length
-      animRef.current = setTimeout(() => requestAnimationFrame(animate), 60)
-    }
-
-    // Small delay to let layers render first
-    const startTimer = setTimeout(() => requestAnimationFrame(animate), 200)
-    return () => {
-      clearTimeout(startTimer)
-      if (animRef.current) clearTimeout(animRef.current)
-    }
-  }, [tradeMode, selectedCountry])
 
   const resolvedFill = fillExpression || '#3b5998'
 
@@ -193,9 +168,32 @@ function Map() {
       args.push(partner, ALLIANCE_COLORS[type] ?? '#6b7280')
     }
     return ['match', ['get', GEO_ISO2], ...args, '#3b5998']
-  }, [activeLayer, selectedCountry, staticData, resolvedFill])
+  }, [activeLayer, selectedCountry, staticData])
 
-  const activeFill = allianceFill ?? resolvedFill
+  // Animated flow on selected trade route lines
+  useEffect(() => {
+    if (activeLayer !== 'trade') {
+      if (animRef.current) clearTimeout(animRef.current)
+      return
+    }
+    const animate = () => {
+      const map = mapRef.current?.getMap()
+      if (map) {
+        const dash = FLOW_DASH[animStep.current % FLOW_DASH.length]
+        if (map.getLayer('trade-export-flow')) map.setPaintProperty('trade-export-flow', 'line-dasharray', dash)
+        if (map.getLayer('trade-import-flow')) map.setPaintProperty('trade-import-flow', 'line-dasharray', dash)
+        animStep.current++
+      }
+      animRef.current = setTimeout(() => requestAnimationFrame(animate), 90)
+    }
+    const t = setTimeout(() => requestAnimationFrame(animate), 300)
+    return () => { clearTimeout(t); if (animRef.current) clearTimeout(animRef.current) }
+  }, [activeLayer, selectedCountry])
+
+  // In trade mode all countries get the same dim base color — routes carry the information
+  const tradeFill = activeLayer === 'trade' ? '#3b5998' : null
+
+  const activeFill = allianceFill ?? tradeFill ?? resolvedFill
 
   return (
     <div className="absolute inset-0">
@@ -310,43 +308,92 @@ function Map() {
             />
           </Source>
         )}
-        {tradeMode && tradeGeoJSON && (
+        {activeLayer === 'trade' && tradeGeoJSON && (
           <Source id="trade-routes" type="geojson" data={tradeGeoJSON}>
-            {/* All routes — dim background */}
+            {/* All global routes — very dim, static */}
             <Layer
               id="trade-bg"
               type="line"
               paint={{
-                'line-color': '#334155',
-                'line-width': 0.7,
-                'line-opacity': 0.25,
+                'line-color': '#1e3a5f',
+                'line-width': 0.5,
+                'line-opacity': 0.28,
+                'line-dasharray': [4, 8],
               }}
             />
-            {/* Exports from selected country — bright teal, animated */}
+
+            {/* ── Exports from selected country ── */}
             <Layer
-              id="trade-export-selected"
+              id="trade-export-line"
               type="line"
               filter={selectedCountry
                 ? ['all', ['==', ['get', 'from'], selectedCountry.code], ['==', ['get', 'type'], 'export']]
                 : ['==', '1', '0']}
-              paint={{
-                'line-color': '#22d3ee',
-                'line-width': 2.2,
-                'line-opacity': 0.9,
-              }}
+              paint={{ 'line-color': '#22d3ee', 'line-width': 1.2, 'line-opacity': 0.25 }}
             />
-            {/* Imports to selected country — bright amber, animated */}
+            {/* Animated flow overlay — dasharray set imperatively by rAF loop */}
             <Layer
-              id="trade-import-selected"
+              id="trade-export-flow"
+              type="line"
+              filter={selectedCountry
+                ? ['all', ['==', ['get', 'from'], selectedCountry.code], ['==', ['get', 'type'], 'export']]
+                : ['==', '1', '0']}
+              paint={{ 'line-color': '#67e8f9', 'line-width': 1.6, 'line-opacity': 0.85 }}
+            />
+            {/* Chevron direction markers */}
+            <Layer
+              id="trade-export-arrows"
+              type="symbol"
+              filter={selectedCountry
+                ? ['all', ['==', ['get', 'from'], selectedCountry.code], ['==', ['get', 'type'], 'export']]
+                : ['==', '1', '0']}
+              layout={{
+                'symbol-placement': 'line',
+                'symbol-spacing': 180,
+                'text-field': '›',
+                'text-size': 11,
+                'text-font': ['Noto Sans Bold'],
+                'text-keep-upright': false,
+                'text-rotation-alignment': 'map',
+                'text-pitch-alignment': 'map',
+              }}
+              paint={{ 'text-color': '#a5f3fc', 'text-opacity': 0.6 }}
+            />
+
+            {/* ── Imports to selected country ── */}
+            <Layer
+              id="trade-import-line"
               type="line"
               filter={selectedCountry
                 ? ['all', ['==', ['get', 'to'], selectedCountry.code], ['==', ['get', 'type'], 'import']]
                 : ['==', '1', '0']}
-              paint={{
-                'line-color': '#fb923c',
-                'line-width': 2.2,
-                'line-opacity': 0.9,
+              paint={{ 'line-color': '#fb923c', 'line-width': 1.2, 'line-opacity': 0.25 }}
+            />
+            <Layer
+              id="trade-import-flow"
+              type="line"
+              filter={selectedCountry
+                ? ['all', ['==', ['get', 'to'], selectedCountry.code], ['==', ['get', 'type'], 'import']]
+                : ['==', '1', '0']}
+              paint={{ 'line-color': '#fdba74', 'line-width': 1.6, 'line-opacity': 0.85 }}
+            />
+            <Layer
+              id="trade-import-arrows"
+              type="symbol"
+              filter={selectedCountry
+                ? ['all', ['==', ['get', 'to'], selectedCountry.code], ['==', ['get', 'type'], 'import']]
+                : ['==', '1', '0']}
+              layout={{
+                'symbol-placement': 'line',
+                'symbol-spacing': 180,
+                'text-field': '›',
+                'text-size': 11,
+                'text-font': ['Noto Sans Bold'],
+                'text-keep-upright': false,
+                'text-rotation-alignment': 'map',
+                'text-pitch-alignment': 'map',
               }}
+              paint={{ 'text-color': '#fed7aa', 'text-opacity': 0.6 }}
             />
           </Source>
         )}
