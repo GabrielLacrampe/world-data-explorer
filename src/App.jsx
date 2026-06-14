@@ -5,6 +5,7 @@ import TopBar from './components/TopBar'
 import Legend from './components/Legend'
 import LoadingOverlay from './components/LoadingOverlay'
 import useStore from './store/useStore'
+import TradeToggle from './components/TradeToggle'
 import { buildMatchExpression, valueToColor, buildPoliticalExpression } from './utils/colorScale'
 import { fetchIndicatorAllCountries, fetchIndicatorsForCountry } from './utils/worldBank'
 import { loadStaticDatasets } from './utils/staticData'
@@ -174,6 +175,7 @@ function App() {
       <TopBar />
       <Sidebar />
       <Legend />
+      <TradeToggle />
       <LoadingOverlay />
     </div>
   )
