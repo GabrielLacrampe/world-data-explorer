@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { LAYERS } from '../layers'
 import useStore from '../store/useStore'
+import { COLOR_SCALE } from '../utils/colorScale'
 
 const ALLIANCE_LEGEND = [
   { type: 'Defense Pact', color: '#ef4444' },
@@ -9,17 +10,12 @@ const ALLIANCE_LEGEND = [
   { type: 'Entente', color: '#22c55e' },
 ]
 
-const COLOR_SCALE = [
-  '#0f172a', '#164e63', '#0369a1', '#0284c7',
-  '#059669', '#65a30d', '#ca8a04', '#ea580c',
-  '#dc2626', '#9f1239',
-]
-
 const LAYER_GROUPS = [
   { label: 'Map Style',    keys: ['geographic', 'political'] },
   { label: 'Demographics', keys: ['population', 'area'] },
-  { label: 'Economy',      keys: ['gdp_per_capita', 'gdp_growth', 'unemployment', 'life_expectancy', 'co2_per_capita', 'military_spending'] },
-  { label: 'Governance',   keys: ['democracy_index'] },
+  { label: 'Economy',      keys: ['gdp_per_capita', 'gdp_growth', 'unemployment'] },
+  { label: 'Social',       keys: ['life_expectancy', 'electricity_access', 'literacy_rate', 'internet_users', 'renewable_energy'] },
+  { label: 'Governance',   keys: ['democracy_index', 'military_spending', 'gini_index'] },
   { label: 'Diplomacy',    keys: ['alliances', 'trade'] },
 ]
 
