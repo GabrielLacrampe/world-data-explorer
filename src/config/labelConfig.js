@@ -6,8 +6,8 @@ export const LABEL_REF_ZOOM     = 3     // zoom where LABEL_BASE_SIZE applies (e
 export const LABEL_LARGE_SHOW   = 0.0   // zoom where override (large) labels appear
 export const LABEL_DEFAULT_SHOW = 3.0   // zoom where default-size labels appear
 export const LABEL_FADE_IN      = 0.5   // zoom range to fully fade in after appearing
-export const LABEL_FADE_START   = 4.5   // zoom where ALL labels start fading out
-export const LABEL_FADE_END     = 5.0   // zoom where ALL labels are completely gone
+export const LABEL_FADE_START   = 5.5   // zoom where ALL labels start fading out
+export const LABEL_FADE_END     = 8.0   // zoom where ALL labels are completely gone
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Per-country overrides (ISO2 key).

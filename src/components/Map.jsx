@@ -225,9 +225,9 @@ function Map() {
                 'fill-opacity': activeLayer === 'geographic' ? 0 : [
                   'case',
                   ['==', ['get', 'ISO3166-1-Alpha-2'], '-99'], 0,
-                  ['boolean', ['feature-state', 'selected'], false], 0.95,
-                  ['boolean', ['feature-state', 'hover'], false], 0.85,
-                  0.35,
+                  ['boolean', ['feature-state', 'selected'], false], 0.50,
+                  ['boolean', ['feature-state', 'hover'], false], 0.42,
+                  0.30,
                 ],
               }}
             />
