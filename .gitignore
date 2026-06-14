@@ -1,5 +1,6 @@
 # Raw dataset files (large, not committed)
 scripts/raw/
+scripts/*.xlsx
 
 # Logs
 logs
