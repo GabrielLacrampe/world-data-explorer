@@ -111,35 +111,6 @@ function clamp(value, min, max) {
 }
 
 /**
- * Calculates quantiles from all values for even color distribution.
- */
-export function calculateQuantiles(allValues, numBuckets = COLOR_SCALE.length) {
-  const sorted = [...allValues].sort((a, b) => a - b)
-  const quantiles = []
-  
-  for (let i = 1; i < numBuckets; i++) {
-    const index = Math.floor((i / numBuckets) * sorted.length)
-    quantiles.push(sorted[index])
-  }
-  
-  return quantiles
-}
-
-/**
- * Generates the ranges for the map legend.
- */
-export function getLegendRanges(min, max, steps = 5) {
-  const logMin = Math.log(Math.max(min, 1))
-  const logMax = Math.log(Math.max(max, 1))
-  const step = (logMax - logMin) / steps
-
-  return Array.from({ length: steps }, (_, i) => {
-    const logValue = logMin + step * i
-    return Math.round(Math.exp(logValue))
-  })
-}
-
-/**
  * Formats large numbers into human-readable strings with suffixes (K, M, B).
  * 1400000000 → "1.4B" | 17000000 → "17M" | 800000 → "800K"
  */
