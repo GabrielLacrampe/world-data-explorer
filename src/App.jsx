@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar'
 import TopBar from './components/TopBar'
 import Legend from './components/Legend'
 import LoadingOverlay from './components/LoadingOverlay'
+import ErrorBanner from './components/ErrorBanner'
 import useStore from './store/useStore'
 import { buildMatchExpression, valueToColor, buildPoliticalExpression } from './utils/colorScale'
 import { loadStaticDatasets } from './utils/staticData'
@@ -78,6 +79,7 @@ function App() {
       <Sidebar />
       <Legend />
       <LoadingOverlay />
+      <ErrorBanner />
     </div>
   )
 }

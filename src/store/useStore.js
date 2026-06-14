@@ -63,6 +63,11 @@ const useStore = create((set, get) => ({
   worldBankCountryData: null,
   setWorldBankCountryData: (data) => set({ worldBankCountryData: data }),
 
+  // ─── Errors ──────────────────────────────────────────────────────────
+  lastError: null,
+  setLastError: (msg) => set({ lastError: msg }),
+  clearError: () => set({ lastError: null }),
+
   // ─── Static datasets ─────────────────────────────────────────────────
   staticData: null,
   setStaticData: (data) => set({ staticData: data }),
