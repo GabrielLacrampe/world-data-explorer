@@ -20,7 +20,7 @@ const LAYER_GROUPS = [
   { label: 'Demographics', keys: ['population', 'area'] },
   { label: 'Economy',      keys: ['gdp_per_capita', 'gdp_growth', 'unemployment', 'life_expectancy', 'co2_per_capita', 'military_spending'] },
   { label: 'Governance',   keys: ['democracy_index'] },
-  { label: 'Diplomacy',    keys: ['alliances'] },
+  { label: 'Diplomacy',    keys: ['alliances', 'trade'] },
 ]
 
 function groupForLayer(layerKey) {
@@ -119,6 +119,27 @@ function DataPanel() {
             ))}
           </div>
           <p className="text-[#374151] text-xs mt-2">Source: COW Project</p>
+        </div>
+      ) : activeLayer === 'trade' ? (
+        <div className="bg-[#0d1117]/90 backdrop-blur-md border border-[#1e2736] rounded-md p-3 w-52">
+          <p className="font-display text-[10px] uppercase tracking-[0.15em] text-[#6b7280] mb-2.5">
+            Trade Routes
+          </p>
+          <div className="flex flex-col gap-1.5">
+            <div className="flex items-center gap-2">
+              <div className="w-5 h-0.5 rounded bg-cyan-400" />
+              <span className="text-[#94a3b8] text-xs">Exports</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-5 h-0.5 rounded bg-orange-400" />
+              <span className="text-[#94a3b8] text-xs">Imports</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <div className="w-5 h-0.5 rounded bg-[#334155]" />
+              <span className="text-[#94a3b8] text-xs">Global routes</span>
+            </div>
+          </div>
+          <p className="text-[#374151] text-xs mt-2">Source: CIA World Factbook</p>
         </div>
       ) : layer && activeLayer !== 'political' && activeLayer !== 'geographic' && (layer.property || layer.indicator || layer.staticKey) ? (
         <div className="bg-[#0d1117]/90 backdrop-blur-md border border-[#1e2736] rounded-md p-3 w-52">

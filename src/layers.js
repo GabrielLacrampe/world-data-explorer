@@ -84,6 +84,11 @@ export const LAYERS = {
     source: 'diplomatic',
     attribution: 'COW Project',
   },
+  trade: {
+    label: 'Trade Routes',
+    source: 'trade',
+    attribution: 'CIA World Factbook',
+  },
 }
 
 export const SIDEBAR_INDICATORS = [
