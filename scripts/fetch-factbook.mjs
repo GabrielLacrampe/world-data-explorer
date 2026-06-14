@@ -187,6 +187,14 @@ for (const [region, codes] of Object.entries(COUNTRY_FILES)) {
       if (items.length) entry.exportCommodities = items
     }
 
+    // Literacy rate (total population)
+    const literacyText = people['Literacy']?.['total population']?.text
+                      ?? people['Literacy']?.text
+    if (literacyText) {
+      const m = literacyText.match(/([\d.]+)\s*%/)
+      if (m) entry.literacyRate = parseFloat(m[1])
+    }
+
     if (Object.keys(entry).length) factbook[iso2] = entry
     processed++
   }
