@@ -5,26 +5,46 @@ const BASE_URL = 'https://api.worldbank.org/v2'
  * Returns an object indexed by ISO2 code: { 'NL': 52000, 'DE': 46000, ... }
  * Countries with null values are excluded.
  */
-export async function fetchIndicatorAllCountries(indicator) {
-  const url = `${BASE_URL}/country/all/indicator/${indicator}?format=json&mrv=1&per_page=300`
+export async function fetchIndicatorAllCountries(indicator, { mrv = 5 } = {}) {
+  const perPage = Math.max(1500, mrv * 300)
+  const url = `${BASE_URL}/country/all/indicator/${indicator}?format=json&mrv=${mrv}&per_page=${perPage}`
   const res = await fetch(url)
   if (!res.ok) throw new Error(`World Bank API error: ${res.status}`)
 
   const json = await res.json()
   const dataArray = json[1] ?? []
 
+  // API returns years descending per country — first non-null hit is most recent.
   const result = {}
   dataArray.forEach((entry) => {
-    if (entry.value !== null && entry.countryiso3code) {
-      // World Bank returns ISO3 — we need ISO2
-      // We'll match by country id which is ISO2 in most cases
-      const iso2 = entry.country?.id
-      if (iso2 && iso2.length === 2) {
-        result[iso2] = entry.value
-      }
-    }
+    if (entry.value === null) return
+    const iso2 = entry.country?.id
+    if (!iso2 || iso2.length !== 2) return
+    if (!(iso2 in result)) result[iso2] = entry.value
   })
 
+  return result
+}
+
+/**
+ * Fetches one indicator for a specific list of countries (supplemental pass).
+ * Returns { iso2: value } for countries that have data.
+ */
+export async function fetchIndicatorForCountries(iso2Codes, indicator, { mrv = 10 } = {}) {
+  if (!iso2Codes.length) return {}
+  const codesStr = iso2Codes.join(';')
+  const url = `${BASE_URL}/country/${codesStr}/indicator/${indicator}?format=json&mrv=${mrv}&per_page=${iso2Codes.length * mrv + 50}`
+  const res = await fetch(url)
+  if (!res.ok) return {}
+  const json = await res.json()
+  const dataArray = json[1] ?? []
+  const result = {}
+  dataArray.forEach((entry) => {
+    if (entry.value === null) return
+    const iso2 = entry.country?.id
+    if (!iso2 || iso2.length !== 2) return
+    if (!(iso2 in result)) result[iso2] = entry.value
+  })
   return result
 }
 
