@@ -5,7 +5,7 @@ async function fetchJson(url) {
 }
 
 export async function loadStaticDatasets() {
-  const [sipri, vdem, alliances, governments, ethnicGroups, religions, militaryPersonnel, freedomhouse] =
+  const [sipri, vdem, alliances, governments, ethnicGroups, religions, militaryPersonnel, freedomhouse, factbook, cpi] =
     await Promise.all([
       fetchJson('/data/sipri.json'),
       fetchJson('/data/vdem.json'),
@@ -15,9 +15,11 @@ export async function loadStaticDatasets() {
       fetchJson('/data/religions.json').catch(() => ({})),
       fetchJson('/data/militaryPersonnel.json').catch(() => ({})),
       fetchJson('/data/freedomhouse.json').catch(() => ({})),
+      fetchJson('/data/factbook.json').catch(() => ({})),
+      fetchJson('/data/cpi.json').catch(() => ({})),
     ])
 
-  return { sipri, vdem, freedomhouse, alliances, governments, ethnicGroups, religions, militaryPersonnel }
+  return { sipri, vdem, freedomhouse, alliances, governments, ethnicGroups, religions, militaryPersonnel, factbook, cpi }
 }
 
 export const FREEDOM_STATUS = {

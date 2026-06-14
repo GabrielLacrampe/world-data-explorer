@@ -1,0 +1,674 @@
+{
+  "AF": {
+    "score": 11,
+    "year": 2015
+  },
+  "AL": {
+    "score": 36,
+    "year": 2015
+  },
+  "DZ": {
+    "score": 36,
+    "year": 2015
+  },
+  "AO": {
+    "score": 15,
+    "year": 2015
+  },
+  "AR": {
+    "score": 32,
+    "year": 2015
+  },
+  "AM": {
+    "score": 35,
+    "year": 2015
+  },
+  "AU": {
+    "score": 79,
+    "year": 2015
+  },
+  "AT": {
+    "score": 76,
+    "year": 2015
+  },
+  "AZ": {
+    "score": 29,
+    "year": 2015
+  },
+  "BH": {
+    "score": 51,
+    "year": 2015
+  },
+  "BD": {
+    "score": 25,
+    "year": 2015
+  },
+  "BY": {
+    "score": 32,
+    "year": 2015
+  },
+  "BE": {
+    "score": 77,
+    "year": 2015
+  },
+  "BJ": {
+    "score": 37,
+    "year": 2015
+  },
+  "BT": {
+    "score": 65,
+    "year": 2015
+  },
+  "BO": {
+    "score": 34,
+    "year": 2015
+  },
+  "BA": {
+    "score": 38,
+    "year": 2015
+  },
+  "BW": {
+    "score": 63,
+    "year": 2015
+  },
+  "BR": {
+    "score": 38,
+    "year": 2015
+  },
+  "BG": {
+    "score": 41,
+    "year": 2015
+  },
+  "BF": {
+    "score": 38,
+    "year": 2015
+  },
+  "BI": {
+    "score": 21,
+    "year": 2015
+  },
+  "KH": {
+    "score": 21,
+    "year": 2015
+  },
+  "CM": {
+    "score": 27,
+    "year": 2015
+  },
+  "CA": {
+    "score": 83,
+    "year": 2015
+  },
+  "CV": {
+    "score": 55,
+    "year": 2015
+  },
+  "CF": {
+    "score": 24,
+    "year": 2015
+  },
+  "TD": {
+    "score": 22,
+    "year": 2015
+  },
+  "CL": {
+    "score": 70,
+    "year": 2015
+  },
+  "CN": {
+    "score": 37,
+    "year": 2015
+  },
+  "CO": {
+    "score": 37,
+    "year": 2015
+  },
+  "KM": {
+    "score": 26,
+    "year": 2015
+  },
+  "CG": {
+    "score": 23,
+    "year": 2015
+  },
+  "CR": {
+    "score": 55,
+    "year": 2015
+  },
+  "CI": {
+    "score": 32,
+    "year": 2015
+  },
+  "HR": {
+    "score": 51,
+    "year": 2015
+  },
+  "CU": {
+    "score": 47,
+    "year": 2015
+  },
+  "CY": {
+    "score": 61,
+    "year": 2015
+  },
+  "CZ": {
+    "score": 56,
+    "year": 2015
+  },
+  "CD": {
+    "score": 22,
+    "year": 2015
+  },
+  "DK": {
+    "score": 91,
+    "year": 2015
+  },
+  "DJ": {
+    "score": 34,
+    "year": 2015
+  },
+  "DO": {
+    "score": 33,
+    "year": 2015
+  },
+  "EC": {
+    "score": 32,
+    "year": 2015
+  },
+  "EG": {
+    "score": 36,
+    "year": 2015
+  },
+  "SV": {
+    "score": 39,
+    "year": 2015
+  },
+  "ER": {
+    "score": 18,
+    "year": 2015
+  },
+  "EE": {
+    "score": 70,
+    "year": 2015
+  },
+  "ET": {
+    "score": 33,
+    "year": 2015
+  },
+  "FI": {
+    "score": 90,
+    "year": 2015
+  },
+  "FR": {
+    "score": 70,
+    "year": 2015
+  },
+  "GA": {
+    "score": 34,
+    "year": 2015
+  },
+  "GM": {
+    "score": 28,
+    "year": 2015
+  },
+  "GE": {
+    "score": 52,
+    "year": 2015
+  },
+  "DE": {
+    "score": 81,
+    "year": 2015
+  },
+  "GH": {
+    "score": 47,
+    "year": 2015
+  },
+  "GR": {
+    "score": 46,
+    "year": 2015
+  },
+  "GT": {
+    "score": 28,
+    "year": 2015
+  },
+  "GN": {
+    "score": 25,
+    "year": 2015
+  },
+  "GW": {
+    "score": 17,
+    "year": 2015
+  },
+  "GY": {
+    "score": 29,
+    "year": 2015
+  },
+  "HT": {
+    "score": 17,
+    "year": 2015
+  },
+  "HN": {
+    "score": 31,
+    "year": 2015
+  },
+  "HK": {
+    "score": 75,
+    "year": 2015
+  },
+  "HU": {
+    "score": 51,
+    "year": 2015
+  },
+  "IS": {
+    "score": 79,
+    "year": 2015
+  },
+  "IN": {
+    "score": 38,
+    "year": 2015
+  },
+  "ID": {
+    "score": 36,
+    "year": 2015
+  },
+  "IR": {
+    "score": 27,
+    "year": 2015
+  },
+  "IQ": {
+    "score": 16,
+    "year": 2015
+  },
+  "IE": {
+    "score": 75,
+    "year": 2015
+  },
+  "IL": {
+    "score": 61,
+    "year": 2015
+  },
+  "IT": {
+    "score": 44,
+    "year": 2015
+  },
+  "JM": {
+    "score": 41,
+    "year": 2015
+  },
+  "JP": {
+    "score": 75,
+    "year": 2015
+  },
+  "JO": {
+    "score": 53,
+    "year": 2015
+  },
+  "KZ": {
+    "score": 28,
+    "year": 2015
+  },
+  "KE": {
+    "score": 25,
+    "year": 2015
+  },
+  "KP": {
+    "score": 8,
+    "year": 2015
+  },
+  "KR": {
+    "score": 56,
+    "year": 2015
+  },
+  "XK": {
+    "score": 33,
+    "year": 2015
+  },
+  "KW": {
+    "score": 49,
+    "year": 2015
+  },
+  "KG": {
+    "score": 28,
+    "year": 2015
+  },
+  "LA": {
+    "score": 25,
+    "year": 2015
+  },
+  "LV": {
+    "score": 55,
+    "year": 2015
+  },
+  "LB": {
+    "score": 28,
+    "year": 2015
+  },
+  "LS": {
+    "score": 44,
+    "year": 2015
+  },
+  "LR": {
+    "score": 37,
+    "year": 2015
+  },
+  "LY": {
+    "score": 16,
+    "year": 2015
+  },
+  "LT": {
+    "score": 61,
+    "year": 2015
+  },
+  "LU": {
+    "score": 81,
+    "year": 2015
+  },
+  "MG": {
+    "score": 28,
+    "year": 2015
+  },
+  "MW": {
+    "score": 31,
+    "year": 2015
+  },
+  "MY": {
+    "score": 50,
+    "year": 2015
+  },
+  "ML": {
+    "score": 35,
+    "year": 2015
+  },
+  "MT": {
+    "score": 56,
+    "year": 2015
+  },
+  "MR": {
+    "score": 31,
+    "year": 2015
+  },
+  "MU": {
+    "score": 53,
+    "year": 2015
+  },
+  "MX": {
+    "score": 35,
+    "year": 2015
+  },
+  "MD": {
+    "score": 33,
+    "year": 2015
+  },
+  "MN": {
+    "score": 39,
+    "year": 2015
+  },
+  "ME": {
+    "score": 44,
+    "year": 2015
+  },
+  "MA": {
+    "score": 36,
+    "year": 2015
+  },
+  "MZ": {
+    "score": 31,
+    "year": 2015
+  },
+  "MM": {
+    "score": 22,
+    "year": 2015
+  },
+  "NA": {
+    "score": 53,
+    "year": 2015
+  },
+  "NP": {
+    "score": 27,
+    "year": 2015
+  },
+  "NL": {
+    "score": 87,
+    "year": 2015
+  },
+  "NZ": {
+    "score": 88,
+    "year": 2015
+  },
+  "NI": {
+    "score": 27,
+    "year": 2015
+  },
+  "NE": {
+    "score": 34,
+    "year": 2015
+  },
+  "NG": {
+    "score": 26,
+    "year": 2015
+  },
+  "NO": {
+    "score": 87,
+    "year": 2015
+  },
+  "OM": {
+    "score": 45,
+    "year": 2015
+  },
+  "PK": {
+    "score": 30,
+    "year": 2015
+  },
+  "PA": {
+    "score": 39,
+    "year": 2015
+  },
+  "PG": {
+    "score": 25,
+    "year": 2015
+  },
+  "PY": {
+    "score": 27,
+    "year": 2015
+  },
+  "PE": {
+    "score": 36,
+    "year": 2015
+  },
+  "PH": {
+    "score": 35,
+    "year": 2015
+  },
+  "PL": {
+    "score": 62,
+    "year": 2015
+  },
+  "PT": {
+    "score": 63,
+    "year": 2015
+  },
+  "QA": {
+    "score": 71,
+    "year": 2015
+  },
+  "RO": {
+    "score": 46,
+    "year": 2015
+  },
+  "RU": {
+    "score": 29,
+    "year": 2015
+  },
+  "RW": {
+    "score": 54,
+    "year": 2015
+  },
+  "ST": {
+    "score": 42,
+    "year": 2015
+  },
+  "SA": {
+    "score": 52,
+    "year": 2015
+  },
+  "SN": {
+    "score": 44,
+    "year": 2015
+  },
+  "RS": {
+    "score": 40,
+    "year": 2015
+  },
+  "SC": {
+    "score": 55,
+    "year": 2015
+  },
+  "SL": {
+    "score": 29,
+    "year": 2015
+  },
+  "SG": {
+    "score": 85,
+    "year": 2015
+  },
+  "SK": {
+    "score": 51,
+    "year": 2015
+  },
+  "SI": {
+    "score": 60,
+    "year": 2015
+  },
+  "SO": {
+    "score": 8,
+    "year": 2015
+  },
+  "ZA": {
+    "score": 44,
+    "year": 2015
+  },
+  "SS": {
+    "score": 15,
+    "year": 2015
+  },
+  "ES": {
+    "score": 58,
+    "year": 2015
+  },
+  "LK": {
+    "score": 37,
+    "year": 2015
+  },
+  "SD": {
+    "score": 12,
+    "year": 2015
+  },
+  "SR": {
+    "score": 36,
+    "year": 2015
+  },
+  "SE": {
+    "score": 89,
+    "year": 2015
+  },
+  "CH": {
+    "score": 86,
+    "year": 2015
+  },
+  "SY": {
+    "score": 18,
+    "year": 2015
+  },
+  "TW": {
+    "score": 62,
+    "year": 2015
+  },
+  "TJ": {
+    "score": 26,
+    "year": 2015
+  },
+  "TZ": {
+    "score": 30,
+    "year": 2015
+  },
+  "TH": {
+    "score": 38,
+    "year": 2015
+  },
+  "MK": {
+    "score": 42,
+    "year": 2015
+  },
+  "US": {
+    "score": 76,
+    "year": 2015
+  },
+  "TL": {
+    "score": 28,
+    "year": 2015
+  },
+  "TG": {
+    "score": 32,
+    "year": 2015
+  },
+  "TT": {
+    "score": 39,
+    "year": 2015
+  },
+  "TN": {
+    "score": 38,
+    "year": 2015
+  },
+  "TR": {
+    "score": 42,
+    "year": 2015
+  },
+  "TM": {
+    "score": 18,
+    "year": 2015
+  },
+  "UG": {
+    "score": 25,
+    "year": 2015
+  },
+  "UA": {
+    "score": 27,
+    "year": 2015
+  },
+  "AE": {
+    "score": 70,
+    "year": 2015
+  },
+  "GB": {
+    "score": 81,
+    "year": 2015
+  },
+  "UY": {
+    "score": 74,
+    "year": 2015
+  },
+  "UZ": {
+    "score": 19,
+    "year": 2015
+  },
+  "VE": {
+    "score": 17,
+    "year": 2015
+  },
+  "VN": {
+    "score": 31,
+    "year": 2015
+  },
+  "YE": {
+    "score": 18,
+    "year": 2015
+  },
+  "ZM": {
+    "score": 38,
+    "year": 2015
+  },
+  "ZW": {
+    "score": 21,
+    "year": 2015
+  }
+}

@@ -87,11 +87,17 @@ export const LAYERS = {
 }
 
 export const SIDEBAR_INDICATORS = [
-  { indicator: 'SP.POP.TOTL', label: 'Population', format: 'integer', unit: '' },
-  { indicator: 'NY.GDP.PCAP.CD', label: 'GDP per Capita', format: 'currency', unit: 'USD' },
-  { indicator: 'NY.GDP.MKTP.KD.ZG', label: 'GDP Growth', format: 'percent', unit: '%' },
-  { indicator: 'SL.UEM.TOTL.ZS', label: 'Unemployment', format: 'percent', unit: '%' },
-  { indicator: 'SP.DYN.LE00.IN', label: 'Life Expectancy', format: 'decimal', unit: 'years' },
-  { indicator: 'EN.ATM.CO2E.PC', label: 'CO₂ per Capita', format: 'decimal', unit: 'tonnes' },
-  { indicator: 'MS.MIL.XPND.GD.ZS', label: 'Military Spending', format: 'percent', unit: '% of GDP' },
+  { indicator: 'SP.POP.TOTL',         label: 'Population',          format: 'integer', unit: '' },
+  { indicator: 'NY.GDP.PCAP.CD',      label: 'GDP per Capita',      format: 'currency', unit: 'USD' },
+  { indicator: 'NY.GDP.MKTP.KD.ZG',  label: 'GDP Growth',          format: 'percent', unit: '%' },
+  { indicator: 'SL.UEM.TOTL.ZS',     label: 'Unemployment',        format: 'percent', unit: '%' },
+  { indicator: 'FP.CPI.TOTC.ZG',     label: 'Inflation',           format: 'percent', unit: '%' },
+  { indicator: 'SI.POV.GINI',        label: 'Gini Index',          format: 'decimal', unit: '' },
+  { indicator: 'SP.DYN.LE00.IN',     label: 'Life Expectancy',     format: 'decimal', unit: 'years' },
+  { indicator: 'SE.ADT.LITR.ZS',     label: 'Literacy Rate',       format: 'percent', unit: '%' },
+  { indicator: 'IT.NET.USER.ZS',     label: 'Internet Users',      format: 'percent', unit: '%' },
+  { indicator: 'EG.ELC.ACCS.ZS',     label: 'Electricity Access',  format: 'percent', unit: '%' },
+  { indicator: 'EG.FEC.RNEW.ZS',     label: 'Renewable Energy',    format: 'percent', unit: '%' },
+  { indicator: 'EN.ATM.CO2E.PC',     label: 'CO₂ per Capita',      format: 'decimal', unit: 'tonnes' },
+  { indicator: 'MS.MIL.XPND.GD.ZS', label: 'Military Spending',   format: 'percent', unit: '% of GDP' },
 ]

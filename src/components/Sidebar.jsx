@@ -1,3 +1,4 @@
+import React from 'react'
 import useStore from '../store/useStore'
 import { formatIndicatorValue } from '../utils/worldBank'
 import { FREEDOM_STATUS, formatMilSpending } from '../utils/staticData'
@@ -97,11 +98,11 @@ function Sidebar() {
             {/* Tab content */}
             <div className="flex-1 p-5">
               {activeTab === 'gobierno'    && <GovernmentTab countryCode={selectedCountry?.code} staticData={staticData} />}
-              {activeTab === 'culturas'    && <CulturesTab   countryCode={selectedCountry?.code} staticData={staticData} />}
+              {activeTab === 'culturas'    && <CulturesTab   countryCode={selectedCountry?.code} staticData={staticData} countryData={countryData} />}
               {activeTab === 'diplomatica' && <DiplomaticTab countryCode={selectedCountry?.code} staticData={staticData} />}
-              {activeTab === 'economia'    && <EconomyTab    data={countryData} worldBankData={worldBankCountryData} />}
+              {activeTab === 'economia'    && <EconomyTab    data={countryData} worldBankData={worldBankCountryData} staticData={staticData} countryCode={selectedCountry?.code} />}
               {activeTab === 'comercio'    && <EmptyTab label="Import/export data coming soon." />}
-              {activeTab === 'historia'    && <EmptyTab label="Historical events coming soon." />}
+              {activeTab === 'historia'    && <HistoryTab    countryName={countryData?.name?.common} />}
               {activeTab === 'politicas'   && <EmptyTab label="Policy positions coming soon." />}
               {activeTab === 'religion'    && <ReligionTab   countryCode={selectedCountry?.code} staticData={staticData} />}
               {activeTab === 'fuerzas'     && <MilitaryTab   countryCode={selectedCountry?.code} staticData={staticData} worldBankData={worldBankCountryData} />}
@@ -258,19 +259,29 @@ function DemographicList({ groups }) {
   )
 }
 
-function CulturesTab({ countryCode, staticData }) {
-  const groups = staticData?.ethnicGroups?.[countryCode]
+function CulturesTab({ countryCode, staticData, countryData }) {
+  const ethnicGroups = staticData?.ethnicGroups?.[countryCode]
+  const fb           = staticData?.factbook?.[countryCode]
+  const languages    = fb?.languages ?? (
+    countryData?.languages
+      ? Object.values(countryData.languages).map(name => ({ name, pct: null }))
+      : null
+  )
 
   return (
     <div className="flex flex-col gap-6">
       <Section title="Ethnic Groups">
-        <DemographicList groups={groups} />
-        {!groups?.length && (
-          <p className="text-[#4b5563] text-xs">Source pending: UN Demographic Statistics</p>
-        )}
+        <DemographicList groups={ethnicGroups} />
+        {!ethnicGroups?.length && <p className="text-[#4b5563] text-xs">No data available</p>}
       </Section>
+
+      <Section title="Languages">
+        <DemographicList groups={languages} />
+        {!languages?.length && <p className="text-[#4b5563] text-xs">No data available</p>}
+      </Section>
+
       <div className="pt-2 border-t border-gray-800">
-        <p className="text-gray-700 text-xs">Source: Wikidata</p>
+        <p className="text-gray-700 text-xs">Sources: CIA World Factbook · world-countries</p>
       </div>
     </div>
   )
@@ -285,12 +296,10 @@ function ReligionTab({ countryCode, staticData }) {
     <div className="flex flex-col gap-6">
       <Section title="Religions">
         <DemographicList groups={groups} />
-        {!groups?.length && (
-          <p className="text-[#4b5563] text-xs">Source pending: Pew Research / Wikidata</p>
-        )}
+        {!groups?.length && <p className="text-[#4b5563] text-xs">No data available</p>}
       </Section>
       <div className="pt-2 border-t border-gray-800">
-        <p className="text-gray-700 text-xs">Source: Wikidata</p>
+        <p className="text-gray-700 text-xs">Source: Pew Research 2020 projections</p>
       </div>
     </div>
   )
@@ -308,6 +317,7 @@ function DiplomaticTab({ countryCode, staticData }) {
 
   const democracyScore = staticData.vdem?.[countryCode]
   const fh             = staticData.freedomhouse?.[countryCode]
+  const cpi            = staticData.cpi?.[countryCode]
   const alliances      = staticData.alliances?.[countryCode] ?? []
   const freedomConfig  = FREEDOM_STATUS[fh?.status]
 
@@ -338,6 +348,23 @@ function DiplomaticTab({ countryCode, staticData }) {
           </div>
         ) : (
           <p className="text-gray-600 text-xs">No Freedom House data</p>
+        )}
+
+        {cpi && (
+          <div>
+            <p className="text-gray-500 text-xs uppercase tracking-wider">Corruption Perceptions Index</p>
+            <div className="flex items-center gap-3 mt-1">
+              <div className="flex-1 h-1.5 bg-gray-800 rounded-full overflow-hidden">
+                <div className="h-full rounded-full"
+                  style={{
+                    width: `${cpi.score}%`,
+                    backgroundColor: cpi.score >= 60 ? '#22c55e' : cpi.score >= 40 ? '#eab308' : '#ef4444',
+                  }} />
+              </div>
+              <span className="text-[#e2e8f0] text-sm w-8 text-right">{cpi.score}</span>
+            </div>
+            <p className="text-gray-600 text-xs mt-1">TI score 0–100 · {cpi.year}</p>
+          </div>
         )}
 
         {democracyScore !== undefined ? (
@@ -398,7 +425,7 @@ function DiplomaticTab({ countryCode, staticData }) {
 
       <div className="pt-2 border-t border-gray-800">
         <p className="text-gray-700 text-xs">
-          Sources: SIPRI · V-Dem Institute · Correlates of War Project
+          Sources: Freedom House 2026 · V-Dem Institute · Correlates of War Project · Transparency International 2015
         </p>
       </div>
     </div>
@@ -407,7 +434,10 @@ function DiplomaticTab({ countryCode, staticData }) {
 
 // ─── Economy ──────────────────────────────────────────────────────────────────
 
-function EconomyTab({ data, worldBankData }) {
+function EconomyTab({ data, worldBankData, staticData, countryCode }) {
+  const fb = staticData?.factbook?.[countryCode]
+  const wb = worldBankData
+
   return (
     <div className="flex flex-col gap-6">
 
@@ -415,45 +445,77 @@ function EconomyTab({ data, worldBankData }) {
         <DataRow label="Capital" value={data.capital?.[0] ?? 'N/A'} />
         <DataRow label="Region"  value={`${data.subregion ?? ''}, ${data.region ?? ''}`} />
         <DataRow label="Area"    value={data.area ? `${data.area.toLocaleString('en-US')} km²` : 'N/A'} />
+        {fb?.independence && <DataRow label="Independence" value={fb.independence} />}
+        {fb?.govType      && <DataRow label="Gov. Type"   value={fb.govType} />}
       </Section>
 
       <Section title="People">
         <DataRow
           label="Population"
-          value={worldBankData?.['SP.POP.TOTL']
-            ? Math.round(worldBankData['SP.POP.TOTL']).toLocaleString('en-US')
-            : 'N/A'}
+          value={wb?.['SP.POP.TOTL'] ? Math.round(wb['SP.POP.TOTL']).toLocaleString('en-US') : 'N/A'}
         />
-        <DataRow label="Languages" value={Object.values(data.languages ?? {}).join(', ') || 'N/A'} />
-        {worldBankData && (
-          <DataRow
-            label="Life Expectancy"
-            value={formatIndicatorValue(worldBankData['SP.DYN.LE00.IN'], 'decimal', 'years')}
-          />
-        )}
+        <DataRow label="Life Expectancy" value={formatIndicatorValue(wb?.['SP.DYN.LE00.IN'], 'decimal', 'years')} />
+        <DataRow label="Literacy Rate"   value={formatIndicatorValue(wb?.['SE.ADT.LITR.ZS'], 'percent', '%')} />
+        <DataRow label="Internet Users"  value={formatIndicatorValue(wb?.['IT.NET.USER.ZS'],  'percent', '%')} />
       </Section>
 
       <Section title="Economy">
-        <DataRow
-          label="Currency"
-          value={Object.values(data.currencies ?? {}).map((c) => `${c.name} (${c.symbol})`).join(', ') || 'N/A'}
-        />
-        {worldBankData ? (
-          <>
-            <DataRow label="GDP per Capita" value={formatIndicatorValue(worldBankData['NY.GDP.PCAP.CD'], 'currency', 'USD')} />
-            <DataRow label="GDP Growth"     value={formatIndicatorValue(worldBankData['NY.GDP.MKTP.KD.ZG'], 'percent', '%')} />
-            <DataRow label="Unemployment"   value={formatIndicatorValue(worldBankData['SL.UEM.TOTL.ZS'], 'percent', '%')} />
-          </>
-        ) : (
-          <p className="text-gray-600 text-xs">Loading economic data...</p>
+        <DataRow label="Currency"
+          value={Object.values(data.currencies ?? {}).map(c => `${c.name} (${c.symbol})`).join(', ') || 'N/A'} />
+        <DataRow label="GDP per Capita" value={formatIndicatorValue(wb?.['NY.GDP.PCAP.CD'],     'currency', 'USD')} />
+        <DataRow label="GDP Growth"     value={formatIndicatorValue(wb?.['NY.GDP.MKTP.KD.ZG'],  'percent',  '%')} />
+        <DataRow label="Unemployment"   value={formatIndicatorValue(wb?.['SL.UEM.TOTL.ZS'],     'percent',  '%')} />
+        <DataRow label="Inflation"      value={formatIndicatorValue(wb?.['FP.CPI.TOTC.ZG'],     'percent',  '%')} />
+        <DataRow label="Gini Index"     value={formatIndicatorValue(wb?.['SI.POV.GINI'],        'decimal',  '')} />
+        {fb?.gdpSectors && (
+          <div>
+            <p className="text-[#6b7280] text-xs uppercase tracking-wider">GDP by Sector</p>
+            <div className="flex gap-3 mt-1">
+              {[['Agr.', fb.gdpSectors.agriculture], ['Ind.', fb.gdpSectors.industry], ['Serv.', fb.gdpSectors.services]]
+                .filter(([, v]) => v != null)
+                .map(([label, pct]) => (
+                  <div key={label} className="text-center">
+                    <p className="text-[#e2e8f0] text-sm font-medium">{pct}%</p>
+                    <p className="text-[#6b7280] text-xs">{label}</p>
+                  </div>
+                ))}
+            </div>
+          </div>
         )}
       </Section>
 
-      {worldBankData && (
-        <Section title="Environment">
-          <DataRow label="CO₂ per Capita" value={formatIndicatorValue(worldBankData['EN.ATM.CO2E.PC'], 'decimal', 'tonnes')} />
+      {fb?.exportPartners?.length > 0 && (
+        <Section title="Export Partners">
+          {fb.exportPartners.map(p => (
+            <div key={p.name} className="flex items-center justify-between">
+              <span className="text-[#94a3b8] text-sm">{p.name}</span>
+              <span className="text-[#6b7280] text-xs tabular-nums">{p.pct}%</span>
+            </div>
+          ))}
         </Section>
       )}
+
+      {fb?.exportCommodities?.length > 0 && (
+        <Section title="Main Exports">
+          <p className="text-[#94a3b8] text-sm">{fb.exportCommodities.join(', ')}</p>
+        </Section>
+      )}
+
+      <Section title="Environment">
+        <DataRow label="CO₂ per Capita"     value={formatIndicatorValue(wb?.['EN.ATM.CO2E.PC'],  'decimal',  'tonnes')} />
+        <DataRow label="Electricity Access" value={formatIndicatorValue(wb?.['EG.ELC.ACCS.ZS'],  'percent',  '%')} />
+        <DataRow label="Renewable Energy"   value={formatIndicatorValue(wb?.['EG.FEC.RNEW.ZS'],  'percent',  '%')} />
+        {fb?.naturalResources?.length > 0 && (
+          <div>
+            <p className="text-[#6b7280] text-xs uppercase tracking-wider">Natural Resources</p>
+            <p className="text-[#94a3b8] text-sm mt-0.5">{fb.naturalResources.join(', ')}</p>
+          </div>
+        )}
+      </Section>
+
+      <div className="pt-2 border-t border-gray-800">
+        <p className="text-gray-700 text-xs">Sources: World Bank · CIA World Factbook</p>
+      </div>
     </div>
   )
 }
@@ -527,6 +589,39 @@ function MilitaryTab({ countryCode, staticData, worldBankData }) {
 
       <div className="pt-2 border-t border-gray-800">
         <p className="text-gray-700 text-xs">Sources: SIPRI Military Expenditure Database · World Bank · Wikidata</p>
+      </div>
+    </div>
+  )
+}
+
+// ─── History ──────────────────────────────────────────────────────────────────
+
+function HistoryTab({ countryName }) {
+  const [summary, setSummary] = React.useState(null)
+  const [loading, setLoading] = React.useState(false)
+
+  React.useEffect(() => {
+    if (!countryName) return
+    setLoading(true)
+    setSummary(null)
+    fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(countryName)}`)
+      .then(r => r.ok ? r.json() : null)
+      .then(d => {
+        setSummary(d?.extract ?? null)
+        setLoading(false)
+      })
+      .catch(() => setLoading(false))
+  }, [countryName])
+
+  return (
+    <div className="flex flex-col gap-4">
+      <Section title="Country Overview">
+        {loading && <p className="text-[#6b7280] text-sm">Loading...</p>}
+        {!loading && summary && <p className="text-[#94a3b8] text-sm leading-relaxed">{summary}</p>}
+        {!loading && !summary && <p className="text-[#4b5563] text-sm">No summary available</p>}
+      </Section>
+      <div className="pt-2 border-t border-gray-800">
+        <p className="text-gray-700 text-xs">Source: Wikipedia</p>
       </div>
     </div>
   )
