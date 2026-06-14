@@ -15,7 +15,6 @@ import useCountryData from './hooks/useCountryData'
 function App() {
   const {
     activeLayer,
-    allCountriesData,
     setAllCountriesData,
     setFillExpression,
     staticData,
@@ -30,6 +29,7 @@ function App() {
     loadStaticDatasets()
       .then(setStaticData)
       .catch((err) => console.error('Static data load failed:', err))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect(() => {

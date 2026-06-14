@@ -7,12 +7,20 @@ export default function HistoryTab({ countryName }) {
 
   useEffect(() => {
     if (!countryName) return
-    setIsLoading(true)
-    setSummary(null)
-    fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(countryName)}`)
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d) => { setSummary(d?.extract ?? null); setIsLoading(false) })
-      .catch(() => setIsLoading(false))
+    let cancelled = false
+    async function load() {
+      setIsLoading(true)
+      setSummary(null)
+      try {
+        const r = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(countryName)}`)
+        const d = r.ok ? await r.json() : null
+        if (!cancelled) { setSummary(d?.extract ?? null); setIsLoading(false) }
+      } catch {
+        if (!cancelled) setIsLoading(false)
+      }
+    }
+    load()
+    return () => { cancelled = true }
   }, [countryName])
 
   return (

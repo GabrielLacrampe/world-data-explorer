@@ -188,6 +188,7 @@ function Map() {
     }
     const t = setTimeout(() => requestAnimationFrame(animate), 300)
     return () => { clearTimeout(t); if (animRef.current) clearTimeout(animRef.current) }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeLayer, selectedCountry])
 
   // In trade mode all countries get the same dim base color — routes carry the information

@@ -112,20 +112,6 @@ const MN = {
   CARIB:     [-73,   14],  // Caribbean (between Panama and Atlantic)
 }
 
-// ─── Zone classification ───────────────────────────────────────────────────────
-// Each zone represents a maritime basin or coastal region.
-const ZONES = {
-  ATL_W:  'ATL_W',   // Americas east coast + Caribbean
-  ATL_E:  'ATL_E',   // West Europe (Atlantic) + West Africa
-  MED:    'MED',     // Mediterranean + Black Sea
-  RED:    'RED',     // Red Sea corridor
-  GULF:   'GULF',    // Persian Gulf
-  INDIAN: 'INDIAN',  // Indian Ocean (east Africa, South Asia)
-  PAC_W:  'PAC_W',   // East/Southeast Asia + Oceania
-  PAC_E:  'PAC_E',   // Americas west coast
-  BALTIC: 'BALTIC',  // Baltic Sea
-}
-
 const ISO2_ZONE = {
   // ── Atlantic West ──────────────────────────────────────────────────────────
   US:'ATL_W', CA:'ATL_W', MX:'ATL_W', GT:'ATL_W', BZ:'ATL_W', HN:'ATL_W',
@@ -169,7 +155,7 @@ const ISO2_ZONE = {
   MM:'PAC_W', KH:'PAC_W', LA:'PAC_W', BN:'PAC_W', AU:'PAC_W', NZ:'PAC_W',
   PG:'PAC_W', FJ:'PAC_W', WS:'PAC_W', TO:'PAC_W', VU:'PAC_W', KI:'PAC_W',
   SB:'PAC_W', PW:'PAC_W', FM:'PAC_W', MH:'PAC_W', NR:'PAC_W',
-  KP:'PAC_W', KZ:'PAC_W',
+  KP:'PAC_W',
   // ── Pacific East ──────────────────────────────────────────────────────────
   CL:'PAC_E', PE:'PAC_E', EC:'PAC_E',
 }
@@ -303,10 +289,10 @@ function buildNameLookup(allCountriesData) {
     'ethiopia': 'ET', 'kenya': 'KE', 'tanzania': 'TZ', 'morocco': 'MA',
     'algeria': 'DZ', 'argentina': 'AR', 'chile': 'CL', 'colombia': 'CO',
     'peru': 'PE', 'venezuela': 'VE', 'pakistan': 'PK', 'bangladesh': 'BD',
-    'myanmar': 'MM', 'philippines': 'PH', 'vietnam': 'VN', 'kenya': 'KE',
+    'myanmar': 'MM', 'philippines': 'PH',
     'new zealand': 'NZ', 'ireland': 'IE', 'iraq': 'IQ', 'kuwait': 'KW',
     'qatar': 'QA', 'oman': 'OM', 'bahrain': 'BH', 'jordan': 'JO',
-    'ethiopia': 'ET', 'ghana': 'GH', 'cameroon': 'CM', 'angola': 'AO',
+    'ghana': 'GH', 'cameroon': 'CM', 'angola': 'AO',
     'mozambique': 'MZ', 'zambia': 'ZM', 'zimbabwe': 'ZW', 'uganda': 'UG',
     'senegal': 'SN', 'ivory coast': "CI", "cote d'ivoire": 'CI',
     'democratic republic of the congo': 'CD', 'republic of congo': 'CG',

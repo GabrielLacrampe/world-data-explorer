@@ -29,6 +29,7 @@ export default function useCountryData() {
       if (!match) setCountryLoadError(true)
     }
     setLoading('country', false)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCountry, allCountriesData])
 
   // Fetch World Bank sidebar indicators for the selected country
@@ -42,5 +43,6 @@ export default function useCountryData() {
         console.error('World Bank country fetch failed:', err)
         setLastError(`Failed to load country indicators: ${err.message}`)
       })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCountry])
 }

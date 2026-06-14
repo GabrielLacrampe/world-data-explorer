@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-const useStore = create((set, get) => ({
+const useStore = create((set) => ({
 
   // ─── Map ─────────────────────────────────────────────────────────────
   activeLayer: 'political',
@@ -19,14 +19,14 @@ const useStore = create((set, get) => ({
   selectedCountry: null,   // { code, name }
   countryData: null,       // REST Countries response
 
-  setSelectedCountry: (country) => set((state) => ({
+  setSelectedCountry: (country) => set({
     selectedCountry: country,
     countryData: null,
     worldBankCountryData: null,
     // keep sidebar open if already open and selecting a new country; close on deselect
     sidebarOpen: country !== null,
     countryLoadError: false,
-  })),
+  }),
   setCountryData: (data) => set({ countryData: data }),
 
   // ─── UI ──────────────────────────────────────────────────────────────

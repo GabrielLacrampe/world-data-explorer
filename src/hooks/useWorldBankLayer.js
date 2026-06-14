@@ -90,5 +90,6 @@ export default function useWorldBankLayer() {
       cancelled = true
       clearTimeout(timerRef.current)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeLayer, allCountriesData])
 }

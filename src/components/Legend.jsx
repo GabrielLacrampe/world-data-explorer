@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { LAYERS } from '../layers'
 import useStore from '../store/useStore'
 import { COLOR_SCALE } from '../utils/colorScale'
@@ -30,13 +30,17 @@ function DataPanel() {
   const staticData     = useStore((s) => s.staticData)
   const layer          = LAYERS[activeLayer]
 
-  // Which group is expanded — default to the group containing the active layer
-  const [openGroup, setOpenGroup] = useState(() => groupForLayer(activeLayer))
+  // Track the last manually-opened group; when null, follow the active layer
+  const [manualGroup, setManualGroup] = useState(null)
+  const [lastLayer, setLastLayer]     = useState(activeLayer)
 
-  // If the active layer changes to a different group, auto-expand that group
-  useEffect(() => {
-    setOpenGroup(groupForLayer(activeLayer))
-  }, [activeLayer])
+  if (activeLayer !== lastLayer) {
+    setLastLayer(activeLayer)
+    setManualGroup(null)
+  }
+
+  const openGroup    = manualGroup ?? groupForLayer(activeLayer)
+  const setOpenGroup = (g) => setManualGroup(g)
 
   const hasAllianceLegend = activeLayer === 'alliances' &&
     selectedCountry &&
