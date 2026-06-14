@@ -1,17 +1,23 @@
 const NO_DATA_COLOR = '#1e293b'
 
-// Ten-stop gradient for data layers, from very low to very high.
-const COLOR_SCALE = [
-  '#0f172a',
-  '#164e63',
-  '#0369a1',
-  '#0284c7',
-  '#059669',
-  '#65a30d',
-  '#ca8a04',
-  '#ea580c',
+// 16-stop gradient: red (worst) → yellow (mid) → green (best)
+export const COLOR_SCALE = [
+  '#b91c1c',
+  '#c62020',
+  '#d32424',
   '#dc2626',
-  '#9f1239',
+  '#e44015',
+  '#ea580c',
+  '#f97316',
+  '#fb923c',
+  '#fbbf24',
+  '#facc15',
+  '#d4f018',
+  '#a3e635',
+  '#84cc16',
+  '#4ade80',
+  '#22c55e',
+  '#16a34a',
 ]
 
 /**
@@ -25,14 +31,16 @@ export function valueToColor(
   {
     gradient = COLOR_SCALE,
     scale = 'log',
+    invert = false,
     lowerPercentile = 0.02,
     upperPercentile = 0.98,
   } = {}
 ) {
-  if (!value || value <= 0) return NO_DATA_COLOR
+  if (value === null || value === undefined) return NO_DATA_COLOR
+  if (scale === 'log' && value <= 0) return NO_DATA_COLOR
 
   const values = Array.isArray(allValues)
-    ? allValues.filter((v) => v && v > 0)
+    ? allValues.filter((v) => v !== null && v !== undefined && (scale === 'log' ? v > 0 : true))
     : []
 
   if (values.length === 0) return NO_DATA_COLOR
@@ -44,7 +52,8 @@ export function valueToColor(
 
   if (min === max) return gradient[Math.floor(gradient.length / 2)]
 
-  const normalized = clamp((transformedValue - min) / (max - min), 0, 1)
+  let normalized = clamp((transformedValue - min) / (max - min), 0, 1)
+  if (invert) normalized = 1 - normalized
   return interpolateGradient(gradient, normalized)
 }
 
@@ -143,7 +152,7 @@ export function formatNumber(n) {
 
 // EU4 country colors: ISO2 → hex. Sourced from game files + paimoe/eu4json.
 // Countries not in this map render as EU4_MISSING_COLOR.
-const EU4_MISSING_COLOR = '#f0f0f0'
+const EU4_MISSING_COLOR = '#2a3040'
 
 const EU4_COLORS = {
   // ── Europe: West ─────────────────────────────────────────────────────
