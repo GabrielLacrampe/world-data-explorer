@@ -19,10 +19,10 @@ function fmtPop(v) {
 function Stat({ label, value, valueClass = 'text-[#e2e8f0]' }) {
   return (
     <div className="flex flex-col justify-center leading-none">
-      <span className="text-[9px] uppercase tracking-[0.12em] text-[#4b5563] font-display">
+      <span className="text-[8px] uppercase tracking-[0.12em] text-[#4b5563] font-display">
         {label}
       </span>
-      <span className={`text-[11px] font-medium mt-0.5 ${valueClass}`}>
+      <span className={`text-[10px] font-medium mt-0.5 ${valueClass}`}>
         {value ?? '—'}
       </span>
     </div>
@@ -58,10 +58,10 @@ function TopBar() {
     : gdpGrowth >= 0 ? 'text-emerald-400' : 'text-red-400'
 
   return (
-    <div className="absolute top-0 left-0 right-0 z-20 h-12
+    <div className="absolute top-0 left-0 z-20 h-10
                     bg-[#0d1117]/90 backdrop-blur-md
-                    border-b border-[#1e2736]
-                    flex items-center px-4 gap-4">
+                    border-b border-r border-[#1e2736] rounded-br
+                    flex items-center px-3 gap-3">
 
       {countryData ? (
         <>
@@ -73,9 +73,9 @@ function TopBar() {
             <img
               src={countryData.flags.svg}
               alt=""
-              className="h-4 w-auto rounded-sm shadow-sm shadow-black/40 group-hover:opacity-90 transition-opacity"
+              className="h-6 w-auto rounded-sm shadow-sm shadow-black/40 group-hover:opacity-90 transition-opacity"
             />
-            <span className="font-display text-xs tracking-wide text-[#e2e8f0] whitespace-nowrap group-hover:text-white transition-colors">
+            <span className="font-display text-[10px] tracking-wide text-[#94a3b8] whitespace-nowrap group-hover:text-white transition-colors max-w-[90px] truncate">
               {countryData.name.common}
             </span>
           </button>
@@ -98,17 +98,12 @@ function TopBar() {
           />
         </>
       ) : (
-        <span className="text-[#4b5563] text-xs tracking-wider font-display uppercase">
+        <span className="text-[#4b5563] text-[10px] tracking-wider font-display uppercase">
           World Data Explorer
         </span>
       )}
-      {/* Zoom indicator — always visible, pinned to the right */}
-      <div className="ml-auto flex flex-col justify-center leading-none text-right shrink-0">
-        <span className="text-[9px] uppercase tracking-[0.12em] text-[#4b5563] font-display">Zoom</span>
-        <span className="text-[11px] font-medium text-[#e2e8f0] mt-0.5 tabular-nums">
-          {mapZoom != null ? mapZoom.toFixed(2) : '—'}
-        </span>
-      </div>
+      <Divider />
+      <Stat label="Zoom" value={mapZoom != null ? mapZoom.toFixed(2) : '—'} />
     </div>
   )
 }
