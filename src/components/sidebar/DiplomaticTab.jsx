@@ -1,18 +1,22 @@
 import useStore from '../../store/useStore'
+import { useRelationships } from '../../hooks/useRelationships'
 import { FREEDOM_STATUS } from '../../utils/staticData'
 import { Section, NoData, Source, EmptyTab } from './SidebarShared'
 
-const ALLIANCE_COLORS = {
-  'Defense Pact':          '#ef4444',
-  'Non-Aggression Treaty': '#f59e0b',
-  'Neutrality Pact':       '#a78bfa',
-  'Entente':               '#22c55e',
+const RELATIONSHIP_COLORS = {
+  war:      '#ef4444',
+  conflict: '#f97316',
+  rivalry:  '#f59e0b',
+  tension:  '#a78bfa',
+  alliance: '#22c55e',
 }
-const ALLIANCE_TYPE_ORDER = ['Defense Pact', 'Non-Aggression Treaty', 'Neutrality Pact', 'Entente']
+
+const INTENSITY_LABEL = { high: 'High', medium: 'Medium', low: 'Low' }
 const countryNames = new Intl.DisplayNames(['en'], { type: 'region' })
 
 export default function DiplomaticTab({ countryCode, staticData, subtab }) {
   const setSelectedCountry = useStore((s) => s.setSelectedCountry)
+  const { data: relationships, loading: relLoading } = useRelationships(countryCode)
 
   if (!staticData) return <p className="text-gray-500 text-sm">Loading...</p>
   if (!countryCode || countryCode === '-99')
@@ -21,7 +25,6 @@ export default function DiplomaticTab({ countryCode, staticData, subtab }) {
   const democracyScore = staticData.vdem?.[countryCode]
   const fh             = staticData.freedomhouse?.[countryCode]
   const cpi            = staticData.cpi?.[countryCode]
-  const alliances      = staticData.alliances?.[countryCode] ?? []
   const freedomConfig  = FREEDOM_STATUS[fh?.status]
 
   if (subtab === 'freedom') return (
@@ -92,38 +95,43 @@ export default function DiplomaticTab({ countryCode, staticData, subtab }) {
 
   if (subtab === 'alliances') return (
     <div className="flex flex-col gap-5">
-      <Section title="Alliances & Treaties">
-        {alliances.length > 0 ? (
-          <div className="flex flex-col gap-3">
-            {ALLIANCE_TYPE_ORDER.map((type) => {
-              const partners = alliances.filter((a) => a.type === type).map((a) => a.partner)
-              if (!partners.length) return null
+      <Section title="Active Relationships">
+        {relLoading && <p className="text-[#4b5563] text-sm">Loading...</p>}
+        {!relLoading && relationships?.length > 0 ? (
+          <div className="flex flex-col gap-4">
+            {relationships.map((rel) => {
+              const partners = [...(rel.side_a ?? []), ...(rel.side_b ?? [])].filter((c) => c !== countryCode)
               return (
-                <div key={type}>
+                <div key={rel.id}>
                   <div className="flex items-center gap-2 mb-1.5">
-                    <div className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: ALLIANCE_COLORS[type] }} />
-                    <span className="text-[#94a3b8] text-sm">{type}</span>
+                    <div className="w-2 h-2 rounded-full shrink-0"
+                      style={{ backgroundColor: RELATIONSHIP_COLORS[rel.type] ?? '#6b7280' }} />
+                    <span className="text-[#94a3b8] text-sm capitalize">{rel.name ?? rel.type}</span>
+                    {rel.intensity && (
+                      <span className="text-[#4b5563] text-xs ml-auto">{INTENSITY_LABEL[rel.intensity]}</span>
+                    )}
                   </div>
-                  <div className="flex flex-wrap gap-1 pl-4">
-                    {partners.map((iso2) => (
-                      <img
-                        key={iso2}
-                        src={`https://flagcdn.com/w20/${iso2.toLowerCase()}.png`}
-                        alt={iso2}
-                        title={countryNames.of(iso2) ?? iso2}
-                        className="h-3 w-auto rounded-sm opacity-80 hover:opacity-100 cursor-pointer"
-                        onClick={() => setSelectedCountry({ code: iso2, name: countryNames.of(iso2) ?? iso2 })}
-                      />
-                    ))}
-                  </div>
+                  {partners.length > 0 && (
+                    <div className="flex flex-wrap gap-1 pl-4">
+                      {partners.map((iso3) => (
+                        <span
+                          key={iso3}
+                          className="text-[#94a3b8] text-xs bg-[#1e2736] px-1.5 py-0.5 rounded cursor-pointer hover:text-white"
+                          onClick={() => setSelectedCountry({ code: iso3, name: iso3 })}
+                        >
+                          {iso3}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  {rel.notes && <p className="text-[#4b5563] text-xs pl-4 mt-1">{rel.notes}</p>}
                 </div>
               )
             })}
           </div>
-        ) : <NoData label="No formal alliances recorded" />}
-        <p className="text-[#374151] text-xs mt-1">COW dataset · up to ~2012</p>
+        ) : !relLoading && <NoData label="No active relationships recorded" />}
       </Section>
-      <Source>Correlates of War Project</Source>
+      <Source>Manual research · June 2026</Source>
     </div>
   )
 

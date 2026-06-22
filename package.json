@@ -11,6 +11,7 @@
     "fetch-data": "node scripts/fetch-governments.mjs && node scripts/fetch-religions.mjs && node scripts/fetch-ethnicgroups.mjs && node scripts/fetch-military.mjs"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.108.2",
     "maplibre-gl": "^5.24.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",

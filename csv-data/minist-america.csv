@@ -1,0 +1,108 @@
+iso3,role,name,party
+CAN,foreign,Mélanie Joly,Liberal Party
+CAN,defense,Bill Blair,Liberal Party
+CAN,economy,Chrystia Freeland,Liberal Party
+USA,foreign,Marco Rubio,Republican Party
+USA,defense,Pete Hegseth,Republican Party
+USA,economy,Scott Bessent,Republican Party
+USA,interior,Kristi Noem,Republican Party
+MEX,foreign,Juan Ramón de la Fuente,MORENA
+MEX,defense,Ricardo Trevilla Trejo,
+MEX,economy,Marcelo Ebrard,MORENA
+MEX,interior,Rosa Icela Rodríguez,MORENA
+BLZ,foreign,Francis Fonseca,People's United Party
+BLZ,defense,Florencio Marin Jr.,People's United Party
+BLZ,economy,John Briceño,People's United Party
+CRI,foreign,Arnoldo André Tinoco,
+CRI,economy,Nogui Acosta,
+CRI,interior,Mario Zamora,
+SLV,foreign,Alexandra Hill Tinoco,
+SLV,defense,René Merino Monroy,
+SLV,interior,Gustavo Villatoro,
+GTM,foreign,Carlos Ramiro Martínez,
+GTM,defense,Henry Saenz Ramos,
+GTM,economy,Jonathan Menkos,
+HND,foreign,Eduardo Enrique Reina,
+HND,defense,Rixi Moncada,
+HND,economy,Marlon Ochoa,
+NIC,foreign,Denis Moncada,
+NIC,defense,Rosa Adelina Barahona,
+NIC,economy,Iván Acosta,
+PAN,foreign,Javier Martínez-Acha,
+PAN,defense,Frank Ábrego,
+PAN,economy,Felipe Chapman,
+ATG,foreign,Gaston Browne,
+ATG,defense,Gaston Browne,
+ATG,economy,Gaston Browne,
+BHS,foreign,Fred Mitchell,
+BHS,defense,Wayne Munroe,
+BHS,economy,Philip Davis,
+BRB,foreign,Kerrie Symmonds,
+BRB,defense,Mia Mottley,
+BRB,economy,Mia Mottley,
+CUB,foreign,Bruno Rodríguez Parrilla,Communist Party of Cuba
+CUB,defense,Álvaro López Miera,Communist Party of Cuba
+CUB,economy,Joaquín Alonso Vázquez,Communist Party of Cuba
+DMA,foreign,Vince Henderson,
+DMA,defense,Roosevelt Skerrit,
+DMA,economy,Roosevelt Skerrit,
+GRD,foreign,Joseph Andall,
+GRD,defense,Dickon Mitchell,
+GRD,economy,Dickon Mitchell,
+HTI,foreign,Harvel Jean-Baptiste,
+HTI,defense,Jean Marc Berthier Antoine,
+HTI,economy,Ketleen Florestal,
+JAM,foreign,Kamina Johnson Smith,
+JAM,defense,Andrew Holness,
+JAM,economy,Nigel Clarke,
+DOM,foreign,Roberto Álvarez,
+DOM,defense,Carlos Luciano Díaz Morfa,
+DOM,economy,Jochi Vicente,
+KNA,foreign,Denzil Douglas,
+KNA,defense,Terrance Drew,
+KNA,economy,Terrance Drew,
+VCT,foreign,Keisal Peters,
+VCT,defense,Ralph Gonsalves,
+VCT,economy,Ralph Gonsalves,
+LCA,foreign,Alva Baptiste,
+LCA,defense,Philip J. Pierre,
+LCA,economy,Philip J. Pierre,
+TTO,foreign,Amery Browne,
+TTO,defense,Fitzgerald Hinds,
+TTO,economy,Colm Imbert,
+ARG,foreign,Gerardo Werthein,
+ARG,defense,Luis Petri,
+ARG,economy,Luis Caputo,
+BOL,foreign,Celinda Sosa Lunda,
+BOL,defense,Edmundo Novillo,
+BOL,economy,Marcelo Montenegro,
+BRA,foreign,Mauro Vieira,
+BRA,defense,José Múcio,
+BRA,economy,Fernando Haddad,Workers' Party
+CHL,foreign,Alberto van Klaveren,
+CHL,defense,Maya Fernández,
+CHL,economy,Mario Marcel,
+COL,foreign,Luis Gilberto Murillo,
+COL,defense,Iván Velásquez,
+COL,economy,Ricardo Bonilla,
+ECU,foreign,Gabriela Sommerfeld,
+ECU,defense,Gian Carlo Loffredo,
+ECU,economy,Juan Carlos Vega,
+GUY,foreign,Hugh Todd,
+GUY,defense,Irfaan Ali,
+GUY,economy,Ashni Singh,
+PRY,foreign,Rubén Ramírez Lezcano,
+PRY,defense,Óscar González,
+PRY,economy,Carlos Fernández Valdovinos,
+PER,foreign,Elmer Schialer,
+PER,defense,Walter Astudillo,
+PER,economy,José Arista,
+SUR,foreign,Albert Ramdin,
+SUR,defense,Krishna Mathoera,
+SUR,economy,Stanley Raghoebarsing,
+URY,foreign,,
+URY,defense,,
+URY,economy,,
+VEN,foreign,Yván Gil,PSUV
+VEN,defense,Vladimir Padrino López,PSUV
+VEN,economy,Delcy Rodríguez,PSUV

@@ -124,7 +124,7 @@ export default function Sidebar() {
 
             {/* Tab content — only this area scrolls */}
             <div className="flex-1 overflow-y-auto p-4">
-              {activeTab === 'gobierno'    && <GovernmentTab countryCode={selectedCountry?.code} staticData={staticData} subtab={currentSubTab} />}
+              {activeTab === 'gobierno'    && <GovernmentTab countryCode={selectedCountry?.code} subtab={currentSubTab} />}
               {activeTab === 'culturas'    && <CulturesTab   countryCode={selectedCountry?.code} staticData={staticData} countryData={countryData} subtab={currentSubTab} />}
               {activeTab === 'diplomatica' && <DiplomaticTab countryCode={selectedCountry?.code} staticData={staticData} subtab={currentSubTab} />}
               {activeTab === 'economia'    && <EconomyTab    data={countryData} worldBankData={worldBankCountryData} staticData={staticData} countryCode={selectedCountry?.code} subtab={currentSubTab} />}
