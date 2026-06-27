@@ -1,0 +1,102 @@
+============================================================
+  PROMPT RECOPILACIÓN DE RELACIONES — WORLD DATA EXPLORER
+  Actualizado: junio 2026
+============================================================
+
+Genera un bloque SQL INSERT con todas las relaciones de la categoría
+indicada, activas a junio de 2026. Los datos se importan directamente
+a una base de datos PostgreSQL.
+
+
+------------------------------------------------------------
+REGLAS OBLIGATORIAS
+------------------------------------------------------------
+
+1. FORMATO — solo SQL INSERT, sin explicaciones ni texto adicional.
+
+2. CÓDIGOS DE PAÍS — siempre ISO3 (USA, ESP, RUS...) en side_a y side_b.
+
+3. ARRAYS — notación PostgreSQL sin comillas externas:
+   - Un país:    {RUS}
+   - Varios:     {USA,GBR,FRA}
+
+4. side_b — debe ser NULL para alianzas multilaterales sin bando
+   contrario. Solo usa side_b cuando hay dos bandos claros.
+
+5. FECHAS — formato YYYY-MM-DD. Si solo conoces el año: YYYY-01-01.
+   Si la fecha es desconocida, usa NULL.
+
+6. NOTAS — en inglés, máximo 120 caracteres, concisas.
+
+7. NUMERACIÓN — continúa desde el número indicado al final del prompt.
+
+8. COMPLETITUD — incluye TODAS las relaciones activas de la categoría
+   a nivel mundial, no solo las más conocidas.
+
+9. VALORES PERMITIDOS
+   type:      alliance / war / conflict / rivalry / tension
+   subtype:   military / economic / economic_political / political /
+              geopolitical / diplomatic / territorial / civil_war /
+              international / proxy
+   status:    active / frozen / resolved
+   intensity: low / medium / high
+
+
+------------------------------------------------------------
+FORMATO SQL
+------------------------------------------------------------
+
+Ejemplo de formato (datos ficticios, NO los incluyas en tu respuesta):
+
+INSERT INTO relationships (id, type, subtype, name, side_a, side_b, status, intensity, since, notes) VALUES
+('rel_001', 'alliance', 'military', 'Example Pact', '{AAA,BBB,CCC}', NULL, 'active', 'high', '1950-01-01', 'Example multilateral alliance'),
+('rel_002', 'war', 'international', 'Example War', '{AAA}', '{BBB}', 'active', 'high', '2020-06-01', 'Example bilateral conflict'),
+('rel_003', 'tension', 'diplomatic', 'Example Tension', '{AAA}', '{CCC}', 'active', 'medium', NULL, 'Example diplomatic dispute');
+
+IMPORTANTE: cada fila termina en coma excepto la última, que termina
+en punto y coma.
+
+
+------------------------------------------------------------
+CATEGORÍAS — envía cada una en una consulta separada
+------------------------------------------------------------
+
+CONSULTA A — Alianzas militares
+   Todas las alianzas y pactos de defensa militar activos a nivel mundial.
+   type = alliance, subtype = military
+   Ejemplos de lo que debe incluir: OTAN, CSTO, AUKUS, pactos bilaterales
+   de defensa, acuerdos de seguridad mutua...
+
+CONSULTA B — Conflictos armados activos
+   Todas las guerras y conflictos armados en curso a junio de 2026,
+   tanto internacionales como guerras civiles con intervención exterior.
+   type = war / conflict
+   Ejemplos: Russia-Ukraine, Sudan, Myanmar, Gaza...
+
+CONSULTA C — Rivalidades geopolíticas
+   Competiciones estratégicas activas entre potencias o bloques.
+   type = rivalry, subtype = geopolitical
+   Ejemplos: US-China, India-Pakistan, Iran-Saudi Arabia...
+
+CONSULTA D — Tensiones territoriales
+   Disputas territoriales activas (fronteras, islas, aguas...).
+   type = tension, subtype = territorial
+   Ejemplos: South China Sea, Kashmir, Western Sahara...
+
+CONSULTA E — Alianzas económicas y comerciales regionales
+   Bloques económicos, uniones aduaneras y acuerdos de libre comercio
+   multilaterales activos.
+   type = alliance, subtype = economic / economic_political
+   Ejemplos: EU, ASEAN, Mercosur, USMCA, African Union...
+
+CONSULTA F — Tensiones y crisis diplomáticas
+   Rupturas diplomáticas, sanciones y crisis bilaterales activas.
+   type = tension, subtype = diplomatic
+   Ejemplos: US-Iran sanctions, Russia-West relations...
+
+
+------------------------------------------------------------
+NUMERACIÓN ACTUAL — actualiza esto tras cada consulta importada:
+  Última rel importada: rel_000 (base de datos vacía)
+  Próxima rel a usar:   rel_001
+------------------------------------------------------------

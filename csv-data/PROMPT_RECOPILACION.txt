@@ -1,4 +1,3 @@
-
 ============================================================
   PROMPT RECOPILACIÓN DE DATOS — WORLD DATA EXPLORER
   Actualizado: junio 2026
@@ -29,8 +28,7 @@ REGLAS GENERALES OBLIGATORIAS
    Si solo conoces año y mes: YYYY-MM-01
 
 4. CÓDIGOS DE PAÍS
-   - governments.csv y ministers.csv: usa ISO3 (USA, ESP, DEU...)
-   - Incluye siempre también ISO2 en governments.csv (US, ES, DE...)
+   - governments.csv y ministers.csv: usa solo ISO3 (USA, ESP, DEU...)
    - relationships (SQL): usa siempre ISO3 para side_a y side_b.
 
 5. HEAD OF GOVERNMENT
@@ -42,36 +40,16 @@ REGLAS GENERALES OBLIGATORIAS
    foreign, defense, economy, interior
    Deja la columna party vacía si no se conoce con certeza.
 
-7. RELATIONSHIPS — FORMATO SQL (no CSV)
-   Los relationships se entregan como bloque SQL INSERT, nunca como CSV.
-   - Continúa la numeración rel_XXX desde el número indicado al final
-     de este prompt.
-   - side_a y side_b son arrays PostgreSQL: {USA}, {USA,CAN,MEX}
-   - Un solo país también va entre llaves: {RUS}, {UKR}
-   - side_b debe ser NULL (sin comillas) para alianzas multilaterales
-     sin bando contrario (NATO, EU, AU, OAS...).
-   - Incluye solo relaciones ACTIVAS a junio de 2026.
-
-8. VALORES PERMITIDOS EN RELATIONSHIPS
-   type:      alliance / war / conflict / rivalry / tension
-   subtype:   military / economic / economic_political / political /
-              geopolitical / diplomatic / territorial / civil_war /
-              international / proxy
-   status:    active / frozen / resolved
-   intensity: low / medium / high
-
 
 ------------------------------------------------------------
 FORMATO governments.csv
 ------------------------------------------------------------
 
-iso3,iso2,head_of_state_name,head_of_state_title,head_of_state_party,head_of_state_since,head_of_government_name,head_of_government_title,head_of_government_party,head_of_government_since
+iso3,head_of_state_name,head_of_state_title,head_of_state_party,head_of_state_since,head_of_government_name,head_of_government_title,head_of_government_party,head_of_government_since
 
-Ejemplos:
-USA,US,Donald Trump,President,Republican Party,2025-01-20,,,,
-ESP,ES,Felipe VI,King,,2014-06-19,Pedro Sánchez,Prime Minister,PSOE,2018-06-02
-DEU,DE,Frank-Walter Steinmeier,President,SPD,2017-03-19,Friedrich Merz,Chancellor,CDU,2025-05-06
-CAN,CA,Charles III,King,,2022-09-08,Mark Carney,Prime Minister,Liberal Party,2025-03-14
+Ejemplo de formato (datos ficticios, NO los incluyas en tu respuesta):
+AAA,John Doe,President,Example Party,2020-01-01,,,,
+BBB,Jane Smith,Queen,,2015-06-15,Bob Jones,Prime Minister,Other Party,2022-03-10
 
 
 ------------------------------------------------------------
@@ -80,27 +58,12 @@ FORMATO ministers.csv
 
 iso3,role,name,party
 
-Ejemplos:
-USA,foreign,Marco Rubio,Republican Party
-USA,defense,Pete Hegseth,Republican Party
-USA,economy,Scott Bessent,Republican Party
-USA,interior,Kristi Noem,Republican Party
-ESP,foreign,José Manuel Albares,PSOE
-ESP,defense,Margarita Robles,PSOE
+Ejemplo de formato (datos ficticios, NO los incluyas en tu respuesta):
+AAA,foreign,John Foreign,Example Party
+AAA,defense,Jane Defense,Example Party
+AAA,economy,Bob Economy,
+AAA,interior,Alice Interior,Other Party
 
-
-------------------------------------------------------------
-FORMATO relationships — BLOQUE SQL INSERT
-------------------------------------------------------------
-
-INSERT INTO relationships (id, type, subtype, name, side_a, side_b, status, intensity, since, notes) VALUES
-('rel_015', 'alliance', 'military', 'NATO', '{USA,ESP,DEU,FRA,GBR,ITA,POL}', NULL, 'active', 'high', '1949-04-04', 'Collective defence pact'),
-('rel_016', 'war', 'international', 'Russia-Ukraine War', '{UKR}', '{RUS}', 'active', 'high', '2022-02-24', 'Full-scale invasion of Ukraine'),
-('rel_017', 'rivalry', 'geopolitical', 'US-China Competition', '{USA}', '{CHN}', 'active', 'high', '2018-03-22', 'Trade and technology dispute'),
-('rel_018', 'tension', 'territorial', 'South China Sea', '{PHL,VNM,MYS}', '{CHN}', 'active', 'medium', NULL, 'Overlapping maritime claims'),
-('rel_019', 'tension', 'diplomatic', 'US-Venezuela Tensions', '{USA}', '{VEN}', 'active', 'medium', NULL, 'Sanctions and geopolitical friction');
-
-IMPORTANTE: cada fila del INSERT termina en coma excepto la última, que termina en punto y coma.
 
 
 ------------------------------------------------------------
@@ -116,15 +79,7 @@ comentarios ni texto adicional. Estructura la respuesta así:
 --- ministers.csv ---
 [contenido]
 
---- relationships SQL ---
-[bloque INSERT]
 
-
-------------------------------------------------------------
-NUMERACIÓN ACTUAL — continúa desde aquí:
-  Último rel importado: rel_014
-  Próximo rel a usar:   rel_015
-------------------------------------------------------------
 
 Países a cubrir este lote:
 [AQUÍ TU LISTA DE PAÍSES]
