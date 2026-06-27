@@ -3,6 +3,7 @@ import { supabase } from '../lib/supabase'
 
 export function useRelationships(iso2) {
   const [data, setData] = useState(null)
+  const [iso3, setIso3] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
@@ -15,22 +16,22 @@ export function useRelationships(iso2) {
     setError(null)
 
     async function fetch() {
-      // Resolve ISO2 → ISO3 first
-      const { data: gov } = await supabase
-        .from('governments')
+      const { data: cc } = await supabase
+        .from('country_codes')
         .select('iso3')
         .eq('iso2', iso2)
         .single()
 
       if (cancelled) return
 
-      if (!gov?.iso3) {
+      if (!cc?.iso3) {
         setData([])
         setLoading(false)
         return
       }
 
-      const iso3 = gov.iso3
+      const iso3 = cc.iso3
+      setIso3(iso3)
       const [resA, resB] = await Promise.all([
         supabase.from('relationships').select('*').contains('side_a', [iso3]).eq('status', 'active'),
         supabase.from('relationships').select('*').contains('side_b', [iso3]).eq('status', 'active'),
@@ -57,5 +58,5 @@ export function useRelationships(iso2) {
     return () => { cancelled = true }
   }, [iso2])
 
-  return { data, loading, error }
+  return { data, iso3, loading, error }
 }

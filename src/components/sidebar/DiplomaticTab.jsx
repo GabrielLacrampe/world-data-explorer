@@ -16,7 +16,7 @@ const countryNames = new Intl.DisplayNames(['en'], { type: 'region' })
 
 export default function DiplomaticTab({ countryCode, staticData, subtab }) {
   const setSelectedCountry = useStore((s) => s.setSelectedCountry)
-  const { data: relationships, loading: relLoading } = useRelationships(countryCode)
+  const { data: relationships, iso3: countryIso3, loading: relLoading } = useRelationships(countryCode)
 
   if (!staticData) return <p className="text-gray-500 text-sm">Loading...</p>
   if (!countryCode || countryCode === '-99')
@@ -100,7 +100,7 @@ export default function DiplomaticTab({ countryCode, staticData, subtab }) {
         {!relLoading && relationships?.length > 0 ? (
           <div className="flex flex-col gap-4">
             {relationships.map((rel) => {
-              const partners = [...(rel.side_a ?? []), ...(rel.side_b ?? [])].filter((c) => c !== countryCode)
+              const partners = [...(rel.side_a ?? []), ...(rel.side_b ?? [])].filter((c) => c !== countryIso3)
               return (
                 <div key={rel.id}>
                   <div className="flex items-center gap-2 mb-1.5">

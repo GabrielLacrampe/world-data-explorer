@@ -15,11 +15,25 @@ export function useGovernmentData(iso2) {
     setError(null)
 
     async function fetch() {
-      const govResult = await supabase
-        .from('governments')
-        .select('*')
+      const { data: cc } = await supabase
+        .from('country_codes')
+        .select('iso3')
         .eq('iso2', iso2)
         .single()
+
+      if (cancelled) return
+
+      const iso3 = cc?.iso3
+      if (!iso3) {
+        setData({ government: null, ministers: [] })
+        setLoading(false)
+        return
+      }
+
+      const [govResult, minResult] = await Promise.all([
+        supabase.from('governments').select('*').eq('iso3', iso3).single(),
+        supabase.from('ministers').select('role, name, party').eq('iso3', iso3),
+      ])
 
       if (cancelled) return
 
@@ -28,13 +42,6 @@ export function useGovernmentData(iso2) {
         setLoading(false)
         return
       }
-
-      const iso3 = govResult.data?.iso3
-      const minResult = iso3
-        ? await supabase.from('ministers').select('role, name, party').eq('iso3', iso3)
-        : { data: [] }
-
-      if (cancelled) return
 
       setData({
         government: govResult.data ?? null,
