@@ -2,19 +2,21 @@ import { useState } from 'react'
 import { LAYERS } from '../layers'
 import useStore from '../store/useStore'
 import { COLOR_SCALE } from '../utils/colorScale'
+import { useRelationships } from '../hooks/useRelationships'
 
-const ALLIANCE_LEGEND = [
-  { type: 'Defense Pact', color: '#ef4444' },
-  { type: 'Non-Aggression Treaty', color: '#f59e0b' },
-  { type: 'Neutrality Pact', color: '#a78bfa' },
-  { type: 'Entente', color: '#22c55e' },
+const REL_LEGEND = [
+  { type: 'war',      label: 'War',      color: '#ef4444' },
+  { type: 'conflict', label: 'Conflict', color: '#f97316' },
+  { type: 'rivalry',  label: 'Rivalry',  color: '#f59e0b' },
+  { type: 'tension',  label: 'Tension',  color: '#a78bfa' },
+  { type: 'alliance', label: 'Alliance', color: '#22c55e' },
 ]
 
 const LAYER_GROUPS = [
   { label: 'Map Style',    keys: ['geographic', 'political'] },
-  { label: 'Demographics', keys: ['population', 'area'] },
-  { label: 'Economy',      keys: ['gdp_per_capita', 'gdp_growth', 'unemployment'] },
-  { label: 'Social',       keys: ['life_expectancy', 'electricity_access', 'literacy_rate', 'internet_users', 'renewable_energy'] },
+  { label: 'Demographics', keys: ['population', 'area', 'birth_rate', 'death_rate', 'net_migration'] },
+  { label: 'Economy',      keys: ['gdp_per_capita', 'gdp_growth', 'unemployment', 'inflation', 'public_debt', 'fiscal_balance', 'exports', 'imports'] },
+  { label: 'Social',       keys: ['life_expectancy', 'electricity_access', 'literacy_rate', 'internet_users', 'renewable_energy', 'health_spending', 'education_spending', 'water_access', 'co2_total'] },
   { label: 'Governance',   keys: ['democracy_index', 'military_spending', 'gini_index'] },
   { label: 'Diplomacy',    keys: ['alliances', 'trade'] },
 ]
@@ -27,7 +29,7 @@ function DataPanel() {
   const activeLayer    = useStore((s) => s.activeLayer)
   const setActiveLayer = useStore((s) => s.setActiveLayer)
   const selectedCountry = useStore((s) => s.selectedCountry)
-  const staticData     = useStore((s) => s.staticData)
+  const layerLoading   = useStore((s) => s.layerLoading)
   const layer          = LAYERS[activeLayer]
 
   // Track the last manually-opened group; when null, follow the active layer
@@ -42,13 +44,15 @@ function DataPanel() {
   const openGroup    = manualGroup ?? groupForLayer(activeLayer)
   const setOpenGroup = (g) => setManualGroup(g)
 
-  const hasAllianceLegend = activeLayer === 'alliances' &&
-    selectedCountry &&
-    staticData?.alliances?.[selectedCountry.code]?.length > 0
+  const { data: relationships } = useRelationships(
+    activeLayer === 'alliances' ? selectedCountry?.code : null
+  )
 
-  const presentAllianceTypes = hasAllianceLegend
-    ? new Set(staticData.alliances[selectedCountry.code].map((a) => a.type))
+  const presentRelTypes = relationships?.length
+    ? new Set(relationships.map((r) => r.type))
     : null
+
+  const hasAllianceLegend = activeLayer === 'alliances' && selectedCountry && !!presentRelTypes
 
   return (
     // bottom-8 clears the MapLibre attribution bar (~32px)
@@ -56,9 +60,22 @@ function DataPanel() {
 
       {/* ── Layer selector ───────────────────────────────────────────── */}
       <div className="bg-[#0d1117]/90 backdrop-blur-md border border-[#1e2736] rounded-md w-52 overflow-hidden">
-        <p className="font-display text-[10px] uppercase tracking-[0.15em] text-[#6b7280] px-3 pt-3 pb-2">
-          Map Layer
-        </p>
+        {layerLoading && (
+          <div className="h-0.5 w-full bg-[#1e2736] overflow-hidden">
+            <div className="h-full w-full bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-pulse" />
+          </div>
+        )}
+        <div className="flex items-center justify-between px-3 pt-3 pb-2">
+          <p className="font-display text-[10px] uppercase tracking-[0.15em] text-[#6b7280]">
+            Map Layer
+          </p>
+          {layerLoading && (
+            <span className="flex items-center gap-1.5 text-[9px] text-blue-400 animate-pulse">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-ping" />
+              Loading
+            </span>
+          )}
+        </div>
 
         {LAYER_GROUPS.map(({ label, keys }) => {
           const isOpen = openGroup === label
@@ -108,17 +125,17 @@ function DataPanel() {
       {hasAllianceLegend ? (
         <div className="bg-[#0d1117]/90 backdrop-blur-md border border-[#1e2736] rounded-md p-3 w-52">
           <p className="font-display text-[10px] uppercase tracking-[0.15em] text-[#6b7280] mb-2.5">
-            Alliance Relations
+            Relations
           </p>
           <div className="flex flex-col gap-1.5">
-            {ALLIANCE_LEGEND.filter((e) => presentAllianceTypes.has(e.type)).map(({ type, color }) => (
+            {REL_LEGEND.filter((e) => presentRelTypes.has(e.type)).map(({ type, label, color }) => (
               <div key={type} className="flex items-center gap-2">
                 <div className="w-2 h-2 rounded-sm shrink-0" style={{ backgroundColor: color }} />
-                <span className="text-[#94a3b8] text-xs">{type}</span>
+                <span className="text-[#94a3b8] text-xs">{label}</span>
               </div>
             ))}
           </div>
-          <p className="text-[#374151] text-xs mt-2">Source: COW Project</p>
+          <p className="text-[#374151] text-xs mt-2">Manual research · June 2026</p>
         </div>
       ) : activeLayer === 'trade' ? (
         <div className="bg-[#0d1117]/90 backdrop-blur-md border border-[#1e2736] rounded-md p-3 w-52">

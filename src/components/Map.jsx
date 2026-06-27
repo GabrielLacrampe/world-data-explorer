@@ -5,8 +5,8 @@ import { MAP_STYLE } from '../utils/mapStyles'
 import useStore from '../store/useStore'
 import { patchGeoJSON, buildLabelPoints } from '../utils/geoUtils'
 import { buildTradeGeoJSON } from '../utils/tradeRoutes'
+import { useRelationships } from '../hooks/useRelationships'
 import {
-  ALLIANCE_COLORS,
   LABEL_REF_ZOOM,
   LABEL_LARGE_SHOW,
   LABEL_DEFAULT_SHOW,
@@ -21,6 +21,14 @@ const GEOJSON_URL =
 
 const GEO_NAME = 'name'
 const GEO_ISO2 = 'ISO3166-1-Alpha-2'
+
+const REL_COLORS = {
+  war:      '#ef4444',
+  conflict: '#f97316',
+  rivalry:  '#f59e0b',
+  tension:  '#a78bfa',
+  alliance: '#22c55e',
+}
 
 // Known ISO2 fixes for features the geo-countries dataset ships with code -99.
 const NAME_TO_ISO2_FIXES = {
@@ -75,6 +83,8 @@ function Map() {
         setLoading('map', false)
       })
   }, [setWorldData, setLoading])
+
+  const { data: relationships, iso3: selectedIso3 } = useRelationships(selectedCountry?.code)
 
   const labelPoints = useMemo(() => worldData ? buildLabelPoints(worldData) : null, [worldData])
 
@@ -158,17 +168,37 @@ function Map() {
 
   const resolvedFill = fillExpression || '#3b5998'
 
+  const iso3ToIso2 = useMemo(() => {
+    if (!allCountriesData) return {}
+    const out = {}
+    for (const [iso2, c] of Object.entries(allCountriesData)) {
+      if (c.cca3) out[c.cca3] = iso2
+    }
+    return out
+  }, [allCountriesData])
+
   const allianceFill = useMemo(() => {
     if (activeLayer !== 'alliances') return null
-    if (!selectedCountry || !staticData?.alliances) return null
-    const allies = staticData.alliances[selectedCountry.code]
-    if (!allies?.length) return null
-    const args = []
-    for (const { partner, type } of allies) {
-      args.push(partner, ALLIANCE_COLORS[type] ?? '#6b7280')
+    if (!selectedCountry || !relationships?.length) return null
+    // Priority order: war > conflict > rivalry > tension > alliance
+    const PRIORITY = { war: 0, conflict: 1, rivalry: 2, tension: 3, alliance: 4 }
+    const best = {} // iso2 → { color, priority }
+    for (const rel of relationships) {
+      const partners = [...(rel.side_a ?? []), ...(rel.side_b ?? [])].filter((c) => c !== selectedIso3)
+      const color = REL_COLORS[rel.type] ?? '#6b7280'
+      const priority = PRIORITY[rel.type] ?? 5
+      for (const partnerIso3 of partners) {
+        const iso2 = iso3ToIso2[partnerIso3]
+        if (!iso2) continue
+        if (!best[iso2] || priority < best[iso2].priority) best[iso2] = { color, priority }
+      }
     }
-    return ['match', ['get', GEO_ISO2], ...args, '#3b5998']
-  }, [activeLayer, selectedCountry, staticData])
+    const entries = Object.entries(best)
+    if (!entries.length) return null
+    const args = []
+    for (const [iso2, { color }] of entries) args.push(iso2, color)
+    return ['match', ['get', GEO_ISO2], ...args, '#1a2535']
+  }, [activeLayer, selectedCountry, relationships, selectedIso3, iso3ToIso2])
 
   // Animated flow on selected trade route lines
   useEffect(() => {
