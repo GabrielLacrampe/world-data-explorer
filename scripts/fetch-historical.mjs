@@ -1,6 +1,6 @@
 /**
- * Downloads historical time-series data from Our World in Data and saves it
- * as static JSON files in public/data/historical/.
+ * Downloads historical time-series data from OWID's GitHub datasets repo
+ * and saves static JSON files to public/data/historical/.
  *
  * Each output file has the shape:
  *   { "<year>": { "<ISO2>": <value>, ... }, ... }
@@ -10,16 +10,97 @@
 
 import { writeFileSync, mkdirSync } from 'node:fs'
 
-const OWID_BASE   = 'https://ourworldindata.org/grapher'
-const COUNTRIES_URL = 'https://cdn.jsdelivr.net/npm/world-countries/countries.json'
-const OUT_DIR     = 'public/data/historical'
+const OWID_RAW = 'https://raw.githubusercontent.com/owid/owid-datasets/master/datasets'
+const COUNTRIES_URL = 'https://raw.githubusercontent.com/mledoze/countries/master/dist/countries.json'
+const OUT_DIR = 'public/data/historical'
 
-// Datasets to fetch: { slug, label }
 const DATASETS = [
-  { slug: 'gdp-per-capita-maddison',  label: 'GDP per Capita (Maddison)' },
-  { slug: 'life-expectancy',           label: 'Life Expectancy' },
-  { slug: 'population',                label: 'Population' },
+  {
+    slug: 'gdp-per-capita-maddison',
+    label: 'GDP per Capita (Maddison Project 2020)',
+    githubDir: 'Maddison Project Database 2020 (Bolt and van Zanden (2020))',
+    valueColumn: 'GDP per capita',
+  },
+  {
+    slug: 'life-expectancy',
+    label: 'Life Expectancy (Gapminder + UN)',
+    githubDir: 'Long run life expectancy - Gapminder, UN',
+    valueColumn: 'Life expectancy (Gapminder, UN)',
+  },
+  {
+    slug: 'population',
+    label: 'Population (Gapminder + UN)',
+    githubDir: 'Total population - Gapminder, UN Population Division',
+    valueColumn: 'Total population (Gapminder, UN Population Division)',
+  },
 ]
+
+// OWID uses its own country-name spellings that don't always match ISO standard names
+const OVERRIDES = {
+  'united states':                     'US',
+  'united kingdom':                    'GB',
+  'russia':                            'RU',
+  'south korea':                       'KR',
+  'north korea':                       'KP',
+  'iran':                              'IR',
+  'syria':                             'SY',
+  'vietnam':                           'VN',
+  'bolivia':                           'BO',
+  'tanzania':                          'TZ',
+  'moldova':                           'MD',
+  'venezuela':                         'VE',
+  "côte d'ivoire":                     'CI',
+  "cote d'ivoire":                     'CI',
+  'ivory coast':                       'CI',
+  'czech republic':                    'CZ',
+  'czechia':                           'CZ',
+  'democratic republic of congo':      'CD',
+  'democratic republic of the congo':  'CD',
+  'dr congo':                          'CD',
+  'congo':                             'CG',
+  'republic of the congo':             'CG',
+  'laos':                              'LA',
+  'myanmar':                           'MM',
+  'burma':                             'MM',
+  'timor-leste':                       'TL',
+  'east timor':                        'TL',
+  'eswatini':                          'SZ',
+  'swaziland':                         'SZ',
+  'cabo verde':                        'CV',
+  'cape verde':                        'CV',
+  'turkey':                            'TR',
+  'turkiye':                           'TR',
+  'united arab emirates':              'AE',
+  'taiwan':                            'TW',
+  'taiwan*':                           'TW',
+  'palestine':                         'PS',
+  'west bank and gaza':                'PS',
+  'hong kong':                         'HK',
+  'macao':                             'MO',
+  'macau':                             'MO',
+  'micronesia (country)':              'FM',
+  'micronesia':                        'FM',
+  // Regions / aggregates — skip these
+  'world': null,
+  'africa': null,
+  'europe': null,
+  'asia': null,
+  'americas': null,
+  'oceania': null,
+  'north america': null,
+  'south america': null,
+  'latin america': null,
+  'western europe': null,
+  'eastern europe': null,
+  'sub-saharan africa': null,
+  'middle east': null,
+  'central asia': null,
+  'south asia': null,
+  'southeast asia': null,
+  'east asia': null,
+  'former ussr': null,
+  'former yugoslavia': null,
+}
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -36,37 +117,54 @@ function splitCsvLine(line) {
   return result
 }
 
-function parseCsv(text, iso3ToIso2) {
+function parseCsv(text, nameToIso2, valueColumn) {
   const lines   = text.trim().split('\n')
-  const headers = splitCsvLine(lines[0])
+  const headers = splitCsvLine(lines[0]).map(h => h.trim().replace(/^"|"$/g, ''))
 
-  const codeIdx  = headers.findIndex(h => h.trim() === 'Code')
-  const yearIdx  = headers.findIndex(h => h.trim() === 'Year')
-  const valueIdx = headers.length - 1   // last column is always the indicator value
+  const entityIdx = headers.findIndex(h => h === 'Entity')
+  const yearIdx   = headers.findIndex(h => h === 'Year')
+  const valueIdx  = headers.findIndex(h => h === valueColumn)
 
-  if (codeIdx === -1 || yearIdx === -1) {
-    console.error('  Could not find Code or Year column. Headers:', headers)
+  if (entityIdx === -1 || yearIdx === -1 || valueIdx === -1) {
+    console.error(`  Could not find columns. Headers: ${headers.join(' | ')}`)
+    console.error(`  Looking for value column: "${valueColumn}"`)
     return {}
   }
 
   const result = {}
+  const skipped = new Set()
 
   for (let i = 1; i < lines.length; i++) {
     if (!lines[i].trim()) continue
     const cols  = splitCsvLine(lines[i])
-    const iso3  = cols[codeIdx]?.trim()
+    const name  = cols[entityIdx]?.trim().toLowerCase()
     const year  = parseInt(cols[yearIdx])
-    const value = parseFloat(cols[valueIdx]?.trim())
+    const raw   = cols[valueIdx]?.trim()
+    const value = parseFloat(raw)
 
-    // Skip aggregate regions (OWID uses 3-letter ISO for countries,
-    // and OWID_* codes for aggregates)
-    if (!iso3 || !/^[A-Z]{3}$/.test(iso3) || isNaN(year) || isNaN(value)) continue
+    if (!name || isNaN(year) || !raw || isNaN(value)) continue
 
-    const iso2 = iso3ToIso2[iso3]
-    if (!iso2) continue
+    // Check override map first
+    if (name in OVERRIDES) {
+      const iso2 = OVERRIDES[name]
+      if (iso2 === null) continue   // explicitly skipped region
+      if (!result[year]) result[year] = {}
+      result[year][iso2] = value
+      continue
+    }
+
+    const iso2 = nameToIso2[name]
+    if (!iso2) {
+      skipped.add(cols[entityIdx]?.trim())
+      continue
+    }
 
     if (!result[year]) result[year] = {}
     result[year][iso2] = value
+  }
+
+  if (skipped.size) {
+    console.log(`  Unmatched (${skipped.size}): ${[...skipped].slice(0, 8).join(', ')}${skipped.size > 8 ? '...' : ''}`)
   }
 
   return result
@@ -74,26 +172,35 @@ function parseCsv(text, iso3ToIso2) {
 
 // ── Main ─────────────────────────────────────────────────────────────────────
 
-console.log('Fetching world-countries for ISO3 → ISO2 mapping...')
-const worldCountries = await fetch(COUNTRIES_URL).then(r => r.json())
+console.log('Fetching country name → ISO2 mapping...')
+const countries = await fetch(COUNTRIES_URL).then(r => r.json())
 
-const iso3ToIso2 = {}
-for (const c of worldCountries) {
-  if (c.cca3 && c.cca2) iso3ToIso2[c.cca3] = c.cca2
+const nameToIso2 = {}
+for (const c of countries) {
+  const iso2 = c.cca2
+  if (!iso2) continue
+  // Index by common name, official name and all translations
+  nameToIso2[c.name.common.toLowerCase()] = iso2
+  if (c.name.official) nameToIso2[c.name.official.toLowerCase()] = iso2
+  for (const t of Object.values(c.translations ?? {})) {
+    if (t.common) nameToIso2[t.common.toLowerCase()] = iso2
+  }
+  for (const alt of Object.values(c.altSpellings ?? [])) {
+    nameToIso2[alt.toLowerCase()] = iso2
+  }
 }
-console.log(`  Mapped ${Object.keys(iso3ToIso2).length} ISO3 codes.`)
+console.log(`  Mapped ${Object.keys(nameToIso2).length} name variants.`)
 
 mkdirSync(OUT_DIR, { recursive: true })
 
-for (const { slug, label } of DATASETS) {
-  const url = `${OWID_BASE}/${slug}.csv?csvType=full&useColumnShortNames=false`
-  console.log(`\nFetching ${label}...`)
+for (const { slug, label, githubDir, valueColumn } of DATASETS) {
+  const encoded = encodeURIComponent(githubDir)
+  const url     = `${OWID_RAW}/${encoded}/${encoded}.csv`
 
+  console.log(`\nFetching ${label}...`)
   let text
   try {
-    const res = await fetch(url, {
-      headers: { 'User-Agent': 'World Data Explorer / data fetch' },
-    })
+    const res = await fetch(url)
     if (!res.ok) throw new Error(`HTTP ${res.status}`)
     text = await res.text()
   } catch (err) {
@@ -101,8 +208,8 @@ for (const { slug, label } of DATASETS) {
     continue
   }
 
-  console.log(`  Parsing...`)
-  const data    = parseCsv(text, iso3ToIso2)
+  console.log(`  Parsing (value column: "${valueColumn}")...`)
+  const data    = parseCsv(text, nameToIso2, valueColumn)
   const years   = Object.keys(data).length
   const outPath = `${OUT_DIR}/${slug}.json`
 

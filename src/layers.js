@@ -12,9 +12,9 @@ export const LAYERS = {
     attribution: 'World Bank',
     historical: {
       owidChart: 'population',
-      yearRange: [1800, 2023],
-      defaultYear: 2023,
-      attribution: 'OWID / UN WPP',
+      yearRange: [1700, 2016],
+      defaultYear: 2016,
+      attribution: 'OWID / Gapminder · UN',
     },
   },
   area: {
@@ -37,8 +37,8 @@ export const LAYERS = {
     attribution: 'World Bank',
     historical: {
       owidChart: 'gdp-per-capita-maddison',
-      yearRange: [1820, 2022],
-      defaultYear: 2022,
+      yearRange: [1800, 2018],
+      defaultYear: 2018,
       attribution: 'OWID / Maddison Project',
     },
   },
@@ -71,9 +71,9 @@ export const LAYERS = {
     attribution: 'World Bank',
     historical: {
       owidChart: 'life-expectancy',
-      yearRange: [1770, 2023],
-      defaultYear: 2023,
-      attribution: 'OWID / UN WPP',
+      yearRange: [1800, 2015],
+      defaultYear: 2015,
+      attribution: 'OWID / Gapminder · UN',
     },
   },
   military_spending: {
