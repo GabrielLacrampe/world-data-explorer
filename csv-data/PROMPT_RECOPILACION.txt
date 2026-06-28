@@ -1,0 +1,85 @@
+============================================================
+  PROMPT RECOPILACIÓN DE DATOS — WORLD DATA EXPLORER
+  Actualizado: junio 2026
+============================================================
+
+Rellena los siguientes formatos con datos actualizados a junio de 2026.
+Sigue exactamente las instrucciones de formato — los datos se importan
+directamente a una base de datos PostgreSQL sin transformación previa.
+
+
+------------------------------------------------------------
+REGLAS GENERALES OBLIGATORIAS
+------------------------------------------------------------
+
+1. CELDAS VACÍAS
+   Si un dato no existe, no se conoce o no aplica, deja la celda vacía.
+   Nunca escribas: NULL, N/A, -, "desconocido" ni ningún otro placeholder.
+
+2. IDIOMA
+   Todo en inglés:
+   - Títulos: King, President, Prime Minister, Chancellor, Secretary...
+   - Organizaciones: NATO, European Union, African Union, ASEAN...
+   - Notas y descripciones en inglés.
+
+3. FECHAS
+   Siempre en formato YYYY-MM-DD.
+   Si solo conoces el año: YYYY-01-01
+   Si solo conoces año y mes: YYYY-MM-01
+
+4. CÓDIGOS DE PAÍS
+   - governments.csv y ministers.csv: usa solo ISO3 (USA, ESP, DEU...)
+   - relationships (SQL): usa siempre ISO3 para side_a y side_b.
+
+5. HEAD OF GOVERNMENT
+   Deja las columnas head_of_government_* vacías si el jefe de gobierno
+   es la misma persona que el jefe de estado (presidencialismos).
+
+6. MINISTERS
+   Entre 3 y 5 ministros por país. Roles permitidos:
+   foreign, defense, economy, interior
+   Deja la columna party vacía si no se conoce con certeza.
+
+
+------------------------------------------------------------
+FORMATO governments.csv
+------------------------------------------------------------
+
+iso3,head_of_state_name,head_of_state_title,head_of_state_party,head_of_state_since,head_of_government_name,head_of_government_title,head_of_government_party,head_of_government_since
+
+Ejemplo de formato (datos ficticios, NO los incluyas en tu respuesta):
+AAA,John Doe,President,Example Party,2020-01-01,,,,
+BBB,Jane Smith,Queen,,2015-06-15,Bob Jones,Prime Minister,Other Party,2022-03-10
+
+
+------------------------------------------------------------
+FORMATO ministers.csv
+------------------------------------------------------------
+
+iso3,role,name,party
+
+Ejemplo de formato (datos ficticios, NO los incluyas en tu respuesta):
+AAA,foreign,John Foreign,Example Party
+AAA,defense,Jane Defense,Example Party
+AAA,economy,Bob Economy,
+AAA,interior,Alice Interior,Other Party
+
+
+
+------------------------------------------------------------
+INSTRUCCIONES DE ENTREGA
+------------------------------------------------------------
+
+Devuelve SOLO los datos en los formatos indicados, sin explicaciones,
+comentarios ni texto adicional. Estructura la respuesta así:
+
+--- governments.csv ---
+[contenido]
+
+--- ministers.csv ---
+[contenido]
+
+
+
+Países a cubrir este lote:
+[AQUÍ TU LISTA DE PAÍSES]

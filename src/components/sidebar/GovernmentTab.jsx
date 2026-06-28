@@ -1,3 +1,4 @@
+import { useGovernmentData } from '../../hooks/useGovernmentData'
 import { Section, NoData, Source, EmptyTab } from './SidebarShared'
 
 function wikiPhotoUrl(uploadUrl) {
@@ -36,58 +37,58 @@ function PersonCard({ person, role }) {
   )
 }
 
-export default function GovernmentTab({ countryCode, staticData, subtab }) {
+export default function GovernmentTab({ countryCode, subtab }) {
+  const { data, loading } = useGovernmentData(countryCode)
+
   if (!countryCode || countryCode === '-99')
     return <EmptyTab label="No data available for this territory." />
+  if (loading)
+    return <p className="text-[#4b5563] text-sm">Loading...</p>
 
-  const gov = staticData?.governments?.[countryCode]
+  const gov = data?.government
+  const ministers = data?.ministers ?? []
 
   if (subtab === 'leaders') return (
     <div className="flex flex-col gap-5">
       <Section title="Head of State">
-        {gov?.headOfState ? <PersonCard person={gov.headOfState} role="Head of State" /> : <NoData />}
+        {gov?.head_of_state_name
+          ? <PersonCard person={{ name: gov.head_of_state_name, party: gov.head_of_state_party, photo: gov.head_of_state_photo }} role={gov.head_of_state_title ?? 'Head of State'} />
+          : <NoData />}
       </Section>
-      {gov?.headOfGov && (
+      {gov?.head_of_government_name && (
         <Section title="Head of Government">
-          <PersonCard person={gov.headOfGov} role="Head of Government" />
+          <PersonCard person={{ name: gov.head_of_government_name, party: gov.head_of_government_party, photo: gov.head_of_government_photo }} role={gov.head_of_government_title ?? 'Head of Government'} />
         </Section>
       )}
-      <Source>Wikidata</Source>
+      <Source>Manual research · June 2026</Source>
     </div>
   )
 
   if (subtab === 'cabinet') return (
     <div className="flex flex-col gap-5">
       <Section title="Key Ministers">
-        {[
-          { key: 'economy', label: 'Economy' },
-          { key: 'defense', label: 'Defense' },
-          { key: 'foreign', label: 'Foreign Affairs' },
-        ].map(({ key, label }) => {
-          const m = gov?.ministers?.[key]
-          return (
-            <div key={key}>
-              <p className="text-[#4b5563] text-[9px] uppercase tracking-wider">{label}</p>
-              {m ? (
-                <p className="text-[#e2e8f0] text-sm mt-0.5">
-                  {m.name}
-                  {m.party && <span className="text-[#6b7280] text-xs"> · {m.party}</span>}
-                </p>
-              ) : <p className="text-[#374151] text-sm mt-0.5">No data</p>}
+        {ministers.length > 0 ? (
+          ministers.map((m) => (
+            <div key={m.role}>
+              <p className="text-[#4b5563] text-[9px] uppercase tracking-wider">{m.role}</p>
+              <p className="text-[#e2e8f0] text-sm mt-0.5">
+                {m.name}
+                {m.party && <span className="text-[#6b7280] text-xs"> · {m.party}</span>}
+              </p>
             </div>
-          )
-        })}
+          ))
+        ) : <NoData />}
       </Section>
-      <Source>Wikidata</Source>
+      <Source>Manual research · June 2026</Source>
     </div>
   )
 
   if (subtab === 'parties') return (
     <div className="flex flex-col gap-5">
       <Section title="Governing Parties">
-        {gov?.governingParties?.length ? (
+        {gov?.governing_parties?.length ? (
           <div className="flex flex-col gap-1.5">
-            {gov.governingParties.map((p) => (
+            {gov.governing_parties.map((p) => (
               <div key={p} className="flex items-center gap-2">
                 <div className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
                 <p className="text-[#e2e8f0] text-sm">{p}</p>
@@ -96,7 +97,7 @@ export default function GovernmentTab({ countryCode, staticData, subtab }) {
           </div>
         ) : <NoData label="No coalition data" />}
       </Section>
-      <Source>Wikidata</Source>
+      <Source>Manual research · June 2026</Source>
     </div>
   )
 

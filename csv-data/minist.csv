@@ -1,0 +1,727 @@
+iso3,role,name,party
+CAN,foreign,Mélanie Joly,Liberal Party
+CAN,defense,Bill Blair,Liberal Party
+CAN,economy,Chrystia Freeland,Liberal Party
+CAN,interior,Dominic LeBlanc,Liberal Party
+USA,foreign,Marco Rubio,Republican Party
+USA,defense,Pete Hegseth,Republican Party
+USA,economy,Scott Bessent,Republican Party
+USA,interior,Kristi Noem,Republican Party
+MEX,foreign,Juan Ramón de la Fuente,Morena
+MEX,defense,Ricardo Trevilla Trejo,
+MEX,economy,Marcelo Ebrard,Morena
+MEX,interior,Rosa Icela Rodríguez,Morena
+BLZ,foreign,Francis Fonseca,People's United Party
+BLZ,defense,Florencio Marin Jr.,People's United Party
+BLZ,economy,John Briceño,People's United Party
+CRI,foreign,Arnoldo André Tinoco,
+CRI,economy,Francisco Gamboa Soto,
+CRI,interior,Mario Zamora Cordero,
+SLV,foreign,Alexandra Hill Tinoco,Nuevas Ideas
+SLV,defense,René Merino Monroy,
+SLV,economy,María Luisa Hayem,Nuevas Ideas
+GTM,foreign,Carlos Ramiro Martínez,
+GTM,defense,Henry Sáenz Ramos,
+GTM,interior,Francisco Jiménez Irungaray,
+HND,foreign,Eduardo Enrique Reina,Libre
+HND,defense,José Manuel Zelaya,Libre
+HND,interior,Tomás Vaquero,Libre
+NIC,foreign,Denis Moncada,Sandinista National Liberation Front
+NIC,defense,Rosa Adelina Barahona,Sandinista National Liberation Front
+NIC,interior,María Amelia Coronel,Sandinista National Liberation Front
+PAN,foreign,Javier Martínez-Acha,
+PAN,economy,Felipe Chapman,
+PAN,interior,José Raúl Mulino,
+ATG,foreign,E.P. Chet Greene,Antigua and Barbuda Labour Party
+ATG,economy,Gaston Browne,Antigua and Barbuda Labour Party
+ATG,interior,Steadroy Benjamin,Antigua and Barbuda Labour Party
+BHS,foreign,Frederick Mitchell,Progressive Liberal Party
+BHS,economy,Philip Davis,Progressive Liberal Party
+BHS,interior,Wayne Munroe,Progressive Liberal Party
+BRB,foreign,Kerrie Symmonds,Barbados Labour Party
+BRB,economy,Mia Mottley,Barbados Labour Party
+BRB,interior,Wilfred Abrahams,Barbados Labour Party
+CUB,foreign,Bruno Rodríguez Parrilla,Communist Party of Cuba
+CUB,defense,Álvaro López Miera,Communist Party of Cuba
+CUB,interior,Lázaro Alberto Álvarez Casas,Communist Party of Cuba
+DMA,foreign,Vince Henderson,Dominica Labour Party
+DMA,economy,Roosevelt Skerrit,Dominica Labour Party
+DMA,interior,Rayburn Blackmoore,Dominica Labour Party
+GRD,foreign,Joseph Andall,National Democratic Congress
+GRD,economy,Dennis Cornwall,National Democratic Congress
+GRD,interior,Dickon Mitchell,National Democratic Congress
+HTI,foreign,Dominique Dupuy,
+HTI,economy,Ketleen Florestal,
+HTI,interior,Garry Conille,
+JAM,foreign,Kamina Johnson Smith,Jamaica Labour Party
+JAM,economy,Nigel Clarke,Jamaica Labour Party
+JAM,interior,Horace Chang,Jamaica Labour Party
+DOM,foreign,Roberto Álvarez,Modern Revolutionary Party
+DOM,defense,Carlos Antonio Fernández Onofre,
+DOM,interior,Faride Raful,Modern Revolutionary Party
+KNA,foreign,Denzil Douglas,Saint Kitts and Nevis Labour Party
+KNA,economy,Terrance Drew,Saint Kitts and Nevis Labour Party
+KNA,interior,Garth Wilkin,Saint Kitts and Nevis Labour Party
+VCT,foreign,Keisal Peters,Unity Labour Party
+VCT,economy,Camillo Gonsalves,Unity Labour Party
+VCT,interior,Ralph Gonsalves,Unity Labour Party
+LCA,foreign,Alva Baptiste,Saint Lucia Labour Party
+LCA,economy,Philip J. Pierre,Saint Lucia Labour Party
+LCA,interior,Virginia Albert-Poyotte,Saint Lucia Labour Party
+TTO,foreign,Amery Browne,People's National Movement
+TTO,economy,Colm Imbert,People's National Movement
+TTO,interior,Fitzgerald Hinds,People's National Movement
+ARG,foreign,Gerardo Werthein,
+ARG,defense,Luis Petri,Radical Civic Union
+ARG,economy,Luis Caputo,
+ARG,interior,Guillermo Francos,
+BOL,foreign,Celinda Sosa Lunda,Movement for Socialism
+BOL,defense,Edmundo Novillo,Movement for Socialism
+BOL,economy,Marcelo Montenegro,Movement for Socialism
+BOL,interior,Eduardo del Castillo,Movement for Socialism
+BRA,foreign,Mauro Vieira,
+BRA,defense,José Múcio,
+BRA,economy,Fernando Haddad,Workers' Party
+BRA,interior,Ricardo Lewandowski,
+CHL,foreign,Alberto van Klaveren,
+CHL,defense,Maya Fernández,Socialist Party
+CHL,economy,Nicolás Grau,Social Convergence
+CHL,interior,Carolina Tohá,Party for Democracy
+COL,foreign,Luis Gilberto Murillo,
+COL,defense,Iván Velásquez Gómez,
+COL,economy,Ricardo Bonilla,
+COL,interior,Juan Fernando Cristo,
+ECU,foreign,Gabriela Sommerfeld,
+ECU,defense,Gian Carlo Loffredo,
+ECU,economy,Juan Carlos Vega,
+ECU,interior,Mónica Palencia,
+GUY,foreign,Hugh Todd,People's Progressive Party/Civic
+GUY,economy,Ashni Singh,People's Progressive Party/Civic
+GUY,interior,Robeson Benn,People's Progressive Party/Civic
+PRY,foreign,Rubén Ramírez Lezcano,Colorado Party
+PRY,defense,Óscar González,Colorado Party
+PRY,economy,Carlos Fernández Valdovinos,Colorado Party
+PRY,interior,Enrique Riera,Colorado Party
+PER,foreign,Javier González-Olaechea,
+PER,defense,Walter Astudillo,
+PER,economy,José Arista,
+PER,interior,Juan José Santiváñez,
+SUR,foreign,Albert Ramdin,Progressive Reform Party
+SUR,defense,Krishna Mathoera,Progressive Reform Party
+SUR,interior,Bronto Somohardjo,
+URY,foreign,Eduardo Ache,
+URY,defense,Javier García,
+URY,economy,Gabriel Oddone,Frente Amplio
+URY,interior,Nicolás Martinelli,
+VEN,foreign,Yván Gil Pinto,United Socialist Party of Venezuela
+VEN,defense,Vladimir Padrino López,United Socialist Party of Venezuela
+VEN,economy,Delcy Rodríguez,United Socialist Party of Venezuela
+VEN,interior,Diosdado Cabello,United Socialist Party of Venezuela
+ALB,foreign,Ferit Hoxha,
+ALB,defense,Ermal Nufi,
+ALB,economy,Petrit Malaj,
+ALB,interior,Besfort Lamallari,
+DEU,foreign,Johann Wadephul,Christian Democratic Union of Germany
+DEU,defense,Boris Pistorius,Social Democratic Party of Germany
+DEU,economy,Lars Klingbeil,Social Democratic Party of Germany
+DEU,interior,Alexander Dobrindt,Christian Social Union in Bavaria
+AND,foreign,Xavier Espot Zamora,Democrats for Andorra
+AND,economy,Ramon Lladós,Democrats for Andorra
+AND,interior,Ester Molné,Democrats for Andorra
+AUT,foreign,Beate Meinl-Reisinger,NEOS
+AUT,defense,Klaudia Tanner,Austrian People's Party
+AUT,economy,Markus Marterbauer,Social Democratic Party of Austria
+AUT,interior,Gerhard Karner,Austrian People's Party
+BEL,foreign,Maxime Prévot,Les Engagés
+BEL,defense,Theo Francken,New Flemish Alliance
+BEL,economy,David Clarinval,Reformist Movement
+BEL,interior,Bernard Quintin,Reformist Movement
+BLR,foreign,Maksim Ryzhenkov,
+BLR,defense,Viktor Khrenin,
+BLR,economy,Yury Chebotar,
+BLR,interior,Ivan Kubrakov,
+BIH,foreign,Elmedin Konaković,People and Justice
+BIH,defense,Zukan Helez,Social Democratic Party of Bosnia and Herzegovina
+BIH,economy,Staša Košarac,Alliance of Independent Social Democrats
+BIH,interior,Nenad Nešić,Democratic People's Alliance
+BGR,foreign,Georg Georgiev,GERB
+BGR,defense,Atanas Zapryanov,
+BGR,economy,Temenuzhka Petkova,GERB
+BGR,interior,Daniel Mitov,GERB
+CYP,foreign,Constantinos Kombos,
+CYP,defense,Vasilis Palmas,
+CYP,economy,Makis Keravnos,
+CYP,interior,Constantinos Ioannou,
+HRV,foreign,Gordan Grlić Radman,Croatian Democratic Union
+HRV,defense,Ivan Anušić,Croatian Democratic Union
+HRV,economy,Marko Primorac,Croatian Democratic Union
+HRV,interior,Davor Božinović,Croatian Democratic Union
+DNK,foreign,Lars Løkke Rasmussen,Moderates
+DNK,defense,Jeppe Bruus,Social Democrats
+DNK,economy,Peter Hummelgaard,Social Democrats
+DNK,interior,Pia Olsen Dyhr,Socialist People's Party
+SVK,foreign,Juraj Blanár,Direction – Social Democracy
+SVK,defense,Robert Kaliňák,Direction – Social Democracy
+SVK,economy,Ladislav Kamenický,Direction – Social Democracy
+SVK,interior,Matúš Šutaj Eštok,Voice – Social Democracy
+SVN,foreign,Tone Kajzer,Slovenian Democratic Party
+SVN,defense,Borut Sajovic,Freedom Movement
+SVN,economy,Anže Logar,Democrats
+SVN,interior,Boštjan Poklukar,
+ESP,foreign,José Manuel Albares,Spanish Socialist Workers' Party
+ESP,defense,Margarita Robles,Spanish Socialist Workers' Party
+ESP,economy,Carlos Cuerpo,Spanish Socialist Workers' Party
+ESP,interior,Fernando Grande-Marlaska,Independent
+EST,foreign,Margus Tsahkna,Eesti 200
+EST,defense,Hanno Pevkur,Reform Party
+EST,economy,Jürgen Ligi,Reform Party
+EST,interior,Igor Taro,Eesti 200
+FIN,foreign,Elina Valtonen,National Coalition Party
+FIN,defense,Antti Häkkänen,National Coalition Party
+FIN,economy,Riikka Purra,Finns Party
+FIN,interior,Mari Rantanen,Finns Party
+FRA,foreign,Jean-Noël Barrot,Democratic Movement
+FRA,defense,Sébastien Lecornu,Renaissance
+FRA,economy,Éric Lombard,
+FRA,interior,Bruno Retailleau,The Republicans
+GRC,foreign,Giorgos Gerapetritis,New Democracy
+GRC,defense,Nikos Dendias,New Democracy
+GRC,economy,Kostis Hatzidakis,New Democracy
+GRC,interior,Theodoros Livanios,New Democracy
+HUN,foreign,Péter Szijjártó,Fidesz
+HUN,defense,Kristóf Szalay-Bobrovniczky,Fidesz
+HUN,economy,Márton Nagy,
+HUN,interior,Sándor Pintér,
+IRL,foreign,Simon Harris,Fine Gael
+IRL,defense,Simon Harris,Fine Gael
+IRL,economy,Paschal Donohoe,Fine Gael
+IRL,interior,Jim O'Callaghan,Fianna Fáil
+ISL,foreign,Þorgerður Katrín Gunnarsdóttir,Liberal Reform Party
+ISL,defense,Þorgerður Katrín Gunnarsdóttir,Liberal Reform Party
+ISL,economy,Daði Már Kristófersson,Social Democratic Alliance
+ISL,interior,Guðrún Hafsteinsdóttir,Independence Party
+ITA,foreign,Antonio Tajani,Forza Italia
+ITA,defense,Guido Crosetto,Brothers of Italy
+ITA,economy,Giancarlo Giorgetti,League
+ITA,interior,Matteo Piantedosi,
+LVA,foreign,Baiba Braže,New Unity
+LVA,defense,Andris Sprūds,Progressives
+LVA,economy,Arvils Ašeradens,New Unity
+LVA,interior,Rihards Kozlovskis,New Unity
+LIE,foreign,Dominique Hasler,Patriotic Union
+LIE,economy,Hubert Büchel,Patriotic Union
+LIE,interior,Sabine Monauni,Patriotic Union
+LTU,foreign,Kęstutis Budrys,
+LTU,defense,Dovilė Šakalienė,Social Democratic Party of Lithuania
+LTU,economy,Rimantas Šadžius,Social Democratic Party of Lithuania
+LTU,interior,Vladislav Kondratovič,Social Democratic Party of Lithuania
+LUX,foreign,Xavier Bettel,Democratic Party
+LUX,defense,Yuriko Backes,Democratic Party
+LUX,economy,Gilles Roth,Christian Social People's Party
+LUX,interior,Léon Gloden,Christian Social People's Party
+MLT,foreign,Chris Fearne,Labour Party
+MLT,defense,Byron Camilleri,Labour Party
+MLT,economy,Clyde Caruana,Labour Party
+MLT,interior,Glenn Bedingfield,Labour Party
+MDA,foreign,Mihai Popșoi,Party of Action and Solidarity
+MDA,defense,Anatolie Nosatîi,
+MDA,economy,Dumitru Alaiba,Party of Action and Solidarity
+MDA,interior,Daniella Misail-Nichitin,
+MCO,foreign,Isabelle Berro-Amadeï,
+MCO,economy,Pierre-André Chiappori,
+MCO,interior,Lionel Beffre,
+MNE,foreign,Ervin Ibrahimović,Bosniak Party
+MNE,defense,Dragan Krapović,Democrats Montenegro
+MNE,economy,Nik Gjeloshaj,Albanian Forum
+MNE,interior,Danilo Šaranović,Democrats Montenegro
+MKD,foreign,Timčo Mucunski,VMRO-DPMNE
+MKD,defense,Vlado Misajlovski,VMRO-DPMNE
+MKD,economy,Besar Durmishi,VLEN
+MKD,interior,Panče Toškovski,VMRO-DPMNE
+NOR,foreign,Espen Barth Eide,Labour Party
+NOR,defense,Tore O. Sandvik,Labour Party
+NOR,economy,Jens Stoltenberg,Labour Party
+NOR,interior,Astri Aas-Hansen,Labour Party
+NLD,foreign,Caspar Veldkamp,New Social Contract
+NLD,defense,Ruben Brekelmans,People's Party for Freedom and Democracy
+NLD,economy,Vincent Karremans,People's Party for Freedom and Democracy
+NLD,interior,Judith Uitermark,New Social Contract
+POL,foreign,Radosław Sikorski,Civic Platform
+POL,defense,Władysław Kosiniak-Kamysz,Polish People's Party
+POL,economy,Andrzej Domański,Civic Platform
+POL,interior,Tomasz Siemoniak,Civic Platform
+PRT,foreign,Paulo Rangel,Social Democratic Party
+PRT,defense,Nuno Melo,CDS – People's Party
+PRT,economy,Manuel Castro Almeida,Social Democratic Party
+PRT,interior,Maria Lúcia Amaral,
+GBR,foreign,Yvette Cooper,Labour Party
+GBR,defense,John Healey,Labour Party
+GBR,economy,Rachel Reeves,Labour Party
+GBR,interior,Shabana Mahmood,Labour Party
+CZE,foreign,Jan Lipavský,
+CZE,defense,Jana Černochová,Civic Democratic Party
+CZE,economy,Zbyněk Stanjura,Civic Democratic Party
+CZE,interior,Vít Rakušan,Mayors and Independents
+ROU,foreign,Emil Hurezeanu,
+ROU,defense,Angel Tîlvăr,Social Democratic Party
+ROU,economy,Bogdan Ivan,Social Democratic Party
+ROU,interior,Cătălin Predoiu,National Liberal Party
+SMR,foreign,Luca Beccari,
+SMR,interior,Andrea Belluzzi,
+SMR,economy,Marco Gatti,
+SRB,foreign,Marko Đurić,Serbian Progressive Party
+SRB,defense,Bratislav Gašić,Serbian Progressive Party
+SRB,economy,Adrijana Mesarović,Serbian Progressive Party
+SRB,interior,Ivica Dačić,Socialist Party of Serbia
+SWE,foreign,Maria Malmer Stenergard,Moderate Party
+SWE,defense,Pål Jonson,Moderate Party
+SWE,economy,Elisabeth Svantesson,Moderate Party
+SWE,interior,Gunnar Strömmer,Moderate Party
+CHE,foreign,Ignazio Cassis,Free Democratic Party
+CHE,defense,Martin Pfister,The Centre
+CHE,economy,Guy Parmelin,Swiss People's Party
+CHE,interior,Elisabeth Baume-Schneider,Social Democratic Party
+UKR,foreign,Andrii Sybiha,
+UKR,defense,Rustem Umerov,
+UKR,economy,Yuliia Svyrydenko,
+UKR,interior,Ihor Klymenko,
+VAT,foreign,Pietro Parolin,
+AFG,foreign,Amir Khan Muttaqi,
+AFG,defense,Yaqub Mujahid,
+AFG,interior,Sirajuddin Haqqani,
+SAU,foreign,Faisal bin Farhan Al Saud,
+SAU,defense,Khalid bin Salman Al Saud,
+SAU,economy,Faisal al-Ibrahim,
+SAU,interior,Abdulaziz bin Saud Al Saud,
+ARM,foreign,Ararat Mirzoyan,Civil Contract
+ARM,defense,Suren Papikyan,Civil Contract
+ARM,economy,Gevorg Papoyan,Civil Contract
+ARM,interior,Vahe Ghazaryan,
+AZE,foreign,Jeyhun Bayramov,
+AZE,defense,Zakir Hasanov,
+AZE,economy,Mikayil Jabbarov,
+AZE,interior,Vilayat Eyvazov,
+BHR,foreign,Abdellatif bin Rashid Al Zayani,
+BHR,defense,Abdullah bin Hassan Al Noaimi,
+BHR,interior,Rashid bin Abdullah Al Khalifa,
+BGD,foreign,Humayun Kabeer,Bangladesh Nationalist Party
+BGD,defense,Tarique Rahman,Bangladesh Nationalist Party
+BGD,interior,Salahuddin Ahmed,Bangladesh Nationalist Party
+BTN,foreign,DN Dhungyel,People's Democratic Party
+BTN,defense,Tshering Tobgay,People's Democratic Party
+BTN,economy,Lekey Dorji,People's Democratic Party
+BRN,foreign,Hassanal Bolkiah,
+BRN,defense,Hassanal Bolkiah,
+BRN,economy,Amin Liew Abdullah,
+BRN,interior,Ahmaddin Rahman,
+KHM,foreign,Sok Chenda Sophea,Cambodian People's Party
+KHM,defense,Tea Seiha,Cambodian People's Party
+KHM,interior,Sar Sokha,Cambodian People's Party
+QAT,foreign,Mohammed bin Abdulrahman bin Jassim Al Thani,
+QAT,defense,Khalid bin Mohamed Al Attiyah,
+QAT,interior,Khalifa bin Hamad bin Khalifa Al Thani,
+CHN,foreign,Wang Yi,Chinese Communist Party
+CHN,defense,Dong Jun,Chinese Communist Party
+CHN,economy,Lan Fo'an,Chinese Communist Party
+CHN,interior,Wang Xiaohong,Chinese Communist Party
+PRK,foreign,Choe Son Hui,Workers' Party of Korea
+PRK,defense,No Kwang Chol,Workers' Party of Korea
+KOR,foreign,Cho Tae-yul,
+KOR,defense,Kim Yong-hyun,
+KOR,economy,Choi Sang-mok,
+ARE,foreign,Abdullah bin Zayed Al Nahyan,
+ARE,defense,Hamdan bin Mohammed Al Maktoum,
+ARE,economy,Abdulla bin Touq Al Marri,
+ARE,interior,Saif bin Zayed Al Nahyan,
+PHL,foreign,Enrique Manalo,
+PHL,defense,Gilmerto Teodoro Jr.,
+PHL,economy,Ralph Recto,
+PHL,interior,Jonvic Remulla,
+GEO,foreign,Ilia Darchiashvili,Georgian Dream
+GEO,defense,Irakli Chikovani,Georgian Dream
+GEO,economy,Levan Davitashvili,Georgian Dream
+GEO,interior,Vakhtang Gomelauri,Georgian Dream
+IND,foreign,S. Jaishankar,Bharatiya Janata Party
+IND,defense,Rajnath Singh,Bharatiya Janata Party
+IND,economy,Nirmala Sitharaman,Bharatiya Janata Party
+IND,interior,Amit Shah,Bharatiya Janata Party
+IDN,foreign,Sugiono,Gerindra Party
+IDN,defense,Syafrie Sjamsoeddin,
+IDN,economy,Sri Mulyani Indrawati,
+IDN,interior,Tito Karnavian,
+IRQ,foreign,Fuad Hussein,Kurdistan Democratic Party
+IRQ,defense,Thabet Al-Abbasi,
+IRQ,interior,Abdul Amir Al-Shammari,
+IRN,foreign,Abbas Araghchi,
+IRN,defense,Aziz Nasirzadeh,
+IRN,economy,Abdolnaser Hemmati,
+IRN,interior,Eskandar Momeni,
+ISR,foreign,Gideon Sa'ar,New Hope
+ISR,defense,Israel Katz,Likud
+ISR,economy,Bezalel Smotrich,Religious Zionist Party
+ISR,interior,Moshe Arbel,Shas
+JPN,foreign,Takeshi Iwaya,Liberal Democratic Party
+JPN,defense,Gen Nakatani,Liberal Democratic Party
+JPN,economy,Katsunobu Kato,Liberal Democratic Party
+JOR,foreign,Ayman Safadi,
+JOR,defense,Jafar Hassan,
+JOR,interior,Sameer Mubaideen,
+KAZ,foreign,Murat Nurtleu,
+KAZ,defense,Ruslan Zhaksylykov,
+KAZ,economy,Nurlan Baibazarov,
+KAZ,interior,Erzhan Sadenov,
+KGZ,foreign,Zheenbek Kulubaev,
+KGZ,defense,Baktybek Bekbolotov,
+KGZ,interior,Ulan Niyazbekov,
+KWT,foreign,Abdullah Ali Al-Yahya,
+KWT,defense,Fahad Yusuf Al-Sabah,
+KWT,interior,Fahad Yusuf Al-Sabah,
+LAO,foreign,Saleumxay Kommasith,Lao People's Revolutionary Party
+LAO,defense,Chansamone Chanyalath,Lao People's Revolutionary Party
+LAO,economy,Santiphab Phomvihane,Lao People's Revolutionary Party
+LAO,interior,Vilahay Lakhamfhong,Lao People's Revolutionary Party
+LBN,foreign,Abdallah Bou Habib,
+LBN,defense,Maurice Slim,
+LBN,economy,Amin Salam,
+LBN,interior,Bassam Mawlawi,
+MYS,foreign,Mohamad Hasan,United Malays National Organisation
+MYS,defense,Mohamed Khaled Nordin,United Malays National Organisation
+MYS,economy,Rafizi Ramli,People's Justice Party
+MYS,interior,Saifuddin Nasution Ismail,People's Justice Party
+MDV,foreign,Moosa Zameer,People's National Congress
+MDV,defense,Gassan Maumoon,People's National Congress
+MDV,economy,Mohamed Shafeeque,
+MDV,interior,Ali Ihusaan,
+MNG,foreign,Battsetseg Batmunkh,Mongolian People's Party
+MNG,defense,Byambatsogt Sandag,Mongolian People's Party
+MNG,economy,Javkhlan Bold,Mongolian People's Party
+MMR,foreign,Than Swe,
+MMR,defense,Tin Aung San,
+MMR,interior,Yar Pyae,
+NPL,foreign,Arzu Rana Deuba,Nepali Congress
+NPL,defense,Manbir Rai,Communist Party of Nepal (UML)
+NPL,economy,Bishnu Prasad Paudel,Communist Party of Nepal (UML)
+NPL,interior,Ramesh Lekhak,Nepali Congress
+OMN,foreign,Badr Albusaidi,
+OMN,defense,Shihab bin Tariq Al Said,
+OMN,economy,Said Mohammed Al Saqri,
+OMN,interior,Hamoud bin Faisal Al Busaidi,
+PAK,foreign,Ishaq Dar,Pakistan Muslim League (N)
+PAK,defense,Khawaja Asif,Pakistan Muslim League (N)
+PAK,economy,Muhammad Aurangzeb,
+PAK,interior,Mohsin Naqvi,
+PSE,foreign,Mohammad Mustafa,
+PSE,interior,Ziad Hab Al-Reeh,Fatah
+SGP,foreign,Vivian Balakrishnan,People's Action Party
+SGP,defense,Ng Eng Hen,People's Action Party
+SGP,economy,Lawrence Wong,People's Action Party
+SGP,interior,K. Shanmugam,People's Action Party
+SYR,foreign,Asaad al-Shaibani,Hay'at Tahrir al-Sham
+SYR,defense,Murhaf Abu Qasra,Hay'at Tahrir al-Sham
+SYR,economy,Mohammed Yosr Bernieh,Hay'at Tahrir al-Sham
+SYR,interior,Anas Khattab,Hay'at Tahrir al-Sham
+LKA,foreign,Vijitha Herath,National People's Power
+LKA,defense,Anura Kumara Dissanayake,National People's Power
+LKA,economy,Anura Kumara Dissanayake,National People's Power
+LKA,interior,Vijitha Herath,National People's Power
+THA,foreign,Maris Sangiampongsa,Pheu Thai Party
+THA,defense,Phumtham Wechayachai,Pheu Thai Party
+THA,economy,Pichai Chunhavajira,Pheu Thai Party
+THA,interior,Anutin Charnvirakul,Bhumjaithai Party
+TJK,foreign,Sirojiddin Muhriddin,
+TJK,defense,Sherali Mirzo,
+TJK,interior,Ramazon Hamro Rahimzoda,
+TLS,foreign,Bendito dos Santos Freitas,National Congress for Timorese Reconstruction
+TLS,defense,Donaciano do Rosário Costa Gomes,
+TLS,economy,Santina José Rodrigues F. Viegas Cardoso,
+TLS,interior,Francisco da Costa Guterres,
+TKM,foreign,Raşit Meredow,
+TKM,defense,Begenç Gundogdyýew,
+TKM,interior,Muhammet Hydyrow,
+TUR,foreign,Hakan Fidan,Justice and Development Party
+TUR,defense,Yaşar Güler,
+TUR,economy,Mehmet Şimşek,Justice and Development Party
+TUR,interior,Ali Yerlikaya,
+UZB,foreign,Bakhtiyor Saidov,
+UZB,defense,Bakhodir Kurbanov,
+UZB,economy,Jamshid Kuchkarov,
+UZB,interior,Pulat Bobojonov,
+VNM,foreign,Bùi Thanh Sơn,Communist Party of Vietnam
+VNM,defense,Phan Văn Giang,Communist Party of Vietnam
+VNM,economy,Hồ Đức Phớc,Communist Party of Vietnam
+VNM,interior,Phạm Thị Thanh Trà,Communist Party of Vietnam
+YEM,foreign,Shayea Mohsen al-Zindani,
+YEM,defense,Mohsen al-Daeri,
+YEM,interior,Ibrahim Ali Haidan,
+RUS,foreign,Sergey Lavrov,
+RUS,defense,Andrey Belousov,
+RUS,economy,Anton Siluanov,
+RUS,interior,Vladimir Kolokoltsev,
+DZA,foreign,Ahmed Attaf,
+DZA,defense,Abdelmadjid Tebboune,
+DZA,economy,Laaziz Faid,
+DZA,interior,Brahim Merad,
+AGO,foreign,Tete António,People's Movement for the Liberation of Angola
+AGO,defense,João Ernesto dos Santos,People's Movement for the Liberation of Angola
+AGO,economy,José de Lima Massano,
+AGO,interior,Manuel Homem,People's Movement for the Liberation of Angola
+BEN,foreign,Shegun Bakari,
+BEN,defense,Fortunet Alain Nouatin,
+BEN,economy,Romuald Wadagni,
+BEN,interior,Alassane Seidou,
+BWA,foreign,Phenyo Butale,Umbrella for Democratic Change
+BWA,defense,Duma Boko,Umbrella for Democratic Change
+BWA,economy,Bogolo Kenewendo,
+BWA,interior,Micah Moeti,
+BFA,foreign,Karamoko Jean-Marie Traoré,
+BFA,defense,Kassoum Coulibaly,
+BFA,economy,Aboubakar Nacanabo,
+BFA,interior,Mahamadou Sana,
+BDI,foreign,Albert Shingiro,
+BDI,defense,Alain Tribert Mutabazi,
+BDI,economy,Audace Niyonzima,
+BDI,interior,Martin Niteretse,
+CPV,foreign,Rui Figueiredo Soares,Movement for Democracy
+CPV,defense,Janine Lélis,Movement for Democracy
+CPV,economy,Olavo Correia,Movement for Democracy
+CPV,interior,Paulo Rocha,
+CMR,foreign,Lejeune Mbella Mbella,Cameroon People's Democratic Movement
+CMR,defense,Joseph Beti Assomo,
+CMR,economy,Alamine Ousmane Mey,
+CMR,interior,Paul Atanga Nji,
+TCD,foreign,Abderaman Koulamallah,
+TCD,defense,Mahamat Abali Salah,
+TCD,economy,Tahir Hamid Nguilin,
+TCD,interior,Limane Mahamat,
+COM,foreign,Mbae Mohamed,
+COM,defense,Youssoufa Mohamed Ali,
+COM,economy,Mze Abdou Mohamed Chanfiou,
+COM,interior,Fakridine Mahamoud,
+CIV,foreign,Kacou Houadja Léon Adom,Rally of Houphouëtists for Democracy and Peace
+CIV,defense,Téné Birahima Ouattara,Rally of Houphouëtists for Democracy and Peace
+CIV,economy,Adama Coulibaly,
+CIV,interior,Vagondo Diomandé,
+EGY,foreign,Badr Abdelatty,
+EGY,defense,Abdel Mageed Saqr,
+EGY,economy,Ahmed Kouchouk,
+EGY,interior,Mahmoud Tawfik,
+ERI,foreign,Osman Saleh Mohammed,People's Front for Democracy and Justice
+ERI,defense,Filipos Woldeyohannes,People's Front for Democracy and Justice
+SWZ,foreign,Pholile Shakantu,
+SWZ,defense,Mswati III,
+SWZ,economy,Neal Rijkenberg,
+SWZ,interior,Prince Bonginkhosi,
+ETH,foreign,Gideon Timotheos,Prosperity Party
+ETH,defense,Aisha Mohammed Mussa,Prosperity Party
+ETH,economy,Ahmed Shide,Prosperity Party
+ETH,interior,Binalf Andualem,Prosperity Party
+GAB,foreign,Régis Onanga Ndiaye,
+GAB,defense,Brice Oligui Nguema,
+GAB,economy,Mays Mouissi,
+GAB,interior,Hermann Immongault,
+GMB,foreign,Mamadou Tangara,
+GMB,defense,Sering Modou Njie,
+GMB,economy,Seedy Keita,
+GMB,interior,Abdoulie Sanyang,
+GHA,foreign,Shirley Ayorkor Botchwey,New Patriotic Party
+GHA,defense,Dominic Nitiwul,New Patriotic Party
+GHA,economy,Abena Osei Asare,New Patriotic Party
+GHA,interior,Henry Quartey,New Patriotic Party
+GIN,foreign,Morissanda Kouyaté,
+GIN,defense,Aboubacar Sidiki Camara,
+GIN,economy,Mourana Soumah,
+GIN,interior,Bachir Diallo,
+GNB,foreign,Carlos Pinto Pereira,
+GNB,defense,Nicolau dos Santos,
+GNB,economy,Ilídio Vieira Tè,
+GNB,interior,Marciano Silva Barbeiro,
+GNQ,foreign,Simeón Oyono Esono Angue,Democratic Party of Equatorial Guinea
+GNQ,defense,Victorio Bibang Nsue Okomo,Democratic Party of Equatorial Guinea
+GNQ,economy,Iván Bacale Ebe Molina,Democratic Party of Equatorial Guinea
+GNQ,interior,Justo Asong Engonga,Democratic Party of Equatorial Guinea
+KEN,foreign,Musalia Mudavadi,Amani National Congress
+KEN,defense,Soipan Tuya,United Democratic Alliance
+KEN,economy,John Mbadi,Orange Democratic Movement
+KEN,interior,Kithure Kindiki,United Democratic Alliance
+LSO,foreign,Lejone Mpotjoane,Revolution for Prosperity
+LSO,defense,Sam Matekane,Revolution for Prosperity
+LSO,economy,Retšelisitsoe Matlanyane,Revolution for Prosperity
+LSO,interior,Lebona Lephema,Revolution for Prosperity
+LBR,foreign,Sara Beysolow Nyanti,
+LBR,defense,Geraldine George,
+LBR,economy,Boima Kamara,
+LBR,interior,J. Tiah Nagbe,
+LBY,foreign,Taher al-Baour,
+LBY,defense,Abdul Hamid Dbeibeh,
+LBY,economy,Khaled Al-Mabrouk,
+LBY,interior,Imad Trabelsi,
+MDG,foreign,Christine Razanamahasoa,
+MDG,defense,Lala Monja Delphin Sahivelo,
+MDG,economy,Rindra Hasimbelo Rabarinirinarison,
+MDG,interior,Justin Tokely,
+MWI,foreign,Nancy Tembo,Malawi Congress Party
+MWI,defense,Lazarus Chakwera,Malawi Congress Party
+MWI,economy,Simplex Chithyola Banda,Malawi Congress Party
+MWI,interior,Ken Zikhale Ng'oma,Malawi Congress Party
+MLI,foreign,Abdoulaye Diop,
+MLI,defense,Sadio Camara,
+MLI,economy,Alousséni Sanou,
+MLI,interior,Daoud Aly Mohammedine,
+MAR,foreign,Nasser Bourita,
+MAR,defense,Abdellatif Loudiyi,
+MAR,economy,Nadia Fettah Alaoui,National Rally of Independents
+MAR,interior,Abdelouafi Laftit,
+MUS,foreign,Arvin Boolell,Labour Party
+MUS,defense,Navin Ramgoolam,Labour Party
+MUS,economy,Shakeel Mohamed,Labour Party
+MUS,interior,Navin Ramgoolam,Labour Party
+MRT,foreign,Mohamed Salem Ould Merzoug,
+MRT,defense,Hanana Ould Sidi,
+MRT,economy,Sid'Ahmed Ould Bouh,
+MRT,interior,Mohamed Ahmed Ould Mohamed Lemine,
+MOZ,foreign,Verónica Macamo,FRELIMO
+MOZ,defense,Cristóvão Chume,FRELIMO
+MOZ,economy,Max Tonela,FRELIMO
+MOZ,interior,Arsénia Massingue,FRELIMO
+NAM,foreign,Peya Mushelenga,SWAPO
+NAM,defense,Frans Kapofi,SWAPO
+NAM,economy,Iipumbu Shiimi,SWAPO
+NAM,interior,Albert Kawana,SWAPO
+NER,foreign,Bakary Yaou Sangaré,
+NER,defense,Salifou Modi,
+NER,economy,Ali Lamine Zeine,
+NER,interior,Mohamed Toumba,
+NGA,foreign,Yusuf Tuggar,All Progressives Congress
+NGA,defense,Mohammed Badaru Abubakar,All Progressives Congress
+NGA,economy,Wale Edun,
+NGA,interior,Olubunmi Tunji-Ojo,All Progressives Congress
+CAF,foreign,Sylvie Baïpo-Temon,
+CAF,defense,Claude Rameaux Bireau,
+CAF,economy,Hervé Ndoba,
+CAF,interior,Michel Nassin,
+COG,foreign,Jean-Claude Gakosso,Congolese Party of Labour
+COG,defense,Charles Richard Mondjo,
+COG,economy,Jean-Baptiste Ondaye,
+COG,interior,Raymond Zéphirin Mboulou,Congolese Party of Labour
+COD,foreign,Thérèse Kayikwamba Wagner,
+COD,defense,Guy Kabombo Muadiamvita,Union for Democracy and Social Progress
+COD,economy,Doudou Fwamba Likunde,
+COD,interior,Jacquemin Shabani,Union for Democracy and Social Progress
+RWA,foreign,Olivier Nduhungirehe,
+RWA,defense,Juvenal Marizamunda,
+RWA,economy,Yusuf Murangwa,
+RWA,interior,Jean-Claude Musabyimana,
+STP,foreign,Gareth Guadalupe,Independent Democratic Action
+STP,defense,Jorge Amado,Movement for the Liberation of São Tomé and Príncipe
+STP,economy,Genésio da Mata,
+STP,interior,Jorge Amado,Movement for the Liberation of São Tomé and Príncipe
+SEN,foreign,Yassine Fall,PASTEF
+SEN,defense,Birame Diop,
+SEN,economy,Cheikh Diba,
+SEN,interior,Jean-Baptiste Tine,
+SYC,foreign,Sylvestre Radegonde,
+SYC,defense,Wavel Ramkalawan,Linyon Demokratik Seselwa
+SYC,economy,Naadir Hassan,
+SYC,interior,Errol Fonseka,
+SLE,foreign,Timothy Kabba,Sierra Leone People's Party
+SLE,defense,Kellie Conteh,
+SLE,economy,Sheku Ahmed Fantamadi Bangura,
+SLE,interior,David Taluva,
+SOM,foreign,Ahmed Moalim Fiqi,Union for Peace and Development Party
+SOM,defense,Abdulkadir Mohamed Nur,
+SOM,economy,Bihi Iman Egeh,
+SOM,interior,Ali Yusuf Ali Hosh,
+ZAF,foreign,Ronald Lamola,African National Congress
+ZAF,defense,Angie Motshekga,African National Congress
+ZAF,economy,Enoch Godongwana,African National Congress
+ZAF,interior,Leon Schreiber,Democratic Alliance
+SDN,foreign,Ali Yusuf Ahmed,
+SDN,defense,Yassin Ibrahim Yassin,
+SDN,economy,Gibril Ibrahim,Justice and Equality Movement
+SDN,interior,Khalil Pasha Sair,
+SSD,foreign,Ramadan Abdallah Goc,Sudan People's Liberation Movement
+SSD,defense,Chol Thon Balok,Sudan People's Liberation Movement
+SSD,economy,Marial Dongrin Ater,Sudan People's Liberation Movement
+SSD,interior,Anjelina Teny,Sudan People's Liberation Movement-In Opposition
+TZA,foreign,Mahmoud Thabit Kombo,Chama Cha Mapinduzi
+TZA,defense,Stergomena Tax,Chama Cha Mapinduzi
+TZA,economy,Mwigulu Nchemba,Chama Cha Mapinduzi
+TZA,interior,Thobias Andengenye,Chama Cha Mapinduzi
+TGO,foreign,Robert Dussey,
+TGO,defense,Faure Gnassingbé,Union for the Republic
+TGO,economy,Sani Yaya,
+TGO,interior,Calixte Madjoulba,
+TUN,foreign,Mohamed Ali Nafti,
+TUN,defense,Khaled Sehili,
+TUN,economy,Abdelkader Boudriga,
+TUN,interior,Khaled Nouri,
+UGA,foreign,Jeje Odongo,National Resistance Movement
+UGA,defense,Jacob Oboth-Oboth,National Resistance Movement
+UGA,economy,Matia Kasaija,National Resistance Movement
+UGA,interior,Kahinda Otafiire,National Resistance Movement
+DJI,foreign,Mahamoud Ali Youssouf,People's Rally for Progress
+DJI,defense,Hassan Omar Mohamed,People's Rally for Progress
+DJI,economy,Ilyas Moussa Dawaleh,People's Rally for Progress
+DJI,interior,Said Nouh Hassan,People's Rally for Progress
+ZMB,foreign,Mulambo Haimbe,United Party for National Development
+ZMB,defense,Ambrose Lufuma,United Party for National Development
+ZMB,economy,Situmbeko Musokotwane,United Party for National Development
+ZMB,interior,Jack Mwiimbu,United Party for National Development
+ZWE,foreign,Amon Murwira,ZANU–PF
+ZWE,defense,Oppah Muchinguri,ZANU–PF
+ZWE,economy,Mthuli Ncube,ZANU–PF
+ZWE,interior,Kazembe Kazembe,ZANU–PF
+AUS,foreign,Penny Wong,Australian Labor Party
+AUS,defense,Richard Marles,Australian Labor Party
+AUS,economy,Jim Chalmers,Australian Labor Party
+AUS,interior,Clare O'Neil,Australian Labor Party
+FJI,foreign,Sitiveni Rabuka,People's Alliance
+FJI,defense,Pio Tikoduadua,National Federation Party
+FJI,economy,Biman Prasad,National Federation Party
+FJI,interior,Pio Tikoduadua,National Federation Party
+KIR,foreign,Taneti Maamau,Tobwaan Kiribati Party
+KIR,defense,Taneti Maamau,Tobwaan Kiribati Party
+KIR,economy,Juuntaake Tokataake,Tobwaan Kiribati Party
+KIR,interior,Boutu Bateriki,Tobwaan Kiribati Party
+MHL,foreign,Kalani Kaneko,
+MHL,defense,Bremon Anni,
+MHL,economy,David Paul,
+MHL,interior,Jess Gasper Jr.,
+FSM,foreign,Lorrin Robert,
+FSM,economy,Rose Nakanaga,
+FSM,interior,Andrew Yatilman,
+NRU,foreign,David Adeang,
+NRU,defense,David Adeang,
+NRU,economy,Asterio Appi,
+NRU,interior,Charmaine Scotty,
+NZL,foreign,Winston Peters,New Zealand First
+NZL,defense,Judith Collins,New Zealand National Party
+NZL,economy,Nicola Willis,New Zealand National Party
+NZL,interior,Brooke van Velden,ACT New Zealand
+PLW,foreign,Gustav Aitaro,
+PLW,economy,Kaleb Udui Jr.,
+PLW,interior,Ulechong Maria S. Demei,
+PNG,foreign,Justin Tkatchenko,PANGU Pati
+PNG,defense,Billy Joseph,Social Democratic Party
+PNG,economy,Ian Ling-Stuckey,PANGU Pati
+PNG,interior,Peter Tsiamalili Jr.,PANGU Pati
+WSM,foreign,Fiamē Naomi Mataʻafa,Faʻatuatua i le Atua Samoa ua Tasi
+WSM,defense,Fiamē Naomi Mataʻafa,Faʻatuatua i le Atua Samoa ua Tasi
+WSM,economy,Lautimuia Afoa Uelese Vaʻai,Faʻatuatua i le Atua Samoa ua Tasi
+WSM,interior,Faualo Harry Schuster,Faʻatuatua i le Atua Samoa ua Tasi
+SLB,foreign,Peter Shanel Agovaka,"Ownership, Unity and Responsibility Party"
+SLB,defense,Jeremiah Manele,"Ownership, Unity and Responsibility Party"
+SLB,economy,Manasseh Sogavare,"Ownership, Unity and Responsibility Party"
+SLB,interior,Isikeli Vave Jr.,
+TON,foreign,Fekitamoeloa ʻUtoikamanu,
+TON,defense,Siaosi Sovaleni,
+TON,economy,Tiofilusi Tiueti,
+TON,interior,Sevenitini Toumoʻua,
+TUV,foreign,Paulson Panapa,
+TUV,defense,Feleti Teo,
+TUV,economy,Panapasi Nelesone,
+TUV,interior,Simon Kofe,
+VUT,foreign,Matai Seremaiah,Leaders Party of Vanuatu
+VUT,defense,Charlot Salwai,Reunification Movement for Change
+VUT,economy,John Salong,Graon mo Jastis Pati
+VUT,interior,Johnny Koanapo,Vanua'aku Pati

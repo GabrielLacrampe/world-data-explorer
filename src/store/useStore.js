@@ -63,6 +63,10 @@ const useStore = create((set) => ({
   worldBankCountryData: null,
   setWorldBankCountryData: (data) => set({ worldBankCountryData: data }),
 
+  // ─── Layer loading ───────────────────────────────────────────────────
+  layerLoading: false,
+  setLayerLoading: (val) => set({ layerLoading: val }),
+
   // ─── Errors ──────────────────────────────────────────────────────────
   lastError: null,
   setLastError: (msg) => set({ lastError: msg }),

@@ -20,6 +20,7 @@ export default function useWorldBankLayer() {
     setWorldBankLayerData,
     setFillExpression,
     setLastError,
+    setLayerLoading,
   } = useStore()
 
   const timerRef = useRef(null)
@@ -63,6 +64,7 @@ export default function useWorldBankLayer() {
 
     clearTimeout(timerRef.current)
     timerRef.current = setTimeout(async () => {
+      setLayerLoading(true)
       try {
         const data = await fetchIndicatorAllCountries(indicator, { mrv: layer.mrv })
         if (cancelled) return
@@ -83,6 +85,8 @@ export default function useWorldBankLayer() {
         console.error('World Bank layer fetch failed:', err)
         setLastError(`Failed to load layer data: ${err.message}`)
         setFillExpression('#3b5998')
+      } finally {
+        if (!cancelled) setLayerLoading(false)
       }
     }, DEBOUNCE_MS)
 
