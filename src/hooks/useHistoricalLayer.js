@@ -8,7 +8,6 @@ export default function useHistoricalLayer() {
   const {
     activeLayer,
     activeYear,
-    allCountriesData,
     historicalData,
     setHistoricalData,
     setActiveYear,
@@ -31,10 +30,10 @@ export default function useHistoricalLayer() {
     setIsPlaying(false)
     setActiveYear(defaultYear)
 
-    if (historicalData[owidChart] || !allCountriesData) return
+    if (historicalData[owidChart]) return
 
     setHistoricalLoading(true)
-    fetchOwidHistorical(owidChart, allCountriesData)
+    fetchOwidHistorical(owidChart)
       .then(data => setHistoricalData(owidChart, data))
       .catch(err => {
         console.error('OWID historical fetch failed:', err)
@@ -42,7 +41,7 @@ export default function useHistoricalLayer() {
       })
       .finally(() => setHistoricalLoading(false))
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeLayer, allCountriesData])
+  }, [activeLayer])
 
   // Year or data change: rebuild fill expression
   useEffect(() => {
