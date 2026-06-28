@@ -10,6 +10,12 @@ export const LAYERS = {
     format: 'integer',
     scale: 'log',
     attribution: 'World Bank',
+    historical: {
+      owidChart: 'population',
+      yearRange: [1800, 2023],
+      defaultYear: 2023,
+      attribution: 'OWID / UN WPP',
+    },
   },
   area: {
     label: 'Area',
@@ -29,6 +35,12 @@ export const LAYERS = {
     source: 'worldbank',
     format: 'currency',
     attribution: 'World Bank',
+    historical: {
+      owidChart: 'gdp-per-capita-maddison',
+      yearRange: [1820, 2022],
+      defaultYear: 2022,
+      attribution: 'OWID / Maddison Project',
+    },
   },
   gdp_growth: {
     label: 'GDP Growth',
@@ -57,6 +69,12 @@ export const LAYERS = {
     format: 'decimal',
     scale: 'linear',
     attribution: 'World Bank',
+    historical: {
+      owidChart: 'life-expectancy',
+      yearRange: [1770, 2023],
+      defaultYear: 2023,
+      attribution: 'OWID / UN WPP',
+    },
   },
   military_spending: {
     label: 'Military Spending',

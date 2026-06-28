@@ -79,6 +79,23 @@ const useStore = create((set) => ({
   // ─── Trade routes ─────────────────────────────────────────────────────
   tradeGeoJSON: null,
   setTradeGeoJSON: (data) => set({ tradeGeoJSON: data }),
+
+  // ─── Historical time slider ───────────────────────────────────────────
+  // historicalData: { [owidChart]: { [year]: { [iso2]: value } } }
+  historicalData: {},
+  setHistoricalData: (chart, data) =>
+    set((state) => ({
+      historicalData: { ...state.historicalData, [chart]: data },
+    })),
+
+  activeYear: null,           // null = slider inactive; number = selected year
+  setActiveYear: (year) => set({ activeYear: year }),
+
+  isPlaying: false,
+  setIsPlaying: (val) => set({ isPlaying: val }),
+
+  historicalLoading: false,
+  setHistoricalLoading: (val) => set({ historicalLoading: val }),
 }))
 
 export default useStore
