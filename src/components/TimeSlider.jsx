@@ -27,8 +27,12 @@ export default function TimeSlider() {
     setDisplayYear(activeYear)
   }, [activeYear])
 
+  const [minYear, maxYear] = historical?.yearRange ?? [0, 9999]
   const availableYears = historical
-    ? Object.keys(historicalData[historical.owidChart] ?? {}).map(Number).sort((a, b) => a - b)
+    ? Object.keys(historicalData[historical.owidChart] ?? {})
+        .map(Number)
+        .filter(y => y >= minYear && y <= maxYear)
+        .sort((a, b) => a - b)
     : []
 
   // Auto-play: advance one year per tick using getState() to avoid stale closures

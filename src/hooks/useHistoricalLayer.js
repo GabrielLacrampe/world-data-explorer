@@ -53,8 +53,9 @@ export default function useHistoricalLayer() {
     const data = historicalData[layer.historical.owidChart]
     if (!data) return
 
-    // Snap to the closest available year with data
-    const years = Object.keys(data).map(Number)
+    // Snap to the closest year within yearRange that has data
+    const [minYear, maxYear] = layer.historical.yearRange
+    const years = Object.keys(data).map(Number).filter(y => y >= minYear && y <= maxYear)
     if (years.length === 0) return
     const closest = years.reduce((prev, curr) =>
       Math.abs(curr - activeYear) < Math.abs(prev - activeYear) ? curr : prev
