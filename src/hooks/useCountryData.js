@@ -11,6 +11,7 @@ export default function useCountryData() {
     setLoading,
     setCountryLoadError,
     setWorldBankCountryData,
+    setWorldBankCountryLoading,
     setLastError,
   } = useStore()
 
@@ -37,12 +38,15 @@ export default function useCountryData() {
     if (!selectedCountry?.code || selectedCountry.code === '-99') return
 
     const indicators = SIDEBAR_INDICATORS.map((i) => i.indicator)
+    setWorldBankCountryData(null)
+    setWorldBankCountryLoading(true)
     fetchIndicatorsForCountry(selectedCountry.code, indicators)
       .then(setWorldBankCountryData)
       .catch((err) => {
         console.error('World Bank country fetch failed:', err)
         setLastError(`Failed to load country indicators: ${err.message}`)
       })
+      .finally(() => setWorldBankCountryLoading(false))
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedCountry])
 }

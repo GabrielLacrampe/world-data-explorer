@@ -30,6 +30,7 @@ export default function Sidebar() {
     setActiveTab,
     loading,
     worldBankCountryData,
+    worldBankCountryLoading,
     staticData,
     countryLoadError,
   } = useStore()
@@ -127,7 +128,7 @@ export default function Sidebar() {
               {activeTab === 'gobierno'    && <GovernmentTab countryCode={selectedCountry?.code} subtab={currentSubTab} />}
               {activeTab === 'culturas'    && <CulturesTab   countryCode={selectedCountry?.code} staticData={staticData} countryData={countryData} subtab={currentSubTab} />}
               {activeTab === 'diplomatica' && <DiplomaticTab countryCode={selectedCountry?.code} staticData={staticData} subtab={currentSubTab} />}
-              {activeTab === 'economia'    && <EconomyTab    data={countryData} worldBankData={worldBankCountryData} staticData={staticData} countryCode={selectedCountry?.code} subtab={currentSubTab} />}
+              {activeTab === 'economia'    && <EconomyTab    data={countryData} worldBankData={worldBankCountryData} worldBankLoading={worldBankCountryLoading} staticData={staticData} countryCode={selectedCountry?.code} subtab={currentSubTab} />}
               {activeTab === 'comercio'    && <EmptyTab label="Import/export data coming soon." />}
               {activeTab === 'historia'    && <HistoryTab    countryName={countryData?.name?.common} />}
               {activeTab === 'politicas'   && <EmptyTab label="Policy positions coming soon." />}

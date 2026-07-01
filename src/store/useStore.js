@@ -62,6 +62,8 @@ const useStore = create((set) => ({
   // World Bank sidebar data for selected country
   worldBankCountryData: null,
   setWorldBankCountryData: (data) => set({ worldBankCountryData: data }),
+  worldBankCountryLoading: false,
+  setWorldBankCountryLoading: (val) => set({ worldBankCountryLoading: val }),
 
   // ─── Layer loading ───────────────────────────────────────────────────
   layerLoading: false,
