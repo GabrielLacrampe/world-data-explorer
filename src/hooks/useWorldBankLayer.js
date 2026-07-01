@@ -28,6 +28,7 @@ export default function useWorldBankLayer() {
   useEffect(() => {
     const layer = LAYERS[activeLayer]
     if (layer.source !== 'worldbank') return
+    if (layer.historical) return  // handled by useHistoricalLayer
 
     const indicator = layer.indicator
     let cancelled = false

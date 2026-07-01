@@ -11,6 +11,8 @@ import { loadStaticDatasets } from './utils/staticData'
 import { LAYERS } from './layers'
 import useWorldBankLayer from './hooks/useWorldBankLayer'
 import useCountryData from './hooks/useCountryData'
+import useHistoricalLayer from './hooks/useHistoricalLayer'
+import TimeSlider from './components/TimeSlider'
 
 function App() {
   const {
@@ -24,6 +26,7 @@ function App() {
 
   useWorldBankLayer()
   useCountryData()
+  useHistoricalLayer()
 
   useEffect(() => {
     loadStaticDatasets()
@@ -78,6 +81,7 @@ function App() {
       <TopBar />
       <Sidebar />
       <Legend />
+      <TimeSlider />
       <LoadingOverlay />
       <ErrorBanner />
     </div>

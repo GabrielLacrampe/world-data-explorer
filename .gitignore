@@ -1,3 +1,6 @@
+# Claude Code project instructions (kept local, not in repo)
+CLAUDE.md
+
 # Raw dataset files (large, not committed)
 scripts/raw/
 scripts/*.xlsx
