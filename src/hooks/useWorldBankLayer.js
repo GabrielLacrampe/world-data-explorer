@@ -15,6 +15,7 @@ const HIGH_LITERACY_EXTRA = new Set(['JP', 'KR', 'SG', 'TW'])
 export default function useWorldBankLayer() {
   const {
     activeLayer,
+    combineMode,
     allCountriesData,
     worldBankLayerCache,
     setWorldBankLayerData,
@@ -26,6 +27,7 @@ export default function useWorldBankLayer() {
   const timerRef = useRef(null)
 
   useEffect(() => {
+    if (combineMode) return  // handled by useCombinedLayer
     const layer = LAYERS[activeLayer]
     if (layer.source !== 'worldbank') return
     if (layer.historical) return  // handled by useHistoricalLayer
@@ -96,5 +98,5 @@ export default function useWorldBankLayer() {
       clearTimeout(timerRef.current)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [activeLayer, allCountriesData])
+  }, [activeLayer, allCountriesData, combineMode])
 }

@@ -278,6 +278,20 @@ export const LAYERS = {
   },
 }
 
+/**
+ * Whether a layer can be added to a combined (multi-layer blend) selection.
+ * Excludes historical layers (no single-year value to blend) and non-numeric
+ * sources (political/geographic/alliances/trade), including `political`
+ * itself which is `source: 'static'` but has no `staticKey`.
+ */
+export function isCombinableLayer(key) {
+  const layer = LAYERS[key]
+  if (!layer || layer.historical) return false
+  if (layer.source === 'worldbank') return true
+  if (layer.source === 'static') return !!layer.staticKey
+  return false
+}
+
 export const SIDEBAR_INDICATORS = [
   { indicator: 'SP.POP.TOTL',         label: 'Population',          format: 'integer', unit: '' },
   { indicator: 'NY.GDP.PCAP.CD',      label: 'GDP per Capita',      format: 'currency', unit: 'USD' },
