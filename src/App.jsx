@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import Map from './components/Map'
 import Sidebar from './components/Sidebar'
 import TopBar from './components/TopBar'
@@ -84,6 +85,7 @@ function App() {
       <TimeSlider />
       <LoadingOverlay />
       <ErrorBanner />
+      <SpeedInsights />
     </div>
   )
 }
