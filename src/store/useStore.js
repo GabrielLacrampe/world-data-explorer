@@ -59,6 +59,13 @@ const useStore = create((set) => ({
       },
     })),
 
+  // IMF layer data cache: { indicator: { ISO3: value, ... } }
+  imfLayerCache: {},
+  setImfLayerData: (indicator, data) =>
+    set((state) => ({
+      imfLayerCache: { ...state.imfLayerCache, [indicator]: data },
+    })),
+
   // World Bank sidebar data for selected country
   worldBankCountryData: null,
   setWorldBankCountryData: (data) => set({ worldBankCountryData: data }),

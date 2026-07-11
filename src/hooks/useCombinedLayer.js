@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import useStore from '../store/useStore'
 import { LAYERS, isCombinableLayer } from '../layers'
 import { fetchIndicatorAllCountries } from '../utils/worldBank'
+import { fetchImfIndicatorLatest } from '../utils/imf'
 import { buildMatchExpression, normalizeValue, combineNormalizedScores } from '../utils/colorScale'
 
 const DEBOUNCE_MS = 150
@@ -12,6 +13,9 @@ export default function useCombinedLayer() {
     combinedLayers,
     worldBankLayerCache,
     setWorldBankLayerData,
+    imfLayerCache,
+    setImfLayerData,
+    allCountriesData,
     staticData,
     setFillExpression,
     setLayerLoading,
@@ -43,6 +47,20 @@ export default function useCombinedLayer() {
               const data = await fetchIndicatorAllCountries(layer.indicator, { mrv: layer.mrv })
               if (!cancelled) setWorldBankLayerData(layer.indicator, data)
               return [key, data]
+            }
+            if (layer.source === 'imf') {
+              let iso3Data = imfLayerCache[layer.indicator]
+              if (!iso3Data) {
+                iso3Data = await fetchImfIndicatorLatest(layer.indicator, { dataflow: layer.dataflow })
+                if (!cancelled) setImfLayerData(layer.indicator, iso3Data)
+              }
+              const iso2Data = {}
+              if (allCountriesData) {
+                Object.entries(allCountriesData).forEach(([iso2, c]) => {
+                  if (c.cca3 && iso3Data[c.cca3] !== undefined) iso2Data[iso2] = iso3Data[c.cca3]
+                })
+              }
+              return [key, iso2Data]
             }
             return [key, (staticData && staticData[layer.staticKey]) || {}]
           })
@@ -89,5 +107,5 @@ export default function useCombinedLayer() {
       clearTimeout(timerRef.current)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [combineMode, combinedLayers, staticData])
+  }, [combineMode, combinedLayers, staticData, allCountriesData])
 }

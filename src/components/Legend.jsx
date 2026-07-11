@@ -15,7 +15,7 @@ const REL_LEGEND = [
 const LAYER_GROUPS = [
   { label: 'Map Style',    keys: ['geographic', 'political'] },
   { label: 'Demographics', keys: ['population', 'area', 'birth_rate', 'death_rate', 'net_migration'] },
-  { label: 'Economy',      keys: ['gdp_per_capita', 'gdp_growth', 'unemployment', 'inflation', 'public_debt', 'fiscal_balance', 'exports', 'imports'] },
+  { label: 'Economy',      keys: ['gdp_per_capita', 'gdp_growth', 'unemployment', 'inflation', 'cost_of_living', 'public_debt', 'fiscal_balance', 'exports', 'imports'] },
   { label: 'Social',       keys: ['life_expectancy', 'electricity_access', 'literacy_rate', 'internet_users', 'renewable_energy', 'health_spending', 'education_spending', 'water_access', 'co2_total'] },
   { label: 'Governance',   keys: ['democracy_index', 'military_spending', 'gini_index'] },
   { label: 'Diplomacy',    keys: ['alliances', 'trade'] },

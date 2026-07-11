@@ -10,6 +10,7 @@ import { buildMatchExpression, valueToColor, buildPoliticalExpression } from './
 import { loadStaticDatasets } from './utils/staticData'
 import { LAYERS } from './layers'
 import useWorldBankLayer from './hooks/useWorldBankLayer'
+import useImfLayer from './hooks/useImfLayer'
 import useCountryData from './hooks/useCountryData'
 import useHistoricalLayer from './hooks/useHistoricalLayer'
 import useCombinedLayer from './hooks/useCombinedLayer'
@@ -27,6 +28,7 @@ function App() {
   } = useStore()
 
   useWorldBankLayer()
+  useImfLayer()
   useCountryData()
   useHistoricalLayer()
   useCombinedLayer()
