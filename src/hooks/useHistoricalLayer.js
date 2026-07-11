@@ -8,6 +8,7 @@ export default function useHistoricalLayer() {
   const {
     activeLayer,
     activeYear,
+    combineMode,
     historicalData,
     setHistoricalData,
     setActiveYear,
@@ -45,6 +46,7 @@ export default function useHistoricalLayer() {
 
   // Year or data change: rebuild fill expression
   useEffect(() => {
+    if (combineMode) return  // handled by useCombinedLayer
     if (activeYear === null) return
 
     const layer = LAYERS[activeLayer]
@@ -75,5 +77,5 @@ export default function useHistoricalLayer() {
       countryColors[iso2] = valueToColor(value, values, { scale, invert })
     })
     setFillExpression(buildMatchExpression(countryColors))
-  }, [activeYear, activeLayer, historicalData, setFillExpression])
+  }, [activeYear, activeLayer, historicalData, setFillExpression, combineMode])
 }

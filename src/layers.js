@@ -149,13 +149,23 @@ export const LAYERS = {
   },
   public_debt: {
     label: 'Public Debt',
-    indicator: 'GC.DOD.TOTL.GD.ZS',
+    indicator: 'FL_S13_POGDP_PT',
+    dataflow: 'GDD',
     unit: '% of GDP',
-    source: 'worldbank',
+    source: 'imf',
     format: 'percent',
     scale: 'linear',
     invert: true,
-    attribution: 'World Bank',
+    attribution: 'IMF Global Debt Database',
+  },
+  cost_of_living: {
+    label: 'Cost of Living',
+    indicator: 'PA.NUS.PRVT.PLI',
+    unit: 'index, US = 100',
+    source: 'worldbank',
+    format: 'decimal',
+    scale: 'linear',
+    attribution: 'World Bank ICP',
   },
   fiscal_balance: {
     label: 'Fiscal Balance',
@@ -276,6 +286,21 @@ export const LAYERS = {
     source: 'trade',
     attribution: 'CIA World Factbook',
   },
+}
+
+/**
+ * Whether a layer can be added to a combined (multi-layer blend) selection.
+ * Excludes historical layers (no single-year value to blend) and non-numeric
+ * sources (political/geographic/alliances/trade), including `political`
+ * itself which is `source: 'static'` but has no `staticKey`.
+ */
+export function isCombinableLayer(key) {
+  const layer = LAYERS[key]
+  if (!layer || layer.historical) return false
+  if (layer.source === 'worldbank') return true
+  if (layer.source === 'imf') return true
+  if (layer.source === 'static') return !!layer.staticKey
+  return false
 }
 
 export const SIDEBAR_INDICATORS = [

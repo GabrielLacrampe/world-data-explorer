@@ -59,6 +59,13 @@ const useStore = create((set) => ({
       },
     })),
 
+  // IMF layer data cache: { indicator: { ISO3: value, ... } }
+  imfLayerCache: {},
+  setImfLayerData: (indicator, data) =>
+    set((state) => ({
+      imfLayerCache: { ...state.imfLayerCache, [indicator]: data },
+    })),
+
   // World Bank sidebar data for selected country
   worldBankCountryData: null,
   setWorldBankCountryData: (data) => set({ worldBankCountryData: data }),
@@ -98,6 +105,20 @@ const useStore = create((set) => ({
 
   historicalLoading: false,
   setHistoricalLoading: (val) => set({ historicalLoading: val }),
+
+  // ─── Combine mode (multi-layer blend) ─────────────────────────────────
+  combineMode: false,
+  combinedLayers: [],   // array of layer keys, insertion order preserved
+  setCombineMode: (on) => set({ combineMode: on }),
+  toggleCombinedLayer: (key) =>
+    set((state) => ({
+      combinedLayers: state.combinedLayers.includes(key)
+        ? state.combinedLayers.filter((k) => k !== key)
+        : [...state.combinedLayers, key],
+    })),
+  removeCombinedLayer: (key) =>
+    set((state) => ({ combinedLayers: state.combinedLayers.filter((k) => k !== key) })),
+  clearCombinedLayers: () => set({ combinedLayers: [] }),
 }))
 
 export default useStore

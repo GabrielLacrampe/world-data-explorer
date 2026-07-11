@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { LAYERS } from '../layers'
+import { LAYERS, isCombinableLayer } from '../layers'
 import useStore from '../store/useStore'
 import { COLOR_SCALE } from '../utils/colorScale'
 import { useRelationships } from '../hooks/useRelationships'
@@ -15,7 +15,7 @@ const REL_LEGEND = [
 const LAYER_GROUPS = [
   { label: 'Map Style',    keys: ['geographic', 'political'] },
   { label: 'Demographics', keys: ['population', 'area', 'birth_rate', 'death_rate', 'net_migration'] },
-  { label: 'Economy',      keys: ['gdp_per_capita', 'gdp_growth', 'unemployment', 'inflation', 'public_debt', 'fiscal_balance', 'exports', 'imports'] },
+  { label: 'Economy',      keys: ['gdp_per_capita', 'gdp_growth', 'unemployment', 'inflation', 'cost_of_living', 'public_debt', 'fiscal_balance', 'exports', 'imports'] },
   { label: 'Social',       keys: ['life_expectancy', 'electricity_access', 'literacy_rate', 'internet_users', 'renewable_energy', 'health_spending', 'education_spending', 'water_access', 'co2_total'] },
   { label: 'Governance',   keys: ['democracy_index', 'military_spending', 'gini_index'] },
   { label: 'Diplomacy',    keys: ['alliances', 'trade'] },
@@ -31,6 +31,12 @@ function DataPanel() {
   const selectedCountry = useStore((s) => s.selectedCountry)
   const layerLoading   = useStore((s) => s.layerLoading)
   const layer          = LAYERS[activeLayer]
+
+  const combineMode         = useStore((s) => s.combineMode)
+  const setCombineMode      = useStore((s) => s.setCombineMode)
+  const combinedLayers      = useStore((s) => s.combinedLayers)
+  const toggleCombinedLayer = useStore((s) => s.toggleCombinedLayer)
+  const removeCombinedLayer = useStore((s) => s.removeCombinedLayer)
 
   // Track the last manually-opened group; when null, follow the active layer
   const [manualGroup, setManualGroup] = useState(null)
@@ -77,6 +83,32 @@ function DataPanel() {
           )}
         </div>
 
+        <label className="flex items-center gap-1.5 px-3 pb-2 text-[9px] uppercase tracking-wider text-[#6b7280] cursor-pointer">
+          <input
+            type="checkbox"
+            checked={combineMode}
+            onChange={(e) => setCombineMode(e.target.checked)}
+            className="accent-blue-600"
+          />
+          Combine mode
+        </label>
+
+        {combineMode && combinedLayers.length > 0 && (
+          <div className="flex flex-wrap gap-1 px-3 pb-2">
+            {combinedLayers.map((key) => (
+              <span
+                key={key}
+                className="flex items-center gap-1 px-1.5 py-0.5 rounded bg-[#1e2736] text-[10px] text-[#e2e8f0]"
+              >
+                {LAYERS[key].label}
+                <button onClick={() => removeCombinedLayer(key)} className="text-[#6b7280] hover:text-white">
+                  ×
+                </button>
+              </span>
+            ))}
+          </div>
+        )}
+
         {LAYER_GROUPS.map(({ label, keys }) => {
           const isOpen = openGroup === label
           const groupHasActive = keys.includes(activeLayer)
@@ -101,19 +133,32 @@ function DataPanel() {
               {/* Layer buttons — shown when expanded */}
               {isOpen && (
                 <div className="flex flex-wrap gap-1 px-3 pb-2.5">
-                  {keys.map((key) => (
-                    <button
-                      key={key}
-                      onClick={() => setActiveLayer(key)}
-                      className={`px-2 py-0.5 text-[10px] rounded transition-all duration-150 ${
-                        activeLayer === key
-                          ? 'bg-blue-600/90 text-white'
-                          : 'text-[#6b7280] hover:text-[#e2e8f0] hover:bg-[#1e2736] border border-[#1e2736]'
-                      }`}
-                    >
-                      {LAYERS[key].label}
-                    </button>
-                  ))}
+                  {keys.map((key) => {
+                    if (combineMode && !isCombinableLayer(key)) {
+                      return (
+                        <span
+                          key={key}
+                          className="px-2 py-0.5 text-[10px] rounded text-[#374151] border border-[#1e2736] opacity-50 cursor-not-allowed"
+                        >
+                          {LAYERS[key].label}
+                        </span>
+                      )
+                    }
+                    const isActive = combineMode ? combinedLayers.includes(key) : activeLayer === key
+                    return (
+                      <button
+                        key={key}
+                        onClick={() => (combineMode ? toggleCombinedLayer(key) : setActiveLayer(key))}
+                        className={`px-2 py-0.5 text-[10px] rounded transition-all duration-150 ${
+                          isActive
+                            ? 'bg-blue-600/90 text-white'
+                            : 'text-[#6b7280] hover:text-[#e2e8f0] hover:bg-[#1e2736] border border-[#1e2736]'
+                        }`}
+                      >
+                        {LAYERS[key].label}
+                      </button>
+                    )
+                  })}
                 </div>
               )}
             </div>
@@ -122,7 +167,34 @@ function DataPanel() {
       </div>
 
       {/* ── Legend ───────────────────────────────────────────────────── */}
-      {hasAllianceLegend ? (
+      {combineMode && combinedLayers.length > 0 ? (
+        <div className="bg-[#0d1117]/90 backdrop-blur-md border border-[#1e2736] rounded-md p-3 w-52">
+          <p className="font-display text-[10px] uppercase tracking-[0.15em] text-[#6b7280] mb-2.5">
+            {combinedLayers.length > 1 ? 'Combined Score' : 'Layer Score'}
+          </p>
+          <div className="flex items-center gap-px">
+            {COLOR_SCALE.map((color, i) => (
+              <div
+                key={i}
+                className="h-1.5 flex-1 first:rounded-l last:rounded-r"
+                style={{ backgroundColor: color }}
+              />
+            ))}
+          </div>
+          <div className="flex justify-between mt-1">
+            <span className="text-[#4b5563] text-xs">Low</span>
+            <span className="text-[#4b5563] text-xs">High</span>
+          </div>
+          <div className="mt-2 flex flex-col gap-0.5">
+            {combinedLayers.map((key) => (
+              <p key={key} className="text-[#6b7280] text-xs">
+                {LAYERS[key].label}
+                {LAYERS[key].unit && ` · ${LAYERS[key].unit}`}
+              </p>
+            ))}
+          </div>
+        </div>
+      ) : hasAllianceLegend ? (
         <div className="bg-[#0d1117]/90 backdrop-blur-md border border-[#1e2736] rounded-md p-3 w-52">
           <p className="font-display text-[10px] uppercase tracking-[0.15em] text-[#6b7280] mb-2.5">
             Relations

@@ -21,6 +21,42 @@ export const COLOR_SCALE = [
 ]
 
 /**
+ * Normalizes a value to a 0-1 score using percentile-clipped min/max
+ * (reduces outlier distortion) and logarithmic scaling by default.
+ * Returns null when there is no usable data for this value.
+ */
+export function normalizeValue(
+  value,
+  allValues,
+  {
+    scale = 'log',
+    invert = false,
+    lowerPercentile = 0.02,
+    upperPercentile = 0.98,
+  } = {}
+) {
+  if (value === null || value === undefined) return null
+  if (scale === 'log' && value <= 0) return null
+
+  const values = Array.isArray(allValues)
+    ? allValues.filter((v) => v !== null && v !== undefined && (scale === 'log' ? v > 0 : true))
+    : []
+
+  if (values.length === 0) return null
+
+  const transformedValues = values.map((v) => transformValue(v, scale))
+  const transformedValue = transformValue(value, scale)
+  const min = percentile(transformedValues, lowerPercentile)
+  const max = percentile(transformedValues, upperPercentile)
+
+  if (min === max) return 0.5
+
+  let normalized = clamp((transformedValue - min) / (max - min), 0, 1)
+  if (invert) normalized = 1 - normalized
+  return normalized
+}
+
+/**
  * Transforms a value into a gradient color.
  * Uses percentile clipping to reduce outlier distortion and logarithmic scaling
  * by default, which works well for country-level population and area values.
@@ -36,25 +72,21 @@ export function valueToColor(
     upperPercentile = 0.98,
   } = {}
 ) {
-  if (value === null || value === undefined) return NO_DATA_COLOR
-  if (scale === 'log' && value <= 0) return NO_DATA_COLOR
-
-  const values = Array.isArray(allValues)
-    ? allValues.filter((v) => v !== null && v !== undefined && (scale === 'log' ? v > 0 : true))
-    : []
-
-  if (values.length === 0) return NO_DATA_COLOR
-
-  const transformedValues = values.map((v) => transformValue(v, scale))
-  const transformedValue = transformValue(value, scale)
-  const min = percentile(transformedValues, lowerPercentile)
-  const max = percentile(transformedValues, upperPercentile)
-
-  if (min === max) return gradient[Math.floor(gradient.length / 2)]
-
-  let normalized = clamp((transformedValue - min) / (max - min), 0, 1)
-  if (invert) normalized = 1 - normalized
+  const normalized = normalizeValue(value, allValues, { scale, invert, lowerPercentile, upperPercentile })
+  if (normalized === null) return NO_DATA_COLOR
   return interpolateGradient(gradient, normalized)
+}
+
+/**
+ * Averages several per-layer normalized (0-1) scores for the same country
+ * into one blended color. Layers with no data for this country are skipped.
+ * Returns null if none of the layers have data.
+ */
+export function combineNormalizedScores(scores, gradient = COLOR_SCALE) {
+  const valid = scores.filter((s) => s !== null && s !== undefined)
+  if (valid.length === 0) return null
+  const avg = valid.reduce((sum, s) => sum + s, 0) / valid.length
+  return interpolateGradient(gradient, avg)
 }
 
 function transformValue(value, scale) {

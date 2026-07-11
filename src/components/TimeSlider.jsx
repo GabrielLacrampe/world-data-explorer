@@ -8,6 +8,7 @@ export default function TimeSlider() {
   const {
     activeLayer,
     activeYear,
+    combineMode,
     setActiveYear,
     isPlaying,
     setIsPlaying,
@@ -59,7 +60,7 @@ export default function TimeSlider() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isPlaying, speed, availableYears.length])
 
-  if (!historical) return null
+  if (!historical || combineMode) return null
 
   const isLoading  = historicalLoading && availableYears.length === 0
   const isDisabled = isLoading || availableYears.length === 0

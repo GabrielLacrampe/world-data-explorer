@@ -11,13 +11,16 @@ import { buildMatchExpression, valueToColor, buildPoliticalExpression } from './
 import { loadStaticDatasets } from './utils/staticData'
 import { LAYERS } from './layers'
 import useWorldBankLayer from './hooks/useWorldBankLayer'
+import useImfLayer from './hooks/useImfLayer'
 import useCountryData from './hooks/useCountryData'
 import useHistoricalLayer from './hooks/useHistoricalLayer'
+import useCombinedLayer from './hooks/useCombinedLayer'
 import TimeSlider from './components/TimeSlider'
 
 function App() {
   const {
     activeLayer,
+    combineMode,
     setAllCountriesData,
     setFillExpression,
     staticData,
@@ -26,8 +29,10 @@ function App() {
   } = useStore()
 
   useWorldBankLayer()
+  useImfLayer()
   useCountryData()
   useHistoricalLayer()
+  useCombinedLayer()
 
   useEffect(() => {
     loadStaticDatasets()
@@ -53,14 +58,16 @@ function App() {
   }, [setAllCountriesData])
 
   useEffect(() => {
+    if (combineMode) return  // handled by useCombinedLayer
     if ((activeLayer !== 'political' && activeLayer !== 'geographic' && activeLayer !== 'alliances') || !worldData) return
     const iso2Codes = worldData.features
       .map((f) => f.properties['ISO3166-1-Alpha-2'])
       .filter(Boolean)
     setFillExpression(buildPoliticalExpression(iso2Codes))
-  }, [activeLayer, worldData, setFillExpression])
+  }, [activeLayer, worldData, setFillExpression, combineMode])
 
   useEffect(() => {
+    if (combineMode) return  // handled by useCombinedLayer
     const layer = LAYERS[activeLayer]
     if (layer.source !== 'static' || !staticData) return
 
@@ -74,7 +81,7 @@ function App() {
       countryColors[code] = valueToColor(value, values, { scale: scaleType })
     })
     setFillExpression(buildMatchExpression(countryColors))
-  }, [activeLayer, staticData, setFillExpression])
+  }, [activeLayer, staticData, setFillExpression, combineMode])
 
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-gray-950">
