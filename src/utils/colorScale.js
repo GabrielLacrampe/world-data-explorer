@@ -143,10 +143,11 @@ function clamp(value, min, max) {
 }
 
 /**
- * Formats large numbers into human-readable strings with suffixes (K, M, B).
- * 1400000000 → "1.4B" | 17000000 → "17M" | 800000 → "800K"
+ * Formats large numbers into human-readable strings with suffixes (K, M, B, T).
+ * 25000000000000 → "25.0T" | 1400000000 → "1.4B" | 17000000 → "17M" | 800000 → "800K"
  */
 export function formatNumber(n) {
+  if (n >= 1_000_000_000_000) return `${(n / 1_000_000_000_000).toFixed(1)}T`
   if (n >= 1_000_000_000) return `${(n / 1_000_000_000).toFixed(1)}B`
   if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`
   if (n >= 1_000) return `${(n / 1_000).toFixed(0)}K`

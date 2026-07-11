@@ -1,7 +1,22 @@
+// Indicators fetched on-demand (not tied to any single map layer) to power
+// hover-tooltip math breakdowns. POPULATION/AREA reuse the same World Bank
+// codes as the `population`/`area` layers, so the fetch/cache is shared.
+export const TOOLTIP_AUX_INDICATORS = {
+  TOTAL_GDP: 'NY.GDP.MKTP.CD',
+  POPULATION: 'SP.POP.TOTL',
+  AREA: 'AG.SRF.TOTL.K2',
+}
+
 export const LAYERS = {
   // ── Existing layers ──────────────────────────────────────────────────
-  geographic: { label: 'Geographic', property: null, unit: '', source: 'none' },
-  political:  { label: 'Political',  property: null, unit: '', source: 'static' },
+  geographic: {
+    label: 'Geographic', property: null, unit: '', source: 'none',
+    description: 'Satellite-style physical map for visual reference — no data layer.',
+  },
+  political: {
+    label: 'Political', property: null, unit: '', source: 'static',
+    description: 'Countries colored by a fixed palette for visual distinction — no data layer.',
+  },
   population: {
     label: 'Population',
     indicator: 'SP.POP.TOTL',
@@ -10,6 +25,8 @@ export const LAYERS = {
     format: 'integer',
     scale: 'log',
     attribution: 'World Bank',
+    description: 'Total number of people living in the country.',
+    breakdown: { type: 'density' },
     historical: {
       owidChart: 'population',
       yearRange: [1700, 2016],
@@ -25,6 +42,8 @@ export const LAYERS = {
     format: 'integer',
     scale: 'log',
     attribution: 'World Bank',
+    description: 'Total land and water area of the country.',
+    breakdown: { type: 'density' },
   },
 
   // ── World Bank layers ────────────────────────────────────────────────
@@ -35,6 +54,8 @@ export const LAYERS = {
     source: 'worldbank',
     format: 'currency',
     attribution: 'World Bank',
+    description: 'Gross Domestic Product divided by population — average economic output per person.',
+    breakdown: { type: 'gdpPerCapitaCrossCheck' },
     historical: {
       owidChart: 'gdp-per-capita-maddison',
       yearRange: [1800, 2018],
@@ -50,6 +71,7 @@ export const LAYERS = {
     format: 'percent',
     scale: 'linear',
     attribution: 'World Bank',
+    description: 'Annual percentage growth of real GDP.',
   },
   unemployment: {
     label: 'Unemployment',
@@ -60,6 +82,7 @@ export const LAYERS = {
     scale: 'linear',
     invert: true,
     attribution: 'World Bank',
+    description: 'Share of the labor force that is without work but available for and seeking employment.',
   },
   life_expectancy: {
     label: 'Life Expectancy',
@@ -69,6 +92,7 @@ export const LAYERS = {
     format: 'decimal',
     scale: 'linear',
     attribution: 'World Bank',
+    description: 'Average number of years a newborn is expected to live, given current mortality patterns.',
     historical: {
       owidChart: 'life-expectancy',
       yearRange: [1800, 2015],
@@ -85,6 +109,8 @@ export const LAYERS = {
     scale: 'linear',
     invert: true,
     attribution: 'World Bank',
+    description: 'Government military expenditure as a share of GDP.',
+    breakdown: { type: 'percentOfGdp' },
   },
   electricity_access: {
     label: 'Electricity Access',
@@ -94,6 +120,7 @@ export const LAYERS = {
     format: 'percent',
     scale: 'linear',
     attribution: 'World Bank',
+    description: 'Share of the population with access to electricity.',
   },
   gini_index: {
     label: 'Gini Index',
@@ -105,6 +132,7 @@ export const LAYERS = {
     invert: true,
     mrv: 10,
     attribution: 'World Bank',
+    description: 'Income inequality on a 0–100 scale — 0 is perfect equality, 100 is perfect inequality.',
   },
   literacy_rate: {
     label: 'Literacy Rate',
@@ -117,6 +145,7 @@ export const LAYERS = {
     fallback: 99,
     supplementalFetch: true,
     attribution: 'World Bank',
+    description: 'Share of people aged 15 and up who can read and write a short, simple statement.',
   },
   internet_users: {
     label: 'Internet Users',
@@ -126,6 +155,7 @@ export const LAYERS = {
     format: 'percent',
     scale: 'linear',
     attribution: 'World Bank',
+    description: 'Share of the population that used the internet in the last 3 months.',
   },
   renewable_energy: {
     label: 'Renewable Energy',
@@ -136,6 +166,7 @@ export const LAYERS = {
     scale: 'linear',
     mrv: 10,
     attribution: 'World Bank',
+    description: 'Share of total final energy consumption that comes from renewable sources.',
   },
   inflation: {
     label: 'Inflation',
@@ -146,6 +177,7 @@ export const LAYERS = {
     scale: 'linear',
     invert: true,
     attribution: 'World Bank',
+    description: 'Annual percentage change in consumer prices.',
   },
   public_debt: {
     label: 'Public Debt',
@@ -157,6 +189,8 @@ export const LAYERS = {
     scale: 'linear',
     invert: true,
     attribution: 'IMF Global Debt Database',
+    description: 'General government gross debt as a share of GDP.',
+    breakdown: { type: 'percentOfGdp' },
   },
   cost_of_living: {
     label: 'Cost of Living',
@@ -166,6 +200,7 @@ export const LAYERS = {
     format: 'decimal',
     scale: 'linear',
     attribution: 'World Bank ICP',
+    description: "Price level of household consumption relative to the US (US = 100).",
   },
   fiscal_balance: {
     label: 'Fiscal Balance',
@@ -175,6 +210,8 @@ export const LAYERS = {
     format: 'percent',
     scale: 'linear',
     attribution: 'World Bank',
+    description: 'Government net lending/borrowing as a share of GDP — positive means a budget surplus.',
+    breakdown: { type: 'percentOfGdp' },
   },
   birth_rate: {
     label: 'Birth Rate',
@@ -184,6 +221,8 @@ export const LAYERS = {
     format: 'decimal',
     scale: 'linear',
     attribution: 'World Bank',
+    description: 'Number of live births per 1,000 people in a year.',
+    breakdown: { type: 'rateOfPopulation', resultUnit: 'births / year' },
   },
   death_rate: {
     label: 'Death Rate',
@@ -194,6 +233,8 @@ export const LAYERS = {
     scale: 'linear',
     invert: true,
     attribution: 'World Bank',
+    description: 'Number of deaths per 1,000 people in a year.',
+    breakdown: { type: 'rateOfPopulation', resultUnit: 'deaths / year' },
   },
   net_migration: {
     label: 'Net Migration',
@@ -204,6 +245,8 @@ export const LAYERS = {
     scale: 'linear',
     mrv: 5,
     attribution: 'World Bank',
+    description: 'Net number of migrants — immigrants minus emigrants — over the period.',
+    breakdown: { type: 'shareOfPopulation' },
   },
   exports: {
     label: 'Exports',
@@ -213,6 +256,8 @@ export const LAYERS = {
     format: 'percent',
     scale: 'linear',
     attribution: 'World Bank',
+    description: 'Value of exported goods and services as a share of GDP.',
+    breakdown: { type: 'percentOfGdp' },
   },
   imports: {
     label: 'Imports',
@@ -222,6 +267,8 @@ export const LAYERS = {
     format: 'percent',
     scale: 'linear',
     attribution: 'World Bank',
+    description: 'Value of imported goods and services as a share of GDP.',
+    breakdown: { type: 'percentOfGdp' },
   },
   education_spending: {
     label: 'Education Spending',
@@ -232,6 +279,8 @@ export const LAYERS = {
     scale: 'linear',
     mrv: 10,
     attribution: 'World Bank',
+    description: 'Government spending on education as a share of GDP.',
+    breakdown: { type: 'percentOfGdp' },
   },
   health_spending: {
     label: 'Health Spending',
@@ -241,6 +290,8 @@ export const LAYERS = {
     format: 'percent',
     scale: 'linear',
     attribution: 'World Bank',
+    description: 'Current health expenditure as a share of GDP.',
+    breakdown: { type: 'percentOfGdp' },
   },
   water_access: {
     label: 'Water Access',
@@ -251,6 +302,7 @@ export const LAYERS = {
     scale: 'linear',
     mrv: 10,
     attribution: 'World Bank',
+    description: 'Share of the population with access to at least basic drinking water.',
   },
   co2_total: {
     label: 'CO₂ Emissions (total)',
@@ -262,6 +314,7 @@ export const LAYERS = {
     invert: true,
     mrv: 5,
     attribution: 'World Bank',
+    description: 'Total carbon dioxide emissions from fossil fuels and industry.',
   },
 
   // ── Static dataset layers ────────────────────────────────────────────
@@ -273,6 +326,7 @@ export const LAYERS = {
     format: 'decimal',
     scale: 'linear',
     attribution: 'V-Dem Institute',
+    description: 'Liberal Democracy Index — how much political power is constrained by rule of law, checks and balances, and civil liberties.',
   },
 
   // ── Diplomatic layers ────────────────────────────────────────────────
@@ -280,11 +334,13 @@ export const LAYERS = {
     label: 'Alliances',
     source: 'diplomatic',
     attribution: 'COW Project',
+    description: 'Diplomatic relationships — alliances, rivalries, conflicts — between the selected country and others.',
   },
   trade: {
     label: 'Trade Routes',
     source: 'trade',
     attribution: 'CIA World Factbook',
+    description: 'Major export and import trade routes.',
   },
 }
 

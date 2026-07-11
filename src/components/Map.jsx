@@ -6,6 +6,8 @@ import useStore from '../store/useStore'
 import { patchGeoJSON, buildLabelPoints } from '../utils/geoUtils'
 import { buildTradeGeoJSON } from '../utils/tradeRoutes'
 import { useRelationships } from '../hooks/useRelationships'
+import { LAYERS } from '../layers'
+import MapHoverTooltip from './MapHoverTooltip'
 import {
   LABEL_REF_ZOOM,
   LABEL_LARGE_SHOW,
@@ -60,6 +62,11 @@ function Map() {
     zoom: 1.8,
   })
 
+  // Country + screen position currently under the cursor, for the hover
+  // tooltip. Kept as local state (not the store) — it's ephemeral and
+  // updates on every mousemove, with no consumers outside this component.
+  const [hoveredCountry, setHoveredCountry] = useState(null)
+
   const {
     worldData,
     setWorldData,
@@ -69,6 +76,7 @@ function Map() {
     setLoading,
     staticData,
     activeLayer,
+    combineMode,
     setMapZoom,
     tradeGeoJSON,
     setTradeGeoJSON,
@@ -134,6 +142,13 @@ function Map() {
       { source: 'countries', id: hoveredFeatureId.current },
       { hover: true }
     )
+
+    const iso2 = e.features[0].properties[GEO_ISO2]
+    if (!iso2 || iso2 === '-99') {
+      setHoveredCountry(null)
+      return
+    }
+    setHoveredCountry({ iso2, name: e.features[0].properties[GEO_NAME], point: e.point })
   }, [])
 
   const handleMouseLeave = useCallback(() => {
@@ -144,6 +159,7 @@ function Map() {
       { hover: false }
     )
     hoveredFeatureId.current = null
+    setHoveredCountry(null)
   }, [])
 
   const handleClick = useCallback((e) => {
@@ -429,6 +445,9 @@ function Map() {
           </Source>
         )}
       </ReactMapGL>
+      {hoveredCountry && (combineMode || LAYERS[activeLayer]?.indicator || LAYERS[activeLayer]?.staticKey) && (
+        <MapHoverTooltip hoveredCountry={hoveredCountry} />
+      )}
     </div>
   )
 }
