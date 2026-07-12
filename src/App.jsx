@@ -25,6 +25,7 @@ function App() {
     setFillExpression,
     staticData,
     setStaticData,
+    setLastError,
     worldData,
   } = useStore()
 
@@ -35,9 +36,12 @@ function App() {
   useCombinedLayer()
 
   useEffect(() => {
-    loadStaticDatasets()
-      .then(setStaticData)
-      .catch((err) => console.error('Static data load failed:', err))
+    loadStaticDatasets().then(({ datasets, failed }) => {
+      setStaticData(datasets)
+      if (failed.length > 0) {
+        setLastError(`Some datasets failed to load: ${failed.join(', ')}. Affected layers may show no data.`)
+      }
+    })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 

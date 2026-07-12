@@ -81,16 +81,25 @@ function Map() {
     tradeGeoJSON,
     setTradeGeoJSON,
     allCountriesData,
+    setLastError,
   } = useStore()
 
   useEffect(() => {
     fetch(GEOJSON_URL)
-      .then((res) => res.json())
+      .then((res) => {
+        // fetch only rejects on network failure — HTTP errors resolve fine
+        if (!res.ok) throw new Error(`HTTP ${res.status} loading world GeoJSON`)
+        return res.json()
+      })
       .then((data) => {
         setWorldData(patchGeoJSON(data, NAME_TO_ISO2_FIXES))
-        setLoading('map', false)
       })
-  }, [setWorldData, setLoading])
+      .catch((err) => {
+        console.error('World GeoJSON load failed:', err)
+        setLastError('Could not load the world map. Check your connection and reload the page.')
+      })
+      .finally(() => setLoading('map', false))
+  }, [setWorldData, setLoading, setLastError])
 
   const { data: relationships, iso3: selectedIso3 } = useRelationships(selectedCountry?.code)
 

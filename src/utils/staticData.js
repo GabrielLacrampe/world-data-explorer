@@ -4,22 +4,42 @@ async function fetchJson(url) {
   return r.json()
 }
 
-export async function loadStaticDatasets() {
-  const [sipri, vdem, alliances, governments, ethnicGroups, religions, militaryPersonnel, freedomhouse, factbook, cpi] =
-    await Promise.all([
-      fetchJson('/data/sipri.json'),
-      fetchJson('/data/vdem.json'),
-      fetchJson('/data/alliances.json'),
-      fetchJson('/data/governments.json').catch(() => ({})),
-      fetchJson('/data/ethnicGroups.json').catch(() => ({})),
-      fetchJson('/data/religions.json').catch(() => ({})),
-      fetchJson('/data/militaryPersonnel.json').catch(() => ({})),
-      fetchJson('/data/freedomhouse.json').catch(() => ({})),
-      fetchJson('/data/factbook.json').catch(() => ({})),
-      fetchJson('/data/cpi.json').catch(() => ({})),
-    ])
+const DATASET_URLS = {
+  sipri: '/data/sipri.json',
+  vdem: '/data/vdem.json',
+  alliances: '/data/alliances.json',
+  governments: '/data/governments.json',
+  ethnicGroups: '/data/ethnicGroups.json',
+  religions: '/data/religions.json',
+  militaryPersonnel: '/data/militaryPersonnel.json',
+  freedomhouse: '/data/freedomhouse.json',
+  factbook: '/data/factbook.json',
+  cpi: '/data/cpi.json',
+}
 
-  return { sipri, vdem, freedomhouse, alliances, governments, ethnicGroups, religions, militaryPersonnel, factbook, cpi }
+/**
+ * Loads every static dataset in parallel. allSettled (instead of all) so one
+ * failed file can't take down the rest — failures fall back to an empty
+ * object and are reported in `failed` for the caller to surface.
+ */
+export async function loadStaticDatasets() {
+  const entries = Object.entries(DATASET_URLS)
+  const results = await Promise.allSettled(entries.map(([, url]) => fetchJson(url)))
+
+  const datasets = {}
+  const failed = []
+  results.forEach((result, i) => {
+    const [key] = entries[i]
+    if (result.status === 'fulfilled') {
+      datasets[key] = result.value
+    } else {
+      console.error(`Static dataset "${key}" failed to load:`, result.reason)
+      datasets[key] = {}
+      failed.push(key)
+    }
+  })
+
+  return { datasets, failed }
 }
 
 export const FREEDOM_STATUS = {
