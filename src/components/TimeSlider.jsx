@@ -21,10 +21,14 @@ export default function TimeSlider() {
   const [speed, setSpeed]             = useState('normal')
   const intervalRef                   = useRef(null)
 
-  // Keep display in sync when activeYear changes externally (layer switch, autoplay)
-  useEffect(() => {
+  // Keep display in sync when activeYear changes externally (layer switch,
+  // autoplay). Adjusted during render instead of in an effect — same pattern
+  // as Legend's manualGroup/lastLayer.
+  const [lastActiveYear, setLastActiveYear] = useState(activeYear)
+  if (activeYear !== lastActiveYear) {
+    setLastActiveYear(activeYear)
     setDisplayYear(activeYear)
-  }, [activeYear])
+  }
 
   const [minYear, maxYear] = historical?.yearRange ?? [0, 9999]
   const availableYears = historical

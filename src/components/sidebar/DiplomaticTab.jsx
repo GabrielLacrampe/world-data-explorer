@@ -12,7 +12,6 @@ const RELATIONSHIP_COLORS = {
 }
 
 const INTENSITY_LABEL = { high: 'High', medium: 'Medium', low: 'Low' }
-const countryNames = new Intl.DisplayNames(['en'], { type: 'region' })
 
 export default function DiplomaticTab({ countryCode, staticData, subtab }) {
   const setSelectedCountry = useStore((s) => s.setSelectedCountry)

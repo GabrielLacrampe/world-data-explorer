@@ -7,13 +7,21 @@ export function useRelationships(iso2) {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
 
+  // Reset for the new country during render, not inside the effect —
+  // avoids a cascading re-render (react.dev: "adjusting state when a prop
+  // changes"). The effect below only sets state from async callbacks.
+  const [lastIso2, setLastIso2] = useState(null)
+  if (iso2 !== lastIso2) {
+    setLastIso2(iso2)
+    setData(null)
+    setError(null)
+    setLoading(!!iso2 && iso2 !== '-99')
+  }
+
   useEffect(() => {
     if (!iso2 || iso2 === '-99') return
 
     let cancelled = false
-    setLoading(true)
-    setData(null)
-    setError(null)
 
     async function fetch() {
       const { data: cc } = await supabase
