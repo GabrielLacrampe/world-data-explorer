@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "preview": "vite preview",
     "fetch-data": "node scripts/fetch-governments.mjs && node scripts/fetch-religions.mjs && node scripts/fetch-ethnicgroups.mjs && node scripts/fetch-military.mjs",
     "fetch-historical": "node scripts/fetch-historical.mjs"
@@ -33,6 +35,7 @@
     "papaparse": "^5.5.3",
     "tailwindcss": "^4.3.0",
     "vite": "^8.0.12",
+    "vitest": "^4.1.10",
     "xlsx": "^0.18.5"
   }
 }
