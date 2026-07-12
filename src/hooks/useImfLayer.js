@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import useStore from '../store/useStore'
 import { LAYERS } from '../layers'
 import { fetchImfIndicatorLatest } from '../utils/imf'
-import { buildMatchExpression, valueToColor } from '../utils/colorScale'
+import { buildLayerExpression } from '../utils/colorScale'
 
 const DEBOUNCE_MS = 150
 
@@ -33,18 +33,8 @@ export default function useImfLayer() {
         if (c.cca3 && iso3Data[c.cca3] !== undefined) iso2Data[iso2] = iso3Data[c.cca3]
       })
 
-      const scale  = layer.scale  ?? 'log'
-      const invert = layer.invert ?? false
-      const values = Object.values(iso2Data).filter(
-        (v) => v !== null && v !== undefined && (scale === 'log' ? v > 0 : true)
-      )
-      if (values.length === 0) return
-
-      const countryColors = {}
-      Object.entries(iso2Data).forEach(([code, value]) => {
-        countryColors[code] = valueToColor(value, values, { scale, invert })
-      })
-      setFillExpression(buildMatchExpression(countryColors))
+      const expression = buildLayerExpression(iso2Data, layer)
+      if (expression) setFillExpression(expression)
     }
 
     if (imfLayerCache[indicator]) {

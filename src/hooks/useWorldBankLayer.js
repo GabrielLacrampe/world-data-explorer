@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import useStore from '../store/useStore'
 import { LAYERS } from '../layers'
 import { fetchIndicatorAllCountries, fetchIndicatorForCountries } from '../utils/worldBank'
-import { buildMatchExpression, valueToColor } from '../utils/colorScale'
+import { buildLayerExpression } from '../utils/colorScale'
 
 const DEBOUNCE_MS = 150
 
@@ -44,18 +44,8 @@ export default function useWorldBankLayer() {
         })
       }
 
-      const scale  = layer.scale  ?? 'log'
-      const invert = layer.invert ?? false
-      const values = Object.values(data).filter(
-        (v) => v !== null && v !== undefined && (scale === 'log' ? v > 0 : true)
-      )
-      if (values.length === 0) return
-
-      const countryColors = {}
-      Object.entries(data).forEach(([code, value]) => {
-        countryColors[code] = valueToColor(value, values, { scale, invert })
-      })
-      setFillExpression(buildMatchExpression(countryColors))
+      const expression = buildLayerExpression(data, layer)
+      if (expression) setFillExpression(expression)
     }
 
     if (worldBankLayerCache[indicator]) {

@@ -170,6 +170,26 @@ export function buildPoliticalExpression(iso2Codes) {
 }
 
 /**
+ * Full color pipeline for a data layer: filters usable values, colors each
+ * country, and returns the MapLibre fill expression — or null when the
+ * dataset has nothing paintable. The options object only needs the optional
+ * `scale` and `invert` fields, so callers can pass their LAYERS entry
+ * directly. Shared by the World Bank, IMF, historical and static sources.
+ */
+export function buildLayerExpression(data, { scale = 'log', invert = false } = {}) {
+  const values = Object.values(data).filter(
+    (v) => v !== null && v !== undefined && (scale === 'log' ? v > 0 : true)
+  )
+  if (values.length === 0) return null
+
+  const countryColors = {}
+  Object.entries(data).forEach(([code, value]) => {
+    countryColors[code] = valueToColor(value, values, { scale, invert })
+  })
+  return buildMatchExpression(countryColors)
+}
+
+/**
  * Builds a MapLibre 'match' expression that maps ISO codes to colors.
  * countryColors is an object: { 'NL': '#ff0000', 'DE': '#00ff00', ... }
  * fallbackColor is used for countries with no data.

@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import useStore from '../store/useStore'
 import { LAYERS } from '../layers'
 import { fetchOwidHistorical } from '../utils/owidApi'
-import { buildMatchExpression, valueToColor } from '../utils/colorScale'
+import { buildLayerExpression } from '../utils/colorScale'
 
 export default function useHistoricalLayer() {
   const activeLayer          = useStore((s) => s.activeLayer)
@@ -63,17 +63,7 @@ export default function useHistoricalLayer() {
     const yearData = data[closest]
     if (!yearData) return
 
-    const scale  = layer.scale  ?? 'log'
-    const invert = layer.invert ?? false
-    const values = Object.values(yearData).filter(v =>
-      v !== null && (scale === 'log' ? v > 0 : true)
-    )
-    if (values.length === 0) return
-
-    const countryColors = {}
-    Object.entries(yearData).forEach(([iso2, value]) => {
-      countryColors[iso2] = valueToColor(value, values, { scale, invert })
-    })
-    setFillExpression(buildMatchExpression(countryColors))
+    const expression = buildLayerExpression(yearData, layer)
+    if (expression) setFillExpression(expression)
   }, [activeYear, activeLayer, historicalData, setFillExpression, combineMode])
 }

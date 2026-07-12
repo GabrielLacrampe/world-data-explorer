@@ -7,7 +7,7 @@ import Legend from './components/Legend'
 import LoadingOverlay from './components/LoadingOverlay'
 import ErrorBanner from './components/ErrorBanner'
 import useStore from './store/useStore'
-import { buildMatchExpression, valueToColor, buildPoliticalExpression } from './utils/colorScale'
+import { buildLayerExpression, buildPoliticalExpression } from './utils/colorScale'
 import { loadStaticDatasets } from './utils/staticData'
 import { LAYERS } from './layers'
 import useWorldBankLayer from './hooks/useWorldBankLayer'
@@ -76,13 +76,8 @@ function App() {
     const dataset = staticData[layer.staticKey]
     if (!dataset) return
 
-    const scaleType = layer.scale ?? 'log'
-    const values = Object.values(dataset).filter((v) => v !== null && (scaleType === 'log' ? v > 0 : true))
-    const countryColors = {}
-    Object.entries(dataset).forEach(([code, value]) => {
-      countryColors[code] = valueToColor(value, values, { scale: scaleType })
-    })
-    setFillExpression(buildMatchExpression(countryColors))
+    const expression = buildLayerExpression(dataset, layer)
+    if (expression) setFillExpression(expression)
   }, [activeLayer, staticData, setFillExpression, combineMode])
 
   return (
