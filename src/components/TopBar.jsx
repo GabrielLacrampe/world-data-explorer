@@ -36,15 +36,13 @@ function Divider() {
 }
 
 export default function TopBar() {
-  const {
-    countryData,
-    worldBankCountryData,
-    staticData,
-    selectedCountry,
-    sidebarOpen,
-    setSidebarOpen,
-    mapZoom,
-  } = useStore()
+  const countryData          = useStore((s) => s.countryData)
+  const worldBankCountryData = useStore((s) => s.worldBankCountryData)
+  const staticData           = useStore((s) => s.staticData)
+  const selectedCountry      = useStore((s) => s.selectedCountry)
+  const sidebarOpen          = useStore((s) => s.sidebarOpen)
+  const setSidebarOpen       = useStore((s) => s.setSidebarOpen)
+  const mapZoom              = useStore((s) => s.mapZoom)
 
   const gdpCap     = worldBankCountryData?.['NY.GDP.PCAP.CD']
   const gdpGrowth  = worldBankCountryData?.['NY.GDP.MKTP.KD.ZG']

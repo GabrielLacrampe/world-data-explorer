@@ -1,7 +1,8 @@
 import useStore from '../store/useStore'
 
 export default function ErrorBanner() {
-  const { lastError, clearError } = useStore()
+  const lastError  = useStore((s) => s.lastError)
+  const clearError = useStore((s) => s.clearError)
 
   if (!lastError) return null
 

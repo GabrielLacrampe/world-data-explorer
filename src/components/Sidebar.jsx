@@ -22,18 +22,16 @@ const TABS = [
 ]
 
 export default function Sidebar() {
-  const {
-    sidebarOpen,
-    selectedCountry,
-    countryData,
-    activeTab,
-    setActiveTab,
-    loading,
-    worldBankCountryData,
-    worldBankCountryLoading,
-    staticData,
-    countryLoadError,
-  } = useStore()
+  const sidebarOpen             = useStore((s) => s.sidebarOpen)
+  const selectedCountry         = useStore((s) => s.selectedCountry)
+  const countryData             = useStore((s) => s.countryData)
+  const activeTab               = useStore((s) => s.activeTab)
+  const setActiveTab            = useStore((s) => s.setActiveTab)
+  const loading                 = useStore((s) => s.loading)
+  const worldBankCountryData    = useStore((s) => s.worldBankCountryData)
+  const worldBankCountryLoading = useStore((s) => s.worldBankCountryLoading)
+  const staticData              = useStore((s) => s.staticData)
+  const countryLoadError        = useStore((s) => s.countryLoadError)
 
   const [activeSubTabs, setActiveSubTabs] = useState({})
 

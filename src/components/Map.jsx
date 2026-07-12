@@ -67,22 +67,20 @@ function Map() {
   // updates on every mousemove, with no consumers outside this component.
   const [hoveredCountry, setHoveredCountry] = useState(null)
 
-  const {
-    worldData,
-    setWorldData,
-    fillExpression,
-    selectedCountry,
-    setSelectedCountry,
-    setLoading,
-    staticData,
-    activeLayer,
-    combineMode,
-    setMapZoom,
-    tradeGeoJSON,
-    setTradeGeoJSON,
-    allCountriesData,
-    setLastError,
-  } = useStore()
+  const worldData          = useStore((s) => s.worldData)
+  const setWorldData       = useStore((s) => s.setWorldData)
+  const fillExpression     = useStore((s) => s.fillExpression)
+  const selectedCountry    = useStore((s) => s.selectedCountry)
+  const setSelectedCountry = useStore((s) => s.setSelectedCountry)
+  const setLoading         = useStore((s) => s.setLoading)
+  const staticData         = useStore((s) => s.staticData)
+  const activeLayer        = useStore((s) => s.activeLayer)
+  const combineMode        = useStore((s) => s.combineMode)
+  const setMapZoom         = useStore((s) => s.setMapZoom)
+  const tradeGeoJSON       = useStore((s) => s.tradeGeoJSON)
+  const setTradeGeoJSON    = useStore((s) => s.setTradeGeoJSON)
+  const allCountriesData   = useStore((s) => s.allCountriesData)
+  const setLastError       = useStore((s) => s.setLastError)
 
   useEffect(() => {
     fetch(GEOJSON_URL)

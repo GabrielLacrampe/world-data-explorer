@@ -7,16 +7,14 @@ import { buildMatchExpression, valueToColor } from '../utils/colorScale'
 const DEBOUNCE_MS = 150
 
 export default function useImfLayer() {
-  const {
-    activeLayer,
-    combineMode,
-    allCountriesData,
-    imfLayerCache,
-    setImfLayerData,
-    setFillExpression,
-    setLastError,
-    setLayerLoading,
-  } = useStore()
+  const activeLayer       = useStore((s) => s.activeLayer)
+  const combineMode       = useStore((s) => s.combineMode)
+  const allCountriesData  = useStore((s) => s.allCountriesData)
+  const imfLayerCache     = useStore((s) => s.imfLayerCache)
+  const setImfLayerData   = useStore((s) => s.setImfLayerData)
+  const setFillExpression = useStore((s) => s.setFillExpression)
+  const setLastError      = useStore((s) => s.setLastError)
+  const setLayerLoading   = useStore((s) => s.setLayerLoading)
 
   const timerRef = useRef(null)
 

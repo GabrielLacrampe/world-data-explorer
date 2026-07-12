@@ -16,19 +16,17 @@ const EDGE_MARGIN_X = 280
 const EDGE_MARGIN_Y = 220
 
 export default function MapHoverTooltip({ hoveredCountry }) {
-  const {
-    activeLayer,
-    combineMode,
-    combinedLayers,
-    worldBankLayerCache,
-    imfLayerCache,
-    staticData,
-    allCountriesData,
-    historicalData,
-    activeYear,
-    layerLoading,
-    historicalLoading,
-  } = useStore()
+  const activeLayer         = useStore((s) => s.activeLayer)
+  const combineMode         = useStore((s) => s.combineMode)
+  const combinedLayers      = useStore((s) => s.combinedLayers)
+  const worldBankLayerCache = useStore((s) => s.worldBankLayerCache)
+  const imfLayerCache       = useStore((s) => s.imfLayerCache)
+  const staticData          = useStore((s) => s.staticData)
+  const allCountriesData    = useStore((s) => s.allCountriesData)
+  const historicalData      = useStore((s) => s.historicalData)
+  const activeYear          = useStore((s) => s.activeYear)
+  const layerLoading        = useStore((s) => s.layerLoading)
+  const historicalLoading   = useStore((s) => s.historicalLoading)
 
   useTooltipAuxData(hoveredCountry.iso2)
 

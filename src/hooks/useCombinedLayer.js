@@ -8,19 +8,17 @@ import { buildMatchExpression, normalizeValue, combineNormalizedScores } from '.
 const DEBOUNCE_MS = 150
 
 export default function useCombinedLayer() {
-  const {
-    combineMode,
-    combinedLayers,
-    worldBankLayerCache,
-    setWorldBankLayerData,
-    imfLayerCache,
-    setImfLayerData,
-    allCountriesData,
-    staticData,
-    setFillExpression,
-    setLayerLoading,
-    setLastError,
-  } = useStore()
+  const combineMode           = useStore((s) => s.combineMode)
+  const combinedLayers        = useStore((s) => s.combinedLayers)
+  const worldBankLayerCache   = useStore((s) => s.worldBankLayerCache)
+  const setWorldBankLayerData = useStore((s) => s.setWorldBankLayerData)
+  const imfLayerCache         = useStore((s) => s.imfLayerCache)
+  const setImfLayerData       = useStore((s) => s.setImfLayerData)
+  const allCountriesData      = useStore((s) => s.allCountriesData)
+  const staticData            = useStore((s) => s.staticData)
+  const setFillExpression     = useStore((s) => s.setFillExpression)
+  const setLayerLoading       = useStore((s) => s.setLayerLoading)
+  const setLastError          = useStore((s) => s.setLastError)
 
   const timerRef = useRef(null)
 

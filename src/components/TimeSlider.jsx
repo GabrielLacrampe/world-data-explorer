@@ -5,16 +5,14 @@ import { LAYERS } from '../layers'
 const PLAY_SPEEDS = { slow: 800, normal: 400, fast: 150 }
 
 export default function TimeSlider() {
-  const {
-    activeLayer,
-    activeYear,
-    combineMode,
-    setActiveYear,
-    isPlaying,
-    setIsPlaying,
-    historicalData,
-    historicalLoading,
-  } = useStore()
+  const activeLayer       = useStore((s) => s.activeLayer)
+  const activeYear        = useStore((s) => s.activeYear)
+  const combineMode       = useStore((s) => s.combineMode)
+  const setActiveYear     = useStore((s) => s.setActiveYear)
+  const isPlaying         = useStore((s) => s.isPlaying)
+  const setIsPlaying      = useStore((s) => s.setIsPlaying)
+  const historicalData    = useStore((s) => s.historicalData)
+  const historicalLoading = useStore((s) => s.historicalLoading)
 
   const layer      = LAYERS[activeLayer]
   const historical = layer?.historical

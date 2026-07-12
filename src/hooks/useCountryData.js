@@ -4,16 +4,14 @@ import { fetchIndicatorsForCountry } from '../utils/worldBank'
 import { SIDEBAR_INDICATORS } from '../layers'
 
 export default function useCountryData() {
-  const {
-    selectedCountry,
-    allCountriesData,
-    setCountryData,
-    setLoading,
-    setCountryLoadError,
-    setWorldBankCountryData,
-    setWorldBankCountryLoading,
-    setLastError,
-  } = useStore()
+  const selectedCountry            = useStore((s) => s.selectedCountry)
+  const allCountriesData           = useStore((s) => s.allCountriesData)
+  const setCountryData             = useStore((s) => s.setCountryData)
+  const setLoading                 = useStore((s) => s.setLoading)
+  const setCountryLoadError        = useStore((s) => s.setCountryLoadError)
+  const setWorldBankCountryData    = useStore((s) => s.setWorldBankCountryData)
+  const setWorldBankCountryLoading = useStore((s) => s.setWorldBankCountryLoading)
+  const setLastError               = useStore((s) => s.setLastError)
 
   // Resolve REST Countries data for the selected country
   useEffect(() => {

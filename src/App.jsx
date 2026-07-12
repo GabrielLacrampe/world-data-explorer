@@ -18,16 +18,14 @@ import useCombinedLayer from './hooks/useCombinedLayer'
 import TimeSlider from './components/TimeSlider'
 
 function App() {
-  const {
-    activeLayer,
-    combineMode,
-    setAllCountriesData,
-    setFillExpression,
-    staticData,
-    setStaticData,
-    setLastError,
-    worldData,
-  } = useStore()
+  const activeLayer         = useStore((s) => s.activeLayer)
+  const combineMode         = useStore((s) => s.combineMode)
+  const setAllCountriesData = useStore((s) => s.setAllCountriesData)
+  const setFillExpression   = useStore((s) => s.setFillExpression)
+  const staticData          = useStore((s) => s.staticData)
+  const setStaticData       = useStore((s) => s.setStaticData)
+  const setLastError        = useStore((s) => s.setLastError)
+  const worldData           = useStore((s) => s.worldData)
 
   useWorldBankLayer()
   useImfLayer()

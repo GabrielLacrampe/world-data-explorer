@@ -25,13 +25,11 @@ const NEEDED_INDICATORS = {
  * satisfies this for free.
  */
 export default function useTooltipAuxData(hoveredIso2) {
-  const {
-    activeLayer,
-    combineMode,
-    worldBankLayerCache,
-    setWorldBankLayerData,
-    setLastError,
-  } = useStore()
+  const activeLayer           = useStore((s) => s.activeLayer)
+  const combineMode           = useStore((s) => s.combineMode)
+  const worldBankLayerCache   = useStore((s) => s.worldBankLayerCache)
+  const setWorldBankLayerData = useStore((s) => s.setWorldBankLayerData)
+  const setLastError          = useStore((s) => s.setLastError)
 
   const timerRef = useRef(null)
 

@@ -5,18 +5,16 @@ import { fetchOwidHistorical } from '../utils/owidApi'
 import { buildMatchExpression, valueToColor } from '../utils/colorScale'
 
 export default function useHistoricalLayer() {
-  const {
-    activeLayer,
-    activeYear,
-    combineMode,
-    historicalData,
-    setHistoricalData,
-    setActiveYear,
-    setIsPlaying,
-    setHistoricalLoading,
-    setFillExpression,
-    setLastError,
-  } = useStore()
+  const activeLayer          = useStore((s) => s.activeLayer)
+  const activeYear           = useStore((s) => s.activeYear)
+  const combineMode          = useStore((s) => s.combineMode)
+  const historicalData       = useStore((s) => s.historicalData)
+  const setHistoricalData    = useStore((s) => s.setHistoricalData)
+  const setActiveYear        = useStore((s) => s.setActiveYear)
+  const setIsPlaying         = useStore((s) => s.setIsPlaying)
+  const setHistoricalLoading = useStore((s) => s.setHistoricalLoading)
+  const setFillExpression    = useStore((s) => s.setFillExpression)
+  const setLastError         = useStore((s) => s.setLastError)
 
   // Layer change: reset year, stop playback, fetch data if not cached
   useEffect(() => {

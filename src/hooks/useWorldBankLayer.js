@@ -13,16 +13,14 @@ const HIGH_LITERACY_SUBREGIONS = new Set([
 const HIGH_LITERACY_EXTRA = new Set(['JP', 'KR', 'SG', 'TW'])
 
 export default function useWorldBankLayer() {
-  const {
-    activeLayer,
-    combineMode,
-    allCountriesData,
-    worldBankLayerCache,
-    setWorldBankLayerData,
-    setFillExpression,
-    setLastError,
-    setLayerLoading,
-  } = useStore()
+  const activeLayer           = useStore((s) => s.activeLayer)
+  const combineMode           = useStore((s) => s.combineMode)
+  const allCountriesData      = useStore((s) => s.allCountriesData)
+  const worldBankLayerCache   = useStore((s) => s.worldBankLayerCache)
+  const setWorldBankLayerData = useStore((s) => s.setWorldBankLayerData)
+  const setFillExpression     = useStore((s) => s.setFillExpression)
+  const setLastError          = useStore((s) => s.setLastError)
+  const setLayerLoading       = useStore((s) => s.setLayerLoading)
 
   const timerRef = useRef(null)
 
