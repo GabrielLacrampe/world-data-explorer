@@ -109,9 +109,12 @@ function DataPanel() {
     <div className="absolute bottom-8 right-4 z-20 flex flex-col gap-2 items-end">
 
       {/* ── Layer selector ───────────────────────────────────────────── */}
-      <div className="bg-[#0d1117]/90 backdrop-blur-md border border-[#1e2736] rounded-md w-52 overflow-hidden">
+      {/* No overflow-hidden here: the layer tooltips are absolutely
+          positioned inside this panel and must be able to spill past its
+          edges. Corner rounding is handled per-element instead. */}
+      <div className="bg-[#0d1117]/90 backdrop-blur-md border border-[#1e2736] rounded-md w-52">
         {layerLoading && (
-          <div className="h-0.5 w-full bg-[#1e2736] overflow-hidden">
+          <div className="h-0.5 w-full bg-[#1e2736] overflow-hidden rounded-t-md">
             <div className="h-full w-full bg-gradient-to-r from-transparent via-blue-500 to-transparent animate-pulse" />
           </div>
         )}
@@ -153,16 +156,20 @@ function DataPanel() {
           </div>
         )}
 
-        {LAYER_GROUPS.map(({ label, keys }) => {
+        {LAYER_GROUPS.map(({ label, keys }, i) => {
           const isOpen = openGroup === label
           const groupHasActive = keys.includes(activeLayer)
+          // When the last group is collapsed its header touches the panel's
+          // rounded bottom corners; round its hover bg to match.
+          const isLastCollapsed = i === LAYER_GROUPS.length - 1 && !isOpen
           return (
             <div key={label} className="border-t border-[#1e2736]">
               {/* Group header — clickable toggle */}
               <button
                 onClick={() => setOpenGroup(isOpen ? null : label)}
-                className="w-full flex items-center justify-between px-3 py-1.5
-                           hover:bg-[#1e2736]/60 transition-colors group"
+                className={`w-full flex items-center justify-between px-3 py-1.5
+                           hover:bg-[#1e2736]/60 transition-colors group
+                           ${isLastCollapsed ? 'rounded-b-md' : ''}`}
               >
                 <span className={`text-[9px] uppercase tracking-wider transition-colors
                   ${groupHasActive ? 'text-blue-400' : 'text-[#4b5563] group-hover:text-[#6b7280]'}`}>
