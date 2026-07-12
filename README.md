@@ -60,7 +60,7 @@ All static datasets are committed, so the map works out of the box. To regenerat
 
 ## Roadmap
 
-- [ ] Unit tests for the normalization and data-parsing logic (Vitest)
+- [x] Unit tests for the normalization and data-parsing logic (Vitest)
 - [ ] Incremental TypeScript migration, starting with `utils/` and the layer config
 - [ ] Self-hosted world GeoJSON (drop the runtime CDN dependency)
 - [ ] Hand-curated public debt dataset to fill IMF gaps
