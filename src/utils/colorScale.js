@@ -24,6 +24,11 @@ export const COLOR_SCALE = [
  * Normalizes a value to a 0-1 score using percentile-clipped min/max
  * (reduces outlier distortion) and logarithmic scaling by default.
  * Returns null when there is no usable data for this value.
+ *
+ * @param {number|null|undefined} value
+ * @param {Array<number|null|undefined>} allValues  Reference distribution.
+ * @param {{scale?: 'log'|'linear', invert?: boolean, lowerPercentile?: number, upperPercentile?: number}} [options]
+ * @returns {number|null}  0-1 score, or null when not normalizable.
  */
 export function normalizeValue(
   value,
@@ -60,6 +65,11 @@ export function normalizeValue(
  * Transforms a value into a gradient color.
  * Uses percentile clipping to reduce outlier distortion and logarithmic scaling
  * by default, which works well for country-level population and area values.
+ *
+ * @param {number|null|undefined} value
+ * @param {Array<number|null|undefined>} allValues  Reference distribution.
+ * @param {{gradient?: string[], scale?: 'log'|'linear', invert?: boolean, lowerPercentile?: number, upperPercentile?: number}} [options]
+ * @returns {string}  Hex color; the no-data color when not normalizable.
  */
 export function valueToColor(
   value,
@@ -81,6 +91,10 @@ export function valueToColor(
  * Averages several per-layer normalized (0-1) scores for the same country
  * into one blended color. Layers with no data for this country are skipped.
  * Returns null if none of the layers have data.
+ *
+ * @param {Array<number|null>} scores
+ * @param {string[]} [gradient]
+ * @returns {string|null}  Hex color, or null with no usable scores.
  */
 export function combineNormalizedScores(scores, gradient = COLOR_SCALE) {
   const valid = scores.filter((s) => s !== null && s !== undefined)
@@ -163,6 +177,10 @@ export function buildPoliticalExpression(iso2Codes) {
  * dataset has nothing paintable. The options object only needs the optional
  * `scale` and `invert` fields, so callers can pass their LAYERS entry
  * directly. Shared by the World Bank, IMF, historical and static sources.
+ *
+ * @param {Record<string, number|null>} data  ISO2 → value.
+ * @param {{scale?: 'log'|'linear', invert?: boolean}} [options]  A LayerDef works.
+ * @returns {Array|null}  MapLibre 'match' expression, or null.
  */
 export function buildLayerExpression(data, { scale = 'log', invert = false } = {}) {
   const values = Object.values(data).filter(
@@ -179,8 +197,10 @@ export function buildLayerExpression(data, { scale = 'log', invert = false } = {
 
 /**
  * Builds a MapLibre 'match' expression that maps ISO codes to colors.
- * countryColors is an object: { 'NL': '#ff0000', 'DE': '#00ff00', ... }
- * fallbackColor is used for countries with no data.
+ *
+ * @param {Record<string, string>} countryColors  e.g. { NL: '#ff0000' }.
+ * @param {string} [fallbackColor]  Used for countries with no entry.
+ * @returns {Array}  MapLibre 'match' expression on the ISO2 property.
  */
 export function buildMatchExpression(countryColors, fallbackColor = '#1e293b') {
   const expression = ['match', ['get', 'ISO3166-1-Alpha-2']]

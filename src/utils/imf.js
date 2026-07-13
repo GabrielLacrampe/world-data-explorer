@@ -10,6 +10,10 @@ const BASE_URL = 'https://api.imf.org/external/sdmx/2.1/data'
  * error even though the same request works fine from curl/Node. The SDMX
  * API returns `Access-Control-Allow-Origin: *` and is used everywhere else
  * in this file for that reason.
+ *
+ * @param {string} indicator  IMF indicator code (e.g. 'FL_S13_POGDP_PT').
+ * @param {{dataflow?: string, freq?: string, startPeriod?: string}} [options]
+ * @returns {Promise<Record<string, number>>}  ISO3 → most recent value.
  */
 export async function fetchImfIndicatorLatest(indicator, { dataflow = 'GDD', freq = 'A', startPeriod = '2015' } = {}) {
   const url = `${BASE_URL}/${dataflow}/.${indicator}.${freq}?startPeriod=${startPeriod}&format=jsondata`

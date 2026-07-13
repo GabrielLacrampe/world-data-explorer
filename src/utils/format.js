@@ -6,6 +6,10 @@
  * Formats large numbers into human-readable strings with suffixes (K, M, B, T).
  * 25000000000000 → "25.0T" | 1400000000 → "1.4B" | 800000 → "800K"
  * `decimals` applies to the M/B/T tiers; the K tier always rounds.
+ *
+ * @param {number|null|undefined} n
+ * @param {{prefix?: string, decimals?: number}} [options]
+ * @returns {string|null}
  */
 export function formatNumber(n, { prefix = '', decimals = 1 } = {}) {
   if (n === null || n === undefined) return null
@@ -38,6 +42,11 @@ export function formatMilSpending(millionsUSD) {
 /**
  * Formats a World Bank value for display in the sidebar,
  * according to the layer's declared `format` and `unit`.
+ *
+ * @param {number|null|undefined} value
+ * @param {'currency'|'percent'|'decimal'|'integer'} [format]
+ * @param {string} [unit]
+ * @returns {string}
  */
 export function formatIndicatorValue(value, format, unit) {
   if (value === null || value === undefined) return 'No data'

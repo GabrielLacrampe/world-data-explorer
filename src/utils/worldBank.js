@@ -2,8 +2,11 @@ const BASE_URL = 'https://api.worldbank.org/v2'
 
 /**
  * Fetches indicator data for all countries.
- * Returns an object indexed by ISO2 code: { 'NL': 52000, 'DE': 46000, ... }
  * Countries with null values are excluded.
+ *
+ * @param {string} indicator  World Bank indicator code.
+ * @param {{mrv?: number}} [options]  Years back to search for data.
+ * @returns {Promise<Record<string, number>>}  ISO2 → most recent value.
  */
 export async function fetchIndicatorAllCountries(indicator, { mrv = 5 } = {}) {
   const perPage = Math.max(1500, mrv * 300)

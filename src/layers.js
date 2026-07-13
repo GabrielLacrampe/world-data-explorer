@@ -17,6 +17,36 @@ export const TOOLTIP_AUX_INDICATORS = {
  *    appear in the layer picker at all.
  * 3. (Optional) add it to SIDEBAR_INDICATORS to show it in the Economy tab.
  */
+
+/**
+ * @typedef {Object} LayerDef
+ * @property {string} label                Display name in the picker/legend.
+ * @property {'worldbank'|'imf'|'static'|'diplomatic'|'trade'|'none'} source
+ *   Which data pipeline feeds the layer.
+ * @property {string} [indicator]          World Bank / IMF indicator code.
+ * @property {string} [unit]               Display unit ('%', 'people', …).
+ * @property {'integer'|'currency'|'percent'|'decimal'} [format]
+ *   How values are rendered (see utils/format.js formatIndicatorValue).
+ * @property {'log'|'linear'} [scale]      Normalization scale. Default 'log'.
+ * @property {boolean} [invert]            True when a HIGH value is BAD
+ *   (unemployment, debt) so the gradient runs green→red instead.
+ * @property {number} [mrv]                World Bank "most recent values"
+ *   window — how many years back to search for data.
+ * @property {string} [attribution]        Data source shown in the legend.
+ * @property {string} [description]        Tooltip description in the picker.
+ * @property {string} [staticKey]          Key into staticData for source 'static'.
+ * @property {string} [dataflow]           IMF SDMX dataflow (default 'GDD').
+ * @property {number} [fallback]           Assumed value for rich countries
+ *   the World Bank stopped surveying (e.g. literacy).
+ * @property {boolean} [supplementalFetch] Second per-country pass for
+ *   countries missing from the all-countries response.
+ * @property {{owidChart: string, defaultYear: number, yearRange: [number, number], attribution?: string}} [historical]
+ *   Present when the layer is driven by the OWID time slider.
+ * @property {{type: string, resultUnit?: string}} [breakdown]
+ *   Which math breakdown the hover tooltip shows (see tooltipContent.js).
+ */
+
+/** @type {Record<string, LayerDef>} */
 export const LAYERS = {
   // ── Existing layers ──────────────────────────────────────────────────
   geographic: {
