@@ -67,25 +67,6 @@ export default function Sidebar() {
 
         {countryData && !loading.country && (
           <>
-            {/* Country header */}
-            <div className="px-4 py-3 border-b border-[#1e2736] shrink-0">
-              <div className="flex items-center gap-3">
-                <img
-                  src={countryData.flags.svg}
-                  alt={`Flag of ${countryData.name.common}`}
-                  className="w-12 h-8 object-cover rounded shadow-sm shadow-black/40 shrink-0"
-                />
-                <div className="min-w-0">
-                  <h2 className="font-display text-sm font-medium tracking-wide text-[#e2e8f0] leading-tight truncate">
-                    {countryData.name.common}
-                  </h2>
-                  <p className="text-[#4b5563] text-[10px] mt-0.5 leading-snug truncate">
-                    {countryData.name.official}
-                  </p>
-                </div>
-              </div>
-            </div>
-
             {/* Icon tab row */}
             <div className="flex border-b border-[#1e2736] shrink-0">
               {TABS.map(({ id, icon, title }) => (
