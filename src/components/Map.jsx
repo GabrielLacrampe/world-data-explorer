@@ -18,8 +18,11 @@ import {
 } from '../config/labelConfig'
 
 
-const GEOJSON_URL =
-  'https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson'
+// Self-hosted copy of datasets/geo-countries (countries.geojson) — served
+// from our own origin so a third-party CDN outage can't break the map.
+// Refresh it with: curl -L -o public/data/countries.geojson
+//   https://raw.githubusercontent.com/datasets/geo-countries/master/data/countries.geojson
+const GEOJSON_URL = '/data/countries.geojson'
 
 const GEO_NAME = 'name'
 const GEO_ISO2 = 'ISO3166-1-Alpha-2'
