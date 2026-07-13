@@ -1,4 +1,4 @@
-import { formatIndicatorValue } from '../../utils/worldBank'
+import { formatIndicatorValue } from '../../utils/format'
 import { Section, NoData, DataRow, Source } from './SidebarShared'
 
 export default function EconomyTab({ data, worldBankData, worldBankLoading, staticData, countryCode, subtab }) {

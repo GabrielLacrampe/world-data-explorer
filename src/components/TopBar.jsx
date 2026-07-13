@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import useStore from '../store/useStore'
-import { formatMilSpending } from '../utils/staticData'
-import { fmtGdpCap, fmtPop } from '../utils/format'
+import { fmtGdpCap, fmtPop, formatMilSpending } from '../utils/format'
 import Tooltip from './Tooltip'
 
 const DEMOCRACY_HIGH = 0.6

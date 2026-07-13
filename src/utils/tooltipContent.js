@@ -1,6 +1,6 @@
 import { LAYERS, TOOLTIP_AUX_INDICATORS, isCombinableLayer } from '../layers'
-import { formatIndicatorValue } from './worldBank'
-import { formatNumber, normalizeValue } from './colorScale'
+import { formatIndicatorValue, formatNumber } from './format'
+import { normalizeValue } from './colorScale'
 
 /**
  * Layers with a `historical` config (gdp_per_capita, population,

@@ -1,5 +1,4 @@
-import { formatIndicatorValue } from '../../utils/worldBank'
-import { formatMilSpending } from '../../utils/staticData'
+import { formatIndicatorValue, formatMilSpending } from '../../utils/format'
 import { Section, DataRow, Source, EmptyTab } from './SidebarShared'
 
 export default function MilitaryTab({ countryCode, staticData, worldBankData, subtab }) {

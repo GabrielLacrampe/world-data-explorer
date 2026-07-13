@@ -142,18 +142,6 @@ function clamp(value, min, max) {
   return Math.max(min, Math.min(max, value))
 }
 
-/**
- * Formats large numbers into human-readable strings with suffixes (K, M, B, T).
- * 25000000000000 → "25.0T" | 1400000000 → "1.4B" | 17000000 → "17M" | 800000 → "800K"
- */
-export function formatNumber(n) {
-  if (n >= 1_000_000_000_000) return `${(n / 1_000_000_000_000).toFixed(1)}T`
-  if (n >= 1_000_000_000) return `${(n / 1_000_000_000).toFixed(1)}B`
-  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1)}M`
-  if (n >= 1_000) return `${(n / 1_000).toFixed(0)}K`
-  return n.toString()
-}
-
 import { EU4_COLORS, EU4_MISSING_COLOR } from '../config/eu4Colors'
 
 /**

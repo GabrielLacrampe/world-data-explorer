@@ -7,7 +7,6 @@ import {
   buildMatchExpression,
   buildLayerExpression,
   buildPoliticalExpression,
-  formatNumber,
 } from './colorScale'
 
 const NO_DATA_COLOR = '#1e293b'
@@ -170,15 +169,5 @@ describe('buildPoliticalExpression', () => {
     const expr = buildPoliticalExpression(['FR', 'ZZ'])
     expect(expr[expr.indexOf('FR') + 1]).toMatch(/^#[0-9a-f]{6}$/i)
     expect(expr[expr.indexOf('ZZ') + 1]).toMatch(/^#[0-9a-f]{6}$/i)
-  })
-})
-
-describe('formatNumber', () => {
-  it('formats with magnitude suffixes', () => {
-    expect(formatNumber(25_000_000_000_000)).toBe('25.0T')
-    expect(formatNumber(1_400_000_000)).toBe('1.4B')
-    expect(formatNumber(17_000_000)).toBe('17.0M')
-    expect(formatNumber(800_000)).toBe('800K')
-    expect(formatNumber(950)).toBe('950')
   })
 })

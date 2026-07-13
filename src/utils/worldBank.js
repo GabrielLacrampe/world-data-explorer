@@ -72,21 +72,3 @@ export async function fetchIndicatorsForCountry(iso2, indicators) {
 
   return results
 }
-
-/**
- * Formats a World Bank value for display in the sidebar.
- */
-export function formatIndicatorValue(value, format, unit) {
-  if (value === null || value === undefined) return 'No data'
-
-  switch (format) {
-    case 'currency':
-      return `$${Number(value).toLocaleString('en-US', { maximumFractionDigits: 0 })} ${unit}`
-    case 'percent':
-      return `${Number(value).toFixed(1)}%`
-    case 'decimal':
-      return `${Number(value).toFixed(1)} ${unit}`
-    default:
-      return `${value} ${unit}`
-  }
-}
