@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react'
-import ReactMapGL, { Source, Layer } from 'react-map-gl/maplibre'
+import ReactMapGL, { Source, Layer, AttributionControl } from 'react-map-gl/maplibre'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { MAP_STYLE } from '../utils/mapStyles'
 import useStore from '../store/useStore'
@@ -142,7 +142,11 @@ function Map() {
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         cursor="pointer"
+        attributionControl={false}
       >
+        {/* Moved to top-right so the compact "ⓘ" doesn't overlap the
+            bottom-right layer dropdown + legend stack. */}
+        <AttributionControl position="top-right" compact />
         {worldData && (
           <Source id="countries" type="geojson" data={worldData} generateId={true}>
             <Layer

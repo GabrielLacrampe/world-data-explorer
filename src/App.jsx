@@ -3,7 +3,7 @@ import { SpeedInsights } from '@vercel/speed-insights/react'
 import Map from './components/Map'
 import Sidebar from './components/Sidebar'
 import TopBar from './components/TopBar'
-import Legend from './components/Legend'
+import LayerMenu from './components/legend/LayerMenu'
 import LoadingOverlay from './components/LoadingOverlay'
 import ErrorBanner from './components/ErrorBanner'
 import useStore from './store/useStore'
@@ -85,7 +85,7 @@ function App() {
       <Map />
       <TopBar />
       <Sidebar />
-      <Legend />
+      <LayerMenu />
       <TimeSlider />
       <LoadingOverlay />
       <ErrorBanner />

@@ -9,8 +9,8 @@ function groupForLayer(layerKey) {
 
 // Layer pill with a hover tooltip showing unit/source/description — helps
 // decide which layer to pick before clicking. Aligned to the right edge
-// ('end') since the Legend panel itself sits flush against the window's
-// right edge, so tooltips need to open leftward to stay on-screen.
+// ('end') since the picker sits flush against the window's right edge, and
+// opens upward ('top') because it drops up from the bottom-right corner.
 function LayerButton({ layerKey, isActive, disabled, onClick }) {
   const [hovered, setHovered] = useState(false)
   const layer = LAYERS[layerKey]
