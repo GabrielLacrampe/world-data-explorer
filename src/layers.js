@@ -7,6 +7,16 @@ export const TOOLTIP_AUX_INDICATORS = {
   AREA: 'AG.SRF.TOTL.K2',
 }
 
+/**
+ * ── Adding a new layer: the full contract ────────────────────────────────
+ * 1. Add an entry to LAYERS below. The `source` field decides which hook
+ *    feeds it: 'worldbank' → useWorldBankLayer, 'imf' → useImfLayer,
+ *    'static' (+ staticKey) → the static effect in App.jsx, layers with a
+ *    `historical` block → useHistoricalLayer.
+ * 2. Add its key to a group in LAYER_GROUPS below — otherwise it won't
+ *    appear in the layer picker at all.
+ * 3. (Optional) add it to SIDEBAR_INDICATORS to show it in the Economy tab.
+ */
 export const LAYERS = {
   // ── Existing layers ──────────────────────────────────────────────────
   geographic: {
@@ -343,6 +353,19 @@ export const LAYERS = {
     description: 'Major export and import trade routes.',
   },
 }
+
+/**
+ * Grouping shown in the layer picker. Every LAYERS key must appear in
+ * exactly one group to be selectable (see the contract above LAYERS).
+ */
+export const LAYER_GROUPS = [
+  { label: 'Map Style',    keys: ['geographic', 'political'] },
+  { label: 'Demographics', keys: ['population', 'area', 'birth_rate', 'death_rate', 'net_migration'] },
+  { label: 'Economy',      keys: ['gdp_per_capita', 'gdp_growth', 'unemployment', 'inflation', 'cost_of_living', 'public_debt', 'fiscal_balance', 'exports', 'imports'] },
+  { label: 'Social',       keys: ['life_expectancy', 'electricity_access', 'literacy_rate', 'internet_users', 'renewable_energy', 'health_spending', 'education_spending', 'water_access', 'co2_total'] },
+  { label: 'Governance',   keys: ['democracy_index', 'military_spending', 'gini_index'] },
+  { label: 'Diplomacy',    keys: ['alliances', 'trade'] },
+]
 
 /**
  * Whether a layer can be added to a combined (multi-layer blend) selection.
