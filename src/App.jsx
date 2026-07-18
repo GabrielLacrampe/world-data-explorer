@@ -9,6 +9,8 @@ import ErrorBanner from './components/ErrorBanner'
 import useStore from './store/useStore'
 import { buildLayerExpression, buildPoliticalExpression } from './utils/colorScale'
 import { loadStaticDatasets } from './utils/staticData'
+import { getDataset, COUNTRIES_KEY } from './lib/datasets'
+import { COUNTRIES_URL } from './config/datasets'
 import { LAYERS } from './layers'
 import useWorldBankLayer from './hooks/useWorldBankLayer'
 import useImfLayer from './hooks/useImfLayer'
@@ -44,8 +46,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    fetch('https://cdn.jsdelivr.net/npm/world-countries/countries.json')
-      .then((res) => res.json())
+    getDataset(COUNTRIES_KEY, () => fetch(COUNTRIES_URL).then((res) => res.json()))
       .then((data) => {
         const indexed = {}
         data.forEach((c) => {

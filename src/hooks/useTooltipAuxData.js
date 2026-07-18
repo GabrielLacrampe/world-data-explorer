@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import useStore from '../store/useStore'
 import { LAYERS, TOOLTIP_AUX_INDICATORS } from '../layers'
 import { fetchIndicatorAllCountries } from '../utils/worldBank'
+import { getDataset, wbKey } from '../lib/datasets'
 
 const DEBOUNCE_MS = 150
 
@@ -47,7 +48,11 @@ export default function useTooltipAuxData(hoveredIso2) {
     clearTimeout(timerRef.current)
     timerRef.current = setTimeout(async () => {
       try {
-        const results = await Promise.all(missing.map((indicator) => fetchIndicatorAllCountries(indicator)))
+        const results = await Promise.all(
+          missing.map((indicator) =>
+            getDataset(wbKey(indicator), () => fetchIndicatorAllCountries(indicator))
+          )
+        )
         if (cancelled) return
         missing.forEach((indicator, i) => setWorldBankLayerData(indicator, results[i]))
       } catch (err) {

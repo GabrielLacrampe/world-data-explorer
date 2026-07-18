@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import useStore from '../store/useStore'
 import { LAYERS } from '../layers'
 import { fetchImfIndicatorLatest } from '../utils/imf'
+import { getDataset, imfKey } from '../lib/datasets'
 import { buildLayerExpression } from '../utils/colorScale'
 
 const DEBOUNCE_MS = 150
@@ -46,7 +47,9 @@ export default function useImfLayer() {
     timerRef.current = setTimeout(async () => {
       setLayerLoading(true)
       try {
-        const data = await fetchImfIndicatorLatest(indicator, { dataflow: layer.dataflow })
+        const data = await getDataset(imfKey(layer.dataflow, indicator), () =>
+          fetchImfIndicatorLatest(indicator, { dataflow: layer.dataflow })
+        )
         if (cancelled) return
         setImfLayerData(indicator, data)
         buildExpression(data)

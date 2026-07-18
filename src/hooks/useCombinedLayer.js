@@ -3,6 +3,7 @@ import useStore from '../store/useStore'
 import { LAYERS, isCombinableLayer } from '../layers'
 import { fetchIndicatorAllCountries } from '../utils/worldBank'
 import { fetchImfIndicatorLatest } from '../utils/imf'
+import { getDataset, wbKey, imfKey } from '../lib/datasets'
 import { buildMatchExpression, normalizeValue, combineNormalizedScores } from '../utils/colorScale'
 
 const DEBOUNCE_MS = 150
@@ -42,14 +43,18 @@ export default function useCombinedLayer() {
             const layer = LAYERS[key]
             if (layer.source === 'worldbank') {
               if (worldBankLayerCache[layer.indicator]) return [key, worldBankLayerCache[layer.indicator]]
-              const data = await fetchIndicatorAllCountries(layer.indicator, { mrv: layer.mrv })
+              const data = await getDataset(wbKey(layer.indicator), () =>
+                fetchIndicatorAllCountries(layer.indicator, { mrv: layer.mrv })
+              )
               if (!cancelled) setWorldBankLayerData(layer.indicator, data)
               return [key, data]
             }
             if (layer.source === 'imf') {
               let iso3Data = imfLayerCache[layer.indicator]
               if (!iso3Data) {
-                iso3Data = await fetchImfIndicatorLatest(layer.indicator, { dataflow: layer.dataflow })
+                iso3Data = await getDataset(imfKey(layer.dataflow, layer.indicator), () =>
+                  fetchImfIndicatorLatest(layer.indicator, { dataflow: layer.dataflow })
+                )
                 if (!cancelled) setImfLayerData(layer.indicator, iso3Data)
               }
               const iso2Data = {}

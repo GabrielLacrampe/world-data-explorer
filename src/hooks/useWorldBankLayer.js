@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import useStore from '../store/useStore'
 import { LAYERS } from '../layers'
 import { fetchIndicatorAllCountries, fetchIndicatorForCountries } from '../utils/worldBank'
+import { getDataset, wbKey } from '../lib/datasets'
 import { buildLayerExpression } from '../utils/colorScale'
 
 const DEBOUNCE_MS = 150
@@ -57,7 +58,11 @@ export default function useWorldBankLayer() {
     timerRef.current = setTimeout(async () => {
       setLayerLoading(true)
       try {
-        const data = await fetchIndicatorAllCountries(indicator, { mrv: layer.mrv })
+        const data = {
+          ...(await getDataset(wbKey(indicator), () =>
+            fetchIndicatorAllCountries(indicator, { mrv: layer.mrv })
+          )),
+        }
         if (cancelled) return
 
         if (layer.supplementalFetch && allCountriesData) {
