@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "preview": "vite preview",
     "fetch-data": "node scripts/fetch-governments.mjs && node scripts/fetch-religions.mjs && node scripts/fetch-ethnicgroups.mjs && node scripts/fetch-military.mjs",
-    "fetch-historical": "node scripts/fetch-historical.mjs"
+    "fetch-historical": "node scripts/fetch-historical.mjs",
+    "refresh-datasets": "node --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/refresh-datasets.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.108.2",
