@@ -3,6 +3,7 @@ import {
   LABEL_REF_ZOOM,
   LABEL_MIN_PX,
   LABEL_MAX_PX,
+  LABEL_FADE_OUT,
   LABEL_CHAR_WIDTH,
   LABEL_FILL_FRAC,
   LABEL_HEIGHT_FRAC,
@@ -158,7 +159,8 @@ function fitLabelToRing(ring, name, forcedRotate) {
  *                 unless overridden in LABEL_OVERRIDES)
  *   labelRotate — degrees clockwise
  *   appearZoom  — zoom at which the rendered size reaches LABEL_MIN_PX
- *   fadeZoom    — zoom at which the rendered size reaches LABEL_MAX_PX
+ *   fadeZoom    — zoom at which the label is fully gone: fade-out starts when
+ *                 the rendered size hits LABEL_MAX_PX and spans LABEL_FADE_OUT
  */
 export function buildLabelPoints(geojson) {
   const byIso2 = {}
@@ -192,7 +194,7 @@ export function buildLabelPoints(geojson) {
         labelSize: size,
         labelRotate: fit.rotate,
         appearZoom: LABEL_REF_ZOOM + Math.log2(LABEL_MIN_PX / size),
-        fadeZoom: LABEL_REF_ZOOM + Math.log2(LABEL_MAX_PX / size),
+        fadeZoom: LABEL_REF_ZOOM + Math.log2(LABEL_MAX_PX / size) + LABEL_FADE_OUT,
       },
     }
   })

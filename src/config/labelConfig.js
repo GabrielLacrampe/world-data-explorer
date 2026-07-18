@@ -8,11 +8,16 @@
 export const LABEL_REF_ZOOM = 3     // zoom at which `labelSize` px applies (scaling anchor)
 
 // ── Visibility ───────────────────────────────────────────────────────────────
-// A label fades in when its rendered size reaches LABEL_MIN_PX and fades out
-// once it grows past LABEL_MAX_PX. Because size is tied to country size, small
-// countries appear later and big ones bow out as you zoom into them.
+// A label fades in when its rendered size reaches LABEL_MIN_PX and starts
+// fading out when it reaches LABEL_MAX_PX. Because size is tied to country
+// size, small countries appear later and big ones bow out as you zoom in.
+//
+// LABEL_MAX_PX is pinned to MapLibre's hard text-size cap (MAX_GLYPH_ICON_SIZE
+// = 255): the renderer clamps any larger size, freezing the sticker growth.
+// Starting the fade exactly there hides the freeze. Raising this value only
+// delays the fade — the label still stops growing at 255px.
 export const LABEL_MIN_PX   = 9     // rendered px at which a label becomes legible → fade in
-export const LABEL_MAX_PX   = 700   // rendered px past which a label is fully gone
+export const LABEL_MAX_PX   = 255   // rendered px at which the fade-out begins
 export const LABEL_FADE_IN  = 0.5   // zoom span of the fade-in
 export const LABEL_FADE_OUT = 1.0   // zoom span of the fade-out
 
