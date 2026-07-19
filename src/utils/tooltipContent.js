@@ -57,15 +57,27 @@ export function getLayerValueForCountry(layerKey, iso2, storeSlices) {
   return { value: null, source: layer.source ?? null }
 }
 
-function getAllValuesForLayer(layerKey, storeSlices) {
+/**
+ * Resolves the full raw distribution backing a layer right now — the same
+ * data the map's fill expression and getLayerValueForCountry() read from.
+ * For worldbank/static/historical layers this is keyed by ISO2; for imf
+ * layers it's keyed by ISO3 (see getLayerValueForCountry's iso3 lookup).
+ * Exported so callers that need country codes alongside values (e.g.
+ * ranking.js) don't have to re-implement this source-resolution switch.
+ */
+export function getLayerDataMap(layerKey, storeSlices) {
   const { worldBankLayerCache, imfLayerCache, staticData } = storeSlices
   const layer = LAYERS[layerKey]
-  if (!layer) return []
-  if (layer.historical) return Object.values(getHistoricalYearData(layer, storeSlices) ?? {})
-  if (layer.source === 'worldbank') return Object.values(worldBankLayerCache[layer.indicator] ?? {})
-  if (layer.source === 'imf') return Object.values(imfLayerCache[layer.indicator] ?? {})
-  if (layer.source === 'static' && layer.staticKey) return Object.values(staticData?.[layer.staticKey] ?? {})
-  return []
+  if (!layer) return {}
+  if (layer.historical) return getHistoricalYearData(layer, storeSlices) ?? {}
+  if (layer.source === 'worldbank') return worldBankLayerCache[layer.indicator] ?? {}
+  if (layer.source === 'imf') return imfLayerCache[layer.indicator] ?? {}
+  if (layer.source === 'static' && layer.staticKey) return staticData?.[layer.staticKey] ?? {}
+  return {}
+}
+
+function getAllValuesForLayer(layerKey, storeSlices) {
+  return Object.values(getLayerDataMap(layerKey, storeSlices))
 }
 
 /**

@@ -8,6 +8,7 @@ import EconomyTab    from './sidebar/EconomyTab'
 import ReligionTab   from './sidebar/ReligionTab'
 import MilitaryTab   from './sidebar/MilitaryTab'
 import HistoryTab    from './sidebar/HistoryTab'
+import RankingSummary from './sidebar/RankingSummary'
 
 const TABS = [
   { id: 'gobierno',    icon: '🏛',  title: 'Government',   subtabs: [{ id: 'leaders', label: 'Leaders' }, { id: 'cabinet', label: 'Cabinet' }, { id: 'parties', label: 'Parties' }] },
@@ -83,6 +84,8 @@ export default function Sidebar() {
                 </button>
               ))}
             </div>
+
+            <RankingSummary />
 
             {/* Sub-tab row */}
             {currentSubtabs.length > 0 && (
