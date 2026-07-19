@@ -58,21 +58,34 @@ function Map() {
     if (!mapRef.current) return
     const map = mapRef.current.getMap()
 
-    if (selectedFeatureId.current !== null) {
-      map.setFeatureState(
-        { source: 'countries', id: selectedFeatureId.current },
-        { selected: false }
-      )
-      selectedFeatureId.current = null
-    }
+    const apply = () => {
+      if (selectedFeatureId.current !== null) {
+        map.setFeatureState(
+          { source: 'countries', id: selectedFeatureId.current },
+          { selected: false }
+        )
+        selectedFeatureId.current = null
+      }
 
-    if (selectedCountry) {
-      const fid = iso2ToFeatureId[selectedCountry.code]
-      if (fid !== undefined) {
-        map.setFeatureState({ source: 'countries', id: fid }, { selected: true })
-        selectedFeatureId.current = fid
+      if (selectedCountry) {
+        const fid = iso2ToFeatureId[selectedCountry.code]
+        if (fid !== undefined) {
+          map.setFeatureState({ source: 'countries', id: fid }, { selected: true })
+          selectedFeatureId.current = fid
+        }
       }
     }
+
+    // setFeatureState throws "Style is not done loading" when called before
+    // the style/source are ready (selecting a country right after mount) —
+    // and the top-level ErrorBoundary then unmounts the whole app. Defer to
+    // the next 'idle' event in that case instead of calling immediately.
+    if (map.isStyleLoaded() && map.getSource('countries')) {
+      apply()
+      return
+    }
+    map.once('idle', apply)
+    return () => { map.off('idle', apply) }
   }, [selectedCountry, iso2ToFeatureId])
 
   const handleMouseMove = useCallback((e) => {
