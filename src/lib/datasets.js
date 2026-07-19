@@ -60,6 +60,34 @@ export function getDataset(key, fallback) {
   return promise
 }
 
+const metaCache = new Map() // key → Promise<{source, fetched_at}|null>
+
+/**
+ * Resolves a dataset's provenance metadata (pipeline name + last refresh
+ * timestamp) without pulling its `data` payload. Kept separate from
+ * getDataset/getDatasetsBatch — which only ever select `data` — so their
+ * return shape never changes for the ~20 existing callers.
+ *
+ * @param {string} key
+ * @returns {Promise<{source: string|null, fetched_at: string|null}|null>}
+ */
+export function getDatasetMeta(key) {
+  if (metaCache.has(key)) return metaCache.get(key)
+
+  const promise = (async () => {
+    const { data, error } = await supabase
+      .from('datasets')
+      .select('source, fetched_at')
+      .eq('key', key)
+      .maybeSingle()
+    if (error || !data) return null
+    return data
+  })().catch(() => null)
+
+  metaCache.set(key, promise)
+  return promise
+}
+
 /**
  * Resolves many datasets with a single Supabase query (plus whatever is
  * already in memory). No fallbacks: keys without a snapshot are simply

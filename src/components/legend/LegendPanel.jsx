@@ -1,7 +1,9 @@
+import { useEffect, useRef, useState } from 'react'
 import { LAYERS } from '../../layers'
 import useStore from '../../store/useStore'
 import { COLOR_SCALE } from '../../utils/colorScale'
 import { useRelationships } from '../../hooks/useRelationships'
+import ProvenancePanel from './ProvenancePanel'
 
 const REL_LEGEND = [
   { type: 'war',      label: 'War',      color: '#ef4444' },
@@ -45,6 +47,31 @@ export default function LegendPanel() {
   const combineMode     = useStore((s) => s.combineMode)
   const combinedLayers  = useStore((s) => s.combinedLayers)
   const layer           = LAYERS[activeLayer]
+
+  const [provenanceOpen, setProvenanceOpen] = useState(false)
+  const provenanceRef = useRef(null)
+
+  // Reset during render, not in an effect — react.dev's "adjusting state
+  // when a prop changes" — so switching layers always closes a stale panel.
+  const [lastLayer, setLastLayer] = useState(activeLayer)
+  if (activeLayer !== lastLayer) {
+    setLastLayer(activeLayer)
+    setProvenanceOpen(false)
+  }
+
+  useEffect(() => {
+    if (!provenanceOpen) return
+    const onPointer = (e) => {
+      if (provenanceRef.current && !provenanceRef.current.contains(e.target)) setProvenanceOpen(false)
+    }
+    const onKey = (e) => e.key === 'Escape' && setProvenanceOpen(false)
+    window.addEventListener('mousedown', onPointer)
+    window.addEventListener('keydown', onKey)
+    return () => {
+      window.removeEventListener('mousedown', onPointer)
+      window.removeEventListener('keydown', onKey)
+    }
+  }, [provenanceOpen])
 
   const { data: relationships } = useRelationships(
     activeLayer === 'alliances' ? selectedCountry?.code : null
@@ -99,7 +126,18 @@ export default function LegendPanel() {
         <>
           <ColorRamp />
           {layer.attribution && (
-            <p className="text-[#374151] text-[9px] mt-1">Source: {layer.attribution}</p>
+            <div ref={provenanceRef} className="relative flex items-center gap-1 mt-1">
+              <p className="text-[#374151] text-[9px]">Source: {layer.attribution}</p>
+              <button
+                onClick={() => setProvenanceOpen((o) => !o)}
+                title="Data provenance & quality"
+                className="w-3 h-3 rounded-full border border-[#374151] text-[#374151] text-[8px]
+                           leading-none flex items-center justify-center hover:border-[#6b7280] hover:text-[#6b7280]"
+              >
+                i
+              </button>
+              {provenanceOpen && <ProvenancePanel layerKey={activeLayer} layer={layer} />}
+            </div>
           )}
         </>
       )
