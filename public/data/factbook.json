@@ -1306,6 +1306,75 @@
     ],
     "literacyRate": 60.5
   },
+  "GM": {
+    "govType": "presidential republic",
+    "independence": "18 February 1965 (from the UK)",
+    "naturalResources": [
+      "fish",
+      "clay",
+      "silica sand",
+      "titanium",
+      "tin",
+      "zircon"
+    ],
+    "gdpSectors": {
+      "agriculture": 24.1,
+      "industry": 14.7,
+      "services": 53.9
+    },
+    "exportPartners": [
+      {
+        "name": "Kazakhstan",
+        "pct": 92
+      },
+      {
+        "name": "Bissau",
+        "pct": 2
+      },
+      {
+        "name": "China",
+        "pct": 1
+      },
+      {
+        "name": "India",
+        "pct": 1
+      },
+      {
+        "name": "Greece",
+        "pct": 1
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Kazakhstan",
+        "pct": 26
+      },
+      {
+        "name": "China",
+        "pct": 18
+      },
+      {
+        "name": "Senegal",
+        "pct": 8
+      },
+      {
+        "name": "India",
+        "pct": 7
+      },
+      {
+        "name": "Brazil",
+        "pct": 4
+      }
+    ],
+    "exportCommodities": [
+      "packaged medicine",
+      "cars",
+      "harvesting machinery",
+      "refined petroleum",
+      "trailers"
+    ],
+    "literacyRate": 51.6
+  },
   "GA": {
     "govType": "presidential republic",
     "independence": "17 August 1960 (from France)",
@@ -1909,7 +1978,7 @@
       "scrap iron"
     ]
   },
-  "MA": {
+  "MG": {
     "languages": [
       {
         "name": "English",
@@ -2183,96 +2252,70 @@
     ],
     "literacyRate": 35.5
   },
-  "ME": {
-    "languages": [
-      {
-        "name": "Serbian",
-        "pct": 42.9
-      },
-      {
-        "name": "Bosnian",
-        "pct": 5.3
-      },
-      {
-        "name": "Albanian",
-        "pct": 5.3
-      },
-      {
-        "name": "unspecified",
-        "pct": 4
-      },
-      {
-        "name": "other",
-        "pct": 3.5
-      },
-      {
-        "name": "Serbo-Croat",
-        "pct": 2
-      }
-    ],
-    "govType": "parliamentary republic",
-    "independence": "3 June 2006 (from the State Union of Serbia and Montenegro); notable earlier dates: 13 March 1852 (Principality of Montenegro established); 13 July 1878 (Congress of Berlin recognizes Montenegrin inde",
+  "MA": {
+    "govType": "parliamentary constitutional monarchy",
+    "independence": "2 March 1956 (from France)",
     "naturalResources": [
-      "bauxite",
-      "hydroelectricity"
+      "phosphates",
+      "iron ore",
+      "manganese",
+      "lead",
+      "zinc",
+      "fish",
+      "salt"
     ],
     "gdpSectors": {
-      "agriculture": 5.2,
-      "industry": 11.6,
-      "services": 62.1
+      "agriculture": 10.1,
+      "industry": 24.1,
+      "services": 54.1
     },
     "exportPartners": [
       {
-        "name": "Italy",
-        "pct": 38
-      },
-      {
-        "name": "Serbia",
-        "pct": 13
-      },
-      {
         "name": "Spain",
+        "pct": 20
+      },
+      {
+        "name": "France",
+        "pct": 17
+      },
+      {
+        "name": "Germany",
         "pct": 6
       },
       {
-        "name": "Slovenia",
-        "pct": 5
-      },
-      {
-        "name": "Herzegovina",
+        "name": "Italy",
         "pct": 4
       }
     ],
     "importPartners": [
       {
-        "name": "Serbia",
-        "pct": 21
+        "name": "Spain",
+        "pct": 16
       },
       {
         "name": "China",
+        "pct": 11
+      },
+      {
+        "name": "France",
         "pct": 10
       },
       {
-        "name": "Germany",
-        "pct": 8
+        "name": "USA",
+        "pct": 9
       },
       {
-        "name": "Croatia",
-        "pct": 6
-      },
-      {
-        "name": "Italy",
-        "pct": 6
+        "name": "Turkey",
+        "pct": 5
       }
     ],
     "exportCommodities": [
-      "electricity",
-      "aluminum",
-      "copper ore",
-      "aluminum ore",
-      "packaged medicine"
-    ],
-    "literacyRate": 98.5
+      "fertilizers",
+      "cars",
+      "garments",
+      "insulated wire",
+      "tomatoes"
+    ]
   },
   "MU": {
     "languages": [
@@ -2551,7 +2594,7 @@
     ],
     "literacyRate": 61.7
   },
-  "NG": {
+  "NE": {
     "govType": "formerly, semi-presidential republic",
     "independence": "3 August 1960 (from France)",
     "naturalResources": [
@@ -2624,7 +2667,7 @@
     ],
     "literacyRate": 35.6
   },
-  "NE": {
+  "NG": {
     "govType": "federal presidential republic",
     "independence": "1 October 1960 (from the UK)",
     "naturalResources": [
@@ -2697,70 +2740,64 @@
     ],
     "literacyRate": 63.2
   },
-  "MG": {
-    "languages": [
-      {
-        "name": "Mongolian",
-        "pct": 90
-      }
-    ],
-    "govType": "semi-presidential republic",
-    "independence": "29 December 1911 (independence declared from China; in actuality, autonomy attained); 11 July 1921 (from China)",
+  "SS": {
+    "govType": "presidential republic",
+    "independence": "9 July 2011 (from Sudan)",
     "naturalResources": [
-      "oil",
-      "coal",
+      "hydropower",
+      "fertile agricultural land",
+      "gold",
+      "diamonds",
+      "petroleum",
+      "hardwoods",
+      "limestone",
+      "iron ore",
       "copper",
-      "molybdenum",
-      "tungsten",
-      "phosphates",
-      "tin",
-      "nickel",
-      "zinc",
-      "fluorspar"
+      "chromium ore"
     ],
     "gdpSectors": {
-      "agriculture": 7.4,
-      "industry": 38.1,
-      "services": 44.2
+      "agriculture": 10.4,
+      "industry": 33.1,
+      "services": 56.6
     },
     "exportPartners": [
       {
         "name": "China",
-        "pct": 92
+        "pct": 51
       },
       {
-        "name": "Switzerland",
-        "pct": 6
+        "name": "Singapore",
+        "pct": 29
       },
       {
-        "name": "Italy",
-        "pct": 1
+        "name": "UAE",
+        "pct": 10
       },
       {
-        "name": "Thailand",
-        "pct": 0
+        "name": "Germany",
+        "pct": 4
       },
       {
-        "name": "Japan",
-        "pct": 0
+        "name": "Uganda",
+        "pct": 3
       }
     ],
     "importPartners": [
       {
+        "name": "Uganda",
+        "pct": 33
+      },
+      {
+        "name": "UAE",
+        "pct": 26
+      },
+      {
+        "name": "Kenya",
+        "pct": 14
+      },
+      {
         "name": "China",
-        "pct": 57
-      },
-      {
-        "name": "Japan",
-        "pct": 13
-      },
-      {
-        "name": "Germany",
-        "pct": 3
-      },
-      {
-        "name": "Singapore",
-        "pct": 3
+        "pct": 10
       },
       {
         "name": "USA",
@@ -2768,13 +2805,12 @@
       }
     ],
     "exportCommodities": [
-      "coal",
-      "copper ore",
+      "crude petroleum",
+      "refined petroleum",
+      "forage crops",
       "gold",
-      "iron ore",
-      "crude petroleum"
-    ],
-    "literacyRate": 98.6
+      "scrap iron"
+    ]
   },
   "GW": {
     "govType": "semi-presidential republic",
@@ -3131,6 +3167,61 @@
       "cement"
     ],
     "literacyRate": 50.4
+  },
+  "SH": {
+    "govType": "parliamentary democracy",
+    "independence": "none (overseas territory of the UK)",
+    "naturalResources": [
+      "fish",
+      "lobster"
+    ],
+    "exportPartners": [
+      {
+        "name": "Singapore",
+        "pct": 33
+      },
+      {
+        "name": "USA",
+        "pct": 16
+      },
+      {
+        "name": "Japan",
+        "pct": 10
+      },
+      {
+        "name": "Turkey",
+        "pct": 10
+      },
+      {
+        "name": "Senegal",
+        "pct": 8
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Greece",
+        "pct": 26
+      },
+      {
+        "name": "Spain",
+        "pct": 16
+      },
+      {
+        "name": "South Africa",
+        "pct": 15
+      },
+      {
+        "name": "Namibia",
+        "pct": 2
+      }
+    ],
+    "exportCommodities": [
+      "fish",
+      "shellfish",
+      "natural gas",
+      "trucks",
+      "construction vehicles"
+    ]
   },
   "SL": {
     "languages": [
@@ -3652,6 +3743,76 @@
     ],
     "literacyRate": 78.2
   },
+  "UG": {
+    "govType": "presidential republic",
+    "independence": "9 October 1962 (from the UK)",
+    "naturalResources": [
+      "copper",
+      "cobalt",
+      "hydropower",
+      "limestone",
+      "salt",
+      "arable land",
+      "gold"
+    ],
+    "gdpSectors": {
+      "agriculture": 24.7,
+      "industry": 24.9,
+      "services": 43.1
+    },
+    "exportPartners": [
+      {
+        "name": "India",
+        "pct": 21
+      },
+      {
+        "name": "UAE",
+        "pct": 16
+      },
+      {
+        "name": "Hong Kong",
+        "pct": 10
+      },
+      {
+        "name": "South Sudan",
+        "pct": 8
+      },
+      {
+        "name": "Kenya",
+        "pct": 6
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "China",
+        "pct": 19
+      },
+      {
+        "name": "UAE",
+        "pct": 12
+      },
+      {
+        "name": "Tanzania",
+        "pct": 11
+      },
+      {
+        "name": "India",
+        "pct": 10
+      },
+      {
+        "name": "Kenya",
+        "pct": 7
+      }
+    ],
+    "exportCommodities": [
+      "gold",
+      "coffee",
+      "fish",
+      "refined petroleum",
+      "tobacco"
+    ],
+    "literacyRate": 69.1
+  },
   "BF": {
     "languages": [
       {
@@ -3892,84 +4053,20 @@
     ],
     "literacyRate": 87.6
   },
-  "ZW": {
-    "languages": [
-      {
-        "name": "other",
-        "pct": 0.3
-      }
-    ],
-    "govType": "presidential republic",
-    "independence": "18 April 1980 (from the UK)",
+  "EH": {
+    "govType": "legal status of territory and issue of sovereignty unresolved; territory contested by Morocco and Polisario Front (Popular Front for the Liberation of the Saguia el Hamra and Rio de Oro), which in Feb",
     "naturalResources": [
-      "coal",
-      "chromium ore",
-      "asbestos",
-      "gold",
-      "nickel",
-      "copper",
-      "iron ore",
-      "vanadium",
-      "lithium",
-      "tin"
+      "phosphates",
+      "iron ore"
     ],
     "gdpSectors": {
-      "agriculture": 5.4,
-      "industry": 31.8,
-      "services": 55.8
+      "agriculture": null,
+      "industry": null,
+      "services": 40
     },
-    "exportPartners": [
-      {
-        "name": "UAE",
-        "pct": 45
-      },
-      {
-        "name": "China",
-        "pct": 18
-      },
-      {
-        "name": "South Africa",
-        "pct": 15
-      },
-      {
-        "name": "Mozambique",
-        "pct": 4
-      },
-      {
-        "name": "Hong Kong",
-        "pct": 2
-      }
-    ],
-    "importPartners": [
-      {
-        "name": "South Africa",
-        "pct": 37
-      },
-      {
-        "name": "China",
-        "pct": 15
-      },
-      {
-        "name": "The",
-        "pct": 5
-      },
-      {
-        "name": "Singapore",
-        "pct": 5
-      },
-      {
-        "name": "UAE",
-        "pct": 4
-      }
-    ],
     "exportCommodities": [
-      "gold",
-      "tobacco",
-      "nickel",
-      "minerals",
-      "diamonds"
-    ],
-    "literacyRate": 93.2
+      "phosphates 62%"
+    ]
   },
   "SZ": {
     "govType": "absolute monarchy",
@@ -4186,6 +4283,162 @@
     ],
     "literacyRate": 71.1
   },
+  "ZW": {
+    "languages": [
+      {
+        "name": "other",
+        "pct": 0.3
+      }
+    ],
+    "govType": "presidential republic",
+    "independence": "18 April 1980 (from the UK)",
+    "naturalResources": [
+      "coal",
+      "chromium ore",
+      "asbestos",
+      "gold",
+      "nickel",
+      "copper",
+      "iron ore",
+      "vanadium",
+      "lithium",
+      "tin"
+    ],
+    "gdpSectors": {
+      "agriculture": 5.4,
+      "industry": 31.8,
+      "services": 55.8
+    },
+    "exportPartners": [
+      {
+        "name": "UAE",
+        "pct": 45
+      },
+      {
+        "name": "China",
+        "pct": 18
+      },
+      {
+        "name": "South Africa",
+        "pct": 15
+      },
+      {
+        "name": "Mozambique",
+        "pct": 4
+      },
+      {
+        "name": "Hong Kong",
+        "pct": 2
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "South Africa",
+        "pct": 37
+      },
+      {
+        "name": "China",
+        "pct": 15
+      },
+      {
+        "name": "The",
+        "pct": 5
+      },
+      {
+        "name": "Singapore",
+        "pct": 5
+      },
+      {
+        "name": "UAE",
+        "pct": 4
+      }
+    ],
+    "exportCommodities": [
+      "gold",
+      "tobacco",
+      "nickel",
+      "minerals",
+      "diamonds"
+    ],
+    "literacyRate": 93.2
+  },
+  "AS": {
+    "languages": [
+      {
+        "name": "Samoan",
+        "pct": 87.9
+      },
+      {
+        "name": "other Pacific Islander",
+        "pct": 4.1
+      },
+      {
+        "name": "English",
+        "pct": 3.3
+      },
+      {
+        "name": "Tongan",
+        "pct": 2.1
+      },
+      {
+        "name": "Asian languages",
+        "pct": 2.1
+      },
+      {
+        "name": "other",
+        "pct": 0.5
+      }
+    ],
+    "govType": "unincorporated, unorganized Territory of the US with local self-government; republican form of territorial government with separate executive, legislative, and judicial branches",
+    "independence": "none (territory of the US)",
+    "naturalResources": [
+      "pumice",
+      "pumicite"
+    ],
+    "exportPartners": [
+      {
+        "name": "Australia",
+        "pct": 31
+      },
+      {
+        "name": "Tanzania",
+        "pct": 9
+      },
+      {
+        "name": "UAE",
+        "pct": 7
+      },
+      {
+        "name": "Senegal",
+        "pct": 6
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Singapore",
+        "pct": 28
+      },
+      {
+        "name": "Fiji",
+        "pct": 14
+      },
+      {
+        "name": "Taiwan",
+        "pct": 11
+      },
+      {
+        "name": "Malaysia",
+        "pct": 11
+      }
+    ],
+    "exportCommodities": [
+      "animal meal",
+      "aluminum",
+      "refined petroleum",
+      "gas turbines",
+      "broadcasting equipment"
+    ]
+  },
   "AU": {
     "languages": [
       {
@@ -4364,7 +4617,7 @@
       "palm oil"
     ]
   },
-  "CK": {
+  "CC": {
     "languages": [
       {
         "name": "English",
@@ -4501,9 +4754,63 @@
       "integrated circuits"
     ]
   },
-  "CC": {
+  "CK": {
+    "languages": [
+      {
+        "name": "other",
+        "pct": 8.3
+      }
+    ],
+    "govType": "parliamentary democracy",
+    "independence": "4 August 1965 (Cook Islands became self-governing state in free association with New Zealand)",
     "naturalResources": [
-      "fish"
+      "coconuts"
+    ],
+    "exportPartners": [
+      {
+        "name": "Japan",
+        "pct": 33
+      },
+      {
+        "name": "Thailand",
+        "pct": 15
+      },
+      {
+        "name": "Greece",
+        "pct": 15
+      },
+      {
+        "name": "France",
+        "pct": 11
+      },
+      {
+        "name": "China",
+        "pct": 8
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Italy",
+        "pct": 26
+      },
+      {
+        "name": "Fiji",
+        "pct": 9
+      },
+      {
+        "name": "China",
+        "pct": 7
+      },
+      {
+        "name": "Australia",
+        "pct": 3
+      }
+    ],
+    "exportCommodities": [
+      "fish",
+      "ships",
+      "garments",
+      "shellfish"
     ]
   },
   "FJ": {
@@ -4852,6 +5159,89 @@
     ],
     "literacyRate": 98.6
   },
+  "CX": {
+    "languages": [
+      {
+        "name": "unspecified",
+        "pct": 27.1
+      },
+      {
+        "name": "Mandarin",
+        "pct": 17.2
+      },
+      {
+        "name": "Malay",
+        "pct": 17.1
+      },
+      {
+        "name": "other",
+        "pct": 4.5
+      },
+      {
+        "name": "Cantonese",
+        "pct": 3.9
+      },
+      {
+        "name": "Min Nan",
+        "pct": 1.6
+      },
+      {
+        "name": "Tagalog",
+        "pct": 1
+      }
+    ],
+    "govType": "non-self-governing overseas territory of Australia",
+    "independence": "none (territory of Australia)",
+    "naturalResources": [
+      "phosphate",
+      "beaches"
+    ],
+    "exportPartners": [
+      {
+        "name": "Indonesia",
+        "pct": 30
+      },
+      {
+        "name": "USA",
+        "pct": 26
+      },
+      {
+        "name": "Malaysia",
+        "pct": 12
+      },
+      {
+        "name": "Ireland",
+        "pct": 8
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "USA",
+        "pct": 58
+      },
+      {
+        "name": "Australia",
+        "pct": 40
+      },
+      {
+        "name": "Malaysia",
+        "pct": 1
+      },
+      {
+        "name": "Fiji",
+        "pct": 0
+      },
+      {
+        "name": "Singapore",
+        "pct": 0
+      }
+    ],
+    "exportCommodities": [
+      "fertilizers",
+      "paintings",
+      "amine compounds"
+    ]
+  },
   "NC": {
     "govType": "parliamentary democracy (Territorial Congress); an overseas collectivity of France",
     "independence": "none (overseas collectivity of France)",
@@ -4918,6 +5308,73 @@
       "processed crustaceans",
       "shellfish"
     ]
+  },
+  "NU": {
+    "languages": [
+      {
+        "name": "Niuean",
+        "pct": 46
+      },
+      {
+        "name": "Niuean and English",
+        "pct": 32
+      },
+      {
+        "name": "other",
+        "pct": 6
+      },
+      {
+        "name": "Niuean and others",
+        "pct": 5
+      }
+    ],
+    "govType": "parliamentary democracy",
+    "independence": "19 October 1974 (Niue became a self-governing state in free association with New Zealand)",
+    "naturalResources": [
+      "arable land",
+      "fish"
+    ],
+    "exportPartners": [
+      {
+        "name": "USA",
+        "pct": 54
+      },
+      {
+        "name": "Germany",
+        "pct": 8
+      },
+      {
+        "name": "Canada",
+        "pct": 5
+      },
+      {
+        "name": "Guatemala",
+        "pct": 4
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Fiji",
+        "pct": 6
+      },
+      {
+        "name": "UAE",
+        "pct": 2
+      },
+      {
+        "name": "Slovakia",
+        "pct": 1
+      },
+      {
+        "name": "Australia",
+        "pct": 1
+      }
+    ],
+    "exportCommodities": [
+      "abrasive powder",
+      "coin"
+    ],
+    "literacyRate": 99.5
   },
   "NF": {
     "languages": [
@@ -5350,185 +5807,236 @@
     "literacyRate": 100
   },
   "MH": {
-    "govType": "parliamentary democracy; self-governing overseas territory of the UK",
-    "independence": "none (overseas territory of the UK)",
-    "naturalResources": [
-      "NEGL"
+    "languages": [
+      {
+        "name": "other languages",
+        "pct": 1.8
+      }
     ],
+    "govType": "mixed presidential-parliamentary system in free association with the US",
+    "independence": "21 October 1986 (from the US-administered UN trusteeship)",
+    "naturalResources": [
+      "coconut products",
+      "marine products",
+      "deep seabed minerals"
+    ],
+    "gdpSectors": {
+      "agriculture": 19.5,
+      "industry": 11.1,
+      "services": 70.5
+    },
     "exportPartners": [
       {
-        "name": "USA",
-        "pct": 25
-      },
-      {
-        "name": "Barbuda",
+        "name": "Germany",
         "pct": 13
       },
       {
-        "name": "Guyana",
-        "pct": 13
-      },
-      {
-        "name": "Egypt",
-        "pct": 12
-      },
-      {
-        "name": "France",
+        "name": "Denmark",
         "pct": 10
+      },
+      {
+        "name": "Ghana",
+        "pct": 9
+      },
+      {
+        "name": "Cyprus",
+        "pct": 9
       }
     ],
     "importPartners": [
       {
-        "name": "USA",
-        "pct": 62
-      },
-      {
-        "name": "Barbuda",
-        "pct": 6
-      },
-      {
-        "name": "Belgium",
-        "pct": 4
-      },
-      {
-        "name": "Tobago",
-        "pct": 3
-      }
-    ],
-    "exportCommodities": [
-      "gravel and crushed stone",
-      "sand"
-    ]
-  },
-  "TL": {
-    "languages": [
-      {
-        "name": "Tetun Prasa",
-        "pct": 30.6
-      },
-      {
-        "name": "Mambai",
-        "pct": 16.6
-      },
-      {
-        "name": "Makasai",
-        "pct": 10.5
-      },
-      {
-        "name": "Tetun Terik",
-        "pct": 6.1
-      },
-      {
-        "name": "Baikenu",
-        "pct": 5.9
-      },
-      {
-        "name": "Kemak",
-        "pct": 5.8
-      },
-      {
-        "name": "Bunak",
-        "pct": 5.5
-      },
-      {
-        "name": "other",
-        "pct": 4.5
-      },
-      {
-        "name": "Tokodede",
-        "pct": 4
-      },
-      {
-        "name": "Fataluku",
-        "pct": 3.5
-      },
-      {
-        "name": "Waima'a",
-        "pct": 1.8
-      },
-      {
-        "name": "Galoli",
-        "pct": 1.4
-      },
-      {
-        "name": "Naueti",
-        "pct": 1.4
-      },
-      {
-        "name": "Idate",
-        "pct": 1.2
-      },
-      {
-        "name": "Midiki",
-        "pct": 1.2
-      }
-    ],
-    "govType": "semi-presidential republic",
-    "independence": "28 November 1975 (from Portugal); 20 May 2002 (from Indonesia)",
-    "naturalResources": [
-      "gold",
-      "petroleum",
-      "natural gas",
-      "manganese",
-      "marble"
-    ],
-    "gdpSectors": {
-      "agriculture": 16.9,
-      "industry": 23.9,
-      "services": 61
-    },
-    "exportPartners": [
-      {
         "name": "China",
-        "pct": 46
-      },
-      {
-        "name": "Singapore",
-        "pct": 25
+        "pct": 47
       },
       {
         "name": "Japan",
         "pct": 15
       },
       {
-        "name": "Indonesia",
+        "name": "Germany",
         "pct": 5
       },
       {
-        "name": "USA",
-        "pct": 3
-      }
-    ],
-    "importPartners": [
-      {
-        "name": "Indonesia",
-        "pct": 34
+        "name": "Brazil",
+        "pct": 4
       },
       {
-        "name": "China",
-        "pct": 26
-      },
-      {
-        "name": "Singapore",
-        "pct": 9
-      },
-      {
-        "name": "Taiwan",
-        "pct": 5
-      },
-      {
-        "name": "India",
+        "name": "Cyprus",
         "pct": 4
       }
     ],
     "exportCommodities": [
-      "crude petroleum",
+      "ships",
+      "refined petroleum",
+      "fish",
       "natural gas",
-      "coffee",
-      "scrap iron",
-      "telephones"
+      "stone processing machines"
     ],
-    "literacyRate": 72.5
+    "literacyRate": 95.8
+  },
+  "TK": {
+    "languages": [
+      {
+        "name": "Tokelauan",
+        "pct": 88.1
+      },
+      {
+        "name": "English",
+        "pct": 48.6
+      },
+      {
+        "name": "Samoan",
+        "pct": 26.7
+      },
+      {
+        "name": "Tuvaluan",
+        "pct": 11.2
+      },
+      {
+        "name": "other",
+        "pct": 2.8
+      },
+      {
+        "name": "none",
+        "pct": 2.8
+      },
+      {
+        "name": "Kiribati",
+        "pct": 1.5
+      },
+      {
+        "name": "unspecified",
+        "pct": 0.8
+      }
+    ],
+    "govType": "parliamentary democracy under a constitutional monarchy",
+    "independence": "none (territory of New Zealand)",
+    "naturalResources": [
+      "fish"
+    ],
+    "exportPartners": [
+      {
+        "name": "Czechia",
+        "pct": 92
+      },
+      {
+        "name": "Singapore",
+        "pct": 2
+      },
+      {
+        "name": "Brazil",
+        "pct": 1
+      },
+      {
+        "name": "South Africa",
+        "pct": 1
+      },
+      {
+        "name": "Sri Lanka",
+        "pct": 1
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Samoa",
+        "pct": 31
+      },
+      {
+        "name": "Italy",
+        "pct": 23
+      },
+      {
+        "name": "France",
+        "pct": 21
+      },
+      {
+        "name": "Netherlands",
+        "pct": 16
+      },
+      {
+        "name": "Germany",
+        "pct": 2
+      }
+    ],
+    "exportCommodities": [
+      "cars",
+      "telephones",
+      "garments",
+      "iron fasteners",
+      "fabric"
+    ],
+    "literacyRate": 100
+  },
+  "TO": {
+    "languages": [
+      {
+        "name": "Tongan only",
+        "pct": 85
+      },
+      {
+        "name": "Tongan and other language",
+        "pct": 13.9
+      },
+      {
+        "name": "Tongan not used at home",
+        "pct": 1.1
+      }
+    ],
+    "govType": "constitutional monarchy",
+    "independence": "4 June 1970 (from UK protectorate status)",
+    "naturalResources": [
+      "arable land",
+      "fish"
+    ],
+    "gdpSectors": {
+      "agriculture": 17.5,
+      "industry": 13.5,
+      "services": 50.2
+    },
+    "exportPartners": [
+      {
+        "name": "Guyana",
+        "pct": 17
+      },
+      {
+        "name": "USA",
+        "pct": 17
+      },
+      {
+        "name": "Australia",
+        "pct": 15
+      },
+      {
+        "name": "UAE",
+        "pct": 12
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Fiji",
+        "pct": 27
+      },
+      {
+        "name": "China",
+        "pct": 21
+      },
+      {
+        "name": "Australia",
+        "pct": 8
+      },
+      {
+        "name": "USA",
+        "pct": 5
+      }
+    ],
+    "exportCommodities": [
+      "refined petroleum",
+      "gold",
+      "processed fruits and nuts",
+      "cassava",
+      "fish"
+    ],
+    "literacyRate": 91.1
   },
   "TV": {
     "govType": "parliamentary democracy under a constitutional monarchy; a Commonwealth realm",
@@ -5725,7 +6233,7 @@
     ],
     "literacyRate": 98
   },
-  "AA": {
+  "AW": {
     "languages": [
       {
         "name": "Spanish",
@@ -5867,7 +6375,7 @@
       "paintings"
     ]
   },
-  "AV": {
+  "AI": {
     "govType": "parliamentary democracy (House of Assembly); self-governing overseas territory of the UK",
     "independence": "none (overseas territory of the UK)",
     "naturalResources": [
@@ -5928,63 +6436,130 @@
     ]
   },
   "BB": {
-    "govType": "Overseas Territory of the UK with limited self-government; parliamentary democracy",
-    "independence": "none (overseas territory of the UK)",
+    "govType": "parliamentary republic; a Commonwealth realm",
+    "independence": "30 November 1966 (from the UK)",
     "naturalResources": [
-      "limestone",
-      "pleasant climate fostering tourism"
+      "petroleum",
+      "fish",
+      "natural gas"
     ],
     "gdpSectors": {
-      "agriculture": 0.2,
-      "industry": 4.6,
-      "services": 91.5
+      "agriculture": 1.9,
+      "industry": 13.2,
+      "services": 75.4
     },
     "exportPartners": [
       {
-        "name": "Germany",
-        "pct": 40
-      },
-      {
-        "name": "South Africa",
-        "pct": 38
-      },
-      {
-        "name": "Netherlands",
-        "pct": 15
-      },
-      {
         "name": "USA",
-        "pct": 2
+        "pct": 22
       },
       {
-        "name": "Angola",
-        "pct": 2
+        "name": "Jamaica",
+        "pct": 17
+      },
+      {
+        "name": "Tobago",
+        "pct": 8
+      },
+      {
+        "name": "Canada",
+        "pct": 6
+      },
+      {
+        "name": "Guyana",
+        "pct": 6
       }
     ],
     "importPartners": [
       {
         "name": "USA",
-        "pct": 38
+        "pct": 32
       },
       {
-        "name": "Cyprus",
-        "pct": 31
+        "name": "Tobago",
+        "pct": 19
       },
       {
-        "name": "China",
+        "name": "Netherlands",
         "pct": 6
       },
       {
-        "name": "Canada",
-        "pct": 4
+        "name": "Guyana",
+        "pct": 5
       }
     ],
     "exportCommodities": [
-      "crude petroleum",
-      "ships",
-      "aircraft",
       "liquor",
-      "railway cargo containers"
+      "refined petroleum",
+      "packaged medicine",
+      "margarine",
+      "baked goods"
+    ]
+  },
+  "BS": {
+    "govType": "parliamentary democracy&nbsp;under a constitutional monarchy; a Commonwealth realm",
+    "independence": "10 July 1973 (from the UK)",
+    "naturalResources": [
+      "salt",
+      "aragonite",
+      "timber",
+      "arable land"
+    ],
+    "gdpSectors": {
+      "agriculture": 0.5,
+      "industry": 9.6,
+      "services": 77.2
+    },
+    "exportPartners": [
+      {
+        "name": "USA",
+        "pct": 36
+      },
+      {
+        "name": "Zimbabwe",
+        "pct": 16
+      },
+      {
+        "name": "Ivoire",
+        "pct": 14
+      },
+      {
+        "name": "Germany",
+        "pct": 8
+      },
+      {
+        "name": "Guyana",
+        "pct": 8
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "USA",
+        "pct": 60
+      },
+      {
+        "name": "Germany",
+        "pct": 13
+      },
+      {
+        "name": "China",
+        "pct": 5
+      },
+      {
+        "name": "Japan",
+        "pct": 3
+      },
+      {
+        "name": "Brazil",
+        "pct": 2
+      }
+    ],
+    "exportCommodities": [
+      "refined petroleum",
+      "ships",
+      "aluminum",
+      "shellfish",
+      "plastics"
     ]
   },
   "BZ": {
@@ -6084,73 +6659,7 @@
     ],
     "literacyRate": 87.9
   },
-  "BS": {
-    "govType": "parliamentary democracy&nbsp;under a constitutional monarchy; a Commonwealth realm",
-    "independence": "10 July 1973 (from the UK)",
-    "naturalResources": [
-      "salt",
-      "aragonite",
-      "timber",
-      "arable land"
-    ],
-    "gdpSectors": {
-      "agriculture": 0.5,
-      "industry": 9.6,
-      "services": 77.2
-    },
-    "exportPartners": [
-      {
-        "name": "USA",
-        "pct": 36
-      },
-      {
-        "name": "Zimbabwe",
-        "pct": 16
-      },
-      {
-        "name": "Ivoire",
-        "pct": 14
-      },
-      {
-        "name": "Germany",
-        "pct": 8
-      },
-      {
-        "name": "Guyana",
-        "pct": 8
-      }
-    ],
-    "importPartners": [
-      {
-        "name": "USA",
-        "pct": 60
-      },
-      {
-        "name": "Germany",
-        "pct": 13
-      },
-      {
-        "name": "China",
-        "pct": 5
-      },
-      {
-        "name": "Japan",
-        "pct": 3
-      },
-      {
-        "name": "Brazil",
-        "pct": 2
-      }
-    ],
-    "exportCommodities": [
-      "refined petroleum",
-      "ships",
-      "aluminum",
-      "shellfish",
-      "plastics"
-    ]
-  },
-  "CJ": {
+  "KY": {
     "languages": [
       {
         "name": "Spanish",
@@ -6932,83 +7441,137 @@
       "processed fruits and nuts"
     ]
   },
-  "CW": {
-    "languages": [
-      {
-        "name": "Spanish",
-        "pct": 5.6
-      },
-      {
-        "name": "other",
-        "pct": 2.3
-      },
-      {
-        "name": "unspecified",
-        "pct": 0.3
-      }
-    ],
-    "govType": "parliamentary democracy",
-    "independence": "none (part of the Kingdom of the Netherlands)",
+  "MS": {
+    "govType": "parliamentary democracy; self-governing overseas territory of the UK",
+    "independence": "none (overseas territory of the UK)",
     "naturalResources": [
-      "calcium phosphates",
-      "protected harbors",
-      "hot springs"
+      "NEGL"
     ],
-    "gdpSectors": {
-      "agriculture": 0.3,
-      "industry": 11.7,
-      "services": 73.3
-    },
     "exportPartners": [
       {
-        "name": "Armenia",
-        "pct": 57
+        "name": "USA",
+        "pct": 25
       },
       {
-        "name": "USA",
-        "pct": 15
+        "name": "Barbuda",
+        "pct": 13
       },
       {
         "name": "Guyana",
-        "pct": 5
+        "pct": 13
       },
       {
-        "name": "Dominican Republic",
-        "pct": 4
+        "name": "Egypt",
+        "pct": 12
       },
       {
-        "name": "Netherlands",
-        "pct": 2
+        "name": "France",
+        "pct": 10
       }
     ],
     "importPartners": [
       {
         "name": "USA",
-        "pct": 39
+        "pct": 62
       },
       {
-        "name": "Netherlands",
-        "pct": 24
-      },
-      {
-        "name": "China",
+        "name": "Barbuda",
         "pct": 6
       },
       {
-        "name": "Colombia",
-        "pct": 5
+        "name": "Belgium",
+        "pct": 4
       },
       {
-        "name": "Brazil",
+        "name": "Tobago",
         "pct": 3
       }
     ],
     "exportCommodities": [
-      "diamonds",
-      "refined petroleum",
-      "crude petroleum",
-      "gold",
-      "petroleum coke"
+      "gravel and crushed stone",
+      "sand"
+    ]
+  },
+  "SX": {
+    "languages": [
+      {
+        "name": "Spanish",
+        "pct": 12.9
+      },
+      {
+        "name": "Creole",
+        "pct": 8.2
+      },
+      {
+        "name": "other",
+        "pct": 3.5
+      },
+      {
+        "name": "French",
+        "pct": 1.5
+      }
+    ],
+    "govType": "parliamentary democracy under a constitutional monarchy",
+    "independence": "none (part of the Kingdom of the Netherlands)",
+    "naturalResources": [
+      "fish",
+      "salt"
+    ],
+    "gdpSectors": {
+      "agriculture": null,
+      "industry": 6,
+      "services": 89.3
+    },
+    "exportPartners": [
+      {
+        "name": "Barbuda",
+        "pct": 28
+      },
+      {
+        "name": "USA",
+        "pct": 16
+      },
+      {
+        "name": "France",
+        "pct": 12
+      },
+      {
+        "name": "Netherlands",
+        "pct": 8
+      },
+      {
+        "name": "Morocco",
+        "pct": 7
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "USA",
+        "pct": 82
+      },
+      {
+        "name": "Netherlands",
+        "pct": 7
+      },
+      {
+        "name": "France",
+        "pct": 4
+      },
+      {
+        "name": "Brazil",
+        "pct": 1
+      },
+      {
+        "name": "Switzerland",
+        "pct": 1
+      }
+    ],
+    "exportCommodities": [
+      "scrap iron",
+      "ships",
+      "jewelry",
+      "flavored water",
+      "liquor"
     ]
   },
   "NI": {
@@ -7162,100 +7725,51 @@
     ],
     "literacyRate": 96.3
   },
-  "RS": {
-    "languages": [
-      {
-        "name": "Hungarian",
-        "pct": 3.4
-      },
-      {
-        "name": "other",
-        "pct": 3.4
-      },
-      {
-        "name": "Bosnian",
-        "pct": 1.9
-      },
-      {
-        "name": "undeclared or unknown",
-        "pct": 1.8
-      },
-      {
-        "name": "Romani",
-        "pct": 1.4
-      }
-    ],
-    "govType": "parliamentary republic",
-    "independence": "5 June 2006 (from the State Union of Serbia and Montenegro); notable earlier dates: 1217 (Serbian Kingdom established); 16 April 1346 (Serbian Empire established); 13 July 1878 (Congress of Berlin rec",
+  "MF": {
+    "govType": "parliamentary democracy (Territorial Council); overseas collectivity of France",
+    "independence": "none (overseas collectivity of France)",
     "naturalResources": [
-      "oil",
-      "gas",
-      "coal",
-      "iron ore",
-      "copper",
-      "zinc",
-      "antimony",
-      "chromite",
-      "gold",
-      "silver"
+      "salt"
     ],
-    "gdpSectors": {
-      "agriculture": 3.1,
-      "industry": 23.3,
-      "services": 58.5
-    },
     "exportPartners": [
       {
-        "name": "Germany",
-        "pct": 15
+        "name": "United States",
+        "pct": 35
       },
       {
-        "name": "Hungary",
-        "pct": 7
+        "name": "Netherlands",
+        "pct": 26
       },
       {
-        "name": "Herzegovina",
-        "pct": 5
+        "name": "Antigua and Barbuda",
+        "pct": 21
       },
       {
-        "name": "Italy",
-        "pct": 5
-      },
-      {
-        "name": "Romania",
-        "pct": 5
+        "name": "France",
+        "pct": 10
       }
     ],
     "importPartners": [
       {
-        "name": "Germany",
-        "pct": 12
+        "name": "United States",
+        "pct": 76
       },
       {
-        "name": "China",
-        "pct": 10
-      },
-      {
-        "name": "Italy",
+        "name": "Netherlands",
         "pct": 7
       },
       {
-        "name": "Turkey",
-        "pct": 5
-      },
-      {
-        "name": "Hungary",
-        "pct": 5
+        "name": "France",
+        "pct": 7
       }
     ],
     "exportCommodities": [
-      "insulated wire",
-      "electricity",
-      "copper ore",
-      "plastic products",
-      "electric motors"
-    ],
-    "literacyRate": 99.3
+      "gold",
+      "special use vessels",
+      "furniture",
+      "scrap aluminum",
+      "rum"
+    ]
   },
   "PR": {
     "govType": "unincorporated organized territory of the US with local self-government; republican form of territorial government with separate executive, legislative, and judicial branches; note - reference Puerto ",
@@ -7452,6 +7966,62 @@
       "paper containers"
     ]
   },
+  "BL": {
+    "govType": "parliamentary democracy (Territorial Council); overseas collectivity of France",
+    "independence": "none (overseas collectivity of France)",
+    "naturalResources": [
+      "few natural resources",
+      "beaches foster tourism"
+    ],
+    "exportPartners": [
+      {
+        "name": "Spain",
+        "pct": 57
+      },
+      {
+        "name": "Switzerland",
+        "pct": 24
+      },
+      {
+        "name": "France",
+        "pct": 6
+      },
+      {
+        "name": "Ireland",
+        "pct": 5
+      },
+      {
+        "name": "Canada",
+        "pct": 2
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Switzerland",
+        "pct": 50
+      },
+      {
+        "name": "Portugal",
+        "pct": 14
+      },
+      {
+        "name": "Brazil",
+        "pct": 6
+      },
+      {
+        "name": "Japan",
+        "pct": 5
+      },
+      {
+        "name": "Ireland",
+        "pct": 5
+      }
+    ],
+    "exportCommodities": [
+      "refined copper",
+      "jewelry"
+    ]
+  },
   "TT": {
     "govType": "parliamentary republic",
     "independence": "31 August 1962 (from the UK)",
@@ -7517,6 +8087,149 @@
       "iron reductions"
     ]
   },
+  "TC": {
+    "govType": "parliamentary democracy",
+    "independence": "none (overseas territory of the UK)",
+    "naturalResources": [
+      "spiny lobster",
+      "conch"
+    ],
+    "gdpSectors": {
+      "agriculture": 0.4,
+      "industry": 9.3,
+      "services": 72.6
+    },
+    "exportPartners": [
+      {
+        "name": "Gabon",
+        "pct": 27
+      },
+      {
+        "name": "USA",
+        "pct": 25
+      },
+      {
+        "name": "Zimbabwe",
+        "pct": 17
+      },
+      {
+        "name": "Czechia",
+        "pct": 8
+      },
+      {
+        "name": "UAE",
+        "pct": 3
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "USA",
+        "pct": 73
+      },
+      {
+        "name": "Dominican Republic",
+        "pct": 4
+      },
+      {
+        "name": "Italy",
+        "pct": 3
+      },
+      {
+        "name": "Japan",
+        "pct": 3
+      },
+      {
+        "name": "China",
+        "pct": 2
+      }
+    ],
+    "exportCommodities": [
+      "plastics",
+      "shellfish",
+      "carbonates",
+      "tobacco",
+      "garments"
+    ]
+  },
+  "CW": {
+    "languages": [
+      {
+        "name": "Spanish",
+        "pct": 5.6
+      },
+      {
+        "name": "other",
+        "pct": 2.3
+      },
+      {
+        "name": "unspecified",
+        "pct": 0.3
+      }
+    ],
+    "govType": "parliamentary democracy",
+    "independence": "none (part of the Kingdom of the Netherlands)",
+    "naturalResources": [
+      "calcium phosphates",
+      "protected harbors",
+      "hot springs"
+    ],
+    "gdpSectors": {
+      "agriculture": 0.3,
+      "industry": 11.7,
+      "services": 73.3
+    },
+    "exportPartners": [
+      {
+        "name": "Armenia",
+        "pct": 57
+      },
+      {
+        "name": "USA",
+        "pct": 15
+      },
+      {
+        "name": "Guyana",
+        "pct": 5
+      },
+      {
+        "name": "Dominican Republic",
+        "pct": 4
+      },
+      {
+        "name": "Netherlands",
+        "pct": 2
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "USA",
+        "pct": 39
+      },
+      {
+        "name": "Netherlands",
+        "pct": 24
+      },
+      {
+        "name": "China",
+        "pct": 6
+      },
+      {
+        "name": "Colombia",
+        "pct": 5
+      },
+      {
+        "name": "Brazil",
+        "pct": 3
+      }
+    ],
+    "exportCommodities": [
+      "diamonds",
+      "refined petroleum",
+      "crude petroleum",
+      "gold",
+      "petroleum coke"
+    ]
+  },
   "VC": {
     "govType": "parliamentary democracy under a constitutional monarchy; a Commonwealth realm",
     "independence": "27 October 1979 (from the UK)",
@@ -7575,6 +8288,66 @@
       "animal food",
       "shellfish",
       "construction vehicles"
+    ]
+  },
+  "VG": {
+    "govType": "Overseas Territory of the UK with limited self-government; parliamentary democracy",
+    "independence": "none (overseas territory of the UK)",
+    "naturalResources": [
+      "NEGL",
+      "pleasant climate",
+      "beaches foster tourism"
+    ],
+    "exportPartners": [
+      {
+        "name": "Malta",
+        "pct": 33
+      },
+      {
+        "name": "Guyana",
+        "pct": 22
+      },
+      {
+        "name": "Greece",
+        "pct": 11
+      },
+      {
+        "name": "Germany",
+        "pct": 7
+      },
+      {
+        "name": "Indonesia",
+        "pct": 4
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "USA",
+        "pct": 34
+      },
+      {
+        "name": "Italy",
+        "pct": 10
+      },
+      {
+        "name": "France",
+        "pct": 9
+      },
+      {
+        "name": "China",
+        "pct": 8
+      },
+      {
+        "name": "Luxembourg",
+        "pct": 5
+      }
+    ],
+    "exportCommodities": [
+      "ships",
+      "refined petroleum",
+      "aircraft",
+      "molasses",
+      "precious stones"
     ]
   },
   "VI": {
@@ -7662,83 +8435,260 @@
       "rum"
     ]
   },
-  "KZ": {
+  "AZ": {
     "languages": [
       {
-        "name": "Russian",
-        "pct": 83.7
+        "name": "Azerbaijani",
+        "pct": 96.1
       },
       {
-        "name": "English",
-        "pct": 35.1
+        "name": "other",
+        "pct": 1.4
+      },
+      {
+        "name": "less than",
+        "pct": 1
       }
     ],
     "govType": "presidential republic",
-    "independence": "16 December 1991 (from the Soviet Union)",
+    "independence": "30 August 1991 (declared from the Soviet Union); 18 October 1991 (adopted by the Supreme Council of Azerbaijan)",
     "naturalResources": [
-      "major deposits of petroleum",
+      "petroleum",
       "natural gas",
-      "coal",
       "iron ore",
-      "manganese",
-      "chrome ore",
-      "nickel",
-      "cobalt",
-      "copper",
-      "molybdenum"
+      "nonferrous metals",
+      "bauxite"
     ],
     "gdpSectors": {
-      "agriculture": 3.9,
-      "industry": 31.4,
-      "services": 58.2
+      "agriculture": 5.7,
+      "industry": 42.6,
+      "services": 42.3
     },
     "exportPartners": [
       {
+        "name": "Italy",
+        "pct": 37
+      },
+      {
+        "name": "Turkey",
+        "pct": 19
+      },
+      {
+        "name": "Israel",
+        "pct": 5
+      },
+      {
+        "name": "Greece",
+        "pct": 4
+      },
+      {
+        "name": "Russia",
+        "pct": 4
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Russia",
+        "pct": 17
+      },
+      {
         "name": "China",
         "pct": 16
+      },
+      {
+        "name": "Turkey",
+        "pct": 14
+      },
+      {
+        "name": "Georgia",
+        "pct": 4
+      },
+      {
+        "name": "Germany",
+        "pct": 4
+      }
+    ],
+    "exportCommodities": [
+      "crude petroleum",
+      "natural gas",
+      "refined petroleum",
+      "plastics",
+      "electricity"
+    ],
+    "literacyRate": 99.8
+  },
+  "AM": {
+    "languages": [
+      {
+        "name": "Armenian",
+        "pct": 97.2
+      },
+      {
+        "name": "Russian",
+        "pct": 1.4
+      },
+      {
+        "name": "Ezidian",
+        "pct": 1
+      },
+      {
+        "name": "less than",
+        "pct": 1
+      }
+    ],
+    "govType": "parliamentary democracy; note - constitutional changes adopted in December 2015 transformed the government to a parliamentary system",
+    "independence": "21 September 1991 (from the Soviet Union); notable earlier dates: 321 B.C. (Kingdom of Armenia established under the Orontid Dynasty), A.D. 884 (Armenian Kingdom reestablished under the Bagratid Dynas",
+    "naturalResources": [
+      "small deposits of gold",
+      "copper",
+      "molybdenum",
+      "zinc",
+      "bauxite"
+    ],
+    "gdpSectors": {
+      "agriculture": 7.9,
+      "industry": 23.2,
+      "services": 61.5
+    },
+    "exportPartners": [
+      {
+        "name": "Russia",
+        "pct": 37
+      },
+      {
+        "name": "UAE",
+        "pct": 25
+      },
+      {
+        "name": "Hong Kong",
+        "pct": 7
+      },
+      {
+        "name": "China",
+        "pct": 5
+      },
+      {
+        "name": "Georgia",
+        "pct": 4
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Russia",
+        "pct": 29
+      },
+      {
+        "name": "China",
+        "pct": 12
+      },
+      {
+        "name": "Vietnam",
+        "pct": 6
+      },
+      {
+        "name": "Georgia",
+        "pct": 5
+      },
+      {
+        "name": "Iran",
+        "pct": 4
+      }
+    ],
+    "exportCommodities": [
+      "gold",
+      "diamonds",
+      "copper ore",
+      "broadcasting equipment",
+      "jewelry"
+    ],
+    "literacyRate": 99.8
+  },
+  "GE": {
+    "languages": [
+      {
+        "name": "Azeri",
+        "pct": 6.2
+      },
+      {
+        "name": "Armenian",
+        "pct": 3.9
+      },
+      {
+        "name": "Russian",
+        "pct": 1.2
+      },
+      {
+        "name": "other",
+        "pct": 1
+      }
+    ],
+    "govType": "semi-presidential republic",
+    "independence": "9 April 1991 (from the Soviet Union); notable earlier date: A.D. 1008 (Georgia unified under King BAGRAT III)",
+    "naturalResources": [
+      "timber",
+      "hydropower",
+      "manganese deposits",
+      "iron ore",
+      "copper",
+      "minor coal and oil deposits"
+    ],
+    "gdpSectors": {
+      "agriculture": 5.4,
+      "industry": 19.1,
+      "services": 62.8
+    },
+    "exportPartners": [
+      {
+        "name": "Azerbaijan",
+        "pct": 13
+      },
+      {
+        "name": "Turkey",
+        "pct": 11
+      },
+      {
+        "name": "Armenia",
+        "pct": 11
       },
       {
         "name": "Russia",
         "pct": 10
       },
       {
-        "name": "Turkey",
-        "pct": 6
-      },
-      {
-        "name": "Italy",
-        "pct": 5
+        "name": "Kyrgyzstan",
+        "pct": 8
       }
     ],
     "importPartners": [
       {
-        "name": "China",
-        "pct": 28
-      },
-      {
-        "name": "Russia",
-        "pct": 24
-      },
-      {
-        "name": "The",
-        "pct": 4
-      },
-      {
         "name": "Turkey",
-        "pct": 4
+        "pct": 16
       },
       {
         "name": "USA",
-        "pct": 4
+        "pct": 13
+      },
+      {
+        "name": "Russia",
+        "pct": 11
+      },
+      {
+        "name": "China",
+        "pct": 8
+      },
+      {
+        "name": "Germany",
+        "pct": 6
       }
     ],
     "exportCommodities": [
-      "crude petroleum",
-      "gold",
-      "radioactive chemicals",
-      "refined copper",
-      "copper ore"
-    ]
+      "cars",
+      "copper ore",
+      "electricity",
+      "garments",
+      "wine"
+    ],
+    "literacyRate": 99.7
   },
   "KG": {
     "languages": [
@@ -7821,6 +8771,167 @@
       "refined petroleum",
       "garments"
     ]
+  },
+  "KZ": {
+    "languages": [
+      {
+        "name": "Russian",
+        "pct": 83.7
+      },
+      {
+        "name": "English",
+        "pct": 35.1
+      }
+    ],
+    "govType": "presidential republic",
+    "independence": "16 December 1991 (from the Soviet Union)",
+    "naturalResources": [
+      "major deposits of petroleum",
+      "natural gas",
+      "coal",
+      "iron ore",
+      "manganese",
+      "chrome ore",
+      "nickel",
+      "cobalt",
+      "copper",
+      "molybdenum"
+    ],
+    "gdpSectors": {
+      "agriculture": 3.9,
+      "industry": 31.4,
+      "services": 58.2
+    },
+    "exportPartners": [
+      {
+        "name": "China",
+        "pct": 16
+      },
+      {
+        "name": "Russia",
+        "pct": 10
+      },
+      {
+        "name": "Turkey",
+        "pct": 6
+      },
+      {
+        "name": "Italy",
+        "pct": 5
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "China",
+        "pct": 28
+      },
+      {
+        "name": "Russia",
+        "pct": 24
+      },
+      {
+        "name": "The",
+        "pct": 4
+      },
+      {
+        "name": "Turkey",
+        "pct": 4
+      },
+      {
+        "name": "USA",
+        "pct": 4
+      }
+    ],
+    "exportCommodities": [
+      "crude petroleum",
+      "gold",
+      "radioactive chemicals",
+      "refined copper",
+      "copper ore"
+    ]
+  },
+  "RU": {
+    "languages": [
+      {
+        "name": "other",
+        "pct": 10.1
+      },
+      {
+        "name": "Tatar",
+        "pct": 3.2
+      },
+      {
+        "name": "Chechen",
+        "pct": 1
+      }
+    ],
+    "govType": "semi-presidential federation",
+    "independence": "25 December 1991 (from the Soviet Union; Russian SFSR renamed Russian Federation); notable earlier dates: 1157 (Principality of Vladimir-Suzdal created); 16 January 1547 (Tsardom of Muscovy establishe",
+    "naturalResources": [
+      "natural gas",
+      "coal",
+      "and many strategic minerals",
+      "bauxite",
+      "reserves of rare earth elements",
+      "timber"
+    ],
+    "gdpSectors": {
+      "agriculture": 2.7,
+      "industry": 30.7,
+      "services": 57.5
+    },
+    "exportPartners": [
+      {
+        "name": "China",
+        "pct": 33
+      },
+      {
+        "name": "India",
+        "pct": 17
+      },
+      {
+        "name": "Turkey",
+        "pct": 8
+      },
+      {
+        "name": "Kazakhstan",
+        "pct": 4
+      },
+      {
+        "name": "Brazil",
+        "pct": 3
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "China",
+        "pct": 53
+      },
+      {
+        "name": "Turkey",
+        "pct": 5
+      },
+      {
+        "name": "Germany",
+        "pct": 5
+      },
+      {
+        "name": "Kazakhstan",
+        "pct": 5
+      },
+      {
+        "name": "Italy",
+        "pct": 2
+      }
+    ],
+    "exportCommodities": [
+      "crude petroleum",
+      "refined petroleum",
+      "natural gas",
+      "coal",
+      "fertilizers"
+    ],
+    "literacyRate": 99.9
   },
   "TJ": {
     "languages": [
@@ -8148,6 +9259,67 @@
       "precious stones"
     ],
     "literacyRate": 93.5
+  },
+  "BN": {
+    "govType": "absolute monarchy or sultanate",
+    "independence": "1 January 1984 (from the UK)",
+    "naturalResources": [
+      "petroleum",
+      "natural gas",
+      "timber"
+    ],
+    "gdpSectors": {
+      "agriculture": 1.2,
+      "industry": 61.7,
+      "services": 38.7
+    },
+    "exportPartners": [
+      {
+        "name": "Australia",
+        "pct": 21
+      },
+      {
+        "name": "Japan",
+        "pct": 17
+      },
+      {
+        "name": "China",
+        "pct": 17
+      },
+      {
+        "name": "Singapore",
+        "pct": 16
+      },
+      {
+        "name": "Malaysia",
+        "pct": 6
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Malaysia",
+        "pct": 23
+      },
+      {
+        "name": "UAE",
+        "pct": 10
+      },
+      {
+        "name": "China",
+        "pct": 10
+      },
+      {
+        "name": "Australia",
+        "pct": 6
+      }
+    ],
+    "exportCommodities": [
+      "refined petroleum",
+      "natural gas",
+      "crude petroleum",
+      "hydrocarbons",
+      "fertilizers"
+    ]
   },
   "KH": {
     "languages": [
@@ -8730,24 +9902,177 @@
     ],
     "literacyRate": 75.6
   },
-  "MC": {
-    "govType": "constitutional monarchy",
-    "independence": "1419 (beginning of permanent rule by the House of GRIMALDI)",
+  "MO": {
+    "languages": [
+      {
+        "name": "Cantonese",
+        "pct": 81
+      },
+      {
+        "name": "other Chinese dialects",
+        "pct": 5.4
+      },
+      {
+        "name": "Mandarin",
+        "pct": 4.7
+      },
+      {
+        "name": "English",
+        "pct": 3.6
+      },
+      {
+        "name": "Tagalog",
+        "pct": 2.9
+      },
+      {
+        "name": "other",
+        "pct": 1.8
+      },
+      {
+        "name": "Portuguese",
+        "pct": 0.6
+      }
+    ],
+    "govType": "executive-led limited democracy; a special administrative region of the People's Republic of China",
+    "independence": "none (special administrative region of China)",
     "naturalResources": [
-      "none"
+      "NEGL"
     ],
     "gdpSectors": {
       "agriculture": null,
-      "industry": 11.5,
-      "services": 88.5
+      "industry": 5.4,
+      "services": 91.4
     },
+    "exportPartners": [
+      {
+        "name": "Hong Kong",
+        "pct": 73
+      },
+      {
+        "name": "China",
+        "pct": 6
+      },
+      {
+        "name": "USA",
+        "pct": 6
+      },
+      {
+        "name": "Philippines",
+        "pct": 3
+      },
+      {
+        "name": "Singapore",
+        "pct": 1
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "China",
+        "pct": 36
+      },
+      {
+        "name": "Hong Kong",
+        "pct": 17
+      },
+      {
+        "name": "USA",
+        "pct": 6
+      },
+      {
+        "name": "France",
+        "pct": 6
+      },
+      {
+        "name": "Japan",
+        "pct": 5
+      }
+    ],
     "exportCommodities": [
       "jewelry",
-      "perfumes",
-      "watches",
-      "packaged medicines",
-      "cars"
+      "garments",
+      "broadcasting equipment",
+      "precious metal watches",
+      "video and card games"
     ]
+  },
+  "MN": {
+    "languages": [
+      {
+        "name": "Mongolian",
+        "pct": 90
+      }
+    ],
+    "govType": "semi-presidential republic",
+    "independence": "29 December 1911 (independence declared from China; in actuality, autonomy attained); 11 July 1921 (from China)",
+    "naturalResources": [
+      "oil",
+      "coal",
+      "copper",
+      "molybdenum",
+      "tungsten",
+      "phosphates",
+      "tin",
+      "nickel",
+      "zinc",
+      "fluorspar"
+    ],
+    "gdpSectors": {
+      "agriculture": 7.4,
+      "industry": 38.1,
+      "services": 44.2
+    },
+    "exportPartners": [
+      {
+        "name": "China",
+        "pct": 92
+      },
+      {
+        "name": "Switzerland",
+        "pct": 6
+      },
+      {
+        "name": "Italy",
+        "pct": 1
+      },
+      {
+        "name": "Thailand",
+        "pct": 0
+      },
+      {
+        "name": "Japan",
+        "pct": 0
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "China",
+        "pct": 57
+      },
+      {
+        "name": "Japan",
+        "pct": 13
+      },
+      {
+        "name": "Germany",
+        "pct": 3
+      },
+      {
+        "name": "Singapore",
+        "pct": 3
+      },
+      {
+        "name": "USA",
+        "pct": 3
+      }
+    ],
+    "exportCommodities": [
+      "coal",
+      "copper ore",
+      "gold",
+      "iron ore",
+      "crude petroleum"
+    ],
+    "literacyRate": 98.6
   },
   "MY": {
     "govType": "federal parliamentary constitutional monarchy",
@@ -9173,6 +10498,136 @@
       "broadcasting equipment"
     ],
     "literacyRate": 91.1
+  },
+  "TL": {
+    "languages": [
+      {
+        "name": "Tetun Prasa",
+        "pct": 30.6
+      },
+      {
+        "name": "Mambai",
+        "pct": 16.6
+      },
+      {
+        "name": "Makasai",
+        "pct": 10.5
+      },
+      {
+        "name": "Tetun Terik",
+        "pct": 6.1
+      },
+      {
+        "name": "Baikenu",
+        "pct": 5.9
+      },
+      {
+        "name": "Kemak",
+        "pct": 5.8
+      },
+      {
+        "name": "Bunak",
+        "pct": 5.5
+      },
+      {
+        "name": "other",
+        "pct": 4.5
+      },
+      {
+        "name": "Tokodede",
+        "pct": 4
+      },
+      {
+        "name": "Fataluku",
+        "pct": 3.5
+      },
+      {
+        "name": "Waima'a",
+        "pct": 1.8
+      },
+      {
+        "name": "Galoli",
+        "pct": 1.4
+      },
+      {
+        "name": "Naueti",
+        "pct": 1.4
+      },
+      {
+        "name": "Idate",
+        "pct": 1.2
+      },
+      {
+        "name": "Midiki",
+        "pct": 1.2
+      }
+    ],
+    "govType": "semi-presidential republic",
+    "independence": "28 November 1975 (from Portugal); 20 May 2002 (from Indonesia)",
+    "naturalResources": [
+      "gold",
+      "petroleum",
+      "natural gas",
+      "manganese",
+      "marble"
+    ],
+    "gdpSectors": {
+      "agriculture": 16.9,
+      "industry": 23.9,
+      "services": 61
+    },
+    "exportPartners": [
+      {
+        "name": "China",
+        "pct": 46
+      },
+      {
+        "name": "Singapore",
+        "pct": 25
+      },
+      {
+        "name": "Japan",
+        "pct": 15
+      },
+      {
+        "name": "Indonesia",
+        "pct": 5
+      },
+      {
+        "name": "USA",
+        "pct": 3
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Indonesia",
+        "pct": 34
+      },
+      {
+        "name": "China",
+        "pct": 26
+      },
+      {
+        "name": "Singapore",
+        "pct": 9
+      },
+      {
+        "name": "Taiwan",
+        "pct": 5
+      },
+      {
+        "name": "India",
+        "pct": 4
+      }
+    ],
+    "exportCommodities": [
+      "crude petroleum",
+      "natural gas",
+      "coffee",
+      "scrap iron",
+      "telephones"
+    ],
+    "literacyRate": 72.5
   },
   "TW": {
     "govType": "semi-presidential republic",
@@ -10062,6 +11517,70 @@
       "pork"
     ]
   },
+  "IE": {
+    "govType": "parliamentary republic",
+    "independence": "6 December 1921 (from the UK); 6 December 1922 (Irish Free State established); 18 April 1949 (Republic of Ireland Act enabled)",
+    "naturalResources": [
+      "natural gas",
+      "peat",
+      "copper",
+      "lead",
+      "zinc",
+      "silver",
+      "barite",
+      "gypsum",
+      "limestone",
+      "dolomite"
+    ],
+    "gdpSectors": {
+      "agriculture": 1.1,
+      "industry": 30.8,
+      "services": 61.8
+    },
+    "exportPartners": [
+      {
+        "name": "USA",
+        "pct": 28
+      },
+      {
+        "name": "Germany",
+        "pct": 11
+      },
+      {
+        "name": "Belgium",
+        "pct": 8
+      },
+      {
+        "name": "China",
+        "pct": 7
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "USA",
+        "pct": 17
+      },
+      {
+        "name": "France",
+        "pct": 10
+      },
+      {
+        "name": "China",
+        "pct": 7
+      },
+      {
+        "name": "Germany",
+        "pct": 7
+      }
+    ],
+    "exportCommodities": [
+      "vaccines",
+      "packaged medicine",
+      "nitrogen compounds",
+      "integrated circuits",
+      "hormones"
+    ]
+  },
   "EE": {
     "languages": [
       {
@@ -10146,70 +11665,6 @@
       "broadcasting equipment",
       "refined petroleum",
       "prefabricated buildings"
-    ]
-  },
-  "IE": {
-    "govType": "parliamentary republic",
-    "independence": "6 December 1921 (from the UK); 6 December 1922 (Irish Free State established); 18 April 1949 (Republic of Ireland Act enabled)",
-    "naturalResources": [
-      "natural gas",
-      "peat",
-      "copper",
-      "lead",
-      "zinc",
-      "silver",
-      "barite",
-      "gypsum",
-      "limestone",
-      "dolomite"
-    ],
-    "gdpSectors": {
-      "agriculture": 1.1,
-      "industry": 30.8,
-      "services": 61.8
-    },
-    "exportPartners": [
-      {
-        "name": "USA",
-        "pct": 28
-      },
-      {
-        "name": "Germany",
-        "pct": 11
-      },
-      {
-        "name": "Belgium",
-        "pct": 8
-      },
-      {
-        "name": "China",
-        "pct": 7
-      }
-    ],
-    "importPartners": [
-      {
-        "name": "USA",
-        "pct": 17
-      },
-      {
-        "name": "France",
-        "pct": 10
-      },
-      {
-        "name": "China",
-        "pct": 7
-      },
-      {
-        "name": "Germany",
-        "pct": 7
-      }
-    ],
-    "exportCommodities": [
-      "vaccines",
-      "packaged medicine",
-      "nitrogen compounds",
-      "integrated circuits",
-      "hormones"
     ]
   },
   "CZ": {
@@ -10373,6 +11828,98 @@
       "ships"
     ]
   },
+  "FO": {
+    "languages": [
+      {
+        "name": "Faroese",
+        "pct": 93.8
+      },
+      {
+        "name": "Danish",
+        "pct": 3.2
+      },
+      {
+        "name": "other",
+        "pct": 3
+      }
+    ],
+    "govType": "parliamentary democracy (Faroese Parliament); part of the Kingdom of Denmark",
+    "independence": "none (self-governing overseas administrative division of Denmark)",
+    "naturalResources": [
+      "fish",
+      "whales",
+      "hydropower",
+      "possible oil and gas"
+    ],
+    "gdpSectors": {
+      "agriculture": 18.2,
+      "industry": 19.7,
+      "services": 52
+    },
+    "exportPartners": [
+      {
+        "name": "Russia",
+        "pct": 26.4
+      },
+      {
+        "name": "Germany",
+        "pct": 8.4
+      },
+      {
+        "name": "China",
+        "pct": 7.9
+      },
+      {
+        "name": "Spain",
+        "pct": 6.8
+      },
+      {
+        "name": "Denmark",
+        "pct": 6.2
+      },
+      {
+        "name": "Poland",
+        "pct": 4.4
+      },
+      {
+        "name": "Norway",
+        "pct": 4.1
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Denmark",
+        "pct": 33
+      },
+      {
+        "name": "China",
+        "pct": 10.7
+      },
+      {
+        "name": "Germany",
+        "pct": 7.6
+      },
+      {
+        "name": "Poland",
+        "pct": 6.8
+      },
+      {
+        "name": "Norway",
+        "pct": 6.7
+      },
+      {
+        "name": "Ireland",
+        "pct": 5
+      },
+      {
+        "name": "Chile",
+        "pct": 4.3
+      }
+    ],
+    "exportCommodities": [
+      "fish and fish products"
+    ]
+  },
   "FR": {
     "govType": "semi-presidential republic",
     "independence": "no official date of independence: 486 (Frankish tribes unified under Merovingian kingship); 10 August 843 (Western Francia established from the division of the Carolingian Empire); 14 July 1789 (Frenc",
@@ -10443,6 +11990,83 @@
       "packaged medicine",
       "gas turbines",
       "vehicle parts/accessories"
+    ]
+  },
+  "GI": {
+    "govType": "parliamentary democracy (Parliament); self-governing overseas territory of the UK",
+    "independence": "none (overseas territory of the UK)",
+    "naturalResources": [
+      "none"
+    ],
+    "exportPartners": [
+      {
+        "name": "Netherlands",
+        "pct": 38
+      },
+      {
+        "name": "France",
+        "pct": 26
+      },
+      {
+        "name": "Cyprus",
+        "pct": 7
+      },
+      {
+        "name": "Poland",
+        "pct": 7
+      },
+      {
+        "name": "Sweden",
+        "pct": 6
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Italy",
+        "pct": 26
+      },
+      {
+        "name": "Greece",
+        "pct": 12
+      },
+      {
+        "name": "Spain",
+        "pct": 10
+      },
+      {
+        "name": "Netherlands",
+        "pct": 9
+      },
+      {
+        "name": "India",
+        "pct": 9
+      }
+    ],
+    "exportCommodities": [
+      "refined petroleum",
+      "natural gas",
+      "ships",
+      "cars",
+      "scrap iron"
+    ]
+  },
+  "GG": {
+    "govType": "parliamentary democracy (States of Deliberation)",
+    "independence": "none (British Crown dependency)",
+    "naturalResources": [
+      "cropland"
+    ],
+    "gdpSectors": {
+      "agriculture": 0.6,
+      "industry": 8.2,
+      "services": 91.2
+    },
+    "exportCommodities": [
+      "aircraft",
+      "photo lab equipment",
+      "clocks",
+      "ships",
+      "paintings"
     ]
   },
   "DE": {
@@ -10830,6 +12454,31 @@
       "iron alloys"
     ]
   },
+  "IM": {
+    "languages": [
+      {
+        "name": "about",
+        "pct": 2
+      }
+    ],
+    "govType": "parliamentary democracy (Tynwald)",
+    "independence": "none (British Crown dependency)",
+    "naturalResources": [
+      "none"
+    ],
+    "gdpSectors": {
+      "agriculture": 0.4,
+      "industry": 6.9,
+      "services": 95.1
+    },
+    "exportCommodities": [
+      "crude petroleum",
+      "artwork",
+      "vegetables",
+      "fruits",
+      "whiskies"
+    ]
+  },
   "IT": {
     "govType": "parliamentary republic",
     "independence": "17 March 1861",
@@ -10898,6 +12547,35 @@
       "vehicle parts/accessories"
     ],
     "literacyRate": 99.3
+  },
+  "JE": {
+    "languages": [
+      {
+        "name": "Portuguese",
+        "pct": 4.6
+      },
+      {
+        "name": "other",
+        "pct": 0.9
+      }
+    ],
+    "govType": "parliamentary democracy (Assembly of the States of Jersey)",
+    "independence": "none (British Crown dependency)",
+    "naturalResources": [
+      "arable land"
+    ],
+    "gdpSectors": {
+      "agriculture": 0.6,
+      "industry": 8.2,
+      "services": 91.2
+    },
+    "exportCommodities": [
+      "refined petroleum",
+      "beverages",
+      "ships",
+      "jewelry",
+      "artwork"
+    ]
   },
   "XK": {
     "languages": [
@@ -11459,6 +13137,97 @@
       "wheat"
     ]
   },
+  "ME": {
+    "languages": [
+      {
+        "name": "Serbian",
+        "pct": 42.9
+      },
+      {
+        "name": "Bosnian",
+        "pct": 5.3
+      },
+      {
+        "name": "Albanian",
+        "pct": 5.3
+      },
+      {
+        "name": "unspecified",
+        "pct": 4
+      },
+      {
+        "name": "other",
+        "pct": 3.5
+      },
+      {
+        "name": "Serbo-Croat",
+        "pct": 2
+      }
+    ],
+    "govType": "parliamentary republic",
+    "independence": "3 June 2006 (from the State Union of Serbia and Montenegro); notable earlier dates: 13 March 1852 (Principality of Montenegro established); 13 July 1878 (Congress of Berlin recognizes Montenegrin inde",
+    "naturalResources": [
+      "bauxite",
+      "hydroelectricity"
+    ],
+    "gdpSectors": {
+      "agriculture": 5.2,
+      "industry": 11.6,
+      "services": 62.1
+    },
+    "exportPartners": [
+      {
+        "name": "Italy",
+        "pct": 38
+      },
+      {
+        "name": "Serbia",
+        "pct": 13
+      },
+      {
+        "name": "Spain",
+        "pct": 6
+      },
+      {
+        "name": "Slovenia",
+        "pct": 5
+      },
+      {
+        "name": "Herzegovina",
+        "pct": 4
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Serbia",
+        "pct": 21
+      },
+      {
+        "name": "China",
+        "pct": 10
+      },
+      {
+        "name": "Germany",
+        "pct": 8
+      },
+      {
+        "name": "Croatia",
+        "pct": 6
+      },
+      {
+        "name": "Italy",
+        "pct": 6
+      }
+    ],
+    "exportCommodities": [
+      "electricity",
+      "aluminum",
+      "copper ore",
+      "aluminum ore",
+      "packaged medicine"
+    ],
+    "literacyRate": 98.5
+  },
   "MK": {
     "languages": [
       {
@@ -11539,6 +13308,25 @@
       "electricity",
       "garments",
       "seats"
+    ]
+  },
+  "MC": {
+    "govType": "constitutional monarchy",
+    "independence": "1419 (beginning of permanent rule by the House of GRIMALDI)",
+    "naturalResources": [
+      "none"
+    ],
+    "gdpSectors": {
+      "agriculture": null,
+      "industry": 11.5,
+      "services": 88.5
+    },
+    "exportCommodities": [
+      "jewelry",
+      "perfumes",
+      "watches",
+      "packaged medicines",
+      "cars"
     ]
   },
   "MT": {
@@ -11898,6 +13686,101 @@
       "refined petroleum"
     ]
   },
+  "RS": {
+    "languages": [
+      {
+        "name": "Hungarian",
+        "pct": 3.4
+      },
+      {
+        "name": "other",
+        "pct": 3.4
+      },
+      {
+        "name": "Bosnian",
+        "pct": 1.9
+      },
+      {
+        "name": "undeclared or unknown",
+        "pct": 1.8
+      },
+      {
+        "name": "Romani",
+        "pct": 1.4
+      }
+    ],
+    "govType": "parliamentary republic",
+    "independence": "5 June 2006 (from the State Union of Serbia and Montenegro); notable earlier dates: 1217 (Serbian Kingdom established); 16 April 1346 (Serbian Empire established); 13 July 1878 (Congress of Berlin rec",
+    "naturalResources": [
+      "oil",
+      "gas",
+      "coal",
+      "iron ore",
+      "copper",
+      "zinc",
+      "antimony",
+      "chromite",
+      "gold",
+      "silver"
+    ],
+    "gdpSectors": {
+      "agriculture": 3.1,
+      "industry": 23.3,
+      "services": 58.5
+    },
+    "exportPartners": [
+      {
+        "name": "Germany",
+        "pct": 15
+      },
+      {
+        "name": "Hungary",
+        "pct": 7
+      },
+      {
+        "name": "Herzegovina",
+        "pct": 5
+      },
+      {
+        "name": "Italy",
+        "pct": 5
+      },
+      {
+        "name": "Romania",
+        "pct": 5
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Germany",
+        "pct": 12
+      },
+      {
+        "name": "China",
+        "pct": 10
+      },
+      {
+        "name": "Italy",
+        "pct": 7
+      },
+      {
+        "name": "Turkey",
+        "pct": 5
+      },
+      {
+        "name": "Hungary",
+        "pct": 5
+      }
+    ],
+    "exportCommodities": [
+      "insulated wire",
+      "electricity",
+      "copper ore",
+      "plastic products",
+      "electric motors"
+    ],
+    "literacyRate": 99.3
+  },
   "RO": {
     "languages": [
       {
@@ -12210,6 +14093,19 @@
     ],
     "literacyRate": 99.7
   },
+  "SJ": {
+    "govType": "non-self-governing territory of Norway",
+    "independence": "none (territory of Norway)",
+    "naturalResources": [
+      "coal",
+      "iron ore",
+      "copper",
+      "zinc",
+      "phosphate",
+      "wildlife",
+      "fish"
+    ]
+  },
   "SE": {
     "govType": "parliamentary constitutional monarchy",
     "independence": "6 June 1523 (Gustav VASA elected king of Sweden, marking the abolishment of the Kalmar Union of Denmark, Norway, and Sweden)",
@@ -12518,7 +14414,7 @@
     ],
     "literacyRate": 100
   },
-  "VT": {
+  "VA": {
     "govType": "ecclesiastical elective monarchy; self-described as an \"absolute monarchy\"",
     "independence": "11 February 1929",
     "naturalResources": [
@@ -13535,6 +15431,66 @@
       "industrial acids/oils/alcohols"
     ]
   },
+  "BM": {
+    "govType": "Overseas Territory of the UK with limited self-government; parliamentary democracy",
+    "independence": "none (overseas territory of the UK)",
+    "naturalResources": [
+      "limestone",
+      "pleasant climate fostering tourism"
+    ],
+    "gdpSectors": {
+      "agriculture": 0.2,
+      "industry": 4.6,
+      "services": 91.5
+    },
+    "exportPartners": [
+      {
+        "name": "Germany",
+        "pct": 40
+      },
+      {
+        "name": "South Africa",
+        "pct": 38
+      },
+      {
+        "name": "Netherlands",
+        "pct": 15
+      },
+      {
+        "name": "USA",
+        "pct": 2
+      },
+      {
+        "name": "Angola",
+        "pct": 2
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "USA",
+        "pct": 38
+      },
+      {
+        "name": "Cyprus",
+        "pct": 31
+      },
+      {
+        "name": "China",
+        "pct": 6
+      },
+      {
+        "name": "Canada",
+        "pct": 4
+      }
+    ],
+    "exportCommodities": [
+      "crude petroleum",
+      "ships",
+      "aircraft",
+      "liquor",
+      "railway cargo containers"
+    ]
+  },
   "CA": {
     "languages": [
       {
@@ -14549,6 +16505,78 @@
     ],
     "literacyRate": 85.6
   },
+  "SR": {
+    "govType": "presidential republic",
+    "independence": "25 November 1975 (from the Netherlands)",
+    "naturalResources": [
+      "timber",
+      "hydropower",
+      "fish",
+      "kaolin",
+      "shrimp",
+      "bauxite",
+      "gold",
+      "and small amounts of nickel",
+      "copper",
+      "platinum"
+    ],
+    "gdpSectors": {
+      "agriculture": 7.5,
+      "industry": 39.9,
+      "services": 48.3
+    },
+    "exportPartners": [
+      {
+        "name": "Switzerland",
+        "pct": 49
+      },
+      {
+        "name": "UAE",
+        "pct": 28
+      },
+      {
+        "name": "Guyana",
+        "pct": 5
+      },
+      {
+        "name": "USA",
+        "pct": 4
+      },
+      {
+        "name": "France",
+        "pct": 3
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "USA",
+        "pct": 22
+      },
+      {
+        "name": "China",
+        "pct": 12
+      },
+      {
+        "name": "Netherlands",
+        "pct": 11
+      },
+      {
+        "name": "Tobago",
+        "pct": 9
+      },
+      {
+        "name": "Guyana",
+        "pct": 8
+      }
+    ],
+    "exportCommodities": [
+      "gold",
+      "fish",
+      "refined petroleum",
+      "wood",
+      "tobacco"
+    ]
+  },
   "PY": {
     "languages": [
       {
@@ -14721,6 +16749,11 @@
       "grapes"
     ],
     "literacyRate": 93.7
+  },
+  "GS": {
+    "naturalResources": [
+      "fish"
+    ]
   },
   "UY": {
     "govType": "presidential republic",
@@ -15333,6 +17366,60 @@
       "garments"
     ],
     "literacyRate": 81.7
+  },
+  "IO": {
+    "naturalResources": [
+      "coconuts",
+      "fish",
+      "sugarcane"
+    ],
+    "exportPartners": [
+      {
+        "name": "Singapore",
+        "pct": 86
+      },
+      {
+        "name": "Pakistan",
+        "pct": 8
+      },
+      {
+        "name": "USA",
+        "pct": 1
+      },
+      {
+        "name": "South Africa",
+        "pct": 1
+      },
+      {
+        "name": "Czechia",
+        "pct": 1
+      }
+    ],
+    "importPartners": [
+      {
+        "name": "Greece",
+        "pct": 52
+      },
+      {
+        "name": "Singapore",
+        "pct": 38
+      },
+      {
+        "name": "USA",
+        "pct": 4
+      },
+      {
+        "name": "Panama",
+        "pct": 2
+      },
+      {
+        "name": "UAE",
+        "pct": 2
+      }
+    ],
+    "exportCommodities": [
+      "fish"
+    ]
   },
   "MV": {
     "govType": "presidential republic",

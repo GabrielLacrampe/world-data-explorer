@@ -10,7 +10,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "preview": "vite preview",
-    "fetch-data": "node scripts/fetch-governments.mjs && node scripts/fetch-religions.mjs && node scripts/fetch-ethnicgroups.mjs && node scripts/fetch-military.mjs",
+    "fetch-data": "node scripts/fetch-governments.mjs && node scripts/fetch-religions.mjs && node scripts/fetch-factbook.mjs && node scripts/fetch-military.mjs",
     "fetch-historical": "node scripts/fetch-historical.mjs",
     "refresh-datasets": "node --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/refresh-datasets.mjs"
   },

@@ -449,6 +449,40 @@
       "pct": 1.2
     }
   ],
+  "GM": [
+    {
+      "name": "Jahanka",
+      "pct": 33.3
+    },
+    {
+      "name": "Lorobo",
+      "pct": 18.2
+    },
+    {
+      "name": "Wolof",
+      "pct": 12.9
+    },
+    {
+      "name": "Karoninka",
+      "pct": 11
+    },
+    {
+      "name": "non-Gambian",
+      "pct": 9.9
+    },
+    {
+      "name": "Serahuleh",
+      "pct": 7.2
+    },
+    {
+      "name": "other",
+      "pct": 4
+    },
+    {
+      "name": "Serer",
+      "pct": 3.5
+    }
+  ],
   "GA": [
     {
       "name": "Fang",
@@ -825,41 +859,13 @@
       "pct": 0.3
     }
   ],
-  "ME": [
+  "MA": [
     {
-      "name": "Montenegrin",
-      "pct": 45
-    },
-    {
-      "name": "Serbian",
-      "pct": 28.7
-    },
-    {
-      "name": "Bosniak",
-      "pct": 8.7
-    },
-    {
-      "name": "Albanian",
-      "pct": 4.9
-    },
-    {
-      "name": "unspecified",
-      "pct": 4.9
-    },
-    {
-      "name": "Muslim",
-      "pct": 3.3
+      "name": "Arab-Amazigh",
+      "pct": 99
     },
     {
       "name": "other",
-      "pct": 2.6
-    },
-    {
-      "name": "Romani",
-      "pct": 1
-    },
-    {
-      "name": "Croat",
       "pct": 1
     }
   ],
@@ -873,7 +879,7 @@
       "pct": 0.8
     }
   ],
-  "NG": [
+  "NE": [
     {
       "name": "Hausa",
       "pct": 53.1
@@ -907,7 +913,7 @@
       "pct": 0.4
     }
   ],
-  "NE": [
+  "NG": [
     {
       "name": "Hausa",
       "pct": 30
@@ -1013,6 +1019,28 @@
     {
       "name": "Soninke",
       "pct": 2.4
+    }
+  ],
+  "SH": [
+    {
+      "name": "St. Helena",
+      "pct": 82.1
+    },
+    {
+      "name": "UK",
+      "pct": 7.6
+    },
+    {
+      "name": "other",
+      "pct": 3.9
+    },
+    {
+      "name": "South Africa",
+      "pct": 3.6
+    },
+    {
+      "name": "Ascension",
+      "pct": 2.8
     }
   ],
   "SL": [
@@ -1121,6 +1149,48 @@
     {
       "name": "other",
       "pct": 1
+    }
+  ],
+  "UG": [
+    {
+      "name": "other",
+      "pct": 32.1
+    },
+    {
+      "name": "Baganda",
+      "pct": 16.5
+    },
+    {
+      "name": "Banyankole",
+      "pct": 9.6
+    },
+    {
+      "name": "Basoga",
+      "pct": 8.8
+    },
+    {
+      "name": "Bakiga",
+      "pct": 7.1
+    },
+    {
+      "name": "Iteso",
+      "pct": 7
+    },
+    {
+      "name": "Langi",
+      "pct": 6.3
+    },
+    {
+      "name": "Bagisu",
+      "pct": 4.9
+    },
+    {
+      "name": "Acholi",
+      "pct": 4.4
+    },
+    {
+      "name": "Lugbara",
+      "pct": 3.3
     }
   ],
   "BF": [
@@ -1295,6 +1365,28 @@
       "pct": 99.6
     }
   ],
+  "AS": [
+    {
+      "name": "Pacific Islander",
+      "pct": 88.7
+    },
+    {
+      "name": "Asian",
+      "pct": 5.8
+    },
+    {
+      "name": "mixed",
+      "pct": 4.4
+    },
+    {
+      "name": "other",
+      "pct": 3.3
+    },
+    {
+      "name": "Tongan",
+      "pct": 2.2
+    }
+  ],
   "AU": [
     {
       "name": "English",
@@ -1395,6 +1487,36 @@
     {
       "name": "other",
       "pct": 2.5
+    }
+  ],
+  "CK": [
+    {
+      "name": "Cook Island Maori",
+      "pct": 77.4
+    },
+    {
+      "name": "part Cook Island Maori",
+      "pct": 8.3
+    },
+    {
+      "name": "Fijian",
+      "pct": 3.6
+    },
+    {
+      "name": "European",
+      "pct": 3.4
+    },
+    {
+      "name": "Filipino",
+      "pct": 2.9
+    },
+    {
+      "name": "other",
+      "pct": 2.6
+    },
+    {
+      "name": "other Pacific Islands",
+      "pct": 1.8
     }
   ],
   "FJ": [
@@ -1551,6 +1673,20 @@
       "pct": 0.2
     }
   ],
+  "CX": [
+    {
+      "name": "Chinese",
+      "pct": 70
+    },
+    {
+      "name": "European",
+      "pct": 20
+    },
+    {
+      "name": "Malay",
+      "pct": 10
+    }
+  ],
   "NC": [
     {
       "name": "Kanak",
@@ -1587,6 +1723,20 @@
     {
       "name": "Vietnamese",
       "pct": 0.9
+    }
+  ],
+  "NU": [
+    {
+      "name": "Niuean",
+      "pct": 65.4
+    },
+    {
+      "name": "non-Niuean",
+      "pct": 20.6
+    },
+    {
+      "name": "part-Niuean",
+      "pct": 14
     }
   ],
   "NF": [
@@ -1701,31 +1851,19 @@
   ],
   "MH": [
     {
-      "name": "Black",
-      "pct": 86.2
-    },
-    {
-      "name": "mixed",
-      "pct": 4.8
-    },
-    {
-      "name": "Spanish",
-      "pct": 3
-    },
-    {
-      "name": "White",
-      "pct": 2.7
+      "name": "Marshallese",
+      "pct": 95.6
     },
     {
       "name": "other",
-      "pct": 1.8
+      "pct": 3.3
     },
     {
-      "name": "Indian",
-      "pct": 1.6
+      "name": "Filipino",
+      "pct": 1.1
     }
   ],
-  "TL": [
+  "TK": [
     {
       "name": "Tokelauan",
       "pct": 64.5
@@ -1749,6 +1887,12 @@
     {
       "name": "unspecified",
       "pct": 0.8
+    }
+  ],
+  "TO": [
+    {
+      "name": "Tongan",
+      "pct": 96.5
     }
   ],
   "TV": [
@@ -1779,7 +1923,7 @@
       "pct": 1.9
     }
   ],
-  "AA": [
+  "AW": [
     {
       "name": "Dutch",
       "pct": 78.7
@@ -1831,7 +1975,7 @@
       "pct": 0.9
     }
   ],
-  "AV": [
+  "AI": [
     {
       "name": "Black",
       "pct": 85.3
@@ -1864,23 +2008,49 @@
   "BB": [
     {
       "name": "African descent",
-      "pct": 52
-    },
-    {
-      "name": "White",
-      "pct": 31
+      "pct": 92.4
     },
     {
       "name": "mixed",
-      "pct": 9
+      "pct": 3.1
     },
     {
-      "name": "Asian",
-      "pct": 4
+      "name": "White",
+      "pct": 2.7
+    },
+    {
+      "name": "East Indian",
+      "pct": 1.3
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.3
     },
     {
       "name": "other",
-      "pct": 4
+      "pct": 0.2
+    }
+  ],
+  "BS": [
+    {
+      "name": "African descent",
+      "pct": 90.6
+    },
+    {
+      "name": "White",
+      "pct": 4.7
+    },
+    {
+      "name": "mixed",
+      "pct": 2.1
+    },
+    {
+      "name": "other",
+      "pct": 1.9
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.7
     }
   ],
   "BZ": [
@@ -1925,29 +2095,7 @@
       "pct": 0.3
     }
   ],
-  "BS": [
-    {
-      "name": "African descent",
-      "pct": 90.6
-    },
-    {
-      "name": "White",
-      "pct": 4.7
-    },
-    {
-      "name": "mixed",
-      "pct": 2.1
-    },
-    {
-      "name": "other",
-      "pct": 1.9
-    },
-    {
-      "name": "unspecified",
-      "pct": 0.7
-    }
-  ],
-  "CJ": [
+  "KY": [
     {
       "name": "Cayman Islander",
       "pct": 35.4
@@ -2193,50 +2341,104 @@
       "pct": 0.4
     }
   ],
-  "CW": [
+  "MS": [
     {
-      "name": "Curacaoan",
-      "pct": 75.4
+      "name": "Black",
+      "pct": 86.2
     },
     {
-      "name": "Dutch",
-      "pct": 6
+      "name": "mixed",
+      "pct": 4.8
     },
     {
-      "name": "other",
-      "pct": 5
-    },
-    {
-      "name": "Dominican",
-      "pct": 3.6
-    },
-    {
-      "name": "Colombian",
+      "name": "Spanish",
       "pct": 3
     },
     {
-      "name": "Saban",
-      "pct": 1.5
+      "name": "White",
+      "pct": 2.7
     },
     {
-      "name": "Haitian",
-      "pct": 1.2
+      "name": "other",
+      "pct": 1.8
     },
     {
-      "name": "Surinamese",
-      "pct": 1.2
+      "name": "Indian",
+      "pct": 1.6
+    }
+  ],
+  "SX": [
+    {
+      "name": "Saint Maarten",
+      "pct": 29.9
     },
     {
-      "name": "Venezuelan",
-      "pct": 1.1
+      "name": "Dominican Republic",
+      "pct": 10.2
     },
     {
-      "name": "Aruban",
-      "pct": 1.1
+      "name": "other",
+      "pct": 8
+    },
+    {
+      "name": "Haiti",
+      "pct": 7.8
+    },
+    {
+      "name": "Jamaica",
+      "pct": 6.6
+    },
+    {
+      "name": "Saint Martin",
+      "pct": 5.9
+    },
+    {
+      "name": "Guyana",
+      "pct": 5
+    },
+    {
+      "name": "Dominica",
+      "pct": 4.4
+    },
+    {
+      "name": "Curacao",
+      "pct": 4.1
+    },
+    {
+      "name": "Aruba",
+      "pct": 3.4
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "pct": 2.8
+    },
+    {
+      "name": "India",
+      "pct": 2.6
+    },
+    {
+      "name": "Netherlands",
+      "pct": 2.2
     },
     {
       "name": "unspecified",
-      "pct": 0.9
+      "pct": 1.7
+    },
+    {
+      "name": "US",
+      "pct": 1.6
+    },
+    {
+      "name": "Suriname",
+      "pct": 1.4
+    },
+    {
+      "name": "Saint Lucia",
+      "pct": 1.3
+    },
+    {
+      "name": "Anguilla",
+      "pct": 1.1
     }
   ],
   "NI": [
@@ -2383,6 +2585,74 @@
       "pct": 1.3
     }
   ],
+  "TC": [
+    {
+      "name": "Black",
+      "pct": 87.6
+    },
+    {
+      "name": "White",
+      "pct": 7.9
+    },
+    {
+      "name": "mixed",
+      "pct": 2.5
+    },
+    {
+      "name": "East Indian",
+      "pct": 1.3
+    },
+    {
+      "name": "other",
+      "pct": 0.7
+    }
+  ],
+  "CW": [
+    {
+      "name": "Curacaoan",
+      "pct": 75.4
+    },
+    {
+      "name": "Dutch",
+      "pct": 6
+    },
+    {
+      "name": "other",
+      "pct": 5
+    },
+    {
+      "name": "Dominican",
+      "pct": 3.6
+    },
+    {
+      "name": "Colombian",
+      "pct": 3
+    },
+    {
+      "name": "Saban",
+      "pct": 1.5
+    },
+    {
+      "name": "Haitian",
+      "pct": 1.2
+    },
+    {
+      "name": "Surinamese",
+      "pct": 1.2
+    },
+    {
+      "name": "Venezuelan",
+      "pct": 1.1
+    },
+    {
+      "name": "Aruban",
+      "pct": 1.1
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.9
+    }
+  ],
   "VC": [
     {
       "name": "African descent",
@@ -2409,6 +2679,40 @@
       "pct": 0.2
     }
   ],
+  "VG": [
+    {
+      "name": "Black",
+      "pct": 76.3
+    },
+    {
+      "name": "Latino",
+      "pct": 5.5
+    },
+    {
+      "name": "White",
+      "pct": 5.4
+    },
+    {
+      "name": "mixed",
+      "pct": 5.3
+    },
+    {
+      "name": "other",
+      "pct": 3
+    },
+    {
+      "name": "Indian",
+      "pct": 2.1
+    },
+    {
+      "name": "East Indian",
+      "pct": 1.6
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.8
+    }
+  ],
   "VI": [
     {
       "name": "African-American or African descent",
@@ -2433,6 +2737,74 @@
     {
       "name": "Hawaiian and other Pacific Islander",
       "pct": 0.1
+    }
+  ],
+  "AZ": [
+    {
+      "name": "Azerbaijani",
+      "pct": 94.8
+    },
+    {
+      "name": "other",
+      "pct": 1.8
+    },
+    {
+      "name": "less than",
+      "pct": 1
+    }
+  ],
+  "AM": [
+    {
+      "name": "Armenian",
+      "pct": 98.1
+    },
+    {
+      "name": "Yezidi",
+      "pct": 1.1
+    },
+    {
+      "name": "less than",
+      "pct": 1
+    }
+  ],
+  "GE": [
+    {
+      "name": "Georgian",
+      "pct": 86.8
+    },
+    {
+      "name": "Azeri",
+      "pct": 6.3
+    },
+    {
+      "name": "Armenian",
+      "pct": 4.5
+    },
+    {
+      "name": "other",
+      "pct": 2.3
+    }
+  ],
+  "KG": [
+    {
+      "name": "Kyrgyz",
+      "pct": 73.8
+    },
+    {
+      "name": "Uzbek",
+      "pct": 14.8
+    },
+    {
+      "name": "other",
+      "pct": 5.2
+    },
+    {
+      "name": "Russian",
+      "pct": 5.1
+    },
+    {
+      "name": "Dungan",
+      "pct": 1.1
     }
   ],
   "KZ": [
@@ -2473,26 +2845,38 @@
       "pct": 0.3
     }
   ],
-  "KG": [
+  "RU": [
     {
-      "name": "Kyrgyz",
-      "pct": 73.8
-    },
-    {
-      "name": "Uzbek",
-      "pct": 14.8
+      "name": "Russian",
+      "pct": 77.7
     },
     {
       "name": "other",
-      "pct": 5.2
+      "pct": 10.2
     },
     {
-      "name": "Russian",
-      "pct": 5.1
+      "name": "unspecified",
+      "pct": 3.9
     },
     {
-      "name": "Dungan",
+      "name": "Tatar",
+      "pct": 3.7
+    },
+    {
+      "name": "Ukrainian",
+      "pct": 1.4
+    },
+    {
+      "name": "Bashkir",
       "pct": 1.1
+    },
+    {
+      "name": "Chuvash",
+      "pct": 1
+    },
+    {
+      "name": "Chechen",
+      "pct": 1
     }
   ],
   "TJ": [
@@ -2585,6 +2969,20 @@
     {
       "name": "Mon",
       "pct": 2
+    }
+  ],
+  "BN": [
+    {
+      "name": "Malay",
+      "pct": 67.4
+    },
+    {
+      "name": "other",
+      "pct": 23
+    },
+    {
+      "name": "Chinese",
+      "pct": 9.6
     }
   ],
   "KH": [
@@ -2763,57 +3161,33 @@
       "pct": 1.8
     }
   ],
-  "MC": [
+  "MO": [
     {
-      "name": "Monegasque",
-      "pct": 32.1
-    },
-    {
-      "name": "French",
-      "pct": 19.9
+      "name": "Chinese",
+      "pct": 89.4
     },
     {
       "name": "other",
-      "pct": 16.6
+      "pct": 8.5
     },
     {
-      "name": "Italian",
-      "pct": 15.3
-    },
-    {
-      "name": "British",
-      "pct": 5
-    },
-    {
-      "name": "Belgian",
-      "pct": 2.3
-    },
-    {
-      "name": "Swiss",
-      "pct": 2
-    },
-    {
-      "name": "German",
-      "pct": 1.9
-    },
-    {
-      "name": "Russian",
-      "pct": 1.8
-    },
-    {
-      "name": "American",
-      "pct": 1.1
-    },
-    {
-      "name": "Dutch",
-      "pct": 1.1
-    },
-    {
-      "name": "Moroccan",
+      "name": "Chinese and Portuguese",
       "pct": 1
+    },
+    {
+      "name": "Portuguese",
+      "pct": 0.8
+    },
+    {
+      "name": "Chinese and non-Portuguese",
+      "pct": 0.2
+    },
+    {
+      "name": "Portuguese and others",
+      "pct": 0.2
     }
   ],
-  "MG": [
+  "MN": [
     {
       "name": "Khalkh",
       "pct": 83.8
@@ -3259,6 +3633,88 @@
       "pct": 3.4
     }
   ],
+  "FO": [
+    {
+      "name": "Faroese",
+      "pct": 83.8
+    },
+    {
+      "name": "Danish",
+      "pct": 8.3
+    },
+    {
+      "name": "other",
+      "pct": 4.5
+    },
+    {
+      "name": "Filipino",
+      "pct": 1.2
+    },
+    {
+      "name": "other Nordic",
+      "pct": 0.9
+    }
+  ],
+  "GI": [
+    {
+      "name": "Gibraltarian",
+      "pct": 79
+    },
+    {
+      "name": "other British",
+      "pct": 13.2
+    },
+    {
+      "name": "other EU",
+      "pct": 2.4
+    },
+    {
+      "name": "Spanish",
+      "pct": 2.1
+    },
+    {
+      "name": "Moroccan",
+      "pct": 1.6
+    },
+    {
+      "name": "other",
+      "pct": 1.6
+    }
+  ],
+  "GG": [
+    {
+      "name": "Guernsey",
+      "pct": 53.5
+    },
+    {
+      "name": "UK and Ireland",
+      "pct": 23.8
+    },
+    {
+      "name": "unspecified",
+      "pct": 10.5
+    },
+    {
+      "name": "other",
+      "pct": 5.3
+    },
+    {
+      "name": "other Europe",
+      "pct": 2.7
+    },
+    {
+      "name": "Portugal",
+      "pct": 2.1
+    },
+    {
+      "name": "Latvia",
+      "pct": 1.4
+    },
+    {
+      "name": "other Crown Dependencies",
+      "pct": 0.7
+    }
+  ],
   "DE": [
     {
       "name": "German",
@@ -3363,6 +3819,54 @@
     {
       "name": "Ukrainian",
       "pct": 1
+    }
+  ],
+  "IM": [
+    {
+      "name": "White",
+      "pct": 94.7
+    },
+    {
+      "name": "Asian",
+      "pct": 3.1
+    },
+    {
+      "name": "Mixed",
+      "pct": 1
+    },
+    {
+      "name": "Black",
+      "pct": 0.6
+    },
+    {
+      "name": "other",
+      "pct": 0.4
+    }
+  ],
+  "JE": [
+    {
+      "name": "Jersey",
+      "pct": 44.4
+    },
+    {
+      "name": "British",
+      "pct": 30.5
+    },
+    {
+      "name": "other",
+      "pct": 10.6
+    },
+    {
+      "name": "Madeiran",
+      "pct": 9.4
+    },
+    {
+      "name": "Polish",
+      "pct": 3
+    },
+    {
+      "name": "Irish",
+      "pct": 2.1
     }
   ],
   "XK": [
@@ -3579,6 +4083,44 @@
       "pct": 0.8
     }
   ],
+  "ME": [
+    {
+      "name": "Montenegrin",
+      "pct": 45
+    },
+    {
+      "name": "Serbian",
+      "pct": 28.7
+    },
+    {
+      "name": "Bosniak",
+      "pct": 8.7
+    },
+    {
+      "name": "Albanian",
+      "pct": 4.9
+    },
+    {
+      "name": "unspecified",
+      "pct": 4.9
+    },
+    {
+      "name": "Muslim",
+      "pct": 3.3
+    },
+    {
+      "name": "other",
+      "pct": 2.6
+    },
+    {
+      "name": "Romani",
+      "pct": 1
+    },
+    {
+      "name": "Croat",
+      "pct": 1
+    }
+  ],
   "MK": [
     {
       "name": "Macedonian",
@@ -3603,6 +4145,56 @@
     {
       "name": "Serb",
       "pct": 1.3
+    }
+  ],
+  "MC": [
+    {
+      "name": "Monegasque",
+      "pct": 32.1
+    },
+    {
+      "name": "French",
+      "pct": 19.9
+    },
+    {
+      "name": "other",
+      "pct": 16.6
+    },
+    {
+      "name": "Italian",
+      "pct": 15.3
+    },
+    {
+      "name": "British",
+      "pct": 5
+    },
+    {
+      "name": "Belgian",
+      "pct": 2.3
+    },
+    {
+      "name": "Swiss",
+      "pct": 2
+    },
+    {
+      "name": "German",
+      "pct": 1.9
+    },
+    {
+      "name": "Russian",
+      "pct": 1.8
+    },
+    {
+      "name": "American",
+      "pct": 1.1
+    },
+    {
+      "name": "Dutch",
+      "pct": 1.1
+    },
+    {
+      "name": "Moroccan",
+      "pct": 1
     }
   ],
   "NL": [
@@ -3767,6 +4359,16 @@
     {
       "name": "Romanian",
       "pct": 1.2
+    }
+  ],
+  "SJ": [
+    {
+      "name": "Norwegian",
+      "pct": 61.1
+    },
+    {
+      "name": "foreign population",
+      "pct": 38.9
     }
   ],
   "SE": [
@@ -4085,6 +4687,28 @@
       "pct": 19
     }
   ],
+  "BM": [
+    {
+      "name": "African descent",
+      "pct": 52
+    },
+    {
+      "name": "White",
+      "pct": 31
+    },
+    {
+      "name": "mixed",
+      "pct": 9
+    },
+    {
+      "name": "Asian",
+      "pct": 4
+    },
+    {
+      "name": "other",
+      "pct": 4
+    }
+  ],
   "CA": [
     {
       "name": "Canadian",
@@ -4375,6 +4999,24 @@
     {
       "name": "other",
       "pct": 0.5
+    }
+  ],
+  "SR": [
+    {
+      "name": "Javanese",
+      "pct": 13.7
+    },
+    {
+      "name": "mixed",
+      "pct": 13.4
+    },
+    {
+      "name": "other",
+      "pct": 7.6
+    },
+    {
+      "name": "unspecified",
+      "pct": 0.6
     }
   ],
   "PY": [

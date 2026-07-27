@@ -1,1 +1,475 @@
-{}
+{
+  "DZ": {
+    "active": 200000
+  },
+  "AO": {
+    "active": 100000
+  },
+  "BW": {
+    "active": 10000
+  },
+  "BJ": {
+    "active": 11000
+  },
+  "BI": {
+    "active": 27500
+  },
+  "TD": {
+    "active": 37500
+  },
+  "CG": {
+    "active": 13000
+  },
+  "CD": {
+    "active": 125000
+  },
+  "CM": {
+    "active": 45000
+  },
+  "CF": {
+    "active": 12500
+  },
+  "CV": {
+    "active": 1250
+  },
+  "DJ": {
+    "active": 11000
+  },
+  "EG": {
+    "active": 450000
+  },
+  "GQ": {
+    "active": 2000
+  },
+  "ER": {
+    "active": 175000
+  },
+  "ET": {
+    "active": 225000
+  },
+  "GM": {
+    "active": 3500
+  },
+  "GA": {
+    "active": 7000
+  },
+  "GH": {
+    "active": 17500
+  },
+  "GN": {
+    "active": 11000
+  },
+  "CI": {
+    "active": 27500
+  },
+  "KE": {
+    "active": 25000
+  },
+  "LR": {
+    "active": 2000
+  },
+  "LS": {
+    "active": 2000
+  },
+  "MW": {
+    "active": 10000
+  },
+  "ML": {
+    "active": 37500
+  },
+  "MA": {
+    "active": 220000
+  },
+  "MR": {
+    "active": 17000
+  },
+  "MZ": {
+    "active": 12000
+  },
+  "NE": {
+    "active": 50000
+  },
+  "NG": {
+    "active": 140000
+  },
+  "SS": {
+    "active": 175000
+  },
+  "GW": {
+    "active": 4000
+  },
+  "RW": {
+    "active": 32500
+  },
+  "SC": {
+    "active": 500
+  },
+  "ZA": {
+    "active": 67500
+  },
+  "SN": {
+    "active": 25000
+  },
+  "SL": {
+    "active": 10000
+  },
+  "SO": {
+    "active": 20000
+  },
+  "TG": {
+    "active": 20000
+  },
+  "ST": {
+    "active": 500
+  },
+  "TN": {
+    "active": 35000
+  },
+  "TZ": {
+    "active": 25000
+  },
+  "UG": {
+    "active": 45000
+  },
+  "NA": {
+    "active": 12000
+  },
+  "SZ": {
+    "active": 3000
+  },
+  "ZM": {
+    "active": 16000
+  },
+  "ZW": {
+    "active": 30000
+  },
+  "AU": {
+    "active": 60000
+  },
+  "FJ": {
+    "active": 4000
+  },
+  "NZ": {
+    "active": 8800
+  },
+  "TO": {
+    "active": 600
+  },
+  "AG": {
+    "active": 300
+  },
+  "BB": {
+    "active": 600
+  },
+  "BS": {
+    "active": 1650
+  },
+  "CU": {
+    "active": 50000
+  },
+  "SV": {
+    "active": 25000
+  },
+  "GT": {
+    "active": 20000
+  },
+  "HN": {
+    "active": 15000
+  },
+  "JM": {
+    "active": 4000
+  },
+  "NI": {
+    "active": 12000
+  },
+  "KN": {
+    "active": 200
+  },
+  "AZ": {
+    "active": 100000
+  },
+  "AM": {
+    "active": 45000
+  },
+  "KG": {
+    "active": 12500
+  },
+  "KZ": {
+    "active": 50000
+  },
+  "RU": {
+    "active": 1150000
+  },
+  "TJ": {
+    "active": 10000
+  },
+  "TM": {
+    "active": 35000
+  },
+  "UZ": {
+    "active": 50000
+  },
+  "MM": {
+    "active": 150000
+  },
+  "BN": {
+    "active": 7000
+  },
+  "CN": {
+    "active": 2000000
+  },
+  "ID": {
+    "active": 400000
+  },
+  "JP": {
+    "active": 235000
+  },
+  "KP": {
+    "active": 1300000
+  },
+  "KR": {
+    "active": 500000
+  },
+  "LA": {
+    "active": 30000
+  },
+  "MN": {
+    "active": 15000
+  },
+  "MY": {
+    "active": 110000
+  },
+  "PG": {
+    "active": 4000
+  },
+  "PH": {
+    "active": 145000
+  },
+  "SG": {
+    "active": 55000
+  },
+  "TH": {
+    "active": 350000
+  },
+  "TW": {
+    "active": 170000
+  },
+  "VN": {
+    "active": 450000
+  },
+  "AL": {
+    "active": 7500
+  },
+  "AT": {
+    "active": 22000,
+    "reserve": 8000
+  },
+  "BE": {
+    "active": 23000
+  },
+  "BA": {
+    "active": 10000
+  },
+  "BY": {
+    "active": 55000
+  },
+  "BG": {
+    "active": 28000
+  },
+  "CY": {
+    "active": 13500
+  },
+  "DK": {
+    "active": 17000
+  },
+  "IE": {
+    "active": 7500
+  },
+  "EE": {
+    "active": 7500
+  },
+  "CZ": {
+    "active": 28000
+  },
+  "FI": {
+    "active": 31000
+  },
+  "FR": {
+    "active": 200000
+  },
+  "DE": {
+    "active": 185000
+  },
+  "GR": {
+    "active": 112000
+  },
+  "HR": {
+    "active": 15000
+  },
+  "HU": {
+    "active": 30000
+  },
+  "IT": {
+    "active": 170000
+  },
+  "XK": {
+    "reserve": 800
+  },
+  "LV": {
+    "active": 9000
+  },
+  "LT": {
+    "active": 20000
+  },
+  "SK": {
+    "active": 17000
+  },
+  "LU": {
+    "active": 900
+  },
+  "ME": {
+    "active": 2000
+  },
+  "MK": {
+    "active": 6000
+  },
+  "MT": {
+    "active": 2000
+  },
+  "NL": {
+    "active": 43000
+  },
+  "NO": {
+    "active": 27000
+  },
+  "PL": {
+    "active": 235000
+  },
+  "PT": {
+    "active": 25000
+  },
+  "RS": {
+    "active": 25000
+  },
+  "RO": {
+    "active": 70000
+  },
+  "SI": {
+    "active": 6000
+  },
+  "ES": {
+    "active": 120000
+  },
+  "SE": {
+    "active": 25000
+  },
+  "GB": {
+    "active": 138000
+  },
+  "UA": {
+    "active": 425000500000
+  },
+  "AE": {
+    "active": 65000
+  },
+  "BH": {
+    "active": 10000
+  },
+  "IR": {
+    "active": 600000
+  },
+  "IL": {
+    "active": 170000,
+    "reserve": 400000
+  },
+  "IQ": {
+    "active": 200000
+  },
+  "JO": {
+    "active": 100000
+  },
+  "KW": {
+    "active": 17000
+  },
+  "LB": {
+    "active": 70000
+  },
+  "OM": {
+    "active": 40000
+  },
+  "QA": {
+    "active": 15000
+  },
+  "SA": {
+    "active": 250000
+  },
+  "TR": {
+    "active": 495000
+  },
+  "PS": {
+    "active": 28000
+  },
+  "CA": {
+    "active": 75000
+  },
+  "MX": {
+    "active": 260000
+  },
+  "US": {
+    "active": 1280000
+  },
+  "AR": {
+    "active": 75000
+  },
+  "BO": {
+    "active": 32500
+  },
+  "BR": {
+    "active": 360000
+  },
+  "CL": {
+    "active": 70000
+  },
+  "CO": {
+    "active": 260000
+  },
+  "EC": {
+    "active": 40000
+  },
+  "GY": {
+    "active": 3500
+  },
+  "PY": {
+    "active": 15000
+  },
+  "PE": {
+    "active": 85000
+  },
+  "UY": {
+    "active": 23000
+  },
+  "VE": {
+    "active": 137500
+  },
+  "BD": {
+    "active": 170000
+  },
+  "BT": {
+    "active": 7500
+  },
+  "LK": {
+    "active": 210000
+  },
+  "IN": {
+    "active": 1500000
+  },
+  "MV": {
+    "active": 3500
+  },
+  "NP": {
+    "active": 95000
+  },
+  "PK": {
+    "active": 650000
+  }
+}

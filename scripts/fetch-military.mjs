@@ -1,77 +1,87 @@
+/**
+ * Builds public/data/militaryPersonnel.json — { ISO2: { active, reserve } }.
+ *
+ * Source: the CIA World Factbook "Military and security service personnel
+ * strengths" field, which is free text like
+ *   "approximately 200,000 active duty Armed Forces; approximately 150,000
+ *    National Gendarmerie; ... (2025)"
+ * so the figures have to be parsed out. Only the headline active-duty number
+ * (and a reserve number when one is stated) is kept; countries whose text
+ * cannot be parsed are simply left out — the sidebar renders "No data".
+ *
+ * Run: node scripts/fetch-military.mjs
+ */
+
 import { writeFileSync } from 'node:fs'
+import { COUNTRY_FILES, CIA_TO_ISO2, fetchFactbookJson } from './factbook-countries.mjs'
 
-const ENDPOINT = 'https://query.wikidata.org/sparql'
+const FIELD = 'Military and security service personnel strengths'
 
-const ACTIVE_QUERY = `
-SELECT ?iso2 ?entityLabel ?active WHERE {
-  ?entity wdt:P2229 ?active .
-  ?entity wdt:P17 ?country .
-  ?country wdt:P297 ?iso2 .
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
-}
-ORDER BY ?iso2
-`
-
-const RESERVE_QUERY = `
-SELECT ?iso2 ?entityLabel ?reserve WHERE {
-  ?entity wdt:P2230 ?reserve .
-  ?entity wdt:P17 ?country .
-  ?country wdt:P297 ?iso2 .
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
-}
-ORDER BY ?iso2
-`
-
-async function sparql(query, label) {
-  console.log(`Querying Wikidata for ${label}...`)
-  const res = await fetch(ENDPOINT, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-      'Accept': 'application/sparql-results+json',
-      'User-Agent': 'WorldDataExplorer/1.0 (educational project)',
-    },
-    body: new URLSearchParams({ query }),
-  })
-  if (!res.ok) throw new Error(`SPARQL error ${res.status}: ${await res.text()}`)
-  const { results } = await res.json()
-  console.log(`  → ${results.bindings.length} rows`)
-  return results.bindings
+/** "1.28 million" → 1280000, "450,000" → 450000. */
+function toNumber(digits, scale) {
+  const n = parseFloat(digits.replace(/,/g, ''))
+  if (isNaN(n)) return null
+  return scale ? Math.round(n * 1e6) : Math.round(n)
 }
 
-const [activeRows, reserveRows] = await Promise.all([
-  sparql(ACTIVE_QUERY, 'active personnel'),
-  sparql(RESERVE_QUERY, 'reserve personnel'),
-])
+/**
+ * Parses a figure that may be a range with an implied magnitude on the low
+ * end: "65-70,000" means 65,000–70,000 and "350-400,000" means 350,000–400,000.
+ * Ranges collapse to their midpoint.
+ */
+function parseFigure(raw, scale) {
+  const [lowRaw, highRaw] = raw.split(/\s*[-–]\s*/)
+  const high = toNumber(highRaw ?? lowRaw, scale)
+  if (high == null || high <= 0) return null
+  if (highRaw == null) return high
 
-// Print sample for debugging
-console.log('\nSample active rows:')
-activeRows.slice(0, 8).forEach(r => console.log(`  ${r.iso2?.value} | ${r.entityLabel?.value} | ${r.active?.value}`))
-console.log('\nSample reserve rows:')
-reserveRows.slice(0, 8).forEach(r => console.log(`  ${r.iso2?.value} | ${r.entityLabel?.value} | ${r.reserve?.value}`))
+  let low = toNumber(lowRaw, scale)
+  if (low == null || low <= 0) return high
+  // "65-70,000": scale the low end up until it is the same magnitude as the high end.
+  while (low * 10 <= high) low *= 10
+  return Math.round((low + high) / 2)
+}
+
+/** Matches "<figure> [million] [total] active|Regular Forces|reserve". */
+function extract(text, kindPattern) {
+  const re = new RegExp(
+    String.raw`([\d][\d,.]*(?:\s*[-–]\s*[\d][\d,.]*)?)\s*(million)?\s+(?:total\s+)?(?:${kindPattern})`,
+    'i'
+  )
+  const m = text.match(re)
+  return m ? parseFigure(m[1].trim(), Boolean(m[2])) : null
+}
 
 const out = {}
+let processed = 0
+let missingField = 0
+let unparsed = 0
 
-for (const row of activeRows) {
-  const iso2 = row.iso2?.value
-  if (!iso2 || iso2.length !== 2) continue
-  const val = parseInt(row.active?.value)
-  if (!isNaN(val)) {
-    if (!out[iso2]) out[iso2] = {}
-    // keep the largest value (national-level, not branch-level)
-    if (out[iso2].active == null || val > out[iso2].active) out[iso2].active = val
-  }
-}
+for (const [region, codes] of Object.entries(COUNTRY_FILES)) {
+  for (const code of codes) {
+    const iso2 = CIA_TO_ISO2[code]
+    if (!iso2) continue // territory with no ISO country of its own
+    const data = await fetchFactbookJson(region, code)
+    if (!data) continue
+    processed++
 
-for (const row of reserveRows) {
-  const iso2 = row.iso2?.value
-  if (!iso2 || iso2.length !== 2) continue
-  const val = parseInt(row.reserve?.value)
-  if (!isNaN(val)) {
-    if (!out[iso2]) out[iso2] = {}
-    if (out[iso2].reserve == null || val > out[iso2].reserve) out[iso2].reserve = val
+    const text = data['Military and Security']?.[FIELD]?.text
+    if (!text) { missingField++; continue }
+
+    const clean = text.replace(/&nbsp;/g, ' ').replace(/<[^>]+>/g, ' ')
+    const active  = extract(clean, 'active|regular forces')
+    const reserve = extract(clean, 'reserv')
+
+    if (active == null && reserve == null) { unparsed++; continue }
+
+    const entry = {}
+    if (active  != null) entry.active  = active
+    if (reserve != null) entry.reserve = reserve
+    out[iso2] = entry
   }
+  console.log(`  ${region}: done`)
 }
 
 writeFileSync('public/data/militaryPersonnel.json', JSON.stringify(out, null, 2))
-console.log(`\nWritten ${Object.keys(out).length} countries to public/data/militaryPersonnel.json`)
+console.log(`\nProcessed ${processed} countries (${missingField} without the field, ${unparsed} unparsed)`)
+console.log(`militaryPersonnel: ${Object.keys(out).length} countries`)
