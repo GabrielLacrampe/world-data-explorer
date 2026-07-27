@@ -2,18 +2,20 @@ name: Refresh datasets
 
 on:
   schedule:
-    # Every Monday at 06:00 UTC — World Bank/IMF data changes yearly,
-    # weekly is already generous.
-    - cron: '0 6 * * 1'
+    # Mondays and Thursdays at 06:00 UTC. The data itself changes yearly, so
+    # once a week would be plenty — the second run exists to keep the free-tier
+    # Supabase project from being paused for inactivity, which a single weekly
+    # run sits right on the edge of once GitHub delays the scheduled job.
+    - cron: '0 6 * * 1,4'
   workflow_dispatch:
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
