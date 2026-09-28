@@ -28,6 +28,12 @@ body {
   background-color: var(--color-ocean);
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
+  /* The app is a single fullscreen map; keep the page itself from scrolling
+     or rubber-banding behind the floating panels on touch devices, and drop
+     the grey tap flash on buttons. */
+  overflow: hidden;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Scrollbar styling */
@@ -39,3 +45,8 @@ body {
 /* Utility classes for custom fonts */
 .font-display { font-family: var(--font-display); }
 .font-body    { font-family: var(--font-body); }
+
+/* Horizontal strips that can overflow on narrow screens (e.g. the TopBar
+   stat row) stay swipeable but hide their scrollbar. */
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
