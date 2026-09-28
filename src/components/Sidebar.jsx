@@ -45,9 +45,9 @@ export default function Sidebar() {
 
   return (
     <div
-      className={`absolute top-10 left-0 bottom-0 z-10 w-full sm:w-80
+      className={`absolute top-10 left-0 bottom-[50vh] sm:bottom-0 z-10 w-full sm:w-80
                   bg-[#0d1117]/95 backdrop-blur-md
-                  border-r border-[#1e2736]
+                  border-r border-b sm:border-b-0 border-[#1e2736]
                   transform transition-transform duration-300 ease-in-out
                   ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
     >
