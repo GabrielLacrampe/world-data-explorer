@@ -95,10 +95,10 @@ export default function TimeSlider() {
 
   return (
     <div
-      className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20
+      className="absolute bottom-20 sm:bottom-6 left-1/2 -translate-x-1/2 z-20
                  bg-[#0d1117]/90 backdrop-blur-md border border-[#1e2736]
-                 rounded-xl px-5 py-3 flex items-center gap-4
-                 w-[min(560px,calc(100vw-2rem))]"
+                 rounded-xl px-3 sm:px-5 py-3 flex items-center gap-2 sm:gap-4
+                 w-[min(560px,calc(100vw-1.5rem))]"
     >
       {/* Play / Pause */}
       <button

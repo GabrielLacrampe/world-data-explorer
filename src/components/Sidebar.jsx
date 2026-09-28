@@ -23,6 +23,7 @@ const TABS = [
 
 export default function Sidebar() {
   const sidebarOpen             = useStore((s) => s.sidebarOpen)
+  const setSidebarOpen          = useStore((s) => s.setSidebarOpen)
   const selectedCountry         = useStore((s) => s.selectedCountry)
   const countryData             = useStore((s) => s.countryData)
   const activeTab               = useStore((s) => s.activeTab)
@@ -44,12 +45,26 @@ export default function Sidebar() {
 
   return (
     <div
-      className={`absolute top-10 left-0 bottom-0 z-10 w-80
+      className={`absolute top-10 left-0 bottom-[50vh] sm:bottom-0 z-10 w-full sm:w-80
                   bg-[#0d1117]/95 backdrop-blur-md
-                  border-r border-[#1e2736]
+                  border-r border-b sm:border-b-0 border-[#1e2736]
                   transform transition-transform duration-300 ease-in-out
                   ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
     >
+      {/* Mobile-only close button. On desktop the TopBar flag toggles the
+          panel and there's always map visible alongside it; on a phone the
+          panel is full-width, so it needs its own dismiss control. */}
+      <button
+        onClick={() => setSidebarOpen(false)}
+        aria-label="Close panel"
+        className="sm:hidden absolute top-0 right-0 z-20 h-9 w-9 flex items-center justify-center
+                   text-[#6b7280] hover:text-white active:text-white"
+      >
+        <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M6 6l12 12M18 6L6 18" strokeLinecap="round" />
+        </svg>
+      </button>
+
       <div className="h-full flex flex-col">
 
         {(loading.country || (selectedCountry && !countryData && !countryLoadError)) && (
@@ -68,7 +83,7 @@ export default function Sidebar() {
         {countryData && !loading.country && (
           <>
             {/* Icon tab row */}
-            <div className="flex border-b border-[#1e2736] shrink-0">
+            <div className="flex border-b border-[#1e2736] shrink-0 pr-9 sm:pr-0">
               {TABS.map(({ id, icon, title }) => (
                 <button
                   key={id}
